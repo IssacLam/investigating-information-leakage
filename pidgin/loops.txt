@@ -1,0 +1,1663 @@
+CBMC version 5.5 64-bit x86_64 linux
+Parsing libpurple/protocols/jabber/auth_digest_md5.c
+Parsing libpurple/cipher.c
+Parsing libpurple/util.c
+Converting
+Type-checking auth_digest_md5
+Type-checking cipher
+Type-checking util
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Partial Inlining
+Generic Property Instrumentation
+Loop memmove.0:
+  file <builtin-library-memmove> line 26 function memmove
+
+Loop memmove.1:
+  file <builtin-library-memmove> line 30 function memmove
+
+Loop memset.0:
+  file <builtin-library-memset> line 29 function memset
+
+Loop strchr.0:
+  file <builtin-library-strchr> line 18 function strchr
+
+Loop strlen.0:
+  file <builtin-library-strlen> line 17 function strlen
+
+Loop purple_menu_action_free.0:
+  file libpurple/util.c line 102 function purple_menu_action_free
+
+Loop purple_util_set_current_song.0:
+  file libpurple/util.c line 5106 function purple_util_set_current_song
+
+Loop purple_base16_encode.0:
+  file libpurple/util.c line 136 function purple_base16_encode
+
+Loop purple_base16_encode.1:
+  file libpurple/util.c line 137 function purple_base16_encode
+
+Loop purple_base16_encode.2:
+  file libpurple/util.c line 141 function purple_base16_encode
+
+Loop purple_base16_decode.0:
+  file libpurple/util.c line 153 function purple_base16_decode
+
+Loop purple_base16_decode.1:
+  file libpurple/util.c line 155 function purple_base16_decode
+
+Loop purple_base16_decode.2:
+  file libpurple/util.c line 157 function purple_base16_decode
+
+Loop purple_base16_decode.3:
+  file libpurple/util.c line 157 function purple_base16_decode
+
+Loop purple_base16_decode.4:
+  file libpurple/util.c line 158 function purple_base16_decode
+
+Loop purple_base16_decode.5:
+  file libpurple/util.c line 162 function purple_base16_decode
+
+Loop purple_base16_encode_chunked.0:
+  file libpurple/util.c line 200 function purple_base16_encode_chunked
+
+Loop purple_base16_encode_chunked.1:
+  file libpurple/util.c line 201 function purple_base16_encode_chunked
+
+Loop purple_base16_encode_chunked.2:
+  file libpurple/util.c line 209 function purple_base16_encode_chunked
+
+Loop purple_quotedp_decode.0:
+  file libpurple/util.c line 256 function purple_quotedp_decode
+
+Loop purple_quotedp_decode.1:
+  file libpurple/util.c line 257 function purple_quotedp_decode
+
+Loop purple_quotedp_decode.2:
+  file libpurple/util.c line 268 function purple_quotedp_decode
+
+Loop purple_quotedp_decode.3:
+  file libpurple/util.c line 269 function purple_quotedp_decode
+
+Loop purple_quotedp_decode.4:
+  file libpurple/util.c line 259 function purple_quotedp_decode
+
+Loop purple_mime_decode_field.0:
+  file libpurple/util.c line 326 function purple_mime_decode_field
+
+Loop purple_mime_decode_field.1:
+  file libpurple/util.c line 346 function purple_mime_decode_field
+
+Loop purple_mime_decode_field.2:
+  file libpurple/util.c line 357 function purple_mime_decode_field
+
+Loop purple_mime_decode_field.3:
+  file libpurple/util.c line 363 function purple_mime_decode_field
+
+Loop purple_mime_decode_field.4:
+  file libpurple/util.c line 374 function purple_mime_decode_field
+
+Loop purple_mime_decode_field.5:
+  file libpurple/util.c line 335 function purple_mime_decode_field
+
+Loop purple_utf8_strftime.0:
+  file libpurple/util.c line 585 function purple_utf8_strftime
+
+Loop purple_get_tzoff_str.0:
+  file libpurple/util.c line 465 function purple_get_tzoff_str
+
+Loop purple_get_tzoff_str.1:
+  file libpurple/util.c line 491 function purple_get_tzoff_str
+
+Loop purple_get_tzoff_str.2:
+  file libpurple/util.c line 495 function purple_get_tzoff_str
+
+Loop purple_str_to_time.0:
+  file libpurple/util.c line 721 function purple_str_to_time
+
+Loop purple_str_to_time.1:
+  file libpurple/util.c line 723 function purple_str_to_time
+
+Loop purple_str_to_time.2:
+  file libpurple/util.c line 728 function purple_str_to_time
+
+Loop purple_str_to_time.3:
+  file libpurple/util.c line 814 function purple_str_to_time
+
+Loop purple_str_to_time.4:
+  file libpurple/util.c line 854 function purple_str_to_time
+
+Loop purple_markup_escape_text.0:
+  file libpurple/util.c line 941 function purple_markup_escape_text
+
+Loop purple_markup_escape_text.1:
+  file libpurple/util.c line 944 function purple_markup_escape_text
+
+Loop purple_markup_find_tag.0:
+  file libpurple/util.c line 1109 function purple_markup_find_tag
+
+Loop purple_markup_find_tag.1:
+  file libpurple/util.c line 1110 function purple_markup_find_tag
+
+Loop purple_markup_find_tag.2:
+  file libpurple/util.c line 1111 function purple_markup_find_tag
+
+Loop purple_markup_find_tag.3:
+  file libpurple/util.c line 1112 function purple_markup_find_tag
+
+Loop purple_markup_find_tag.4:
+  file libpurple/util.c line 1113 function purple_markup_find_tag
+
+Loop purple_markup_find_tag.5:
+  file libpurple/util.c line 1114 function purple_markup_find_tag
+
+Loop purple_markup_find_tag.6:
+  file libpurple/util.c line 1116 function purple_markup_find_tag
+
+Loop purple_markup_find_tag.7:
+  file libpurple/util.c line 1124 function purple_markup_find_tag
+
+Loop purple_markup_find_tag.8:
+  file libpurple/util.c line 1149 function purple_markup_find_tag
+
+Loop purple_markup_find_tag.9:
+  file libpurple/util.c line 1188 function purple_markup_find_tag
+
+Loop purple_markup_find_tag.10:
+  file libpurple/util.c line 1219 function purple_markup_find_tag
+
+Loop purple_markup_find_tag.11:
+  file libpurple/util.c line 1223 function purple_markup_find_tag
+
+Loop purple_markup_find_tag.12:
+  file libpurple/util.c line 1216 function purple_markup_find_tag
+
+Loop purple_markup_find_tag.13:
+  file libpurple/util.c line 1119 function purple_markup_find_tag
+
+Loop purple_markup_extract_info_field.0:
+  file libpurple/util.c line 1261 function purple_markup_extract_info_field
+
+Loop purple_markup_extract_info_field.1:
+  file libpurple/util.c line 1262 function purple_markup_extract_info_field
+
+Loop purple_markup_extract_info_field.2:
+  file libpurple/util.c line 1263 function purple_markup_extract_info_field
+
+Loop purple_markup_extract_info_field.3:
+  file libpurple/util.c line 1264 function purple_markup_extract_info_field
+
+Loop purple_markup_extract_info_field.4:
+  file libpurple/util.c line 1265 function purple_markup_extract_info_field
+
+Loop purple_markup_extract_info_field.5:
+  file libpurple/util.c line 1272 function purple_markup_extract_info_field
+
+Loop purple_markup_extract_info_field.6:
+  file libpurple/util.c line 1283 function purple_markup_extract_info_field
+
+Loop purple_markup_extract_info_field.7:
+  file libpurple/util.c line 1288 function purple_markup_extract_info_field
+
+Loop purple_markup_extract_info_field.8:
+  file libpurple/util.c line 1298 function purple_markup_extract_info_field
+
+Loop purple_markup_html_to_xhtml.0:
+  file libpurple/util.c line 1455 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.1:
+  file libpurple/util.c line 1468 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.2:
+  file libpurple/util.c line 1468 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.3:
+  file libpurple/util.c line 1469 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.4:
+  file libpurple/util.c line 1466 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.5:
+  file libpurple/util.c line 1475 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.6:
+  file libpurple/util.c line 1503 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.7:
+  file libpurple/util.c line 1516 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.8:
+  file libpurple/util.c line 1516 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.9:
+  file libpurple/util.c line 1516 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.10:
+  file libpurple/util.c line 1516 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.11:
+  file libpurple/util.c line 1516 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.12:
+  file libpurple/util.c line 1516 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.13:
+  file libpurple/util.c line 1516 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.14:
+  file libpurple/util.c line 1516 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.15:
+  file libpurple/util.c line 1517 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.16:
+  file libpurple/util.c line 1517 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.17:
+  file libpurple/util.c line 1517 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.18:
+  file libpurple/util.c line 1517 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.19:
+  file libpurple/util.c line 1517 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.20:
+  file libpurple/util.c line 1517 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.21:
+  file libpurple/util.c line 1517 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.22:
+  file libpurple/util.c line 1517 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.23:
+  file libpurple/util.c line 1518 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.24:
+  file libpurple/util.c line 1518 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.25:
+  file libpurple/util.c line 1518 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.26:
+  file libpurple/util.c line 1518 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.27:
+  file libpurple/util.c line 1518 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.28:
+  file libpurple/util.c line 1518 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.29:
+  file libpurple/util.c line 1518 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.30:
+  file libpurple/util.c line 1518 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.31:
+  file libpurple/util.c line 1519 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.32:
+  file libpurple/util.c line 1519 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.33:
+  file libpurple/util.c line 1519 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.34:
+  file libpurple/util.c line 1519 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.35:
+  file libpurple/util.c line 1519 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.36:
+  file libpurple/util.c line 1519 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.37:
+  file libpurple/util.c line 1519 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.38:
+  file libpurple/util.c line 1519 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.39:
+  file libpurple/util.c line 1520 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.40:
+  file libpurple/util.c line 1520 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.41:
+  file libpurple/util.c line 1520 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.42:
+  file libpurple/util.c line 1520 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.43:
+  file libpurple/util.c line 1520 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.44:
+  file libpurple/util.c line 1520 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.45:
+  file libpurple/util.c line 1520 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.46:
+  file libpurple/util.c line 1520 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.47:
+  file libpurple/util.c line 1521 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.48:
+  file libpurple/util.c line 1521 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.49:
+  file libpurple/util.c line 1521 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.50:
+  file libpurple/util.c line 1521 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.51:
+  file libpurple/util.c line 1521 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.52:
+  file libpurple/util.c line 1521 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.53:
+  file libpurple/util.c line 1521 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.54:
+  file libpurple/util.c line 1521 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.55:
+  file libpurple/util.c line 1522 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.56:
+  file libpurple/util.c line 1522 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.57:
+  file libpurple/util.c line 1522 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.58:
+  file libpurple/util.c line 1522 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.59:
+  file libpurple/util.c line 1522 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.60:
+  file libpurple/util.c line 1522 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.61:
+  file libpurple/util.c line 1522 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.62:
+  file libpurple/util.c line 1522 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.63:
+  file libpurple/util.c line 1523 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.64:
+  file libpurple/util.c line 1523 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.65:
+  file libpurple/util.c line 1523 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.66:
+  file libpurple/util.c line 1523 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.67:
+  file libpurple/util.c line 1523 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.68:
+  file libpurple/util.c line 1523 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.69:
+  file libpurple/util.c line 1523 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.70:
+  file libpurple/util.c line 1523 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.71:
+  file libpurple/util.c line 1524 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.72:
+  file libpurple/util.c line 1524 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.73:
+  file libpurple/util.c line 1524 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.74:
+  file libpurple/util.c line 1524 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.75:
+  file libpurple/util.c line 1524 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.76:
+  file libpurple/util.c line 1524 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.77:
+  file libpurple/util.c line 1524 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.78:
+  file libpurple/util.c line 1524 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.79:
+  file libpurple/util.c line 1525 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.80:
+  file libpurple/util.c line 1525 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.81:
+  file libpurple/util.c line 1525 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.82:
+  file libpurple/util.c line 1525 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.83:
+  file libpurple/util.c line 1525 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.84:
+  file libpurple/util.c line 1525 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.85:
+  file libpurple/util.c line 1525 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.86:
+  file libpurple/util.c line 1525 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.87:
+  file libpurple/util.c line 1528 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.88:
+  file libpurple/util.c line 1528 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.89:
+  file libpurple/util.c line 1528 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.90:
+  file libpurple/util.c line 1528 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.91:
+  file libpurple/util.c line 1528 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.92:
+  file libpurple/util.c line 1528 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.93:
+  file libpurple/util.c line 1528 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.94:
+  file libpurple/util.c line 1528 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.95:
+  file libpurple/util.c line 1530 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.96:
+  file libpurple/util.c line 1530 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.97:
+  file libpurple/util.c line 1530 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.98:
+  file libpurple/util.c line 1530 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.99:
+  file libpurple/util.c line 1530 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.100:
+  file libpurple/util.c line 1530 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.101:
+  file libpurple/util.c line 1530 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.102:
+  file libpurple/util.c line 1530 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.103:
+  file libpurple/util.c line 1531 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.104:
+  file libpurple/util.c line 1531 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.105:
+  file libpurple/util.c line 1531 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.106:
+  file libpurple/util.c line 1531 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.107:
+  file libpurple/util.c line 1531 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.108:
+  file libpurple/util.c line 1531 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.109:
+  file libpurple/util.c line 1531 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.110:
+  file libpurple/util.c line 1531 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.111:
+  file libpurple/util.c line 1532 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.112:
+  file libpurple/util.c line 1532 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.113:
+  file libpurple/util.c line 1532 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.114:
+  file libpurple/util.c line 1532 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.115:
+  file libpurple/util.c line 1532 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.116:
+  file libpurple/util.c line 1532 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.117:
+  file libpurple/util.c line 1532 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.118:
+  file libpurple/util.c line 1532 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.119:
+  file libpurple/util.c line 1533 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.120:
+  file libpurple/util.c line 1533 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.121:
+  file libpurple/util.c line 1533 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.122:
+  file libpurple/util.c line 1533 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.123:
+  file libpurple/util.c line 1533 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.124:
+  file libpurple/util.c line 1533 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.125:
+  file libpurple/util.c line 1533 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.126:
+  file libpurple/util.c line 1533 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.127:
+  file libpurple/util.c line 1534 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.128:
+  file libpurple/util.c line 1534 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.129:
+  file libpurple/util.c line 1534 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.130:
+  file libpurple/util.c line 1534 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.131:
+  file libpurple/util.c line 1534 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.132:
+  file libpurple/util.c line 1534 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.133:
+  file libpurple/util.c line 1534 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.134:
+  file libpurple/util.c line 1534 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.135:
+  file libpurple/util.c line 1535 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.136:
+  file libpurple/util.c line 1535 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.137:
+  file libpurple/util.c line 1535 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.138:
+  file libpurple/util.c line 1535 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.139:
+  file libpurple/util.c line 1535 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.140:
+  file libpurple/util.c line 1535 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.141:
+  file libpurple/util.c line 1535 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.142:
+  file libpurple/util.c line 1535 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.143:
+  file libpurple/util.c line 1536 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.144:
+  file libpurple/util.c line 1536 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.145:
+  file libpurple/util.c line 1536 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.146:
+  file libpurple/util.c line 1536 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.147:
+  file libpurple/util.c line 1536 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.148:
+  file libpurple/util.c line 1536 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.149:
+  file libpurple/util.c line 1536 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.150:
+  file libpurple/util.c line 1536 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.151:
+  file libpurple/util.c line 1537 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.152:
+  file libpurple/util.c line 1537 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.153:
+  file libpurple/util.c line 1537 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.154:
+  file libpurple/util.c line 1537 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.155:
+  file libpurple/util.c line 1537 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.156:
+  file libpurple/util.c line 1537 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.157:
+  file libpurple/util.c line 1537 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.158:
+  file libpurple/util.c line 1537 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.159:
+  file libpurple/util.c line 1538 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.160:
+  file libpurple/util.c line 1538 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.161:
+  file libpurple/util.c line 1538 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.162:
+  file libpurple/util.c line 1538 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.163:
+  file libpurple/util.c line 1538 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.164:
+  file libpurple/util.c line 1538 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.165:
+  file libpurple/util.c line 1538 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.166:
+  file libpurple/util.c line 1538 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.167:
+  file libpurple/util.c line 1550 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.168:
+  file libpurple/util.c line 1557 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.169:
+  file libpurple/util.c line 1557 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.170:
+  file libpurple/util.c line 1567 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.171:
+  file libpurple/util.c line 1572 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.172:
+  file libpurple/util.c line 1577 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.173:
+  file libpurple/util.c line 1582 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.174:
+  file libpurple/util.c line 1587 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.175:
+  file libpurple/util.c line 1597 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.176:
+  file libpurple/util.c line 1607 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.177:
+  file libpurple/util.c line 1622 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.178:
+  file libpurple/util.c line 1633 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.179:
+  file libpurple/util.c line 1615 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.180:
+  file libpurple/util.c line 1642 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.181:
+  file libpurple/util.c line 1672 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.182:
+  file libpurple/util.c line 1662 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.183:
+  file libpurple/util.c line 1685 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.184:
+  file libpurple/util.c line 1706 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.185:
+  file libpurple/util.c line 1717 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.186:
+  file libpurple/util.c line 1728 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.187:
+  file libpurple/util.c line 1701 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.188:
+  file libpurple/util.c line 1771 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.189:
+  file libpurple/util.c line 1795 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.190:
+  file libpurple/util.c line 1802 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.191:
+  file libpurple/util.c line 1789 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.192:
+  file libpurple/util.c line 1817 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.193:
+  file libpurple/util.c line 1817 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.194:
+  file libpurple/util.c line 1817 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.195:
+  file libpurple/util.c line 1817 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.196:
+  file libpurple/util.c line 1817 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.197:
+  file libpurple/util.c line 1817 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.198:
+  file libpurple/util.c line 1817 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.199:
+  file libpurple/util.c line 1817 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.200:
+  file libpurple/util.c line 1818 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.201:
+  file libpurple/util.c line 1819 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.202:
+  file libpurple/util.c line 1823 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.203:
+  file libpurple/util.c line 1462 function purple_markup_html_to_xhtml
+
+Loop purple_markup_html_to_xhtml.204:
+  file libpurple/util.c line 1862 function purple_markup_html_to_xhtml
+
+Loop purple_markup_strip_html.0:
+  file libpurple/util.c line 1914 function purple_markup_strip_html
+
+Loop purple_markup_strip_html.1:
+  file libpurple/util.c line 1916 function purple_markup_strip_html
+
+Loop purple_markup_strip_html.2:
+  file libpurple/util.c line 1947 function purple_markup_strip_html
+
+Loop purple_markup_strip_html.3:
+  file libpurple/util.c line 1961 function purple_markup_strip_html
+
+Loop purple_markup_strip_html.4:
+  file libpurple/util.c line 1975 function purple_markup_strip_html
+
+Loop purple_markup_strip_html.5:
+  file libpurple/util.c line 1997 function purple_markup_strip_html
+
+Loop purple_markup_strip_html.6:
+  file libpurple/util.c line 2007 function purple_markup_strip_html
+
+Loop purple_markup_strip_html.7:
+  file libpurple/util.c line 2007 function purple_markup_strip_html
+
+Loop purple_markup_strip_html.8:
+  file libpurple/util.c line 2007 function purple_markup_strip_html
+
+Loop purple_markup_strip_html.9:
+  file libpurple/util.c line 2059 function purple_markup_strip_html
+
+Loop purple_markup_strip_html.10:
+  file libpurple/util.c line 1906 function purple_markup_strip_html
+
+Loop purple_markup_linkify.0:
+  file libpurple/util.c line 2180 function purple_markup_linkify
+
+Loop purple_markup_linkify.1:
+  file libpurple/util.c line 2209 function purple_markup_linkify
+
+Loop purple_markup_linkify.2:
+  file libpurple/util.c line 2242 function purple_markup_linkify
+
+Loop purple_markup_linkify.3:
+  file libpurple/util.c line 2242 function purple_markup_linkify
+
+Loop purple_markup_linkify.4:
+  file libpurple/util.c line 2250 function purple_markup_linkify
+
+Loop purple_markup_linkify.5:
+  file libpurple/util.c line 2282 function purple_markup_linkify
+
+Loop purple_markup_linkify.6:
+  file libpurple/util.c line 2283 function purple_markup_linkify
+
+Loop purple_markup_linkify.7:
+  file libpurple/util.c line 2283 function purple_markup_linkify
+
+Loop purple_markup_linkify.8:
+  file libpurple/util.c line 2273 function purple_markup_linkify
+
+Loop purple_markup_linkify.9:
+  file libpurple/util.c line 2160 function purple_markup_linkify
+
+Loop purple_unescape_text.0:
+  file libpurple/util.c line 2331 function purple_unescape_text
+
+Loop purple_unescape_html.0:
+  file libpurple/util.c line 2356 function purple_unescape_html
+
+Loop purple_markup_slice.0:
+  file libpurple/util.c line 2385 function purple_markup_slice
+
+Loop purple_markup_slice.1:
+  file libpurple/util.c line 2386 function purple_markup_slice
+
+Loop purple_markup_slice.2:
+  file libpurple/util.c line 2398 function purple_markup_slice
+
+Loop purple_markup_slice.3:
+  file libpurple/util.c line 2402 function purple_markup_slice
+
+Loop purple_markup_slice.4:
+  file libpurple/util.c line 2409 function purple_markup_slice
+
+Loop purple_markup_slice.5:
+  file libpurple/util.c line 2413 function purple_markup_slice
+
+Loop purple_markup_slice.6:
+  file libpurple/util.c line 2436 function purple_markup_slice
+
+Loop purple_markup_slice.7:
+  file libpurple/util.c line 2439 function purple_markup_slice
+
+Loop purple_markup_slice.8:
+  file libpurple/util.c line 2455 function purple_markup_slice
+
+Loop purple_markup_slice.9:
+  file libpurple/util.c line 2394 function purple_markup_slice
+
+Loop purple_markup_slice.10:
+  file libpurple/util.c line 2471 function purple_markup_slice
+
+Loop purple_markup_get_tag_name.0:
+  file libpurple/util.c line 2488 function purple_markup_get_tag_name
+
+Loop purple_markup_get_tag_name.1:
+  file libpurple/util.c line 2489 function purple_markup_get_tag_name
+
+Loop purple_markup_get_tag_name.2:
+  file libpurple/util.c line 2491 function purple_markup_get_tag_name
+
+Loop purple_markup_unescape_entity.0:
+  file libpurple/util.c line 991 function purple_markup_unescape_entity
+
+Loop purple_markup_get_css_property.0:
+  file libpurple/util.c line 1012 function purple_markup_get_css_property
+
+Loop purple_markup_get_css_property.1:
+  file libpurple/util.c line 1021 function purple_markup_get_css_property
+
+Loop purple_markup_get_css_property.2:
+  file libpurple/util.c line 1025 function purple_markup_get_css_property
+
+Loop purple_markup_get_css_property.3:
+  file libpurple/util.c line 1028 function purple_markup_get_css_property
+
+Loop purple_markup_get_css_property.4:
+  file libpurple/util.c line 1018 function purple_markup_get_css_property
+
+Loop purple_markup_get_css_property.5:
+  file libpurple/util.c line 1039 function purple_markup_get_css_property
+
+Loop purple_markup_get_css_property.6:
+  file libpurple/util.c line 1040 function purple_markup_get_css_property
+
+Loop purple_markup_get_css_property.7:
+  file libpurple/util.c line 1045 function purple_markup_get_css_property
+
+Loop purple_markup_get_css_property.8:
+  file libpurple/util.c line 1052 function purple_markup_get_css_property
+
+Loop purple_markup_get_css_property.9:
+  file libpurple/util.c line 1057 function purple_markup_get_css_property
+
+Loop purple_util_write_data_to_file.0:
+  file libpurple/util.c line 2550 function purple_util_write_data_to_file
+
+Loop purple_util_write_data_to_file_absolute.0:
+  file libpurple/util.c line 2588 function purple_util_write_data_to_file_absolute
+
+Loop purple_util_write_data_to_file_absolute.1:
+  file libpurple/util.c line 2615 function purple_util_write_data_to_file_absolute
+
+Loop purple_mkstemp.0:
+  file libpurple/util.c line 2753 function purple_mkstemp
+
+Loop purple_util_get_image_extension.0:
+  file libpurple/util.c line 2786 function purple_util_get_image_extension
+
+Loop purple_util_get_image_extension.1:
+  file libpurple/util.c line 2787 function purple_util_get_image_extension
+
+Loop purple_util_get_image_checksum.0:
+  file libpurple/util.c line 2823 function purple_util_get_image_checksum
+
+Loop purple_util_get_image_checksum.1:
+  file libpurple/util.c line 2831 function purple_util_get_image_checksum
+
+Loop purple_program_is_valid.0:
+  file libpurple/util.c line 2857 function purple_program_is_valid
+
+Loop purple_program_is_valid.1:
+  file libpurple/util.c line 2858 function purple_program_is_valid
+
+Loop purple_fd_get_ip.0:
+  file libpurple/util.c line 2955 function purple_fd_get_ip
+
+Loop purple_socket_get_family.0:
+  file libpurple/util.c line 2984 function purple_socket_get_family
+
+Loop purple_socket_speaks_ipv4.0:
+  file libpurple/util.c line 2997 function purple_socket_speaks_ipv4
+
+Loop purple_normalize.0:
+  file libpurple/util.c line 3041 function purple_normalize
+
+Loop purple_normalize_nocase.0:
+  file libpurple/util.c line 3081 function purple_normalize_nocase
+
+Loop purple_strdup_withhtml.0:
+  file libpurple/util.c line 3098 function purple_strdup_withhtml
+
+Loop purple_strdup_withhtml.1:
+  file libpurple/util.c line 3102 function purple_strdup_withhtml
+
+Loop purple_strdup_withhtml.2:
+  file libpurple/util.c line 3113 function purple_strdup_withhtml
+
+Loop purple_str_add_cr.0:
+  file libpurple/util.c line 3145 function purple_str_add_cr
+
+Loop purple_str_add_cr.1:
+  file libpurple/util.c line 3149 function purple_str_add_cr
+
+Loop purple_str_add_cr.2:
+  file libpurple/util.c line 3149 function purple_str_add_cr
+
+Loop purple_str_add_cr.3:
+  file libpurple/util.c line 3156 function purple_str_add_cr
+
+Loop purple_str_add_cr.4:
+  file libpurple/util.c line 3162 function purple_str_add_cr
+
+Loop purple_str_add_cr.5:
+  file libpurple/util.c line 3162 function purple_str_add_cr
+
+Loop purple_str_strip_char.0:
+  file libpurple/util.c line 3176 function purple_str_strip_char
+
+Loop purple_str_strip_char.1:
+  file libpurple/util.c line 3178 function purple_str_strip_char
+
+Loop purple_util_chrreplace.0:
+  file libpurple/util.c line 3191 function purple_util_chrreplace
+
+Loop purple_util_chrreplace.1:
+  file libpurple/util.c line 3193 function purple_util_chrreplace
+
+Loop purple_strreplace.0:
+  file libpurple/util.c line 3208 function purple_strreplace
+
+Loop purple_strreplace.1:
+  file libpurple/util.c line 3209 function purple_strreplace
+
+Loop purple_strreplace.2:
+  file libpurple/util.c line 3210 function purple_strreplace
+
+Loop purple_utf8_ncr_encode.0:
+  file libpurple/util.c line 4748 function purple_utf8_ncr_encode
+
+Loop purple_utf8_ncr_encode.1:
+  file libpurple/util.c line 4749 function purple_utf8_ncr_encode
+
+Loop purple_utf8_ncr_encode.2:
+  file libpurple/util.c line 4753 function purple_utf8_ncr_encode
+
+Loop purple_utf8_ncr_decode.0:
+  file libpurple/util.c line 4774 function purple_utf8_ncr_decode
+
+Loop purple_utf8_ncr_decode.1:
+  file libpurple/util.c line 4775 function purple_utf8_ncr_decode
+
+Loop purple_utf8_ncr_decode.2:
+  file libpurple/util.c line 4780 function purple_utf8_ncr_decode
+
+Loop purple_strcasereplace.0:
+  file libpurple/util.c line 3226 function purple_strcasereplace
+
+Loop purple_strcasereplace.1:
+  file libpurple/util.c line 3227 function purple_strcasereplace
+
+Loop purple_strcasereplace.2:
+  file libpurple/util.c line 3228 function purple_strcasereplace
+
+Loop purple_strcasereplace.3:
+  file libpurple/util.c line 3230 function purple_strcasereplace
+
+Loop purple_strcasereplace.4:
+  file libpurple/util.c line 3231 function purple_strcasereplace
+
+Loop purple_strcasereplace.5:
+  file libpurple/util.c line 3236 function purple_strcasereplace
+
+Loop purple_strcasereplace.6:
+  file libpurple/util.c line 3250 function purple_strcasereplace
+
+Loop purple_str_size_to_units.0:
+  file libpurple/util.c line 3318 function purple_str_size_to_units
+
+Loop purple_str_binary_to_ascii.0:
+  file libpurple/util.c line 3392 function purple_str_binary_to_ascii
+
+Loop purple_str_binary_to_ascii.1:
+  file libpurple/util.c line 3396 function purple_str_binary_to_ascii
+
+Loop purple_got_protocol_handler_uri.0:
+  file libpurple/util.c line 3419 function purple_got_protocol_handler_uri
+
+Loop purple_got_protocol_handler_uri.1:
+  file libpurple/util.c line 3438 function purple_got_protocol_handler_uri
+
+Loop purple_got_protocol_handler_uri.2:
+  file libpurple/util.c line 3460 function purple_got_protocol_handler_uri
+
+Loop purple_got_protocol_handler_uri.3:
+  file libpurple/util.c line 3448 function purple_got_protocol_handler_uri
+
+Loop purple_url_parse.0:
+  file libpurple/util.c line 3513 function purple_url_parse
+
+Loop purple_url_parse.1:
+  file libpurple/util.c line 3529 function purple_url_parse
+
+Loop purple_url_parse.2:
+  file libpurple/util.c line 3530 function purple_url_parse
+
+Loop purple_util_fetch_url_request_len_with_account.0:
+  file libpurple/util.c line 4202 function purple_util_fetch_url_request_len_with_account
+
+Loop purple_util_fetch_url_request_data_len_with_account.0:
+  file libpurple/util.c line 4214 function purple_util_fetch_url_request_data_len_with_account
+
+Loop purple_util_fetch_url_request_data_len_with_account.1:
+  file libpurple/util.c line 4215 function purple_util_fetch_url_request_data_len_with_account
+
+Loop purple_url_decode.0:
+  file libpurple/util.c line 4310 function purple_url_decode
+
+Loop purple_url_decode.1:
+  file libpurple/util.c line 4316 function purple_url_decode
+
+Loop purple_url_decode.2:
+  file libpurple/util.c line 4319 function purple_url_decode
+
+Loop purple_url_decode.3:
+  file libpurple/util.c line 4319 function purple_url_decode
+
+Loop purple_url_encode.0:
+  file libpurple/util.c line 4354 function purple_url_encode
+
+Loop purple_url_encode.1:
+  file libpurple/util.c line 4355 function purple_url_encode
+
+Loop purple_url_encode.2:
+  file libpurple/util.c line 4370 function purple_url_encode
+
+Loop purple_url_encode.3:
+  file libpurple/util.c line 4366 function purple_url_encode
+
+Loop purple_url_encode.4:
+  file libpurple/util.c line 4358 function purple_url_encode
+
+Loop purple_email_is_valid.0:
+  file libpurple/util.c line 4397 function purple_email_is_valid
+
+Loop purple_email_is_valid.1:
+  file libpurple/util.c line 4404 function purple_email_is_valid
+
+Loop purple_email_is_valid.2:
+  file libpurple/util.c line 4419 function purple_email_is_valid
+
+Loop purple_email_is_valid.3:
+  file libpurple/util.c line 4402 function purple_email_is_valid
+
+Loop purple_email_is_valid.4:
+  file libpurple/util.c line 4437 function purple_email_is_valid
+
+Loop purple_ipv4_address_is_valid.0:
+  file libpurple/util.c line 4450 function purple_ipv4_address_is_valid
+
+Loop purple_ipv6_address_is_valid.0:
+  file libpurple/util.c line 4466 function purple_ipv6_address_is_valid
+
+Loop purple_ipv6_address_is_valid.1:
+  file libpurple/util.c line 4471 function purple_ipv6_address_is_valid
+
+Loop purple_uri_list_extract_uris.0:
+  file libpurple/util.c line 4518 function purple_uri_list_extract_uris
+
+Loop purple_uri_list_extract_uris.1:
+  file libpurple/util.c line 4529 function purple_uri_list_extract_uris
+
+Loop purple_uri_list_extract_uris.2:
+  file libpurple/util.c line 4533 function purple_uri_list_extract_uris
+
+Loop purple_uri_list_extract_uris.3:
+  file libpurple/util.c line 4538 function purple_uri_list_extract_uris
+
+Loop purple_uri_list_extract_uris.4:
+  file libpurple/util.c line 4548 function purple_uri_list_extract_uris
+
+Loop purple_uri_list_extract_uris.5:
+  file libpurple/util.c line 4527 function purple_uri_list_extract_uris
+
+Loop purple_uri_list_extract_filenames.0:
+  file libpurple/util.c line 4563 function purple_uri_list_extract_filenames
+
+Loop purple_uri_list_extract_filenames.1:
+  file libpurple/util.c line 4568 function purple_uri_list_extract_filenames
+
+Loop purple_utf8_try_convert.0:
+  file libpurple/util.c line 4595 function purple_utf8_try_convert
+
+Loop purple_utf8_try_convert.1:
+  file libpurple/util.c line 4606 function purple_utf8_try_convert
+
+Loop purple_utf8_salvage.0:
+  file libpurple/util.c line 4622 function purple_utf8_salvage
+
+Loop purple_utf8_salvage.1:
+  file libpurple/util.c line 4624 function purple_utf8_salvage
+
+Loop purple_utf8_salvage.2:
+  file libpurple/util.c line 4635 function purple_utf8_salvage
+
+Loop purple_utf8_salvage.3:
+  file libpurple/util.c line 4636 function purple_utf8_salvage
+
+Loop purple_utf8_strip_unprintables.0:
+  file libpurple/util.c line 4655 function purple_utf8_strip_unprintables
+
+Loop purple_utf8_strip_unprintables.1:
+  file libpurple/util.c line 4658 function purple_utf8_strip_unprintables
+
+Loop purple_utf8_strip_unprintables.2:
+  file libpurple/util.c line 4659 function purple_utf8_strip_unprintables
+
+Loop purple_utf8_has_word.0:
+  file libpurple/util.c line 4855 function purple_utf8_has_word
+
+Loop purple_utf8_has_word.1:
+  file libpurple/util.c line 4857 function purple_utf8_has_word
+
+Loop purple_message_meify.0:
+  file libpurple/util.c line 4910 function purple_message_meify
+
+Loop purple_message_meify.1:
+  file libpurple/util.c line 4913 function purple_message_meify
+
+Loop purple_message_meify.2:
+  file libpurple/util.c line 4915 function purple_message_meify
+
+Loop purple_message_meify.3:
+  file libpurple/util.c line 4928 function purple_message_meify
+
+Loop purple_message_meify.4:
+  file libpurple/util.c line 4928 function purple_message_meify
+
+Loop purple_text_strip_mnemonic.0:
+  file libpurple/util.c line 4942 function purple_text_strip_mnemonic
+
+Loop purple_text_strip_mnemonic.1:
+  file libpurple/util.c line 4944 function purple_text_strip_mnemonic
+
+Loop purple_text_strip_mnemonic.2:
+  file libpurple/util.c line 4986 function purple_text_strip_mnemonic
+
+Loop purple_text_strip_mnemonic.3:
+  file libpurple/util.c line 4950 function purple_text_strip_mnemonic
+
+Loop purple_escape_filename.0:
+  file libpurple/util.c line 5012 function purple_escape_filename
+
+Loop purple_escape_filename.1:
+  file libpurple/util.c line 5013 function purple_escape_filename
+
+Loop purple_escape_filename.2:
+  file libpurple/util.c line 5029 function purple_escape_filename
+
+Loop purple_escape_filename.3:
+  file libpurple/util.c line 5025 function purple_escape_filename
+
+Loop purple_escape_filename.4:
+  file libpurple/util.c line 5016 function purple_escape_filename
+
+Loop _purple_oscar_convert.0:
+  file libpurple/util.c line 5053 function _purple_oscar_convert
+
+Loop purple_cipher_get_name.0:
+  file libpurple/cipher.c line 67 function purple_cipher_get_name
+
+Loop purple_cipher_get_capabilities.0:
+  file libpurple/cipher.c line 77 function purple_cipher_get_capabilities
+
+Loop purple_cipher_get_capabilities.1:
+  file libpurple/cipher.c line 80 function purple_cipher_get_capabilities
+
+Loop purple_cipher_digest_region.0:
+  file libpurple/cipher.c line 131 function purple_cipher_digest_region
+
+Loop purple_cipher_digest_region.1:
+  file libpurple/cipher.c line 132 function purple_cipher_digest_region
+
+Loop purple_cipher_digest_region.2:
+  file libpurple/cipher.c line 136 function purple_cipher_digest_region
+
+Loop purple_ciphers_find_cipher.0:
+  file libpurple/cipher.c line 161 function purple_ciphers_find_cipher
+
+Loop purple_ciphers_find_cipher.1:
+  file libpurple/cipher.c line 163 function purple_ciphers_find_cipher
+
+Loop purple_ciphers_register_cipher.0:
+  file libpurple/cipher.c line 177 function purple_ciphers_register_cipher
+
+Loop purple_ciphers_register_cipher.1:
+  file libpurple/cipher.c line 178 function purple_ciphers_register_cipher
+
+Loop purple_ciphers_register_cipher.2:
+  file libpurple/cipher.c line 179 function purple_ciphers_register_cipher
+
+Loop purple_ciphers_unregister_cipher.0:
+  file libpurple/cipher.c line 196 function purple_ciphers_unregister_cipher
+
+Loop purple_ciphers_unregister_cipher.1:
+  file libpurple/cipher.c line 197 function purple_ciphers_unregister_cipher
+
+Loop purple_ciphers_uninit.0:
+  file libpurple/cipher.c line 270 function purple_ciphers_uninit
+
+Loop purple_cipher_context_set_option.0:
+  file libpurple/cipher.c line 291 function purple_cipher_context_set_option
+
+Loop purple_cipher_context_set_option.1:
+  file libpurple/cipher.c line 292 function purple_cipher_context_set_option
+
+Loop purple_cipher_context_set_option.2:
+  file libpurple/cipher.c line 295 function purple_cipher_context_set_option
+
+Loop purple_cipher_context_get_option.0:
+  file libpurple/cipher.c line 308 function purple_cipher_context_get_option
+
+Loop purple_cipher_context_get_option.1:
+  file libpurple/cipher.c line 309 function purple_cipher_context_get_option
+
+Loop purple_cipher_context_get_option.2:
+  file libpurple/cipher.c line 312 function purple_cipher_context_get_option
+
+Loop purple_cipher_context_new.0:
+  file libpurple/cipher.c line 328 function purple_cipher_context_new
+
+Loop purple_cipher_context_new_by_name.0:
+  file libpurple/cipher.c line 345 function purple_cipher_context_new_by_name
+
+Loop purple_cipher_context_new_by_name.1:
+  file libpurple/cipher.c line 349 function purple_cipher_context_new_by_name
+
+Loop purple_cipher_context_reset.0:
+  file libpurple/cipher.c line 358 function purple_cipher_context_reset
+
+Loop purple_cipher_context_reset.1:
+  file libpurple/cipher.c line 361 function purple_cipher_context_reset
+
+Loop purple_cipher_context_destroy.0:
+  file libpurple/cipher.c line 371 function purple_cipher_context_destroy
+
+Loop purple_cipher_context_destroy.1:
+  file libpurple/cipher.c line 374 function purple_cipher_context_destroy
+
+Loop purple_cipher_context_destroy.2:
+  file libpurple/cipher.c line 381 function purple_cipher_context_destroy
+
+Loop purple_cipher_context_set_iv.0:
+  file libpurple/cipher.c line 391 function purple_cipher_context_set_iv
+
+Loop purple_cipher_context_set_iv.1:
+  file libpurple/cipher.c line 392 function purple_cipher_context_set_iv
+
+Loop purple_cipher_context_set_iv.2:
+  file libpurple/cipher.c line 395 function purple_cipher_context_set_iv
+
+Loop purple_cipher_context_append.0:
+  file libpurple/cipher.c line 410 function purple_cipher_context_append
+
+Loop purple_cipher_context_append.1:
+  file libpurple/cipher.c line 413 function purple_cipher_context_append
+
+Loop purple_cipher_context_digest.0:
+  file libpurple/cipher.c line 428 function purple_cipher_context_digest
+
+Loop purple_cipher_context_digest_to_str.0:
+  file libpurple/cipher.c line 449 function purple_cipher_context_digest_to_str
+
+Loop purple_cipher_context_digest_to_str.1:
+  file libpurple/cipher.c line 450 function purple_cipher_context_digest_to_str
+
+Loop purple_cipher_context_digest_to_str.2:
+  file libpurple/cipher.c line 459 function purple_cipher_context_digest_to_str
+
+Loop purple_cipher_context_encrypt.0:
+  file libpurple/cipher.c line 476 function purple_cipher_context_encrypt
+
+Loop purple_cipher_context_encrypt.1:
+  file libpurple/cipher.c line 479 function purple_cipher_context_encrypt
+
+Loop purple_cipher_context_decrypt.0:
+  file libpurple/cipher.c line 500 function purple_cipher_context_decrypt
+
+Loop purple_cipher_context_decrypt.1:
+  file libpurple/cipher.c line 503 function purple_cipher_context_decrypt
+
+Loop purple_cipher_context_set_salt.0:
+  file libpurple/cipher.c line 522 function purple_cipher_context_set_salt
+
+Loop purple_cipher_context_set_salt.1:
+  file libpurple/cipher.c line 525 function purple_cipher_context_set_salt
+
+Loop purple_cipher_context_get_salt_size.0:
+  file libpurple/cipher.c line 538 function purple_cipher_context_get_salt_size
+
+Loop purple_cipher_context_get_salt_size.1:
+  file libpurple/cipher.c line 541 function purple_cipher_context_get_salt_size
+
+Loop purple_cipher_context_set_key.0:
+  file libpurple/cipher.c line 557 function purple_cipher_context_set_key
+
+Loop purple_cipher_context_set_key.1:
+  file libpurple/cipher.c line 560 function purple_cipher_context_set_key
+
+Loop purple_cipher_context_get_key_size.0:
+  file libpurple/cipher.c line 573 function purple_cipher_context_get_key_size
+
+Loop purple_cipher_context_get_key_size.1:
+  file libpurple/cipher.c line 576 function purple_cipher_context_get_key_size
+
+Loop purple_cipher_context_set_batch_mode.0:
+  file libpurple/cipher.c line 594 function purple_cipher_context_set_batch_mode
+
+Loop purple_cipher_context_set_batch_mode.1:
+  file libpurple/cipher.c line 597 function purple_cipher_context_set_batch_mode
+
+Loop purple_cipher_context_get_batch_mode.0:
+  file libpurple/cipher.c line 611 function purple_cipher_context_get_batch_mode
+
+Loop purple_cipher_context_get_batch_mode.1:
+  file libpurple/cipher.c line 614 function purple_cipher_context_get_batch_mode
+
+Loop purple_cipher_context_get_block_size.0:
+  file libpurple/cipher.c line 630 function purple_cipher_context_get_block_size
+
+Loop purple_cipher_context_get_block_size.1:
+  file libpurple/cipher.c line 633 function purple_cipher_context_get_block_size
+
+Loop purple_cipher_context_set_key_with_len.0:
+  file libpurple/cipher.c line 650 function purple_cipher_context_set_key_with_len
+
+Loop purple_cipher_context_set_key_with_len.1:
+  file libpurple/cipher.c line 653 function purple_cipher_context_set_key_with_len
+
+Loop purple_cipher_context_set_data.0:
+  file libpurple/cipher.c line 664 function purple_cipher_context_set_data
+
+Loop purple_cipher_context_get_data.0:
+  file libpurple/cipher.c line 671 function purple_cipher_context_get_data
+
+Loop purple_cipher_http_digest_calculate_session_key.0:
+  file libpurple/cipher.c line 688 function purple_cipher_http_digest_calculate_session_key
+
+Loop purple_cipher_http_digest_calculate_session_key.1:
+  file libpurple/cipher.c line 689 function purple_cipher_http_digest_calculate_session_key
+
+Loop purple_cipher_http_digest_calculate_session_key.2:
+  file libpurple/cipher.c line 690 function purple_cipher_http_digest_calculate_session_key
+
+Loop purple_cipher_http_digest_calculate_session_key.3:
+  file libpurple/cipher.c line 691 function purple_cipher_http_digest_calculate_session_key
+
+Loop purple_cipher_http_digest_calculate_session_key.4:
+  file libpurple/cipher.c line 694 function purple_cipher_http_digest_calculate_session_key
+
+Loop purple_cipher_http_digest_calculate_session_key.5:
+  file libpurple/cipher.c line 700 function purple_cipher_http_digest_calculate_session_key
+
+Loop purple_cipher_http_digest_calculate_session_key.6:
+  file libpurple/cipher.c line 704 function purple_cipher_http_digest_calculate_session_key
+
+Loop purple_cipher_http_digest_calculate_session_key.7:
+  file libpurple/cipher.c line 706 function purple_cipher_http_digest_calculate_session_key
+
+Loop purple_cipher_http_digest_calculate_session_key.8:
+  file libpurple/cipher.c line 708 function purple_cipher_http_digest_calculate_session_key
+
+Loop purple_cipher_http_digest_calculate_session_key.9:
+  file libpurple/cipher.c line 727 function purple_cipher_http_digest_calculate_session_key
+
+Loop purple_cipher_http_digest_calculate_session_key.10:
+  file libpurple/cipher.c line 729 function purple_cipher_http_digest_calculate_session_key
+
+Loop purple_cipher_http_digest_calculate_response.0:
+  file libpurple/cipher.c line 753 function purple_cipher_http_digest_calculate_response
+
+Loop purple_cipher_http_digest_calculate_response.1:
+  file libpurple/cipher.c line 754 function purple_cipher_http_digest_calculate_response
+
+Loop purple_cipher_http_digest_calculate_response.2:
+  file libpurple/cipher.c line 755 function purple_cipher_http_digest_calculate_response
+
+Loop purple_cipher_http_digest_calculate_response.3:
+  file libpurple/cipher.c line 756 function purple_cipher_http_digest_calculate_response
+
+Loop purple_cipher_http_digest_calculate_response.4:
+  file libpurple/cipher.c line 759 function purple_cipher_http_digest_calculate_response
+
+Loop purple_cipher_http_digest_calculate_response.5:
+  file libpurple/cipher.c line 765 function purple_cipher_http_digest_calculate_response
+
+Loop purple_cipher_http_digest_calculate_response.6:
+  file libpurple/cipher.c line 771 function purple_cipher_http_digest_calculate_response
+
+Loop purple_cipher_http_digest_calculate_response.7:
+  file libpurple/cipher.c line 775 function purple_cipher_http_digest_calculate_response
+
+Loop purple_cipher_http_digest_calculate_response.8:
+  file libpurple/cipher.c line 777 function purple_cipher_http_digest_calculate_response
+
+Loop purple_cipher_http_digest_calculate_response.9:
+  file libpurple/cipher.c line 792 function purple_cipher_http_digest_calculate_response
+
+Loop purple_cipher_http_digest_calculate_response.10:
+  file libpurple/cipher.c line 797 function purple_cipher_http_digest_calculate_response
+
+Loop purple_cipher_http_digest_calculate_response.11:
+  file libpurple/cipher.c line 804 function purple_cipher_http_digest_calculate_response
+
+Loop purple_cipher_http_digest_calculate_response.12:
+  file libpurple/cipher.c line 806 function purple_cipher_http_digest_calculate_response
+
+Loop purple_cipher_http_digest_calculate_response.13:
+  file libpurple/cipher.c line 825 function purple_cipher_http_digest_calculate_response
+
+Loop purple_cipher_http_digest_calculate_response.14:
+  file libpurple/cipher.c line 827 function purple_cipher_http_digest_calculate_response
+
+Loop purple_cipher_http_digest_calculate_response.15:
+  file libpurple/cipher.c line 830 function purple_cipher_http_digest_calculate_response
+
+Loop purple_cipher_http_digest_calculate_response.16:
+  file libpurple/cipher.c line 835 function purple_cipher_http_digest_calculate_response
+
+Loop jabber_auth_digest_md5_parse.0:
+  file libpurple/protocols/jabber/auth_digest_md5.c line 59 function jabber_auth_digest_md5_parse
+
+Loop jabber_auth_digest_md5_parse.1:
+  file libpurple/protocols/jabber/auth_digest_md5.c line 66 function jabber_auth_digest_md5_parse
+
+Loop jabber_auth_digest_md5_parse.2:
+  file libpurple/protocols/jabber/auth_digest_md5.c line 75 function jabber_auth_digest_md5_parse
+
+Loop jabber_auth_digest_md5_parse.3:
+  file libpurple/protocols/jabber/auth_digest_md5.c line 81 function jabber_auth_digest_md5_parse
+
+Loop jabber_auth_digest_md5_parse.4:
+  file libpurple/protocols/jabber/auth_digest_md5.c line 96 function jabber_auth_digest_md5_parse
+
+Loop jabber_auth_digest_md5_parse.5:
+  file libpurple/protocols/jabber/auth_digest_md5.c line 54 function jabber_auth_digest_md5_parse
+
+Loop generate_response_value.0:
+  file libpurple/protocols/jabber/auth_digest_md5.c line 129 function generate_response_value
+
+Loop generate_response_value.1:
+  file libpurple/protocols/jabber/auth_digest_md5.c line 133 function generate_response_value
+
+Loop generate_response_value.2:
+  file libpurple/protocols/jabber/auth_digest_md5.c line 134 function generate_response_value
+
+Loop generate_response_value.3:
+  file libpurple/protocols/jabber/auth_digest_md5.c line 134 function generate_response_value
+
+Loop generate_response_value.4:
+  file libpurple/protocols/jabber/auth_digest_md5.c line 134 function generate_response_value
+
+Loop generate_response_value.5:
+  file libpurple/protocols/jabber/auth_digest_md5.c line 143 function generate_response_value
+
+Loop generate_response_value.6:
+  file libpurple/protocols/jabber/auth_digest_md5.c line 151 function generate_response_value
+
+Loop digest_md5_handle_challenge.0:
+  file libpurple/protocols/jabber/auth_digest_md5.c line 187 function digest_md5_handle_challenge
+
+Loop purple_internal_strftime.0:
+  file libpurple/util.c line 511 function purple_internal_strftime
+
+Loop purple_internal_strftime.1:
+  file libpurple/util.c line 518 function purple_internal_strftime
+
+Loop append_escaped_text.0:
+  file libpurple/util.c line 896 function append_escaped_text
+
+Loop process_link.0:
+  file libpurple/util.c line 2115 function process_link
+
+Loop purple_strcasestr_len.0:
+  file libpurple/util.c line 3273 function purple_strcasestr_len
+
+Loop purple_strcasestr_len.1:
+  file libpurple/util.c line 3274 function purple_strcasestr_len
+
+Loop purple_strcasestr_len.2:
+  file libpurple/util.c line 3277 function purple_strcasestr_len
+
+Loop purple_strcasestr_len.3:
+  file libpurple/util.c line 3279 function purple_strcasestr_len
+
+Loop purple_strcasestr_len.4:
+  file libpurple/util.c line 3283 function purple_strcasestr_len
+
+Loop purple_strcasestr_len.5:
+  file libpurple/util.c line 3284 function purple_strcasestr_len
+
+Loop purple_strcasestr_len.6:
+  file libpurple/util.c line 3286 function purple_strcasestr_len
+
+Loop parse_redirect.0:
+  file libpurple/util.c line 3624 function parse_redirect
+
+Loop parse_redirect.1:
+  file libpurple/util.c line 3625 function parse_redirect
+
+Loop parse_redirect.2:
+  file libpurple/util.c line 3629 function parse_redirect
+
+Loop find_header_content.0:
+  file libpurple/util.c line 3725 function find_header_content
+
+Loop process_chunked_data.0:
+  file libpurple/util.c line 3818 function process_chunked_data
+
+Loop process_chunked_data.1:
+  file libpurple/util.c line 3818 function process_chunked_data
+
+Loop process_chunked_data.2:
+  file libpurple/util.c line 3818 function process_chunked_data
+
+Loop process_chunked_data.3:
+  file libpurple/util.c line 3785 function process_chunked_data
+
+Loop url_fetch_recv_cb.0:
+  file libpurple/util.c line 3846 function url_fetch_recv_cb
+
+Loop url_fetch_recv_cb.1:
+  file libpurple/util.c line 3867 function url_fetch_recv_cb
+
+Loop url_fetch_recv_cb.2:
+  file libpurple/util.c line 3856 function url_fetch_recv_cb
+
+Loop url_fetch_send_cb.0:
+  file libpurple/util.c line 4069 function url_fetch_send_cb
+
+Loop url_fetch_send_cb.1:
+  file libpurple/util.c line 4086 function url_fetch_send_cb
+
