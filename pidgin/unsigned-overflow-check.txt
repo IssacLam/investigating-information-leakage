@@ -1,0 +1,1006 @@
+CBMC version 5.5 64-bit x86_64 linux
+Parsing pidgin/libpurple/protocols/jabber/auth_digest_md5.c
+Parsing pidgin/libpurple/cipher.c
+Parsing pidgin/libpurple/util.c
+Parsing glib/glib/gmem.c
+Parsing glib/glib/gstrfuncs.c
+Parsing glib/glib/gconvert.c
+Parsing glib/glib/gprintf.c
+Parsing ./snprintf.c
+Converting
+Type-checking auth_digest_md5
+Type-checking cipher
+Type-checking gconvert
+Type-checking gmem
+Type-checking gprintf
+Type-checking gstrfuncs
+Type-checking snprintf
+Type-checking util
+Generating GOTO Program
+Adding CPROVER library (x86_64)
+Removal of function pointers and virtual functions
+Partial Inlining
+Generic Property Instrumentation
+Starting Bounded Model Checking
+Not unwinding loop g_strdup.0 iteration 1 (1 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Not unwinding loop g_strdup.1 iteration 1 (1 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Not unwinding loop g_strdup.0 iteration 1 (1 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Not unwinding loop g_strdup.1 iteration 1 (1 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Not unwinding loop vsnprintf.7 iteration 1 (1 max) file ./snprintf.c line 703 function vsnprintf thread 0
+Not unwinding loop vsnprintf.18 iteration 1 (1 max) file ./snprintf.c line 555 function vsnprintf thread 0
+Not unwinding loop vsnprintf.7 iteration 1 (1 max) file ./snprintf.c line 703 function vsnprintf thread 0
+Not unwinding loop vsnprintf.8 iteration 1 (1 max) file ./snprintf.c line 949 function vsnprintf thread 0
+Not unwinding loop vsnprintf.9 iteration 1 (1 max) file ./snprintf.c line 949 function vsnprintf thread 0
+Not unwinding loop vsnprintf.14 iteration 1 (1 max) file ./snprintf.c line 986 function vsnprintf thread 0
+Not unwinding loop vsnprintf.15 iteration 1 (1 max) file ./snprintf.c line 986 function vsnprintf thread 0
+Not unwinding loop vsnprintf.18 iteration 1 (1 max) file ./snprintf.c line 555 function vsnprintf thread 0
+Not unwinding loop generate_response_value.0 iteration 1 (1 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 129 function generate_response_value thread 0
+Not unwinding loop vsnprintf.0 iteration 1 (1 max) file ./snprintf.c line 560 function vsnprintf thread 0
+Not unwinding loop vsnprintf.1 iteration 1 (1 max) file ./snprintf.c line 561 function vsnprintf thread 0
+Not unwinding loop vsnprintf.18 iteration 1 (1 max) file ./snprintf.c line 555 function vsnprintf thread 0
+Not unwinding loop vsnprintf.0 iteration 1 (1 max) file ./snprintf.c line 560 function vsnprintf thread 0
+Not unwinding loop vsnprintf.1 iteration 1 (1 max) file ./snprintf.c line 561 function vsnprintf thread 0
+Not unwinding loop vsnprintf.3 iteration 1 (1 max) file ./snprintf.c line 564 function vsnprintf thread 0
+Not unwinding loop vsnprintf.18 iteration 1 (1 max) file ./snprintf.c line 555 function vsnprintf thread 0
+Not unwinding loop generate_response_value.1 iteration 1 (1 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 134 function generate_response_value thread 0
+Not unwinding loop generate_response_value.2 iteration 1 (1 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 136 function generate_response_value thread 0
+Not unwinding loop generate_response_value.3 iteration 1 (1 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 136 function generate_response_value thread 0
+Not unwinding loop vsnprintf.4 iteration 1 (1 max) file ./snprintf.c line 599 function vsnprintf thread 0
+Not unwinding loop vsnprintf.15 iteration 1 (1 max) file ./snprintf.c line 986 function vsnprintf thread 0
+Not unwinding loop vsnprintf.18 iteration 1 (1 max) file ./snprintf.c line 555 function vsnprintf thread 0
+Not unwinding loop purple_base16_encode.2 iteration 1 (1 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Not unwinding loop generate_response_value.5 iteration 1 (1 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 145 function generate_response_value thread 0
+Not unwinding loop vsnprintf.4 iteration 1 (1 max) file ./snprintf.c line 599 function vsnprintf thread 0
+Not unwinding loop vsnprintf.15 iteration 1 (1 max) file ./snprintf.c line 986 function vsnprintf thread 0
+Not unwinding loop vsnprintf.18 iteration 1 (1 max) file ./snprintf.c line 555 function vsnprintf thread 0
+Not unwinding loop purple_base16_encode.2 iteration 1 (1 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Not unwinding loop vsnprintf.7 iteration 1 (1 max) file ./snprintf.c line 703 function vsnprintf thread 0
+Not unwinding loop vsnprintf.18 iteration 1 (1 max) file ./snprintf.c line 555 function vsnprintf thread 0
+Not unwinding loop vsnprintf.7 iteration 1 (1 max) file ./snprintf.c line 703 function vsnprintf thread 0
+Not unwinding loop vsnprintf.8 iteration 1 (1 max) file ./snprintf.c line 949 function vsnprintf thread 0
+Not unwinding loop vsnprintf.9 iteration 1 (1 max) file ./snprintf.c line 949 function vsnprintf thread 0
+Not unwinding loop vsnprintf.14 iteration 1 (1 max) file ./snprintf.c line 986 function vsnprintf thread 0
+Not unwinding loop vsnprintf.15 iteration 1 (1 max) file ./snprintf.c line 986 function vsnprintf thread 0
+Not unwinding loop vsnprintf.18 iteration 1 (1 max) file ./snprintf.c line 555 function vsnprintf thread 0
+Not unwinding loop generate_response_value.6 iteration 1 (1 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 153 function generate_response_value thread 0
+Not unwinding loop vsnprintf.4 iteration 1 (1 max) file ./snprintf.c line 599 function vsnprintf thread 0
+Not unwinding loop vsnprintf.15 iteration 1 (1 max) file ./snprintf.c line 986 function vsnprintf thread 0
+Not unwinding loop vsnprintf.18 iteration 1 (1 max) file ./snprintf.c line 555 function vsnprintf thread 0
+Not unwinding loop purple_base16_encode.2 iteration 1 (1 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Not unwinding loop g_strdup.0 iteration 1 (1 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Not unwinding loop g_strdup.1 iteration 1 (1 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Not unwinding loop g_strdup.0 iteration 1 (1 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Not unwinding loop g_strdup.1 iteration 1 (1 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Not unwinding loop vsnprintf.7 iteration 1 (1 max) file ./snprintf.c line 703 function vsnprintf thread 0
+Not unwinding loop vsnprintf.18 iteration 1 (1 max) file ./snprintf.c line 555 function vsnprintf thread 0
+Not unwinding loop vsnprintf.7 iteration 1 (1 max) file ./snprintf.c line 703 function vsnprintf thread 0
+Not unwinding loop vsnprintf.8 iteration 1 (1 max) file ./snprintf.c line 949 function vsnprintf thread 0
+Not unwinding loop vsnprintf.9 iteration 1 (1 max) file ./snprintf.c line 949 function vsnprintf thread 0
+Not unwinding loop vsnprintf.14 iteration 1 (1 max) file ./snprintf.c line 986 function vsnprintf thread 0
+Not unwinding loop vsnprintf.15 iteration 1 (1 max) file ./snprintf.c line 986 function vsnprintf thread 0
+Not unwinding loop vsnprintf.18 iteration 1 (1 max) file ./snprintf.c line 555 function vsnprintf thread 0
+Not unwinding loop generate_response_value.0 iteration 1 (1 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 129 function generate_response_value thread 0
+Not unwinding loop vsnprintf.0 iteration 1 (1 max) file ./snprintf.c line 560 function vsnprintf thread 0
+Not unwinding loop vsnprintf.1 iteration 1 (1 max) file ./snprintf.c line 561 function vsnprintf thread 0
+Not unwinding loop vsnprintf.18 iteration 1 (1 max) file ./snprintf.c line 555 function vsnprintf thread 0
+Not unwinding loop vsnprintf.0 iteration 1 (1 max) file ./snprintf.c line 560 function vsnprintf thread 0
+Not unwinding loop vsnprintf.1 iteration 1 (1 max) file ./snprintf.c line 561 function vsnprintf thread 0
+Not unwinding loop vsnprintf.3 iteration 1 (1 max) file ./snprintf.c line 564 function vsnprintf thread 0
+Not unwinding loop vsnprintf.18 iteration 1 (1 max) file ./snprintf.c line 555 function vsnprintf thread 0
+Not unwinding loop generate_response_value.1 iteration 1 (1 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 134 function generate_response_value thread 0
+Not unwinding loop generate_response_value.2 iteration 1 (1 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 136 function generate_response_value thread 0
+Not unwinding loop generate_response_value.3 iteration 1 (1 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 136 function generate_response_value thread 0
+Not unwinding loop vsnprintf.4 iteration 1 (1 max) file ./snprintf.c line 599 function vsnprintf thread 0
+Not unwinding loop vsnprintf.15 iteration 1 (1 max) file ./snprintf.c line 986 function vsnprintf thread 0
+Not unwinding loop vsnprintf.18 iteration 1 (1 max) file ./snprintf.c line 555 function vsnprintf thread 0
+Not unwinding loop purple_base16_encode.2 iteration 1 (1 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Not unwinding loop generate_response_value.5 iteration 1 (1 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 145 function generate_response_value thread 0
+Not unwinding loop vsnprintf.4 iteration 1 (1 max) file ./snprintf.c line 599 function vsnprintf thread 0
+Not unwinding loop vsnprintf.15 iteration 1 (1 max) file ./snprintf.c line 986 function vsnprintf thread 0
+Not unwinding loop vsnprintf.18 iteration 1 (1 max) file ./snprintf.c line 555 function vsnprintf thread 0
+Not unwinding loop purple_base16_encode.2 iteration 1 (1 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Not unwinding loop vsnprintf.7 iteration 1 (1 max) file ./snprintf.c line 703 function vsnprintf thread 0
+Not unwinding loop vsnprintf.18 iteration 1 (1 max) file ./snprintf.c line 555 function vsnprintf thread 0
+Not unwinding loop vsnprintf.7 iteration 1 (1 max) file ./snprintf.c line 703 function vsnprintf thread 0
+Not unwinding loop vsnprintf.8 iteration 1 (1 max) file ./snprintf.c line 949 function vsnprintf thread 0
+Not unwinding loop vsnprintf.9 iteration 1 (1 max) file ./snprintf.c line 949 function vsnprintf thread 0
+Not unwinding loop vsnprintf.14 iteration 1 (1 max) file ./snprintf.c line 986 function vsnprintf thread 0
+Not unwinding loop vsnprintf.15 iteration 1 (1 max) file ./snprintf.c line 986 function vsnprintf thread 0
+Not unwinding loop vsnprintf.18 iteration 1 (1 max) file ./snprintf.c line 555 function vsnprintf thread 0
+Not unwinding loop generate_response_value.6 iteration 1 (1 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 153 function generate_response_value thread 0
+Not unwinding loop vsnprintf.4 iteration 1 (1 max) file ./snprintf.c line 599 function vsnprintf thread 0
+Not unwinding loop vsnprintf.15 iteration 1 (1 max) file ./snprintf.c line 986 function vsnprintf thread 0
+Not unwinding loop vsnprintf.18 iteration 1 (1 max) file ./snprintf.c line 555 function vsnprintf thread 0
+Not unwinding loop purple_base16_encode.2 iteration 1 (1 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Not unwinding loop main.0 iteration 1 (1 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 322 function main thread 0
+size of program expression: 6176 steps
+simple slicing removed 8 assignments
+Generated 371 VCC(s), 307 remaining after simplification
+Passing problem to propositional reduction
+converting SSA
+Running propositional reduction
+Post-processing
+Solving with MiniSAT 2.2.1 with simplifier
+225705 variables, 605023 clauses
+SAT checker: instance is UNSATISFIABLE
+Runtime decision procedure: 0.681s
+
+** Results:
+[] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[main.assertion.1] ERROR: Information Leak: SUCCESS
+[vsnprintf.overflow.1] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[vsnprintf.overflow.2] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[vsnprintf.overflow.3] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)(q - p): SUCCESS
+[vsnprintf.overflow.4] arithmetic overflow on unsigned - in str_m - str_l: SUCCESS
+[vsnprintf.overflow.5] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[vsnprintf.overflow.6] arithmetic overflow on unsigned - in nn - 1ul: SUCCESS
+[vsnprintf.overflow.7] arithmetic overflow on unsigned + in str_l + n: SUCCESS
+[vsnprintf.overflow.8] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)j: SUCCESS
+[vsnprintf.overflow.9] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)-j: SUCCESS
+[vsnprintf.overflow.10] arithmetic overflow on signed to unsigned type conversion in (unsigned int)((signed int)*tmp_post$5 - 48): SUCCESS
+[vsnprintf.overflow.11] arithmetic overflow on unsigned * in (unsigned int)10 * uj: SUCCESS
+[vsnprintf.overflow.12] arithmetic overflow on signed to unsigned type conversion in (unsigned int)((signed int)*tmp_post$6 - 48): SUCCESS
+[vsnprintf.overflow.13] arithmetic overflow on unsigned + in (unsigned int)10 * uj + (unsigned int)((signed int)*tmp_post$6 - 48): SUCCESS
+[vsnprintf.overflow.14] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)j: SUCCESS
+[vsnprintf.overflow.15] arithmetic overflow on signed to unsigned type conversion in (unsigned int)((signed int)*tmp_post$7 - 48): SUCCESS
+[vsnprintf.overflow.16] arithmetic overflow on unsigned * in (unsigned int)10 * uj: SUCCESS
+[vsnprintf.overflow.17] arithmetic overflow on signed to unsigned type conversion in (unsigned int)((signed int)*tmp_post$8 - 48): SUCCESS
+[vsnprintf.overflow.18] arithmetic overflow on unsigned + in (unsigned int)10 * uj + (unsigned int)((signed int)*tmp_post$8 - 48): SUCCESS
+[vsnprintf.overflow.19] arithmetic overflow on signed to unsigned type conversion in (unsigned char)j: SUCCESS
+[vsnprintf.overflow.20] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[vsnprintf.overflow.21] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)(q - str_arg): SUCCESS
+[vsnprintf.overflow.22] arithmetic overflow on unsigned + in str_arg_l + 1ul: SUCCESS
+[vsnprintf.overflow.23] arithmetic overflow on unsigned + in str_arg_l + 1ul: SUCCESS
+[vsnprintf.overflow.24] arithmetic overflow on unsigned + in str_arg_l + 1ul: SUCCESS
+[vsnprintf.overflow.25] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)return_value_sprintf$20: SUCCESS
+[vsnprintf.overflow.26] arithmetic overflow on unsigned + in str_arg_l + (unsigned long int)return_value_sprintf$20: SUCCESS
+[vsnprintf.overflow.27] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)return_value_sprintf$21: SUCCESS
+[vsnprintf.overflow.28] arithmetic overflow on unsigned + in str_arg_l + (unsigned long int)return_value_sprintf$21: SUCCESS
+[vsnprintf.overflow.29] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)return_value_sprintf$22: SUCCESS
+[vsnprintf.overflow.30] arithmetic overflow on unsigned + in str_arg_l + (unsigned long int)return_value_sprintf$22: SUCCESS
+[vsnprintf.overflow.31] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)return_value_sprintf$23: SUCCESS
+[vsnprintf.overflow.32] arithmetic overflow on unsigned + in str_arg_l + (unsigned long int)return_value_sprintf$23: SUCCESS
+[vsnprintf.overflow.33] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)return_value_sprintf$24: SUCCESS
+[vsnprintf.overflow.34] arithmetic overflow on unsigned + in str_arg_l + (unsigned long int)return_value_sprintf$24: SUCCESS
+[vsnprintf.overflow.35] arithmetic overflow on unsigned + in zero_padding_insertion_ind + 1ul: SUCCESS
+[vsnprintf.overflow.36] arithmetic overflow on unsigned + in zero_padding_insertion_ind + (unsigned long int)1: SUCCESS
+[vsnprintf.overflow.37] arithmetic overflow on unsigned + in zero_padding_insertion_ind + (unsigned long int)1: SUCCESS
+[vsnprintf.overflow.38] arithmetic overflow on unsigned + in zero_padding_insertion_ind + (unsigned long int)2: SUCCESS
+[vsnprintf.overflow.39] arithmetic overflow on unsigned - in str_arg_l - zero_padding_insertion_ind: SUCCESS
+[vsnprintf.overflow.40] arithmetic overflow on unsigned + in num_of_digits + (unsigned long int)1: SUCCESS
+[vsnprintf.overflow.41] arithmetic overflow on unsigned + in num_of_digits + (unsigned long int)1: SUCCESS
+[vsnprintf.overflow.42] arithmetic overflow on unsigned - in precision - num_of_digits: SUCCESS
+[vsnprintf.overflow.43] arithmetic overflow on unsigned + in str_arg_l + number_of_zeros_to_pad: SUCCESS
+[vsnprintf.overflow.44] arithmetic overflow on unsigned - in min_field_width - (str_arg_l + number_of_zeros_to_pad): SUCCESS
+[vsnprintf.overflow.45] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)n: SUCCESS
+[vsnprintf.overflow.46] arithmetic overflow on unsigned + in number_of_zeros_to_pad + (unsigned long int)n: SUCCESS
+[vsnprintf.overflow.47] arithmetic overflow on unsigned + in str_arg_l + 1ul: SUCCESS
+[vsnprintf.overflow.48] arithmetic overflow on unsigned + in str_arg_l + number_of_zeros_to_pad: SUCCESS
+[vsnprintf.overflow.49] arithmetic overflow on unsigned - in min_field_width - (str_arg_l + number_of_zeros_to_pad): SUCCESS
+[vsnprintf.overflow.50] arithmetic overflow on unsigned - in str_m - str_l: SUCCESS
+[vsnprintf.overflow.51] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)n: SUCCESS
+[vsnprintf.overflow.52] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)n: SUCCESS
+[vsnprintf.overflow.53] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[vsnprintf.overflow.54] arithmetic overflow on unsigned - in nn - 1ul: SUCCESS
+[vsnprintf.overflow.55] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)n: SUCCESS
+[vsnprintf.overflow.56] arithmetic overflow on unsigned + in str_l + (unsigned long int)n: SUCCESS
+[vsnprintf.overflow.57] arithmetic overflow on unsigned - in str_m - str_l: SUCCESS
+[vsnprintf.overflow.58] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)n: SUCCESS
+[vsnprintf.overflow.59] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)n: SUCCESS
+[vsnprintf.overflow.60] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[vsnprintf.overflow.61] arithmetic overflow on unsigned - in nn - 1ul: SUCCESS
+[vsnprintf.overflow.62] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)n: SUCCESS
+[vsnprintf.overflow.63] arithmetic overflow on unsigned + in str_l + (unsigned long int)n: SUCCESS
+[vsnprintf.overflow.64] arithmetic overflow on unsigned - in str_m - str_l: SUCCESS
+[vsnprintf.overflow.65] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)n: SUCCESS
+[vsnprintf.overflow.66] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)n: SUCCESS
+[vsnprintf.overflow.67] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[vsnprintf.overflow.68] arithmetic overflow on unsigned - in nn - 1ul: SUCCESS
+[vsnprintf.overflow.69] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)n: SUCCESS
+[vsnprintf.overflow.70] arithmetic overflow on unsigned + in str_l + (unsigned long int)n: SUCCESS
+[vsnprintf.overflow.71] arithmetic overflow on unsigned - in str_arg_l - zero_padding_insertion_ind: SUCCESS
+[vsnprintf.overflow.72] arithmetic overflow on unsigned - in str_m - str_l: SUCCESS
+[vsnprintf.overflow.73] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)n: SUCCESS
+[vsnprintf.overflow.74] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)n: SUCCESS
+[vsnprintf.overflow.75] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[vsnprintf.overflow.76] arithmetic overflow on unsigned - in nn - 1ul: SUCCESS
+[vsnprintf.overflow.77] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)n: SUCCESS
+[vsnprintf.overflow.78] arithmetic overflow on unsigned + in str_l + (unsigned long int)n: SUCCESS
+[vsnprintf.overflow.79] arithmetic overflow on unsigned + in str_arg_l + number_of_zeros_to_pad: SUCCESS
+[vsnprintf.overflow.80] arithmetic overflow on unsigned - in min_field_width - (str_arg_l + number_of_zeros_to_pad): SUCCESS
+[vsnprintf.overflow.81] arithmetic overflow on unsigned - in str_m - str_l: SUCCESS
+[vsnprintf.overflow.82] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)n: SUCCESS
+[vsnprintf.overflow.83] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)n: SUCCESS
+[vsnprintf.overflow.84] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[vsnprintf.overflow.85] arithmetic overflow on unsigned - in nn - 1ul: SUCCESS
+[vsnprintf.overflow.86] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)n: SUCCESS
+[vsnprintf.overflow.87] arithmetic overflow on unsigned + in str_l + (unsigned long int)n: SUCCESS
+[vsnprintf.overflow.88] arithmetic overflow on unsigned - in str_m - (unsigned long int)1: SUCCESS
+[vsnprintf.overflow.89] arithmetic overflow on unsigned - in str_m - (unsigned long int)1: SUCCESS
+[g_convert_with_iconv.overflow.1] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[g_convert_with_iconv.overflow.2] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)len: SUCCESS
+[g_convert_with_iconv.overflow.3] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)(len + (signed long int)4): SUCCESS
+[g_convert_with_iconv.overflow.4] arithmetic overflow on unsigned - in outbuf_size - (unsigned long int)4: SUCCESS
+[g_convert_with_iconv.overflow.5] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)-1: SUCCESS
+[g_convert_with_iconv.overflow.6] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)(outp - dest): SUCCESS
+[g_convert_with_iconv.overflow.7] arithmetic overflow on unsigned * in outbuf_size * (unsigned long int)2: SUCCESS
+[g_convert_with_iconv.overflow.8] arithmetic overflow on unsigned - in outbuf_size - used: SUCCESS
+[g_convert_with_iconv.overflow.9] arithmetic overflow on unsigned - in (outbuf_size - used) - (unsigned long int)4: SUCCESS
+[g_convert_with_iconv.overflow.10] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[g_convert_with_iconv.overflow.11] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)(p - str): SUCCESS
+[g_convert_with_iconv.overflow.12] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)(outp - dest): SUCCESS
+[g_free.assertion.1] free argument is dynamic object: SUCCESS
+[g_free.assertion.2] free argument has offset zero: SUCCESS
+[g_free.assertion.3] double free: SUCCESS
+[g_free.assertion.4] free called for new[] object: SUCCESS
+[free.assertion.1] free argument is dynamic object: SUCCESS
+[free.assertion.2] free argument has offset zero: SUCCESS
+[free.assertion.3] double free: SUCCESS
+[free.assertion.4] free called for new[] object: SUCCESS
+[g_malloc0.overflow.1] arithmetic overflow on unsigned * in nmemb * size: SUCCESS
+[g_realloc.assertion.1] free argument is dynamic object: SUCCESS
+[g_realloc.assertion.2] free argument has offset zero: SUCCESS
+[g_realloc.assertion.3] double free: SUCCESS
+[g_realloc.assertion.4] free called for new[] object: SUCCESS
+[g_realloc.assertion.5] realloc argument is dynamic object: SUCCESS
+[g_realloc.assertion.6] free argument is dynamic object: SUCCESS
+[g_realloc.assertion.7] free argument has offset zero: SUCCESS
+[g_realloc.assertion.8] double free: SUCCESS
+[g_realloc.assertion.9] free called for new[] object: SUCCESS
+[g_realloc.assertion.10] free argument is dynamic object: SUCCESS
+[g_realloc.assertion.11] free argument has offset zero: SUCCESS
+[g_realloc.assertion.12] double free: SUCCESS
+[g_realloc.assertion.13] free called for new[] object: SUCCESS
+[g_try_malloc0.overflow.1] arithmetic overflow on unsigned * in nmemb * size: SUCCESS
+[g_try_realloc.assertion.1] free argument is dynamic object: SUCCESS
+[g_try_realloc.assertion.2] free argument has offset zero: SUCCESS
+[g_try_realloc.assertion.3] double free: SUCCESS
+[g_try_realloc.assertion.4] free called for new[] object: SUCCESS
+[g_try_realloc.assertion.5] realloc argument is dynamic object: SUCCESS
+[g_try_realloc.assertion.6] free argument is dynamic object: SUCCESS
+[g_try_realloc.assertion.7] free argument has offset zero: SUCCESS
+[g_try_realloc.assertion.8] double free: SUCCESS
+[g_try_realloc.assertion.9] free called for new[] object: SUCCESS
+[g_try_realloc.assertion.10] free argument is dynamic object: SUCCESS
+[g_try_realloc.assertion.11] free argument has offset zero: SUCCESS
+[g_try_realloc.assertion.12] double free: SUCCESS
+[g_try_realloc.assertion.13] free called for new[] object: SUCCESS
+[g_malloc_n.overflow.1] arithmetic overflow on unsigned * in (unsigned long int)9223372036854775807l * 2ul: SUCCESS
+[g_malloc_n.overflow.2] arithmetic overflow on unsigned + in (unsigned long int)9223372036854775807l * 2ul + 1ul: SUCCESS
+[g_malloc_n.overflow.3] arithmetic overflow on unsigned * in n_blocks * n_block_bytes: SUCCESS
+[g_malloc0_n.overflow.1] arithmetic overflow on unsigned * in (unsigned long int)9223372036854775807l * 2ul: SUCCESS
+[g_malloc0_n.overflow.2] arithmetic overflow on unsigned + in (unsigned long int)9223372036854775807l * 2ul + 1ul: SUCCESS
+[g_malloc0_n.overflow.3] arithmetic overflow on unsigned * in n_blocks * n_block_bytes: SUCCESS
+[g_realloc_n.overflow.1] arithmetic overflow on unsigned * in (unsigned long int)9223372036854775807l * 2ul: SUCCESS
+[g_realloc_n.overflow.2] arithmetic overflow on unsigned + in (unsigned long int)9223372036854775807l * 2ul + 1ul: SUCCESS
+[g_realloc_n.overflow.3] arithmetic overflow on unsigned * in n_blocks * n_block_bytes: SUCCESS
+[g_try_malloc_n.overflow.1] arithmetic overflow on unsigned * in (unsigned long int)9223372036854775807l * 2ul: SUCCESS
+[g_try_malloc_n.overflow.2] arithmetic overflow on unsigned + in (unsigned long int)9223372036854775807l * 2ul + 1ul: SUCCESS
+[g_try_malloc_n.overflow.3] arithmetic overflow on unsigned * in n_blocks * n_block_bytes: SUCCESS
+[g_try_malloc0_n.overflow.1] arithmetic overflow on unsigned * in (unsigned long int)9223372036854775807l * 2ul: SUCCESS
+[g_try_malloc0_n.overflow.2] arithmetic overflow on unsigned + in (unsigned long int)9223372036854775807l * 2ul + 1ul: SUCCESS
+[g_try_malloc0_n.overflow.3] arithmetic overflow on unsigned * in n_blocks * n_block_bytes: SUCCESS
+[g_try_realloc_n.overflow.1] arithmetic overflow on unsigned * in (unsigned long int)9223372036854775807l * 2ul: SUCCESS
+[g_try_realloc_n.overflow.2] arithmetic overflow on unsigned + in (unsigned long int)9223372036854775807l * 2ul + 1ul: SUCCESS
+[g_try_realloc_n.overflow.3] arithmetic overflow on unsigned * in n_blocks * n_block_bytes: SUCCESS
+[g_strdup.overflow.1] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[g_strdup.overflow.2] arithmetic overflow on unsigned + in return_value_strlen$1 + (unsigned long int)1: SUCCESS
+[g_strdup.overflow.3] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[purple_base16_encode.overflow.1] arithmetic overflow on unsigned * in len * (unsigned long int)2: SUCCESS
+[purple_base16_encode.overflow.2] arithmetic overflow on unsigned + in len * (unsigned long int)2 + (unsigned long int)1: SUCCESS
+[purple_base16_encode.overflow.3] arithmetic overflow on unsigned * in i * (unsigned long int)2: SUCCESS
+[purple_base16_encode.overflow.4] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[purple_base16_decode.overflow.1] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_base16_decode.overflow.2] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_base16_decode.overflow.3] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)((signed int)str[(signed long int)i] - 48): SUCCESS
+[purple_base16_decode.overflow.4] arithmetic overflow on unsigned - in i - (unsigned long int)1: SUCCESS
+[purple_base16_decode.overflow.5] arithmetic overflow on unsigned to unsigned type conversion in (unsigned char)accumulator: SUCCESS
+[purple_base16_decode.overflow.6] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[purple_base16_encode_chunked.overflow.1] arithmetic overflow on unsigned * in len * (unsigned long int)3: SUCCESS
+[purple_base16_encode_chunked.overflow.2] arithmetic overflow on unsigned + in len * (unsigned long int)3 + (unsigned long int)1: SUCCESS
+[purple_base16_encode_chunked.overflow.3] arithmetic overflow on unsigned * in i * (unsigned long int)3: SUCCESS
+[purple_base16_encode_chunked.overflow.4] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[purple_base16_encode_chunked.overflow.5] arithmetic overflow on unsigned * in len * (unsigned long int)3: SUCCESS
+[purple_base16_encode_chunked.overflow.6] arithmetic overflow on unsigned - in len * (unsigned long int)3 - (unsigned long int)1: SUCCESS
+[purple_quotedp_decode.overflow.1] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_quotedp_decode.overflow.2] arithmetic overflow on unsigned + in return_value_strlen$1 + (unsigned long int)1: SUCCESS
+[purple_quotedp_decode.overflow.3] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_quotedp_decode.overflow.4] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[purple_quotedp_decode.overflow.5] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[purple_quotedp_decode.overflow.6] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)(n - new): SUCCESS
+[purple_mime_decode_field.overflow.1] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[purple_mime_decode_field.overflow.2] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[purple_mime_decode_field.overflow.3] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[purple_mime_decode_field.overflow.4] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[purple_mime_decode_field.overflow.5] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)((encoding0 - charset0) - (signed long int)1): SUCCESS
+[purple_mime_decode_field.overflow.6] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)((encoded_text0 - encoding0) - (signed long int)1): SUCCESS
+[purple_mime_decode_field.overflow.7] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)((cur - encoded_text0) - (signed long int)1): SUCCESS
+[g_string_append_c_inline.overflow.1] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.2] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[purple_str_to_time.overflow.1] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[purple_str_to_time.overflow.2] arithmetic overflow on signed to unsigned type conversion in (unsigned char)*str: SUCCESS
+[purple_str_to_time.overflow.3] arithmetic overflow on signed to unsigned type conversion in (unsigned char)*str: SUCCESS
+[purple_str_to_time.overflow.4] arithmetic overflow on signed to unsigned type conversion in (unsigned char)*str: SUCCESS
+[purple_markup_escape_text.overflow.1] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_escape_text.overflow.2] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)length: SUCCESS
+[purple_markup_find_tag.overflow.1] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_find_tag.overflow.2] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)(purple_markup_find_tag$$1$$7$$1$$1$$close - cur): SUCCESS
+[purple_markup_find_tag.overflow.3] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)(purple_markup_find_tag$$1$$7$$1$$2$$close - cur): SUCCESS
+[purple_markup_extract_info_field.overflow.1] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_extract_info_field.overflow.2] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)skip: SUCCESS
+[purple_markup_extract_info_field.overflow.3] arithmetic overflow on unsigned + in return_value_strlen$1 + (unsigned long int)skip: SUCCESS
+[purple_markup_extract_info_field.overflow.4] arithmetic overflow on signed to unsigned type conversion in (unsigned char)*p: SUCCESS
+[purple_markup_extract_info_field.overflow.5] arithmetic overflow on signed to unsigned type conversion in (unsigned char)*(q - (signed long int)1): SUCCESS
+[purple_markup_extract_info_field.overflow.6] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_extract_info_field.overflow.7] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)(q - p): SUCCESS
+[realloc.assertion.1] free argument is dynamic object: SUCCESS
+[realloc.assertion.2] free argument has offset zero: SUCCESS
+[realloc.assertion.3] double free: SUCCESS
+[realloc.assertion.4] free called for new[] object: SUCCESS
+[realloc.assertion.5] realloc argument is dynamic object: SUCCESS
+[realloc.assertion.6] free argument is dynamic object: SUCCESS
+[realloc.assertion.7] free argument has offset zero: SUCCESS
+[realloc.assertion.8] double free: SUCCESS
+[realloc.assertion.9] free called for new[] object: SUCCESS
+[purple_markup_extract_info_field.overflow.8] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)(q - p): SUCCESS
+[realloc.assertion.10] free argument is dynamic object: SUCCESS
+[realloc.assertion.11] free argument has offset zero: SUCCESS
+[realloc.assertion.12] double free: SUCCESS
+[realloc.assertion.13] free called for new[] object: SUCCESS
+[realloc.assertion.14] realloc argument is dynamic object: SUCCESS
+[realloc.assertion.15] free argument is dynamic object: SUCCESS
+[realloc.assertion.16] free argument has offset zero: SUCCESS
+[realloc.assertion.17] double free: SUCCESS
+[realloc.assertion.18] free called for new[] object: SUCCESS
+[purple_markup_html_to_xhtml.overflow.1] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.2] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.3] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.4] arithmetic overflow on unsigned + in return_value_strlen$1 + (unsigned long int)3: SUCCESS
+[purple_markup_html_to_xhtml.overflow.5] arithmetic overflow on signed to unsigned type conversion in (unsigned char)*end: SUCCESS
+[g_string_append_c_inline.overflow.3] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.4] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.6] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.7] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.8] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)((o - q) - (signed long int)1): SUCCESS
+[g_string_append_c_inline.overflow.5] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.6] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.7] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.8] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.9] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.10] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.9] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.10] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.11] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.12] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.11] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.12] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.13] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.14] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.15] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.16] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)((o - q) - (signed long int)1): SUCCESS
+[g_string_append_c_inline.overflow.13] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.14] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.15] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.16] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.17] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.18] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.17] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.18] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.19] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.20] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.19] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.20] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.21] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.22] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.23] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.24] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)((o - q) - (signed long int)1): SUCCESS
+[g_string_append_c_inline.overflow.21] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.22] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.23] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.24] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.25] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.26] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.25] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.26] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.27] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.28] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.27] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.28] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.29] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.30] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.31] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.32] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)((o - q) - (signed long int)1): SUCCESS
+[g_string_append_c_inline.overflow.29] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.30] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.31] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.32] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.33] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.34] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.33] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.34] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.35] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.36] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.35] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.36] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.37] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.38] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.39] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.40] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)((o - q) - (signed long int)1): SUCCESS
+[g_string_append_c_inline.overflow.37] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.38] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.39] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.40] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.41] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.42] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.41] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.42] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.43] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.44] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.43] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.44] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.45] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.46] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.47] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.48] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)((o - q) - (signed long int)1): SUCCESS
+[g_string_append_c_inline.overflow.45] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.46] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.47] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.48] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.49] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.50] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.49] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.50] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.51] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.52] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.51] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.52] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.53] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.54] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.55] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.56] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)((o - q) - (signed long int)1): SUCCESS
+[g_string_append_c_inline.overflow.53] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.54] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.55] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.56] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.57] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.58] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.57] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.58] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.59] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.60] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.59] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.60] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.61] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.62] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.63] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.64] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)((o - q) - (signed long int)1): SUCCESS
+[g_string_append_c_inline.overflow.61] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.62] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.63] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.64] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.65] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.66] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.65] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.66] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.67] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.68] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.67] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.68] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.69] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.70] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.71] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.72] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)((o - q) - (signed long int)1): SUCCESS
+[g_string_append_c_inline.overflow.69] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.70] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.71] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.72] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.73] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.74] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.73] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.74] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.75] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.76] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.75] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.76] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.77] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.78] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.79] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.80] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)((o - q) - (signed long int)1): SUCCESS
+[g_string_append_c_inline.overflow.77] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.78] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.79] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.80] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.81] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.82] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.81] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.82] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.83] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.84] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.83] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.84] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.85] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.86] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.87] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.88] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)((o - q) - (signed long int)1): SUCCESS
+[g_string_append_c_inline.overflow.85] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.86] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.87] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.88] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.89] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.90] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.89] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.90] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.91] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.92] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.91] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.92] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.93] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.94] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.95] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.96] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)((o - q) - (signed long int)1): SUCCESS
+[g_string_append_c_inline.overflow.93] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.94] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.95] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.96] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.97] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.98] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.97] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.98] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.99] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.100] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.99] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.100] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.101] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.102] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.103] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.104] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)((o - q) - (signed long int)1): SUCCESS
+[g_string_append_c_inline.overflow.101] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.102] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.103] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.104] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.105] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.106] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.105] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.106] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.107] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.108] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.107] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.108] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.109] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.110] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.111] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.112] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)((o - q) - (signed long int)1): SUCCESS
+[g_string_append_c_inline.overflow.109] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.110] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.111] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.112] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.113] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.114] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.113] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.114] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.115] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.116] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.115] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.116] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.117] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.118] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.119] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.120] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)((o - q) - (signed long int)1): SUCCESS
+[g_string_append_c_inline.overflow.117] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.118] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.119] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.120] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.121] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.122] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.121] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.122] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.123] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.124] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.123] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.124] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.125] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.126] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.127] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.128] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)((o - q) - (signed long int)1): SUCCESS
+[g_string_append_c_inline.overflow.125] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.126] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.127] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.128] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.129] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.130] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.129] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.130] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.131] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.132] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.131] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.132] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.133] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.134] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.135] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.136] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)((o - q) - (signed long int)1): SUCCESS
+[g_string_append_c_inline.overflow.133] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.134] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.135] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.136] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.137] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.138] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.137] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.138] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.139] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.140] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.139] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.140] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.141] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.142] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.143] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.144] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)((o - q) - (signed long int)1): SUCCESS
+[g_string_append_c_inline.overflow.141] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.142] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.143] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.144] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.145] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.146] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.145] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.146] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.147] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.148] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.147] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.148] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.149] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.150] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.151] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.152] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)((o - q) - (signed long int)1): SUCCESS
+[g_string_append_c_inline.overflow.149] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.150] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.151] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.152] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.153] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.154] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.153] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.154] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.155] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.156] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.155] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.156] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.157] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.158] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.159] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.160] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)((o - q) - (signed long int)1): SUCCESS
+[g_string_append_c_inline.overflow.157] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.158] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.159] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.160] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.161] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.162] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.161] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.162] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.163] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.164] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.163] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.164] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.165] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.166] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.165] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.166] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.167] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.168] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.169] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.170] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.171] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.172] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.173] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.174] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.175] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.167] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.168] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.169] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.170] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.176] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.171] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.172] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.177] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.173] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.174] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.175] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.176] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.177] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.178] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.178] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.179] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.180] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.179] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.180] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.181] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.182] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)((o - q) - (signed long int)1): SUCCESS
+[g_string_append_c_inline.overflow.181] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.182] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.183] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.184] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.185] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.186] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.183] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.184] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.185] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.186] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.187] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.188] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.187] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.188] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.189] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_html_to_xhtml.overflow.190] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.189] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.190] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.191] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.192] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.193] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.194] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.195] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.196] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[purple_markup_strip_html.overflow.1] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_strip_html.overflow.2] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_strip_html.overflow.3] arithmetic overflow on unsigned - in return_value_strlen$1 - (unsigned long int)1: SUCCESS
+[purple_markup_strip_html.overflow.4] arithmetic overflow on signed to unsigned type conversion in (unsigned char)str2[(signed long int)k]: SUCCESS
+[purple_markup_strip_html.overflow.5] arithmetic overflow on signed to unsigned type conversion in (unsigned char)str2[(signed long int)(i + 2)]: SUCCESS
+[purple_markup_strip_html.overflow.6] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)(end - st): SUCCESS
+[purple_markup_strip_html.overflow.7] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_strip_html.overflow.8] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)(j - href_st): SUCCESS
+[purple_markup_strip_html.overflow.9] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)((j - href_st) + 7): SUCCESS
+[purple_markup_strip_html.overflow.10] arithmetic overflow on unsigned - in hrlen - (unsigned long int)7: SUCCESS
+[purple_markup_strip_html.overflow.11] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[purple_markup_strip_html.overflow.12] arithmetic overflow on unsigned - in i - (unsigned long int)1: SUCCESS
+[purple_markup_strip_html.overflow.13] arithmetic overflow on unsigned - in i - 1ul: SUCCESS
+[purple_markup_strip_html.overflow.14] arithmetic overflow on signed to unsigned type conversion in (unsigned char)str2[(signed long int)i]: SUCCESS
+[purple_markup_strip_html.overflow.15] arithmetic overflow on signed to unsigned type conversion in (unsigned char)str2[(signed long int)i]: SUCCESS
+[g_string_append_c_inline.overflow.197] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.198] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.199] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.200] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[purple_markup_linkify.overflow.1] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)((d - c) - (signed long int)7): SUCCESS
+[purple_markup_linkify.overflow.2] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)((t - c) - (signed long int)7): SUCCESS
+[purple_markup_linkify.overflow.3] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)(t - c): SUCCESS
+[purple_markup_linkify.overflow.4] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[purple_markup_linkify.overflow.5] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[purple_markup_linkify.overflow.6] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)(c - t): SUCCESS
+[purple_markup_linkify.overflow.7] arithmetic overflow on unsigned - in ret->len - (unsigned long int)(c - t): SUCCESS
+[purple_markup_linkify.overflow.8] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_linkify.overflow.9] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.201] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.202] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.203] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.204] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.205] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.206] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.207] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.208] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.209] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.210] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[purple_markup_slice.overflow.1] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[purple_markup_slice.overflow.2] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_slice.overflow.3] arithmetic overflow on unsigned to unsigned type conversion in (unsigned int)return_value_strlen$3: SUCCESS
+[purple_markup_slice.overflow.4] arithmetic overflow on unsigned + in z + (unsigned int)return_value_strlen$3: SUCCESS
+[purple_markup_slice.overflow.5] arithmetic overflow on unsigned + in z + (unsigned int)1: SUCCESS
+[purple_markup_slice.overflow.6] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_slice.overflow.7] arithmetic overflow on unsigned to unsigned type conversion in (unsigned int)return_value_strlen$4: SUCCESS
+[purple_markup_slice.overflow.8] arithmetic overflow on unsigned + in z + (unsigned int)return_value_strlen$4: SUCCESS
+[purple_markup_slice.overflow.9] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)((end - str) + (signed long int)1): SUCCESS
+[purple_markup_slice.overflow.10] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[purple_markup_slice.overflow.11] arithmetic overflow on unsigned + in z + 1u: SUCCESS
+[purple_markup_slice.overflow.12] arithmetic overflow on unsigned + in z + 1u: SUCCESS
+[purple_markup_get_tag_name.overflow.1] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)(i - 1): SUCCESS
+[purple_markup_unescape_entity.overflow.1] arithmetic overflow on unsigned - in sizeof(char [6l]) /*6ul*/  - (unsigned long int)1: SUCCESS
+[purple_markup_unescape_entity.overflow.2] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)len: SUCCESS
+[purple_markup_unescape_entity.overflow.3] arithmetic overflow on unsigned - in sizeof(char [5l]) /*5ul*/  - (unsigned long int)1: SUCCESS
+[purple_markup_unescape_entity.overflow.4] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)len: SUCCESS
+[purple_markup_unescape_entity.overflow.5] arithmetic overflow on unsigned - in sizeof(char [5l]) /*5ul*/  - (unsigned long int)1: SUCCESS
+[purple_markup_unescape_entity.overflow.6] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)len: SUCCESS
+[purple_markup_unescape_entity.overflow.7] arithmetic overflow on unsigned - in sizeof(char [7l]) /*7ul*/  - (unsigned long int)1: SUCCESS
+[purple_markup_unescape_entity.overflow.8] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)len: SUCCESS
+[purple_markup_unescape_entity.overflow.9] arithmetic overflow on unsigned - in sizeof(char [7l]) /*7ul*/  - (unsigned long int)1: SUCCESS
+[purple_markup_unescape_entity.overflow.10] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)len: SUCCESS
+[purple_markup_unescape_entity.overflow.11] arithmetic overflow on unsigned - in sizeof(char [7l]) /*7ul*/  - (unsigned long int)1: SUCCESS
+[purple_markup_unescape_entity.overflow.12] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)len: SUCCESS
+[purple_markup_unescape_entity.overflow.13] arithmetic overflow on unsigned - in sizeof(char [6l]) /*6ul*/  - (unsigned long int)1: SUCCESS
+[purple_markup_unescape_entity.overflow.14] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)len: SUCCESS
+[purple_markup_unescape_entity.overflow.15] arithmetic overflow on unsigned - in sizeof(char [7l]) /*7ul*/  - (unsigned long int)1: SUCCESS
+[purple_markup_unescape_entity.overflow.16] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)len: SUCCESS
+[purple_markup_unescape_entity.overflow.17] arithmetic overflow on signed to unsigned type conversion in (unsigned int)pound: SUCCESS
+[purple_markup_get_css_property.overflow.1] arithmetic overflow on signed to unsigned type conversion in (unsigned char)*css_str: SUCCESS
+[purple_markup_get_css_property.overflow.2] arithmetic overflow on signed to unsigned type conversion in (unsigned char)*css_str: SUCCESS
+[purple_markup_get_css_property.overflow.3] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_get_css_property.overflow.4] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_markup_get_css_property.overflow.5] arithmetic overflow on signed to unsigned type conversion in (unsigned char)*css_str: SUCCESS
+[purple_markup_get_css_property.overflow.6] arithmetic overflow on signed to unsigned type conversion in (unsigned char)*css_str: SUCCESS
+[purple_markup_get_css_property.overflow.7] arithmetic overflow on signed to unsigned type conversion in (unsigned char)*css_value_end: SUCCESS
+[purple_markup_get_css_property.overflow.8] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)((css_value_end - css_value_start) + (signed long int)1): SUCCESS
+[purple_util_write_data_to_file_absolute.overflow.1] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_util_write_data_to_file_absolute.overflow.2] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)size: SUCCESS
+[purple_util_write_data_to_file_absolute.overflow.3] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)st.st_size: SUCCESS
+[purple_strdup_withhtml.overflow.1] arithmetic overflow on unsigned + in destsize + (unsigned long int)4: SUCCESS
+[purple_strdup_withhtml.overflow.2] arithmetic overflow on unsigned + in destsize + 1ul: SUCCESS
+[purple_strdup_withhtml.overflow.3] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[purple_strdup_withhtml.overflow.4] arithmetic overflow on unsigned + in j + (unsigned long int)4: SUCCESS
+[purple_strdup_withhtml.overflow.5] arithmetic overflow on unsigned + in j + 1ul: SUCCESS
+[purple_strdup_withhtml.overflow.6] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[purple_strdup_withhtml.overflow.7] arithmetic overflow on unsigned - in destsize - (unsigned long int)1: SUCCESS
+[purple_str_add_cr.overflow.1] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_str_add_cr.overflow.2] arithmetic overflow on unsigned - in i - (unsigned int)1: SUCCESS
+[purple_str_add_cr.overflow.3] arithmetic overflow on unsigned + in i + 1u: SUCCESS
+[purple_str_add_cr.overflow.4] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_str_add_cr.overflow.5] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)count: SUCCESS
+[purple_str_add_cr.overflow.6] arithmetic overflow on unsigned + in return_value_strlen$3 + (unsigned long int)count: SUCCESS
+[purple_str_add_cr.overflow.7] arithmetic overflow on unsigned + in return_value_strlen$3 + (unsigned long int)count + (unsigned long int)1: SUCCESS
+[purple_str_add_cr.overflow.8] arithmetic overflow on unsigned + in i + 1u: SUCCESS
+[purple_str_add_cr.overflow.9] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_str_add_cr.overflow.10] arithmetic overflow on unsigned - in i - (unsigned int)1: SUCCESS
+[purple_str_add_cr.overflow.11] arithmetic overflow on unsigned + in i + 1u: SUCCESS
+[purple_utf8_ncr_decode.overflow.1] arithmetic overflow on unsigned to unsigned type conversion in (unsigned int)return_value_strtoul$3: SUCCESS
+[purple_strcasereplace.overflow.1] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_strcasereplace.overflow.2] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_strcasereplace.overflow.3] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)length_del: SUCCESS
+[purple_strcasereplace.overflow.4] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)(j + 1): SUCCESS
+[purple_strcasereplace.overflow.5] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)length_del: SUCCESS
+[purple_strcasereplace.overflow.6] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)length_rep: SUCCESS
+[purple_str_size_to_units.overflow.1] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)-1: SUCCESS
+[g_string_append_c_inline.overflow.211] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.212] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[purple_str_binary_to_ascii.overflow.1] arithmetic overflow on unsigned + in i + 1u: SUCCESS
+[purple_got_protocol_handler_uri.overflow.1] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[purple_got_protocol_handler_uri.overflow.2] arithmetic overflow on unsigned - in sizeof(char [11l]) /*11ul*/  - (unsigned long int)1: SUCCESS
+[purple_got_protocol_handler_uri.overflow.3] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)(tmp - uri): SUCCESS
+[purple_got_protocol_handler_uri.overflow.4] arithmetic overflow on unsigned - in sizeof(char [11l]) /*11ul*/  - (unsigned long int)1: SUCCESS
+[purple_got_protocol_handler_uri.overflow.5] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)(tmp - uri): SUCCESS
+[purple_got_protocol_handler_uri.overflow.6] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)len: SUCCESS
+[purple_got_protocol_handler_uri.overflow.7] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[purple_got_protocol_handler_uri.overflow.8] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)(param_string - tmp): SUCCESS
+[purple_got_protocol_handler_uri.overflow.9] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)(keyend - pairstart): SUCCESS
+[purple_got_protocol_handler_uri.overflow.10] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)((tmp - keyend) - (signed long int)1): SUCCESS
+[purple_url_parse.overflow.1] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[purple_url_parse.overflow.2] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[purple_util_fetch_url_request_len_with_account.overflow.1] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_util_fetch_url_request_data_len_with_account.overflow.1] arithmetic overflow on unsigned to unsigned type conversion in (unsigned int)request_len: SUCCESS
+[purple_util_fetch_url_request_data_len_with_account.overflow.2] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)max_len: SUCCESS
+[purple_url_decode.overflow.1] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_url_decode.overflow.2] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_url_decode.overflow.3] arithmetic overflow on unsigned + in j + 1u: SUCCESS
+[purple_url_decode.overflow.4] arithmetic overflow on unsigned + in i + 1u: SUCCESS
+[purple_url_decode.overflow.5] arithmetic overflow on unsigned + in i + 1u: SUCCESS
+[purple_url_decode.overflow.6] arithmetic overflow on unsigned + in j + 1u: SUCCESS
+[purple_url_decode.overflow.7] arithmetic overflow on unsigned + in i + 1u: SUCCESS
+[purple_url_encode.overflow.1] arithmetic overflow on unsigned + in j + 1u: SUCCESS
+[purple_url_encode.overflow.2] arithmetic overflow on unsigned + in j + (unsigned int)3: SUCCESS
+[purple_url_encode.overflow.3] arithmetic overflow on unsigned + in i + 1u: SUCCESS
+[purple_email_is_valid.overflow.1] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[purple_uri_list_extract_uris.overflow.1] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)((q - p) + (signed long int)2): SUCCESS
+[purple_uri_list_extract_uris.overflow.2] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)((q - p) + (signed long int)1): SUCCESS
+[purple_uri_list_extract_uris.overflow.3] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[purple_utf8_try_convert.overflow.1] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_utf8_salvage.overflow.1] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[g_string_append_c_inline.overflow.213] arithmetic overflow on unsigned + in gstring->len + (unsigned long int)1: SUCCESS
+[g_string_append_c_inline.overflow.214] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
+[purple_utf8_strip_unprintables.overflow.1] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_utf8_strip_unprintables.overflow.2] arithmetic overflow on unsigned + in return_value_strlen$2 + (unsigned long int)1: SUCCESS
+[purple_utf8_strip_unprintables.overflow.3] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)(next - str): SUCCESS
+[purple_utf8_strip_unprintables.overflow.4] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[purple_utf8_has_word.overflow.1] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_utf8_has_word.overflow.2] arithmetic overflow on signed to unsigned type conversion in (unsigned int)-2: SUCCESS
+[purple_utf8_has_word.overflow.3] arithmetic overflow on signed to unsigned type conversion in (unsigned int)-2: SUCCESS
+[purple_utf8_has_word.overflow.4] arithmetic overflow on signed to unsigned type conversion in (unsigned int)-2: SUCCESS
+[purple_message_meify.overflow.1] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_message_meify.overflow.2] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)(len - (signed long int)3): SUCCESS
+[purple_message_meify.overflow.3] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[purple_message_meify.overflow.4] arithmetic overflow on unsigned - in i - (unsigned long int)1: SUCCESS
+[purple_message_meify.overflow.5] arithmetic overflow on unsigned - in i - 1ul: SUCCESS
+[purple_text_strip_mnemonic.overflow.1] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_text_strip_mnemonic.overflow.2] arithmetic overflow on unsigned + in return_value_strlen$1 + (unsigned long int)1: SUCCESS
+[purple_escape_filename.overflow.1] arithmetic overflow on unsigned to unsigned type conversion in (unsigned char)c: SUCCESS
+[purple_escape_filename.overflow.2] arithmetic overflow on unsigned + in j + 1u: SUCCESS
+[purple_escape_filename.overflow.3] arithmetic overflow on unsigned + in j + (unsigned int)3: SUCCESS
+[purple_escape_filename.overflow.4] arithmetic overflow on unsigned + in i + 1u: SUCCESS
+[purple_cipher_context_new.overflow.1] arithmetic overflow on unsigned + in cipher->ref + 1u: SUCCESS
+[purple_cipher_context_destroy.overflow.1] arithmetic overflow on unsigned - in cipher->ref - 1u: SUCCESS
+[free.assertion.5] free argument is dynamic object: SUCCESS
+[free.assertion.6] free argument has offset zero: SUCCESS
+[free.assertion.7] double free: SUCCESS
+[free.assertion.8] free called for new[] object: SUCCESS
+[purple_cipher_context_destroy.overflow.2] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[purple_cipher_context_digest_to_str.overflow.1] arithmetic overflow on unsigned * in dlen * (unsigned long int)2: SUCCESS
+[purple_cipher_context_digest_to_str.overflow.2] arithmetic overflow on unsigned * in n * (unsigned long int)2: SUCCESS
+[purple_cipher_context_digest_to_str.overflow.3] arithmetic overflow on unsigned + in n + 1ul: SUCCESS
+[purple_cipher_context_digest_to_str.overflow.4] arithmetic overflow on unsigned * in n * (unsigned long int)2: SUCCESS
+[purple_cipher_context_digest_to_str.overflow.5] arithmetic overflow on unsigned * in dlen * (unsigned long int)2: SUCCESS
+[purple_cipher_context_encrypt.overflow.1] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)-1: SUCCESS
+[purple_cipher_context_decrypt.overflow.1] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)-1: SUCCESS
+[purple_cipher_context_get_salt_size.overflow.1] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)-1: SUCCESS
+[purple_cipher_context_get_salt_size.overflow.2] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)-1: SUCCESS
+[purple_cipher_context_get_salt_size.overflow.3] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)-1: SUCCESS
+[purple_cipher_context_get_key_size.overflow.1] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)-1: SUCCESS
+[purple_cipher_context_get_key_size.overflow.2] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)-1: SUCCESS
+[purple_cipher_context_get_key_size.overflow.3] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)-1: SUCCESS
+[purple_cipher_context_get_block_size.overflow.1] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)-1: SUCCESS
+[purple_cipher_context_get_block_size.overflow.2] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)-1: SUCCESS
+[purple_cipher_context_get_block_size.overflow.3] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)-1: SUCCESS
+[purple_cipher_http_digest_calculate_session_key.overflow.1] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_cipher_http_digest_calculate_session_key.overflow.2] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_cipher_http_digest_calculate_session_key.overflow.3] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_cipher_http_digest_calculate_session_key.overflow.4] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_cipher_http_digest_calculate_session_key.overflow.5] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_cipher_http_digest_calculate_response.overflow.1] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_cipher_http_digest_calculate_response.overflow.2] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_cipher_http_digest_calculate_response.overflow.3] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_cipher_http_digest_calculate_response.overflow.4] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_cipher_http_digest_calculate_response.overflow.5] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_cipher_http_digest_calculate_response.overflow.6] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_cipher_http_digest_calculate_response.overflow.7] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_cipher_http_digest_calculate_response.overflow.8] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_cipher_http_digest_calculate_response.overflow.9] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_cipher_http_digest_calculate_response.overflow.10] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[jabber_auth_digest_md5_parse.overflow.1] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[jabber_auth_digest_md5_parse.overflow.2] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)(val_start - token_start): SUCCESS
+[jabber_auth_digest_md5_parse.overflow.3] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)((val_end - val_start) + (signed long int)1): SUCCESS
+[generate_response_value.overflow.1] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[generate_response_value.assertion.1] TEST: g_strdup_printf is working: SUCCESS
+[generate_response_value.overflow.2] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[generate_response_value.assertion.2] TEST: a1 is not Empty: SUCCESS
+[generate_response_value.overflow.3] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[generate_response_value.overflow.4] arithmetic overflow on unsigned - in i - (unsigned long int)1: SUCCESS
+[generate_response_value.overflow.5] arithmetic overflow on unsigned - in i - 1ul: SUCCESS
+[generate_response_value.overflow.6] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[generate_response_value.overflow.7] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[generate_response_value.assertion.3] CHECK: convnode is sanitized.: SUCCESS
+[generate_response_value.assertion.4] CHECK: convpasswd is sanitized.: SUCCESS
+[generate_response_value.assertion.5] CHECK: x is sanitized.: SUCCESS
+[generate_response_value.assertion.6] CHECK: a1 is sanitized.: SUCCESS
+[generate_response_value.assertion.7] CHECK: ha1 is sanitized.: SUCCESS
+[generate_response_value.assertion.8] CHECK: ha2 is sanitized.: SUCCESS
+[generate_response_value.assertion.9] CHECK: kd is sanitized.: SUCCESS
+[digest_md5_handle_challenge.overflow.1] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[process_link.overflow.1] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)(t - c): SUCCESS
+[purple_strcasestr_len.overflow.1] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_strcasestr_len.overflow.2] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[purple_strcasestr_len.overflow.3] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)nlen: SUCCESS
+[parse_redirect.overflow.1] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[parse_redirect.overflow.2] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[parse_redirect.overflow.3] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[parse_redirect.overflow.4] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)(len + 1): SUCCESS
+[parse_redirect.overflow.5] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)len: SUCCESS
+[find_header_content.overflow.1] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[find_header_content.overflow.2] arithmetic overflow on unsigned - in header_len - (unsigned long int)1: SUCCESS
+[find_header_content.overflow.3] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)(p - data): SUCCESS
+[find_header_content.overflow.4] arithmetic overflow on unsigned - in data_len - (unsigned long int)(p - data): SUCCESS
+[process_chunked_data.overflow.1] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[process_chunked_data.overflow.2] arithmetic overflow on unsigned - in i - (unsigned long int)1: SUCCESS
+[process_chunked_data.overflow.3] arithmetic overflow on unsigned - in i - 1ul: SUCCESS
+[process_chunked_data.overflow.4] arithmetic overflow on unsigned + in newlen + sz: SUCCESS
+[url_fetch_recv_cb.overflow.1] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)len: SUCCESS
+[url_fetch_recv_cb.overflow.2] arithmetic overflow on unsigned + in gfud->len + (unsigned long int)len: SUCCESS
+[url_fetch_recv_cb.overflow.3] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)len: SUCCESS
+[url_fetch_recv_cb.overflow.4] arithmetic overflow on unsigned + in gfud->len + (unsigned long int)len: SUCCESS
+[url_fetch_recv_cb.overflow.5] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)len: SUCCESS
+[url_fetch_recv_cb.overflow.6] arithmetic overflow on unsigned + in gfud->len + (unsigned long int)len: SUCCESS
+[url_fetch_recv_cb.overflow.7] arithmetic overflow on unsigned + in gfud->data_len + sizeof(char [4096l]) /*4096ul*/ : SUCCESS
+[url_fetch_recv_cb.overflow.8] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)len: SUCCESS
+[url_fetch_recv_cb.overflow.9] arithmetic overflow on unsigned + in gfud->len + (unsigned long int)len: SUCCESS
+[url_fetch_recv_cb.overflow.10] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)len: SUCCESS
+[url_fetch_recv_cb.overflow.11] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[url_fetch_recv_cb.overflow.12] arithmetic overflow on signed to unsigned type conversion in (unsigned int)((end_of_headers + (signed long int)4) - gfud->webdata): SUCCESS
+[url_fetch_recv_cb.overflow.13] arithmetic overflow on unsigned + in content_len + (unsigned long int)header_len: SUCCESS
+[url_fetch_recv_cb.overflow.14] arithmetic overflow on unsigned - in gfud->len - (unsigned long int)header_len: SUCCESS
+[url_fetch_recv_cb.overflow.15] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
+[url_fetch_recv_cb.overflow.16] arithmetic overflow on unsigned + in gfud->len + (unsigned long int)1: SUCCESS
+[url_fetch_send_cb.overflow.1] arithmetic overflow on unsigned - in sizeof(char [256l]) /*256ul*/  - (unsigned long int)1: SUCCESS
+[url_fetch_send_cb.overflow.2] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[url_fetch_send_cb.overflow.3] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
+[url_fetch_send_cb.overflow.4] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)total_len: SUCCESS
+[url_fetch_send_cb.overflow.5] arithmetic overflow on unsigned - in (unsigned long int)total_len - gfud->request_written: SUCCESS
+[url_fetch_send_cb.overflow.6] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)total_len: SUCCESS
+[url_fetch_send_cb.overflow.7] arithmetic overflow on unsigned - in (unsigned long int)total_len - gfud->request_written: SUCCESS
+[url_fetch_send_cb.overflow.8] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)len: SUCCESS
+[url_fetch_send_cb.overflow.9] arithmetic overflow on unsigned + in gfud->request_written + (unsigned long int)len: SUCCESS
+[url_fetch_send_cb.overflow.10] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)total_len: SUCCESS
+[vasprintf.assertion.1] assertion str_l >= 0: SUCCESS
+[vasprintf.overflow.1] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)str_l: SUCCESS
+[vasprintf.overflow.2] arithmetic overflow on unsigned + in (unsigned long int)str_l + (unsigned long int)1: SUCCESS
+[vasprintf.assertion.2] assertion str_l2 == str_l: SUCCESS
+
+** 0 of 875 failed (1 iteration)
+VERIFICATION SUCCESSFUL
