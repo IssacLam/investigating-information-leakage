@@ -1,0 +1,36 @@
+# random seed: R02S96ad2b9c4e58c277f0d00d60e16892c4
+1..15
+# Start of type tests
+ok 1 /type/fundamentals
+PASS: reference 1 /type/fundamentals
+ok 2 /type/qdata
+PASS: reference 2 /type/qdata
+ok 3 /type/query
+PASS: reference 3 /type/query
+ok 4 /type/class-private
+PASS: reference 4 /type/class-private
+# End of type tests
+# Start of object tests
+ok 5 /object/clear
+PASS: reference 5 /object/clear
+ok 6 /object/clear-function
+PASS: reference 6 /object/clear-function
+ok 7 /object/set
+PASS: reference 7 /object/set
+ok 8 /object/set-function
+PASS: reference 8 /object/set-function
+ok 9 /object/value
+PASS: reference 9 /object/value
+ok 10 /object/initially-unowned
+PASS: reference 10 /object/initially-unowned
+ok 11 /object/weak-pointer
+PASS: reference 11 /object/weak-pointer
+ok 12 /object/weak-ref
+PASS: reference 12 /object/weak-ref
+ok 13 /object/toggle-ref
+PASS: reference 13 /object/toggle-ref
+ok 14 /object/qdata
+PASS: reference 14 /object/qdata
+ok 15 /object/qdata2
+PASS: reference 15 /object/qdata2
+# End of object tests

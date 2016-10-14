@@ -1,0 +1,28 @@
+# random seed: R02S86c326939fdf870534ad56c90a738062
+1..10
+# Start of quark tests
+ok 1 /quark/basic
+PASS: dataset 1 /quark/basic
+ok 2 /quark/string
+PASS: dataset 2 /quark/string
+# End of quark tests
+# Start of dataset tests
+ok 3 /dataset/basic
+PASS: dataset 3 /dataset/basic
+ok 4 /dataset/id
+PASS: dataset 4 /dataset/id
+ok 5 /dataset/full
+PASS: dataset 5 /dataset/full
+ok 6 /dataset/foreach
+PASS: dataset 6 /dataset/foreach
+ok 7 /dataset/destroy
+PASS: dataset 7 /dataset/destroy
+# End of dataset tests
+# Start of datalist tests
+ok 8 /datalist/basic
+PASS: dataset 8 /datalist/basic
+ok 9 /datalist/id
+PASS: dataset 9 /datalist/id
+ok 10 /datalist/recursive-clear
+PASS: dataset 10 /datalist/recursive-clear
+# End of datalist tests

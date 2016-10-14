@@ -1,0 +1,52 @@
+# random seed: R02S8df94a8408fe0f70f7aa233c91fd6af2
+1..20
+# Start of snprintf tests
+ok 1 /snprintf/retval-and-trunc
+PASS: test-printf 1 /snprintf/retval-and-trunc
+ok 2 /snprintf/%d
+PASS: test-printf 2 /snprintf/%d
+ok 3 /snprintf/%d-invalid
+PASS: test-printf 3 /snprintf/%d-invalid
+ok 4 /snprintf/%o
+PASS: test-printf 4 /snprintf/%o
+ok 5 /snprintf/%u
+PASS: test-printf 5 /snprintf/%u
+ok 6 /snprintf/%x
+PASS: test-printf 6 /snprintf/%x
+ok 7 /snprintf/%X
+PASS: test-printf 7 /snprintf/%X
+ok 8 /snprintf/%f
+PASS: test-printf 8 /snprintf/%f
+ok 9 /snprintf/%e
+PASS: test-printf 9 /snprintf/%e
+ok 10 /snprintf/%c
+PASS: test-printf 10 /snprintf/%c
+ok 11 /snprintf/%s
+PASS: test-printf 11 /snprintf/%s
+ok 12 /snprintf/%n
+PASS: test-printf 12 /snprintf/%n
+ok 13 /snprintf/test-percent
+PASS: test-printf 13 /snprintf/test-percent
+ok 14 /snprintf/test-positional-params
+PASS: test-printf 14 /snprintf/test-positional-params
+ok 15 /snprintf/test-64bit
+PASS: test-printf 15 /snprintf/test-64bit
+# End of snprintf tests
+# Start of printf tests
+ok 16 /printf/test-percent
+PASS: test-printf 16 /printf/test-percent
+ok 17 /printf/test-positional-params
+PASS: test-printf 17 /printf/test-positional-params
+ok 18 /printf/test-64bit
+PASS: test-printf 18 /printf/test-64bit
+# Start of test-64bit tests
+# Start of subprocess tests
+# End of subprocess tests
+# End of test-64bit tests
+# End of printf tests
+# Start of sprintf tests
+ok 19 /sprintf/test-positional-params
+PASS: test-printf 19 /sprintf/test-positional-params
+ok 20 /sprintf/upper-bound
+PASS: test-printf 20 /sprintf/upper-bound
+# End of sprintf tests

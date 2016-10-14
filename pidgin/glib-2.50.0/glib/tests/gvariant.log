@@ -1,0 +1,98 @@
+# random seed: R02Sbf2e256a73ee6980e988c335784de71d
+1..41
+# Start of gvariant tests
+ok 1 /gvariant/type
+PASS: gvariant 1 /gvariant/type
+ok 2 /gvariant/typeinfo
+PASS: gvariant 2 /gvariant/typeinfo
+ok 3 /gvariant/string
+PASS: gvariant 3 /gvariant/string
+ok 4 /gvariant/utf8
+PASS: gvariant 4 /gvariant/utf8
+ok 5 /gvariant/containers
+PASS: gvariant 5 /gvariant/containers
+ok 6 /gvariant/format-strings
+PASS: gvariant 6 /gvariant/format-strings
+ok 7 /gvariant/invalid-varargs
+PASS: gvariant 7 /gvariant/invalid-varargs
+ok 8 /gvariant/varargs
+PASS: gvariant 8 /gvariant/varargs
+ok 9 /gvariant/valist
+PASS: gvariant 9 /gvariant/valist
+ok 10 /gvariant/builder-memory
+PASS: gvariant 10 /gvariant/builder-memory
+ok 11 /gvariant/hashing
+PASS: gvariant 11 /gvariant/hashing
+ok 12 /gvariant/byteswap
+PASS: gvariant 12 /gvariant/byteswap
+ok 13 /gvariant/parser
+PASS: gvariant 13 /gvariant/parser
+ok 14 /gvariant/parse-failures
+PASS: gvariant 14 /gvariant/parse-failures
+ok 15 /gvariant/parse-positional
+PASS: gvariant 15 /gvariant/parse-positional
+ok 16 /gvariant/floating
+PASS: gvariant 16 /gvariant/floating
+ok 17 /gvariant/bytestring
+PASS: gvariant 17 /gvariant/bytestring
+ok 18 /gvariant/lookup-value
+PASS: gvariant 18 /gvariant/lookup-value
+ok 19 /gvariant/lookup
+PASS: gvariant 19 /gvariant/lookup
+ok 20 /gvariant/compare
+PASS: gvariant 20 /gvariant/compare
+ok 21 /gvariant/equal
+PASS: gvariant 21 /gvariant/equal
+ok 22 /gvariant/fixed-array
+PASS: gvariant 22 /gvariant/fixed-array
+ok 23 /gvariant/check-format-string
+PASS: gvariant 23 /gvariant/check-format-string
+ok 24 /gvariant/checksum-basic
+PASS: gvariant 24 /gvariant/checksum-basic
+ok 25 /gvariant/checksum-nested
+PASS: gvariant 25 /gvariant/checksum-nested
+ok 26 /gvariant/gbytes
+PASS: gvariant 26 /gvariant/gbytes
+ok 27 /gvariant/print-context
+PASS: gvariant 27 /gvariant/print-context
+ok 28 /gvariant/error-quark
+PASS: gvariant 28 /gvariant/error-quark
+ok 29 /gvariant/stack-builder-init
+PASS: gvariant 29 /gvariant/stack-builder-init
+ok 30 /gvariant/stack-dict-init
+PASS: gvariant 30 /gvariant/stack-dict-init
+# Start of serialiser tests
+ok 31 /gvariant/serialiser/maybe
+PASS: gvariant 31 /gvariant/serialiser/maybe
+ok 32 /gvariant/serialiser/array
+PASS: gvariant 32 /gvariant/serialiser/array
+ok 33 /gvariant/serialiser/tuple
+PASS: gvariant 33 /gvariant/serialiser/tuple
+ok 34 /gvariant/serialiser/variant
+PASS: gvariant 34 /gvariant/serialiser/variant
+ok 35 /gvariant/serialiser/strings
+PASS: gvariant 35 /gvariant/serialiser/strings
+ok 36 /gvariant/serialiser/byteswap
+PASS: gvariant 36 /gvariant/serialiser/byteswap
+# Start of fuzz tests
+ok 37 /gvariant/serialiser/fuzz/1%
+PASS: gvariant 37 /gvariant/serialiser/fuzz/1%
+ok 38 /gvariant/serialiser/fuzz/5%
+PASS: gvariant 38 /gvariant/serialiser/fuzz/5%
+ok 39 /gvariant/serialiser/fuzz/9%
+PASS: gvariant 39 /gvariant/serialiser/fuzz/9%
+ok 40 /gvariant/serialiser/fuzz/13%
+PASS: gvariant 40 /gvariant/serialiser/fuzz/13%
+ok 41 /gvariant/serialiser/fuzz/17%
+PASS: gvariant 41 /gvariant/serialiser/fuzz/17%
+# End of fuzz tests
+# End of serialiser tests
+# Start of varargs tests
+# Start of subprocess tests
+# End of subprocess tests
+# End of varargs tests
+# Start of parse tests
+# Start of subprocess tests
+# End of subprocess tests
+# End of parse tests
+# End of gvariant tests

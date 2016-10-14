@@ -1,0 +1,38 @@
+# random seed: R02Sff0dc8beb6b8f87c16606179389dc648
+1..15
+# Start of bytes tests
+ok 1 /bytes/new
+PASS: bytes 1 /bytes/new
+ok 2 /bytes/new-take
+PASS: bytes 2 /bytes/new-take
+ok 3 /bytes/new-static
+PASS: bytes 3 /bytes/new-static
+ok 4 /bytes/new-with-free-func
+PASS: bytes 4 /bytes/new-with-free-func
+ok 5 /bytes/new-from-bytes
+PASS: bytes 5 /bytes/new-from-bytes
+ok 6 /bytes/hash
+PASS: bytes 6 /bytes/hash
+ok 7 /bytes/equal
+PASS: bytes 7 /bytes/equal
+ok 8 /bytes/compare
+PASS: bytes 8 /bytes/compare
+ok 9 /bytes/null
+PASS: bytes 9 /bytes/null
+# Start of to-data tests
+ok 10 /bytes/to-data/transfered
+PASS: bytes 10 /bytes/to-data/transfered
+ok 11 /bytes/to-data/two-refs
+PASS: bytes 11 /bytes/to-data/two-refs
+ok 12 /bytes/to-data/non-malloc
+PASS: bytes 12 /bytes/to-data/non-malloc
+# End of to-data tests
+# Start of to-array tests
+ok 13 /bytes/to-array/transfered
+PASS: bytes 13 /bytes/to-array/transfered
+ok 14 /bytes/to-array/two-refs
+PASS: bytes 14 /bytes/to-array/two-refs
+ok 15 /bytes/to-array/non-malloc
+PASS: bytes 15 /bytes/to-array/non-malloc
+# End of to-array tests
+# End of bytes tests

@@ -1,0 +1,78 @@
+# random seed: R02Sd92b4cff67db065d99bc3f1ad594478b
+1..33
+# Start of keyfile tests
+ok 1 /keyfile/line-ends
+PASS: keyfile 1 /keyfile/line-ends
+ok 2 /keyfile/whitespace
+PASS: keyfile 2 /keyfile/whitespace
+ok 3 /keyfile/comments
+PASS: keyfile 3 /keyfile/comments
+ok 4 /keyfile/listing
+PASS: keyfile 4 /keyfile/listing
+ok 5 /keyfile/string
+PASS: keyfile 5 /keyfile/string
+ok 6 /keyfile/boolean
+PASS: keyfile 6 /keyfile/boolean
+ok 7 /keyfile/number
+PASS: keyfile 7 /keyfile/number
+ok 8 /keyfile/locale-string
+PASS: keyfile 8 /keyfile/locale-string
+ok 9 /keyfile/lists
+PASS: keyfile 9 /keyfile/lists
+ok 10 /keyfile/lists-set-get
+PASS: keyfile 10 /keyfile/lists-set-get
+# Bug Reference: http://bugzilla.gnome.org/165887
+ok 11 /keyfile/group-remove
+PASS: keyfile 11 /keyfile/group-remove
+# Bug Reference: http://bugzilla.gnome.org/165980
+ok 12 /keyfile/key-remove
+PASS: keyfile 12 /keyfile/key-remove
+# Bug Reference: http://bugzilla.gnome.org/316309
+ok 13 /keyfile/groups
+PASS: keyfile 13 /keyfile/groups
+ok 14 /keyfile/duplicate-keys
+PASS: keyfile 14 /keyfile/duplicate-keys
+# Bug Reference: http://bugzilla.gnome.org/157877
+ok 15 /keyfile/duplicate-groups
+PASS: keyfile 15 /keyfile/duplicate-groups
+# Bug Reference: http://bugzilla.gnome.org/385910
+ok 16 /keyfile/duplicate-groups2
+PASS: keyfile 16 /keyfile/duplicate-groups2
+ok 17 /keyfile/group-names
+PASS: keyfile 17 /keyfile/group-names
+ok 18 /keyfile/key-names
+PASS: keyfile 18 /keyfile/key-names
+# Bug Reference: http://bugzilla.gnome.org/420686
+ok 19 /keyfile/reload
+PASS: keyfile 19 /keyfile/reload
+# Bug Reference: http://bugzilla.gnome.org/614864
+ok 20 /keyfile/int64
+PASS: keyfile 20 /keyfile/int64
+ok 21 /keyfile/load
+PASS: keyfile 21 /keyfile/load
+ok 22 /keyfile/save
+PASS: keyfile 22 /keyfile/save
+ok 23 /keyfile/load-fail
+PASS: keyfile 23 /keyfile/load-fail
+ok 24 /keyfile/non-utf8
+PASS: keyfile 24 /keyfile/non-utf8
+# Bug Reference: http://bugzilla.gnome.org/640695
+ok 25 /keyfile/page-boundary
+PASS: keyfile 25 /keyfile/page-boundary
+ok 26 /keyfile/ref
+PASS: keyfile 26 /keyfile/ref
+ok 27 /keyfile/replace-value
+PASS: keyfile 27 /keyfile/replace-value
+ok 28 /keyfile/list-separator
+PASS: keyfile 28 /keyfile/list-separator
+ok 29 /keyfile/empty-string
+PASS: keyfile 29 /keyfile/empty-string
+ok 30 /keyfile/limbo
+PASS: keyfile 30 /keyfile/limbo
+ok 31 /keyfile/utf8
+PASS: keyfile 31 /keyfile/utf8
+ok 32 /keyfile/roundtrip
+PASS: keyfile 32 /keyfile/roundtrip
+ok 33 /keyfile/bytes
+PASS: keyfile 33 /keyfile/bytes
+# End of keyfile tests

@@ -1,0 +1,7 @@
+# random seed: R02Sfda977ac67a121d235927e6d5d32131f
+1..1
+# Start of glib tests
+# Bug Reference: https://bugzilla.gnome.org/show_bug.cgi?id=642026
+ok 1 /glib/642026
+PASS: 642026-ec 1 /glib/642026
+# End of glib tests

@@ -1,0 +1,50 @@
+# random seed: R02S3c2d2b7b12859312d9a2a9404b60291f
+1..21
+# Start of maincontext tests
+ok 1 /maincontext/basic
+PASS: mainloop 1 /maincontext/basic
+# End of maincontext tests
+# Start of mainloop tests
+ok 2 /mainloop/basic
+PASS: mainloop 2 /mainloop/basic
+ok 3 /mainloop/timeouts
+PASS: mainloop 3 /mainloop/timeouts
+ok 4 /mainloop/priorities
+PASS: mainloop 4 /mainloop/priorities
+ok 5 /mainloop/invoke
+PASS: mainloop 5 /mainloop/invoke
+ok 6 /mainloop/child_sources
+PASS: mainloop 6 /mainloop/child_sources
+ok 7 /mainloop/recursive_child_sources
+PASS: mainloop 7 /mainloop/recursive_child_sources
+ok 8 /mainloop/swapping_child_sources
+PASS: mainloop 8 /mainloop/swapping_child_sources
+# Bug Reference: http://bugzilla.gnome.org/701283
+ok 9 /mainloop/blocked_child_sources
+PASS: mainloop 9 /mainloop/blocked_child_sources
+ok 10 /mainloop/source_time
+PASS: mainloop 10 /mainloop/source_time
+# Bug Reference: http://bugzilla.gnome.org/687098
+ok 11 /mainloop/overflow
+PASS: mainloop 11 /mainloop/overflow
+ok 12 /mainloop/ready-time
+PASS: mainloop 12 /mainloop/ready-time
+ok 13 /mainloop/wakeup
+PASS: mainloop 13 /mainloop/wakeup
+ok 14 /mainloop/remove-invalid
+PASS: mainloop 14 /mainloop/remove-invalid
+ok 15 /mainloop/unref-while-pending
+PASS: mainloop 15 /mainloop/unref-while-pending
+ok 16 /mainloop/unix-fd
+PASS: mainloop 16 /mainloop/unix-fd
+ok 17 /mainloop/unix-fd-source
+PASS: mainloop 17 /mainloop/unix-fd-source
+ok 18 /mainloop/source-unix-fd-api
+PASS: mainloop 18 /mainloop/source-unix-fd-api
+ok 19 /mainloop/wait
+PASS: mainloop 19 /mainloop/wait
+ok 20 /mainloop/unix-file-poll
+PASS: mainloop 20 /mainloop/unix-file-poll
+ok 21 /mainloop/nfds
+PASS: mainloop 21 /mainloop/nfds
+# End of mainloop tests

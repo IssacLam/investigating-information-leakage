@@ -25,6 +25,7 @@
 #define PURPLE_JABBER_AUTH_DIGEST_MD5_H_
 
 #include "internal.h"
+#include "jabber.h"
 
 /*
  * Every function in this file is ONLY exposed for tests.
@@ -37,3 +38,4 @@
 GHashTable *jabber_auth_digest_md5_parse(const char *challenge);
 
 #endif /* PURPLE_JABBER_AUTH_DIGEST_MD5_H_ */
+

@@ -1,0 +1,18 @@
+# random seed: R02S95abe0bccced6e8210c8213983c26ff4
+1..7
+# Start of conversion tests
+ok 1 /conversion/no-conv
+PASS: convert 1 /conversion/no-conv
+ok 2 /conversion/iconv-state
+PASS: convert 2 /conversion/iconv-state
+ok 3 /conversion/illegal-sequence
+PASS: convert 3 /conversion/illegal-sequence
+ok 4 /conversion/byte-order
+PASS: convert 4 /conversion/byte-order
+ok 5 /conversion/unicode
+PASS: convert 5 /conversion/unicode
+ok 6 /conversion/filename-utf8
+PASS: convert 6 /conversion/filename-utf8
+ok 7 /conversion/filename-display
+PASS: convert 7 /conversion/filename-display
+# End of conversion tests

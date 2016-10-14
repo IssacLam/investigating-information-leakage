@@ -1,0 +1,20 @@
+# random seed: R02S32a6cd88fd1f81e5d66c6747376fc407
+1..8
+# Start of thread tests
+ok 1 /thread/rwlock1
+PASS: rwlock 1 /thread/rwlock1
+ok 2 /thread/rwlock2
+PASS: rwlock 2 /thread/rwlock2
+ok 3 /thread/rwlock3
+PASS: rwlock 3 /thread/rwlock3
+ok 4 /thread/rwlock4
+PASS: rwlock 4 /thread/rwlock4
+ok 5 /thread/rwlock5
+PASS: rwlock 5 /thread/rwlock5
+ok 6 /thread/rwlock6
+PASS: rwlock 6 /thread/rwlock6
+ok 7 /thread/rwlock7
+PASS: rwlock 7 /thread/rwlock7
+ok 8 /thread/rwlock8
+PASS: rwlock 8 /thread/rwlock8
+# End of thread tests

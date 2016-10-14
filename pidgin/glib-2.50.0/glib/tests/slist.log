@@ -1,0 +1,26 @@
+# random seed: R02S1550214b3b78cecad60e5f96f32de6e3
+1..11
+# Start of slist tests
+ok 1 /slist/sort
+PASS: slist 1 /slist/sort
+ok 2 /slist/sort-with-data
+PASS: slist 2 /slist/sort-with-data
+ok 3 /slist/insert-sorted
+PASS: slist 3 /slist/insert-sorted
+ok 4 /slist/insert-sorted-with-data
+PASS: slist 4 /slist/insert-sorted-with-data
+ok 5 /slist/reverse
+PASS: slist 5 /slist/reverse
+ok 6 /slist/nth
+PASS: slist 6 /slist/nth
+ok 7 /slist/remove
+PASS: slist 7 /slist/remove
+ok 8 /slist/remove-all
+PASS: slist 8 /slist/remove-all
+ok 9 /slist/insert
+PASS: slist 9 /slist/insert
+ok 10 /slist/position
+PASS: slist 10 /slist/position
+ok 11 /slist/concat
+PASS: slist 11 /slist/concat
+# End of slist tests

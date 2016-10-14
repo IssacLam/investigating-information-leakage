@@ -1,0 +1,160 @@
+# random seed: R02S435932c65e1d2ff1fe96844b30c1db7a
+1..75
+# Start of pattern tests
+# Start of compile tests
+ok 1 /pattern/compile/0
+PASS: pattern 1 /pattern/compile/0
+ok 2 /pattern/compile/1
+PASS: pattern 2 /pattern/compile/1
+ok 3 /pattern/compile/2
+PASS: pattern 3 /pattern/compile/2
+ok 4 /pattern/compile/3
+PASS: pattern 4 /pattern/compile/3
+ok 5 /pattern/compile/4
+PASS: pattern 5 /pattern/compile/4
+ok 6 /pattern/compile/5
+PASS: pattern 6 /pattern/compile/5
+ok 7 /pattern/compile/6
+PASS: pattern 7 /pattern/compile/6
+ok 8 /pattern/compile/7
+PASS: pattern 8 /pattern/compile/7
+ok 9 /pattern/compile/8
+PASS: pattern 9 /pattern/compile/8
+ok 10 /pattern/compile/9
+PASS: pattern 10 /pattern/compile/9
+ok 11 /pattern/compile/10
+PASS: pattern 11 /pattern/compile/10
+ok 12 /pattern/compile/11
+PASS: pattern 12 /pattern/compile/11
+ok 13 /pattern/compile/12
+PASS: pattern 13 /pattern/compile/12
+# End of compile tests
+# Start of match tests
+ok 14 /pattern/match/0
+PASS: pattern 14 /pattern/match/0
+ok 15 /pattern/match/1
+PASS: pattern 15 /pattern/match/1
+ok 16 /pattern/match/2
+PASS: pattern 16 /pattern/match/2
+ok 17 /pattern/match/3
+PASS: pattern 17 /pattern/match/3
+ok 18 /pattern/match/4
+PASS: pattern 18 /pattern/match/4
+ok 19 /pattern/match/5
+PASS: pattern 19 /pattern/match/5
+ok 20 /pattern/match/6
+PASS: pattern 20 /pattern/match/6
+ok 21 /pattern/match/7
+PASS: pattern 21 /pattern/match/7
+ok 22 /pattern/match/8
+PASS: pattern 22 /pattern/match/8
+ok 23 /pattern/match/9
+PASS: pattern 23 /pattern/match/9
+ok 24 /pattern/match/10
+PASS: pattern 24 /pattern/match/10
+ok 25 /pattern/match/11
+PASS: pattern 25 /pattern/match/11
+ok 26 /pattern/match/12
+PASS: pattern 26 /pattern/match/12
+ok 27 /pattern/match/13
+PASS: pattern 27 /pattern/match/13
+ok 28 /pattern/match/14
+PASS: pattern 28 /pattern/match/14
+ok 29 /pattern/match/15
+PASS: pattern 29 /pattern/match/15
+ok 30 /pattern/match/16
+PASS: pattern 30 /pattern/match/16
+ok 31 /pattern/match/17
+PASS: pattern 31 /pattern/match/17
+ok 32 /pattern/match/18
+PASS: pattern 32 /pattern/match/18
+ok 33 /pattern/match/19
+PASS: pattern 33 /pattern/match/19
+ok 34 /pattern/match/20
+PASS: pattern 34 /pattern/match/20
+ok 35 /pattern/match/21
+PASS: pattern 35 /pattern/match/21
+ok 36 /pattern/match/22
+PASS: pattern 36 /pattern/match/22
+ok 37 /pattern/match/23
+PASS: pattern 37 /pattern/match/23
+ok 38 /pattern/match/24
+PASS: pattern 38 /pattern/match/24
+ok 39 /pattern/match/25
+PASS: pattern 39 /pattern/match/25
+ok 40 /pattern/match/26
+PASS: pattern 40 /pattern/match/26
+ok 41 /pattern/match/27
+PASS: pattern 41 /pattern/match/27
+ok 42 /pattern/match/28
+PASS: pattern 42 /pattern/match/28
+ok 43 /pattern/match/29
+PASS: pattern 43 /pattern/match/29
+ok 44 /pattern/match/30
+PASS: pattern 44 /pattern/match/30
+ok 45 /pattern/match/31
+PASS: pattern 45 /pattern/match/31
+ok 46 /pattern/match/32
+PASS: pattern 46 /pattern/match/32
+ok 47 /pattern/match/33
+PASS: pattern 47 /pattern/match/33
+ok 48 /pattern/match/34
+PASS: pattern 48 /pattern/match/34
+ok 49 /pattern/match/35
+PASS: pattern 49 /pattern/match/35
+ok 50 /pattern/match/36
+PASS: pattern 50 /pattern/match/36
+ok 51 /pattern/match/37
+PASS: pattern 51 /pattern/match/37
+ok 52 /pattern/match/38
+PASS: pattern 52 /pattern/match/38
+ok 53 /pattern/match/39
+PASS: pattern 53 /pattern/match/39
+ok 54 /pattern/match/40
+PASS: pattern 54 /pattern/match/40
+ok 55 /pattern/match/41
+PASS: pattern 55 /pattern/match/41
+ok 56 /pattern/match/42
+PASS: pattern 56 /pattern/match/42
+ok 57 /pattern/match/43
+PASS: pattern 57 /pattern/match/43
+ok 58 /pattern/match/44
+PASS: pattern 58 /pattern/match/44
+ok 59 /pattern/match/45
+PASS: pattern 59 /pattern/match/45
+ok 60 /pattern/match/46
+PASS: pattern 60 /pattern/match/46
+ok 61 /pattern/match/47
+PASS: pattern 61 /pattern/match/47
+ok 62 /pattern/match/48
+PASS: pattern 62 /pattern/match/48
+ok 63 /pattern/match/49
+PASS: pattern 63 /pattern/match/49
+ok 64 /pattern/match/50
+PASS: pattern 64 /pattern/match/50
+# End of match tests
+# Start of equal tests
+ok 65 /pattern/equal/0
+PASS: pattern 65 /pattern/equal/0
+ok 66 /pattern/equal/1
+PASS: pattern 66 /pattern/equal/1
+ok 67 /pattern/equal/2
+PASS: pattern 67 /pattern/equal/2
+ok 68 /pattern/equal/3
+PASS: pattern 68 /pattern/equal/3
+ok 69 /pattern/equal/4
+PASS: pattern 69 /pattern/equal/4
+ok 70 /pattern/equal/5
+PASS: pattern 70 /pattern/equal/5
+ok 71 /pattern/equal/6
+PASS: pattern 71 /pattern/equal/6
+ok 72 /pattern/equal/7
+PASS: pattern 72 /pattern/equal/7
+ok 73 /pattern/equal/8
+PASS: pattern 73 /pattern/equal/8
+ok 74 /pattern/equal/9
+PASS: pattern 74 /pattern/equal/9
+ok 75 /pattern/equal/10
+PASS: pattern 75 /pattern/equal/10
+# End of equal tests
+# End of pattern tests

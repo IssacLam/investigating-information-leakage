@@ -1,0 +1,8 @@
+# random seed: R02S8047ca5e4a7fe919ff708a644c56a6ca
+1..2
+# Start of timeout tests
+ok 1 /timeout/seconds
+PASS: timeout 1 /timeout/seconds
+ok 2 /timeout/rounding
+PASS: timeout 2 /timeout/rounding
+# End of timeout tests

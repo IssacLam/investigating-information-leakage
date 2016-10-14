@@ -1,0 +1,6 @@
+# random seed: R02S6975ef9a7303ef0f895d51705bf77f91
+1..1
+# Start of include tests
+ok 1 /include/rwlock
+PASS: include 1 /include/rwlock
+# End of include tests

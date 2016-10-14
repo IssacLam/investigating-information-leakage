@@ -1,0 +1,7 @@
+Add same-priority sources: 16
+Remove in random order: 29
+Add different-priority sources: 27
+Remove in random order: 45
+Add sources from threads: 218
+Remove sources from threads: 197
+PASS sources (exit status: 0)

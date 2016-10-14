@@ -1,0 +1,40 @@
+# random seed: R02S09eb26c288617265ed3ecc9c27ec14ba
+1..17
+# Start of gobject tests
+# Start of signals tests
+ok 1 /gobject/signals/all-types
+PASS: signals 1 /gobject/signals/all-types
+ok 2 /gobject/signals/variant
+PASS: signals 2 /gobject/signals/variant
+ok 3 /gobject/signals/destroy-target-object
+PASS: signals 3 /gobject/signals/destroy-target-object
+ok 4 /gobject/signals/generic-marshaller-1
+PASS: signals 4 /gobject/signals/generic-marshaller-1
+ok 5 /gobject/signals/generic-marshaller-2
+PASS: signals 5 /gobject/signals/generic-marshaller-2
+ok 6 /gobject/signals/generic-marshaller-enum-return-signed
+PASS: signals 6 /gobject/signals/generic-marshaller-enum-return-signed
+ok 7 /gobject/signals/generic-marshaller-enum-return-unsigned
+PASS: signals 7 /gobject/signals/generic-marshaller-enum-return-unsigned
+ok 8 /gobject/signals/generic-marshaller-int-return
+PASS: signals 8 /gobject/signals/generic-marshaller-int-return
+ok 9 /gobject/signals/generic-marshaller-uint-return
+PASS: signals 9 /gobject/signals/generic-marshaller-uint-return
+ok 10 /gobject/signals/custom-marshaller
+PASS: signals 10 /gobject/signals/custom-marshaller
+ok 11 /gobject/signals/connect
+PASS: signals 11 /gobject/signals/connect
+ok 12 /gobject/signals/emission-hook
+PASS: signals 12 /gobject/signals/emission-hook
+ok 13 /gobject/signals/introspection
+PASS: signals 13 /gobject/signals/introspection
+ok 14 /gobject/signals/block-handler
+PASS: signals 14 /gobject/signals/block-handler
+ok 15 /gobject/signals/stop-emission
+PASS: signals 15 /gobject/signals/stop-emission
+ok 16 /gobject/signals/invocation-hint
+PASS: signals 16 /gobject/signals/invocation-hint
+ok 17 /gobject/signals/test-disconnection-wrong-object
+PASS: signals 17 /gobject/signals/test-disconnection-wrong-object
+# End of signals tests
+# End of gobject tests

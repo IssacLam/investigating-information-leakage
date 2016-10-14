@@ -1,0 +1,29 @@
+# random seed: R02S59e685064b53f357324bf9ec1ea409bb
+# No suitable locale, skipping tests
+1..9
+# Start of unicode tests
+# Start of collate tests
+ok 1 /unicode/collate/0 # SKIP no en_US locale
+SKIP: collate 1 /unicode/collate/0 # SKIP no en_US locale
+ok 2 /unicode/collate/1 # SKIP no en_US locale
+SKIP: collate 2 /unicode/collate/1 # SKIP no en_US locale
+ok 3 /unicode/collate/2 # SKIP no en_US locale
+SKIP: collate 3 /unicode/collate/2 # SKIP no en_US locale
+# End of collate tests
+# Start of collate-key tests
+ok 4 /unicode/collate-key/0 # SKIP no en_US locale
+SKIP: collate 4 /unicode/collate-key/0 # SKIP no en_US locale
+ok 5 /unicode/collate-key/1 # SKIP no en_US locale
+SKIP: collate 5 /unicode/collate-key/1 # SKIP no en_US locale
+ok 6 /unicode/collate-key/2 # SKIP no en_US locale
+SKIP: collate 6 /unicode/collate-key/2 # SKIP no en_US locale
+# End of collate-key tests
+# Start of collate-filename tests
+ok 7 /unicode/collate-filename/0 # SKIP no en_US locale
+SKIP: collate 7 /unicode/collate-filename/0 # SKIP no en_US locale
+ok 8 /unicode/collate-filename/1 # SKIP no en_US locale
+SKIP: collate 8 /unicode/collate-filename/1 # SKIP no en_US locale
+ok 9 /unicode/collate-filename/2 # SKIP no en_US locale
+SKIP: collate 9 /unicode/collate-filename/2 # SKIP no en_US locale
+# End of collate-filename tests
+# End of unicode tests

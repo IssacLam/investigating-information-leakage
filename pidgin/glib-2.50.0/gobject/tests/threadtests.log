@@ -1,0 +1,8 @@
+# random seed: R02S1eef939c3928d77847b02ac38d4d0bcf
+1..2
+# Start of GObject tests
+ok 1 /GObject/threaded-object-init
+PASS: threadtests 1 /GObject/threaded-object-init
+ok 2 /GObject/threaded-weak-ref
+PASS: threadtests 2 /GObject/threaded-weak-ref
+# End of GObject tests

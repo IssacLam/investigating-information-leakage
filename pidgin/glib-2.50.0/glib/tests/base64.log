@@ -1,0 +1,56 @@
+# random seed: R02S0d83624e3957da100277d9e1837f8460
+1..21
+# Start of base64 tests
+ok 1 /base64/encode
+PASS: base64 1 /base64/encode
+ok 2 /base64/decode
+PASS: base64 2 /base64/decode
+ok 3 /base64/decode-inplace
+PASS: base64 3 /base64/decode-inplace
+ok 4 /base64/encode-decode
+PASS: base64 4 /base64/encode-decode
+# Start of full tests
+ok 5 /base64/full/1
+PASS: base64 5 /base64/full/1
+ok 6 /base64/full/2
+PASS: base64 6 /base64/full/2
+ok 7 /base64/full/3
+PASS: base64 7 /base64/full/3
+ok 8 /base64/full/4
+PASS: base64 8 /base64/full/4
+# End of full tests
+# Start of incremental tests
+# Start of nobreak tests
+ok 9 /base64/incremental/nobreak/1
+PASS: base64 9 /base64/incremental/nobreak/1
+ok 10 /base64/incremental/nobreak/2
+PASS: base64 10 /base64/incremental/nobreak/2
+ok 11 /base64/incremental/nobreak/3
+PASS: base64 11 /base64/incremental/nobreak/3
+ok 12 /base64/incremental/nobreak/4-a
+PASS: base64 12 /base64/incremental/nobreak/4-a
+ok 13 /base64/incremental/nobreak/4-b
+PASS: base64 13 /base64/incremental/nobreak/4-b
+ok 14 /base64/incremental/nobreak/4-c
+PASS: base64 14 /base64/incremental/nobreak/4-c
+# End of nobreak tests
+# Start of break tests
+ok 15 /base64/incremental/break/1
+PASS: base64 15 /base64/incremental/break/1
+ok 16 /base64/incremental/break/2
+PASS: base64 16 /base64/incremental/break/2
+ok 17 /base64/incremental/break/3
+PASS: base64 17 /base64/incremental/break/3
+# End of break tests
+# Start of smallblock tests
+ok 18 /base64/incremental/smallblock/1
+PASS: base64 18 /base64/incremental/smallblock/1
+ok 19 /base64/incremental/smallblock/2
+PASS: base64 19 /base64/incremental/smallblock/2
+ok 20 /base64/incremental/smallblock/3
+PASS: base64 20 /base64/incremental/smallblock/3
+ok 21 /base64/incremental/smallblock/4
+PASS: base64 21 /base64/incremental/smallblock/4
+# End of smallblock tests
+# End of incremental tests
+# End of base64 tests

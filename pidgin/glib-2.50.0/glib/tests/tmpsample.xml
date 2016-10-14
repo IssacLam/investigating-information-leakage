@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<gtester>
+  <testbinary path="../../glib/gtester">
+    <binary file="/home/parallels/Downloads/glib-2.50.0/glib/.libs/lt-gtester"/>
+    <random-seed>R02Sbf5de338442ae717aa45906c558f88d9</random-seed>
+    <testcase path="/gtester/fixture-test">
+      <message>
+This is a test message API test message.
+      </message>
+      <message>
+Bug Reference: http://www.example.com/bugtracker/123
+      </message>
+      <message>
+Bug Reference: http://www.example.com/bugtracker?bugnum=456;cmd=showbug
+      </message>
+      <duration>0.000012</duration>
+      <status exit-status="0" n-forks="0" result="success"/>
+    </testcase>
+    <duration>0.009015</duration>
+  </testbinary>
+</gtester>

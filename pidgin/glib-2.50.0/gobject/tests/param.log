@@ -1,0 +1,24 @@
+# random seed: R02S04f31899dc3bfd7476627b4eb7410f05
+1..7
+# Start of param tests
+ok 1 /param/value
+PASS: param 1 /param/value
+ok 2 /param/strings
+PASS: param 2 /param/strings
+ok 3 /param/qdata
+PASS: param 3 /param/qdata
+ok 4 /param/validate
+PASS: param 4 /param/validate
+ok 5 /param/convert
+PASS: param 5 /param/convert
+ok 6 /param/default
+PASS: param 6 /param/default
+# Start of implement tests
+# Start of subprocess tests
+# End of subprocess tests
+# End of implement tests
+# End of param tests
+# Start of value tests
+ok 7 /value/transform
+PASS: param 7 /value/transform
+# End of value tests

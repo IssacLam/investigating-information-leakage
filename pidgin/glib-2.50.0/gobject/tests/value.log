@@ -1,0 +1,10 @@
+# random seed: R02Sb86a636e3b3f202605621e06b48fe137
+1..2
+# Start of value tests
+ok 1 /value/basic
+PASS: value 1 /value/basic
+# Start of array tests
+ok 2 /value/array/basic
+PASS: value 2 /value/array/basic
+# End of array tests
+# End of value tests

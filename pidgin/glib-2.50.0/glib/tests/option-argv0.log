@@ -1,0 +1,6 @@
+# random seed: R02S5154c5845710cbe0c5ca5cab88f0f09c
+1..1
+# Start of option tests
+ok 1 /option/argv0
+PASS: option-argv0 1 /option/argv0
+# End of option tests

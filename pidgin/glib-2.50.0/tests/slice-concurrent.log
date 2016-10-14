@@ -1,0 +1,11 @@
+Starting 8 threads for concurrent GSlice usage...
+gdgbgbbaehcfegdfcfdffdagedhgceeabhabfhecadbbdgffehgegcfhabbgghcheacaahhdgegefbhbcebadaefhhdadecgagdfgbghggfggfbafdaefbcefhffhfedhebbeccfgchgfaeacdhfeeeegaeaccc
+Thread 1: 49684 blocks freed, 489 blocks not freed
+Thread 2: 49420 blocks freed, 198 blocks not freed
+Thread 3: 49602 blocks freed, 864 blocks not freed
+Thread 4: 49139 blocks freed, 787 blocks not freed
+Thread 5: 49069 blocks freed, 980 blocks not freed
+Thread 6: 49543 blocks freed, 328 blocks not freed
+Thread 7: 48656 blocks freed, 1142 blocks not freed
+Thread 8: 47605 blocks freed, 2494 blocks not freed
+PASS slice-concurrent (exit status: 0)

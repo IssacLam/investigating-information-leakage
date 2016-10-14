@@ -1,0 +1,14 @@
+# random seed: R02Scc6f6a47b4fa4ae987e3fdaae5578de3
+1..5
+# Start of tree tests
+ok 1 /tree/search
+PASS: tree 1 /tree/search
+ok 2 /tree/remove
+PASS: tree 2 /tree/remove
+ok 3 /tree/destroy
+PASS: tree 3 /tree/destroy
+ok 4 /tree/traverse
+PASS: tree 4 /tree/traverse
+ok 5 /tree/insert
+PASS: tree 5 /tree/insert
+# End of tree tests

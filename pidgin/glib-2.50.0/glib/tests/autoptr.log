@@ -1,0 +1,98 @@
+# random seed: R02S55739eaae727d45d1409f7086429cff4
+1..47
+# Start of autoptr tests
+ok 1 /autoptr/autofree
+PASS: autoptr 1 /autoptr/autofree
+ok 2 /autoptr/g_async_queue
+PASS: autoptr 2 /autoptr/g_async_queue
+ok 3 /autoptr/g_bookmark_file
+PASS: autoptr 3 /autoptr/g_bookmark_file
+ok 4 /autoptr/g_bytes
+PASS: autoptr 4 /autoptr/g_bytes
+ok 5 /autoptr/g_checksum
+PASS: autoptr 5 /autoptr/g_checksum
+ok 6 /autoptr/g_date_time
+PASS: autoptr 6 /autoptr/g_date_time
+ok 7 /autoptr/g_dir
+PASS: autoptr 7 /autoptr/g_dir
+ok 8 /autoptr/g_error
+PASS: autoptr 8 /autoptr/g_error
+ok 9 /autoptr/g_hash_table
+PASS: autoptr 9 /autoptr/g_hash_table
+ok 10 /autoptr/g_hmac
+PASS: autoptr 10 /autoptr/g_hmac
+ok 11 /autoptr/g_io_channel
+PASS: autoptr 11 /autoptr/g_io_channel
+ok 12 /autoptr/g_key_file
+PASS: autoptr 12 /autoptr/g_key_file
+ok 13 /autoptr/g_list
+PASS: autoptr 13 /autoptr/g_list
+ok 14 /autoptr/g_array
+PASS: autoptr 14 /autoptr/g_array
+ok 15 /autoptr/g_ptr_array
+PASS: autoptr 15 /autoptr/g_ptr_array
+ok 16 /autoptr/g_byte_array
+PASS: autoptr 16 /autoptr/g_byte_array
+ok 17 /autoptr/g_main_context
+PASS: autoptr 17 /autoptr/g_main_context
+ok 18 /autoptr/g_main_loop
+PASS: autoptr 18 /autoptr/g_main_loop
+ok 19 /autoptr/g_source
+PASS: autoptr 19 /autoptr/g_source
+ok 20 /autoptr/g_mapped_file
+PASS: autoptr 20 /autoptr/g_mapped_file
+ok 21 /autoptr/g_markup_parse_context
+PASS: autoptr 21 /autoptr/g_markup_parse_context
+ok 22 /autoptr/g_node
+PASS: autoptr 22 /autoptr/g_node
+ok 23 /autoptr/g_option_context
+PASS: autoptr 23 /autoptr/g_option_context
+ok 24 /autoptr/g_option_group
+PASS: autoptr 24 /autoptr/g_option_group
+ok 25 /autoptr/g_pattern_spec
+PASS: autoptr 25 /autoptr/g_pattern_spec
+ok 26 /autoptr/g_queue
+PASS: autoptr 26 /autoptr/g_queue
+ok 27 /autoptr/g_rand
+PASS: autoptr 27 /autoptr/g_rand
+ok 28 /autoptr/g_regex
+PASS: autoptr 28 /autoptr/g_regex
+ok 29 /autoptr/g_match_info
+PASS: autoptr 29 /autoptr/g_match_info
+ok 30 /autoptr/g_scanner
+PASS: autoptr 30 /autoptr/g_scanner
+ok 31 /autoptr/g_sequence
+PASS: autoptr 31 /autoptr/g_sequence
+ok 32 /autoptr/g_slist
+PASS: autoptr 32 /autoptr/g_slist
+ok 33 /autoptr/g_string
+PASS: autoptr 33 /autoptr/g_string
+ok 34 /autoptr/g_string_chunk
+PASS: autoptr 34 /autoptr/g_string_chunk
+ok 35 /autoptr/g_thread
+PASS: autoptr 35 /autoptr/g_thread
+ok 36 /autoptr/g_mutex
+PASS: autoptr 36 /autoptr/g_mutex
+ok 37 /autoptr/g_mutex_locker
+PASS: autoptr 37 /autoptr/g_mutex_locker
+ok 38 /autoptr/g_cond
+PASS: autoptr 38 /autoptr/g_cond
+ok 39 /autoptr/g_timer
+PASS: autoptr 39 /autoptr/g_timer
+ok 40 /autoptr/g_time_zone
+PASS: autoptr 40 /autoptr/g_time_zone
+ok 41 /autoptr/g_tree
+PASS: autoptr 41 /autoptr/g_tree
+ok 42 /autoptr/g_variant
+PASS: autoptr 42 /autoptr/g_variant
+ok 43 /autoptr/g_variant_builder
+PASS: autoptr 43 /autoptr/g_variant_builder
+ok 44 /autoptr/g_variant_iter
+PASS: autoptr 44 /autoptr/g_variant_iter
+ok 45 /autoptr/g_variant_dict
+PASS: autoptr 45 /autoptr/g_variant_dict
+ok 46 /autoptr/g_variant_type
+PASS: autoptr 46 /autoptr/g_variant_type
+ok 47 /autoptr/strv
+PASS: autoptr 47 /autoptr/strv
+# End of autoptr tests

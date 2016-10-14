@@ -1,0 +1,52 @@
+# random seed: R02S709c04e0cc3e673ca67bf4e82d46013a
+1..16
+# Start of logging tests
+ok 1 /logging/default-handler
+PASS: logging 1 /logging/default-handler
+ok 2 /logging/warnings
+PASS: logging 2 /logging/warnings
+ok 3 /logging/fatal-log-mask
+PASS: logging 3 /logging/fatal-log-mask
+# bu-DEBUG: message
+# ba-DEBUG: message
+# ba-INFO: message
+ok 4 /logging/set-handler
+PASS: logging 4 /logging/set-handler
+ok 5 /logging/print-handler
+PASS: logging 5 /logging/print-handler
+ok 6 /logging/printerr-handler
+PASS: logging 6 /logging/printerr-handler
+# Bug Reference: http://bugzilla.gnome.org/653052
+# The Log Message Handler
+
+# The Good Fail Message Handler
+
+ok 7 /logging/653052
+PASS: logging 7 /logging/653052
+ok 8 /logging/gibberish
+PASS: logging 8 /logging/gibberish
+# Start of default-handler tests
+# Start of subprocess tests
+# End of subprocess tests
+# End of default-handler tests
+# End of logging tests
+# Start of structured-logging tests
+ok 9 /structured-logging/no-state
+PASS: logging 9 /structured-logging/no-state
+ok 10 /structured-logging/some-state
+PASS: logging 10 /structured-logging/some-state
+# The Log Message Handler
+
+ok 11 /structured-logging/robustness
+PASS: logging 11 /structured-logging/robustness
+ok 12 /structured-logging/roundtrip1
+PASS: logging 12 /structured-logging/roundtrip1
+ok 13 /structured-logging/roundtrip2
+PASS: logging 13 /structured-logging/roundtrip2
+ok 14 /structured-logging/roundtrip3
+PASS: logging 14 /structured-logging/roundtrip3
+ok 15 /structured-logging/variant1
+PASS: logging 15 /structured-logging/variant1
+ok 16 /structured-logging/variant2
+PASS: logging 16 /structured-logging/variant2
+# End of structured-logging tests

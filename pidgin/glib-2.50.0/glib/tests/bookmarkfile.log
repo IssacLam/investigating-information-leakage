@@ -1,0 +1,54 @@
+# random seed: R02Seae079276bc22b65525611f244e77d8f
+1..24
+# Start of bookmarks tests
+ok 1 /bookmarks/load-from-data-dirs
+PASS: bookmarkfile 1 /bookmarks/load-from-data-dirs
+ok 2 /bookmarks/to-file
+PASS: bookmarkfile 2 /bookmarks/to-file
+ok 3 /bookmarks/move-item
+PASS: bookmarkfile 3 /bookmarks/move-item
+ok 4 /bookmarks/misc
+PASS: bookmarkfile 4 /bookmarks/misc
+# Start of parse tests
+ok 5 /bookmarks/parse/fail-15.xbel
+PASS: bookmarkfile 5 /bookmarks/parse/fail-15.xbel
+ok 6 /bookmarks/parse/fail-02.xbel
+PASS: bookmarkfile 6 /bookmarks/parse/fail-02.xbel
+ok 7 /bookmarks/parse/fail-06.xbel
+PASS: bookmarkfile 7 /bookmarks/parse/fail-06.xbel
+ok 8 /bookmarks/parse/fail-11.xbel
+PASS: bookmarkfile 8 /bookmarks/parse/fail-11.xbel
+ok 9 /bookmarks/parse/fail-14.xbel
+PASS: bookmarkfile 9 /bookmarks/parse/fail-14.xbel
+ok 10 /bookmarks/parse/fail-17.xbel
+PASS: bookmarkfile 10 /bookmarks/parse/fail-17.xbel
+ok 11 /bookmarks/parse/valid-01.xbel
+PASS: bookmarkfile 11 /bookmarks/parse/valid-01.xbel
+ok 12 /bookmarks/parse/valid-02.xbel
+PASS: bookmarkfile 12 /bookmarks/parse/valid-02.xbel
+ok 13 /bookmarks/parse/valid-03.xbel
+PASS: bookmarkfile 13 /bookmarks/parse/valid-03.xbel
+ok 14 /bookmarks/parse/fail-13.xbel
+PASS: bookmarkfile 14 /bookmarks/parse/fail-13.xbel
+ok 15 /bookmarks/parse/fail-07.xbel
+PASS: bookmarkfile 15 /bookmarks/parse/fail-07.xbel
+ok 16 /bookmarks/parse/fail-12.xbel
+PASS: bookmarkfile 16 /bookmarks/parse/fail-12.xbel
+ok 17 /bookmarks/parse/fail-04.xbel
+PASS: bookmarkfile 17 /bookmarks/parse/fail-04.xbel
+ok 18 /bookmarks/parse/fail-09.xbel
+PASS: bookmarkfile 18 /bookmarks/parse/fail-09.xbel
+ok 19 /bookmarks/parse/fail-05.xbel
+PASS: bookmarkfile 19 /bookmarks/parse/fail-05.xbel
+ok 20 /bookmarks/parse/fail-08.xbel
+PASS: bookmarkfile 20 /bookmarks/parse/fail-08.xbel
+ok 21 /bookmarks/parse/fail-03.xbel
+PASS: bookmarkfile 21 /bookmarks/parse/fail-03.xbel
+ok 22 /bookmarks/parse/fail-10.xbel
+PASS: bookmarkfile 22 /bookmarks/parse/fail-10.xbel
+ok 23 /bookmarks/parse/fail-01.xbel
+PASS: bookmarkfile 23 /bookmarks/parse/fail-01.xbel
+ok 24 /bookmarks/parse/fail-16.xbel
+PASS: bookmarkfile 24 /bookmarks/parse/fail-16.xbel
+# End of parse tests
+# End of bookmarks tests

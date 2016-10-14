@@ -1,0 +1,42 @@
+# random seed: R02S5fb566898aa7e6c424a70fdef6f7817e
+1..19
+# Start of unicode tests
+ok 1 /unicode/validate
+PASS: unicode 1 /unicode/validate
+ok 2 /unicode/character-type
+PASS: unicode 2 /unicode/character-type
+ok 3 /unicode/break-type
+PASS: unicode 3 /unicode/break-type
+ok 4 /unicode/script
+PASS: unicode 4 /unicode/script
+ok 5 /unicode/combining-class
+PASS: unicode 5 /unicode/combining-class
+ok 6 /unicode/mirror
+PASS: unicode 6 /unicode/mirror
+ok 7 /unicode/mark
+PASS: unicode 7 /unicode/mark
+ok 8 /unicode/title
+PASS: unicode 8 /unicode/title
+ok 9 /unicode/zero-width
+PASS: unicode 9 /unicode/zero-width
+ok 10 /unicode/defined
+PASS: unicode 10 /unicode/defined
+ok 11 /unicode/wide
+PASS: unicode 11 /unicode/wide
+ok 12 /unicode/compose
+PASS: unicode 12 /unicode/compose
+ok 13 /unicode/decompose
+PASS: unicode 13 /unicode/decompose
+ok 14 /unicode/fully-decompose-canonical
+PASS: unicode 14 /unicode/fully-decompose-canonical
+ok 15 /unicode/canonical-decomposition
+PASS: unicode 15 /unicode/canonical-decomposition
+ok 16 /unicode/decompose-tail
+PASS: unicode 16 /unicode/decompose-tail
+ok 17 /unicode/fully-decompose-len
+PASS: unicode 17 /unicode/fully-decompose-len
+ok 18 /unicode/iso15924
+PASS: unicode 18 /unicode/iso15924
+ok 19 /unicode/cases
+PASS: unicode 19 /unicode/cases
+# End of unicode tests

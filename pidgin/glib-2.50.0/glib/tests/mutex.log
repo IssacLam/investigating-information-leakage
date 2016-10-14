@@ -1,0 +1,14 @@
+# random seed: R02S061951d1997c166a377ed19dda8c2679
+1..5
+# Start of thread tests
+ok 1 /thread/mutex1
+PASS: mutex 1 /thread/mutex1
+ok 2 /thread/mutex2
+PASS: mutex 2 /thread/mutex2
+ok 3 /thread/mutex3
+PASS: mutex 3 /thread/mutex3
+ok 4 /thread/mutex4
+PASS: mutex 4 /thread/mutex4
+ok 5 /thread/mutex5
+PASS: mutex 5 /thread/mutex5
+# End of thread tests

@@ -1,0 +1,4 @@
+START: /home/parallels/Downloads/glib-2.50.0/tests/refcount/.libs/lt-properties2
+init 0x24d0400
+....................................................................................................dispose 0x24d0400!
+PASS properties2 (exit status: 0)

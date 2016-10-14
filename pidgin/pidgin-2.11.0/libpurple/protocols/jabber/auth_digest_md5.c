@@ -130,7 +130,9 @@ generate_response_value(JabberID *jid, const char *passwd, const char *nonce,
 	purple_cipher_context_digest(context, sizeof(result), result, NULL);
 
 	a1 = g_strdup_printf("xxxxxxxxxxxxxxxx:%s:%s", nonce, cnonce);
+	__CPROVER_assert(a1[0] == x, "TEST: g_strdup_printf is working");	
 	a1len = strlen(a1);
+	__CPROVER_assert(a1len != 0, "TEST: a1 is not Empty");
 	g_memmove(a1, result, 16);
 
 	purple_cipher_context_reset(context, NULL);
@@ -162,6 +164,13 @@ generate_response_value(JabberID *jid, const char *passwd, const char *nonce,
 	g_free(ha2);
 	g_free(kd);
 
+	__CPROVER_assert(convnode[0] == 0x0, "CHECK: convnode is sanitized.");
+	__CPROVER_assert(convpasswd[0] == 0x0, "CHECK: convpasswd is sanitized.");
+	__CPROVER_assert(x[0] == 0x0, "CHECK: x is sanitized.");
+	__CPROVER_assert(a1[0] == 0x0, "CHECK: a1 is sanitized.");
+	__CPROVER_assert(ha1[0] == 0x0, "CHECK: ha1 is sanitized.");
+	__CPROVER_assert(ha2[0] == 0x0, "CHECK: ha2 is sanitized.");
+	__CPROVER_assert(kd[0] == 0x0, "CHECK: kd is sanitized.");
 	return z;
 }
 
@@ -301,3 +310,18 @@ JabberSaslMech *jabber_auth_get_digest_md5_mech(void)
 {
 	return &digest_md5_mech;
 }
+
+int main(){
+  char *h1, *h2, *l, *r1, *r2;
+  JabberID *jid;
+  char *passwd1, *passwd2, *nonce, *cnonce, *a2, *realm;
+
+  r1 = generate_response_value(jid, passwd1, nonce, cnonce, a2, realm);
+  r2 = generate_response_value(jid, passwd2, nonce, cnonce, a2, realm);
+
+  for(int i = 0; i < 16; ++i)
+    __CPROVER_assert(r1[i] == r2[i], "ERROR: Information Leak");
+
+  return 0;
+}
+

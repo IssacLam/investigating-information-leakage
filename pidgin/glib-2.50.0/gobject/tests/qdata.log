@@ -1,0 +1,8 @@
+# random seed: R02S5f2d94b0912d8084297f28ff6fce7663
+1..2
+# Start of qdata tests
+ok 1 /qdata/threaded
+PASS: qdata 1 /qdata/threaded
+ok 2 /qdata/dup
+PASS: qdata 2 /qdata/dup
+# End of qdata tests

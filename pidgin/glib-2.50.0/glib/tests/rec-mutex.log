@@ -1,0 +1,12 @@
+# random seed: R02S26fb51fef4bcfd744119f5529970702d
+1..4
+# Start of thread tests
+ok 1 /thread/rec-mutex1
+PASS: rec-mutex 1 /thread/rec-mutex1
+ok 2 /thread/rec-mutex2
+PASS: rec-mutex 2 /thread/rec-mutex2
+ok 3 /thread/rec-mutex3
+PASS: rec-mutex 3 /thread/rec-mutex3
+ok 4 /thread/rec-mutex4
+PASS: rec-mutex 4 /thread/rec-mutex4
+# End of thread tests

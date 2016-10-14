@@ -1,0 +1,10 @@
+# random seed: R02S66540418ffc4eb2c083f83545eef9def
+1..3
+# Start of sort tests
+ok 1 /sort/basic
+PASS: sort 1 /sort/basic
+ok 2 /sort/stable
+PASS: sort 2 /sort/stable
+ok 3 /sort/big
+PASS: sort 3 /sort/big
+# End of sort tests

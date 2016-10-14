@@ -1,0 +1,16 @@
+# random seed: R02S0d4e83cb7a8a9ab1ae441af510a1fbc0
+1..6
+# Start of closure tests
+ok 1 /closure/idle
+PASS: closure 1 /closure/idle
+ok 2 /closure/timeout
+PASS: closure 2 /closure/timeout
+ok 3 /closure/iochannel
+PASS: closure 3 /closure/iochannel
+ok 4 /closure/child
+PASS: closure 4 /closure/child
+ok 5 /closure/fd
+PASS: closure 5 /closure/fd
+ok 6 /closure/signal
+PASS: closure 6 /closure/signal
+# End of closure tests

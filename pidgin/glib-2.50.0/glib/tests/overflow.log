@@ -1,0 +1,18 @@
+# random seed: R02S0cdfd2df15f19aa41036e1427268503d
+1..6
+# Start of glib tests
+# Start of checked-math tests
+ok 1 /glib/checked-math/guint-add
+PASS: overflow 1 /glib/checked-math/guint-add
+ok 2 /glib/checked-math/guint-mul
+PASS: overflow 2 /glib/checked-math/guint-mul
+ok 3 /glib/checked-math/guint64-add
+PASS: overflow 3 /glib/checked-math/guint64-add
+ok 4 /glib/checked-math/guint64-mul
+PASS: overflow 4 /glib/checked-math/guint64-mul
+ok 5 /glib/checked-math/gsize-add
+PASS: overflow 5 /glib/checked-math/gsize-add
+ok 6 /glib/checked-math/gsize-mul
+PASS: overflow 6 /glib/checked-math/gsize-mul
+# End of checked-math tests
+# End of glib tests

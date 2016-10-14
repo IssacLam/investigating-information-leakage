@@ -1,0 +1,8 @@
+GLib-Message: test_mapping: ok
+GLib-Message: test_private: ok
+GLib-Message: test_child_private: child spawned
+GLib-Message: test_child_private: received first child signal
+GLib-Message: test_child_private: received parent signal
+GLib-Message: test_child_private: received second child signal
+GLib-Message: test_child_private: ok
+PASS mapping-test (exit status: 0)

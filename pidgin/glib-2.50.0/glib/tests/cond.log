@@ -1,0 +1,12 @@
+# random seed: R02S9ca9df2b314c56a68fa2a4c357240b7d
+1..3
+# Start of thread tests
+ok 1 /thread/cond1
+PASS: cond 1 /thread/cond1
+ok 2 /thread/cond2
+PASS: cond 2 /thread/cond2
+# Start of cond tests
+ok 3 /thread/cond/wait-until
+PASS: cond 3 /thread/cond/wait-until
+# End of cond tests
+# End of thread tests

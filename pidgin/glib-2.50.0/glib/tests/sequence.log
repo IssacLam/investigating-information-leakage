@@ -1,0 +1,38 @@
+# random seed: R02S48d33ea720d58ac376f9c1994a8903ec
+1..16
+# Start of sequence tests
+ok 1 /sequence/out-of-range-jump
+PASS: sequence 1 /sequence/out-of-range-jump
+ok 2 /sequence/iter-move
+PASS: sequence 2 /sequence/iter-move
+ok 3 /sequence/insert-sorted-non-pointer
+PASS: sequence 3 /sequence/insert-sorted-non-pointer
+ok 4 /sequence/stable-sort
+PASS: sequence 4 /sequence/stable-sort
+ok 5 /sequence/is_empty
+PASS: sequence 5 /sequence/is_empty
+# Start of random tests
+ok 6 /sequence/random/seed:825541564
+PASS: sequence 6 /sequence/random/seed:825541564
+ok 7 /sequence/random/seed:801678400
+PASS: sequence 7 /sequence/random/seed:801678400
+ok 8 /sequence/random/seed:1477639090
+PASS: sequence 8 /sequence/random/seed:1477639090
+ok 9 /sequence/random/seed:3369132895
+PASS: sequence 9 /sequence/random/seed:3369132895
+ok 10 /sequence/random/seed:1192944867
+PASS: sequence 10 /sequence/random/seed:1192944867
+ok 11 /sequence/random/seed:770458294
+PASS: sequence 11 /sequence/random/seed:770458294
+ok 12 /sequence/random/seed:1099575817
+PASS: sequence 12 /sequence/random/seed:1099575817
+ok 13 /sequence/random/seed:590523467
+PASS: sequence 13 /sequence/random/seed:590523467
+ok 14 /sequence/random/seed:3583571454
+PASS: sequence 14 /sequence/random/seed:3583571454
+ok 15 /sequence/random/seed:579241222
+PASS: sequence 15 /sequence/random/seed:579241222
+ok 16 /sequence/random/seed:381934196
+PASS: sequence 16 /sequence/random/seed:381934196
+# End of random tests
+# End of sequence tests

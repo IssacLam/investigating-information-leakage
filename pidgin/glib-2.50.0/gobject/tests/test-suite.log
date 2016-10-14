@@ -1,0 +1,21 @@
+===============================================
+   glib 2.50.0: gobject/tests/test-suite.log
+===============================================
+
+# TOTAL: 111
+# PASS:  110
+# SKIP:  1
+# XFAIL: 0
+# FAIL:  0
+# XPASS: 0
+# ERROR: 0
+
+.. contents:: :depth: 2
+
+SKIP: signal-handler
+====================
+
+# random seed: R02Sa40f39793e3be3e9000ae0061f9741e0
+1..0
+SKIP: signal-handler
+

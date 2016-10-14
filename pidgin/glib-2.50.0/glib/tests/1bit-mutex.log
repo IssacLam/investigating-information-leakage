@@ -1,0 +1,10 @@
+# random seed: R02Sc36bb527a7838b9bd655fe62a5f8b776
+1..2
+# Start of glib tests
+# Start of 1bit-mutex tests
+ok 1 /glib/1bit-mutex/int
+PASS: 1bit-mutex 1 /glib/1bit-mutex/int
+ok 2 /glib/1bit-mutex/pointer
+PASS: 1bit-mutex 2 /glib/1bit-mutex/pointer
+# End of 1bit-mutex tests
+# End of glib tests

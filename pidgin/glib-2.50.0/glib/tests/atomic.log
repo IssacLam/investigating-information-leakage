@@ -1,0 +1,8 @@
+# random seed: R02S70953db2a929d5a18e281ffbd2e4c597
+1..2
+# Start of atomic tests
+ok 1 /atomic/types
+PASS: atomic 1 /atomic/types
+ok 2 /atomic/threaded
+PASS: atomic 2 /atomic/threaded
+# End of atomic tests

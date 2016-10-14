@@ -1,0 +1,12 @@
+# random seed: R02S845ee6fad839d480d6da7851cfcdfa0d
+1..4
+# Start of error tests
+ok 1 /error/overwrite
+PASS: error 1 /error/overwrite
+ok 2 /error/prefix
+PASS: error 2 /error/prefix
+ok 3 /error/literal
+PASS: error 3 /error/literal
+ok 4 /error/copy
+PASS: error 4 /error/copy
+# End of error tests

@@ -1,0 +1,37 @@
+**
+GLib:ERROR:fileutils.c:865:test_stdio_wrappers: assertion failed: (errno == EACCES)
+Aborted (core dumped)
+# random seed: R02S9ecacd35343cc1bcbea9c0c2aa70dbaa
+1..15
+# Start of fileutils tests
+ok 1 /fileutils/build-path
+PASS: fileutils 1 /fileutils/build-path
+ok 2 /fileutils/build-pathv
+PASS: fileutils 2 /fileutils/build-pathv
+ok 3 /fileutils/build-filename
+PASS: fileutils 3 /fileutils/build-filename
+ok 4 /fileutils/build-filenamev
+PASS: fileutils 4 /fileutils/build-filenamev
+ok 5 /fileutils/mkdir-with-parents
+PASS: fileutils 5 /fileutils/mkdir-with-parents
+ok 6 /fileutils/format-size-for-display
+PASS: fileutils 6 /fileutils/format-size-for-display
+ok 7 /fileutils/errors
+PASS: fileutils 7 /fileutils/errors
+ok 8 /fileutils/basename
+PASS: fileutils 8 /fileutils/basename
+ok 9 /fileutils/dir-make-tmp
+PASS: fileutils 9 /fileutils/dir-make-tmp
+ok 10 /fileutils/file-open-tmp
+PASS: fileutils 10 /fileutils/file-open-tmp
+ok 11 /fileutils/mkstemp
+PASS: fileutils 11 /fileutils/mkstemp
+ok 12 /fileutils/mkdtemp
+PASS: fileutils 12 /fileutils/mkdtemp
+ok 13 /fileutils/set-contents
+PASS: fileutils 13 /fileutils/set-contents
+ok 14 /fileutils/read-link
+PASS: fileutils 14 /fileutils/read-link
+# GLib:ERROR:fileutils.c:865:test_stdio_wrappers: assertion failed: (errno == EACCES)
+ERROR: fileutils - too few tests run (expected 15, got 14)
+ERROR: fileutils - exited with status 134 (terminated by signal 6?)

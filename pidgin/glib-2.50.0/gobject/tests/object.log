@@ -1,0 +1,11 @@
+# random seed: R02S1ed96b4b5f39406db787bd7d35b555fa
+1..2
+# Start of object tests
+# Start of constructor tests
+ok 1 /object/constructor/singleton
+PASS: object 1 /object/constructor/singleton
+# Bug Reference: http://bugzilla.gnome.org/661576
+ok 2 /object/constructor/infanticide
+PASS: object 2 /object/constructor/infanticide
+# End of constructor tests
+# End of object tests

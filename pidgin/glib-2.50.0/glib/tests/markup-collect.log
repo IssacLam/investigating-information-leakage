@@ -1,0 +1,48 @@
+# random seed: R02S0085395423a7f6e35ddcada3cb65a1a3
+1..21
+# Start of markup tests
+# Start of collect tests
+ok 1 /markup/collect/0
+PASS: markup-collect 1 /markup/collect/0
+ok 2 /markup/collect/1
+PASS: markup-collect 2 /markup/collect/1
+ok 3 /markup/collect/2
+PASS: markup-collect 3 /markup/collect/2
+ok 4 /markup/collect/3
+PASS: markup-collect 4 /markup/collect/3
+ok 5 /markup/collect/4
+PASS: markup-collect 5 /markup/collect/4
+ok 6 /markup/collect/5
+PASS: markup-collect 6 /markup/collect/5
+ok 7 /markup/collect/6
+PASS: markup-collect 7 /markup/collect/6
+ok 8 /markup/collect/7
+PASS: markup-collect 8 /markup/collect/7
+ok 9 /markup/collect/8
+PASS: markup-collect 9 /markup/collect/8
+ok 10 /markup/collect/9
+PASS: markup-collect 10 /markup/collect/9
+ok 11 /markup/collect/10
+PASS: markup-collect 11 /markup/collect/10
+ok 12 /markup/collect/11
+PASS: markup-collect 12 /markup/collect/11
+ok 13 /markup/collect/12
+PASS: markup-collect 13 /markup/collect/12
+ok 14 /markup/collect/13
+PASS: markup-collect 14 /markup/collect/13
+ok 15 /markup/collect/14
+PASS: markup-collect 15 /markup/collect/14
+ok 16 /markup/collect/15
+PASS: markup-collect 16 /markup/collect/15
+ok 17 /markup/collect/16
+PASS: markup-collect 17 /markup/collect/16
+ok 18 /markup/collect/17
+PASS: markup-collect 18 /markup/collect/17
+ok 19 /markup/collect/18
+PASS: markup-collect 19 /markup/collect/18
+ok 20 /markup/collect/19
+PASS: markup-collect 20 /markup/collect/19
+ok 21 /markup/collect/cleanup
+PASS: markup-collect 21 /markup/collect/cleanup
+# End of collect tests
+# End of markup tests

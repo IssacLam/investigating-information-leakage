@@ -1,0 +1,137 @@
+test cmdline: foo bar
+test cmdline: foo 'bar'
+test cmdline: foo "bar"
+test cmdline: foo '' 'bar'
+test cmdline: foo "bar"'baz'blah'foo'\''blah'"boo"
+test cmdline: foo 	 	blah	foo		bar  baz
+test cmdline: foo '    spaces more spaces lots of     spaces in this   '  	
+test cmdline: foo \
+bar
+test cmdline: foo '' ''
+test cmdline: foo \" la la la
+test cmdline: foo \ foo woo woo\ 
+test cmdline: foo "yada yada \$\""
+test cmdline: foo "c:\\"
+test cmdline: foo # bla bla bla
+ bar
+test cmdline: foo a#b
+test cmdline: #foo
+test cmdline: foo bar \
+test cmdline: foo 'bar baz
+test cmdline: foo '"bar" baz
+test cmdline: 
+test cmdline:   
+test cmdline: # foo bar
+test cmdline: foo '/bar/summer'\''09 tours.pdf'
+# random seed: R02S5ee4989ed9b6991a9b2f9603cbcc86ec
+1..51
+# Start of shell tests
+# Start of cmdline tests
+ok 1 /shell/cmdline/0
+PASS: shell 1 /shell/cmdline/0
+ok 2 /shell/cmdline/1
+PASS: shell 2 /shell/cmdline/1
+ok 3 /shell/cmdline/2
+PASS: shell 3 /shell/cmdline/2
+ok 4 /shell/cmdline/3
+PASS: shell 4 /shell/cmdline/3
+ok 5 /shell/cmdline/4
+PASS: shell 5 /shell/cmdline/4
+ok 6 /shell/cmdline/5
+PASS: shell 6 /shell/cmdline/5
+ok 7 /shell/cmdline/6
+PASS: shell 7 /shell/cmdline/6
+ok 8 /shell/cmdline/7
+PASS: shell 8 /shell/cmdline/7
+ok 9 /shell/cmdline/8
+PASS: shell 9 /shell/cmdline/8
+ok 10 /shell/cmdline/9
+PASS: shell 10 /shell/cmdline/9
+ok 11 /shell/cmdline/10
+PASS: shell 11 /shell/cmdline/10
+ok 12 /shell/cmdline/11
+PASS: shell 12 /shell/cmdline/11
+ok 13 /shell/cmdline/12
+PASS: shell 13 /shell/cmdline/12
+ok 14 /shell/cmdline/13
+PASS: shell 14 /shell/cmdline/13
+ok 15 /shell/cmdline/14
+PASS: shell 15 /shell/cmdline/14
+ok 16 /shell/cmdline/15
+PASS: shell 16 /shell/cmdline/15
+ok 17 /shell/cmdline/16
+PASS: shell 17 /shell/cmdline/16
+ok 18 /shell/cmdline/17
+PASS: shell 18 /shell/cmdline/17
+ok 19 /shell/cmdline/18
+PASS: shell 19 /shell/cmdline/18
+ok 20 /shell/cmdline/19
+PASS: shell 20 /shell/cmdline/19
+ok 21 /shell/cmdline/20
+PASS: shell 21 /shell/cmdline/20
+ok 22 /shell/cmdline/21
+PASS: shell 22 /shell/cmdline/21
+ok 23 /shell/cmdline/22
+PASS: shell 23 /shell/cmdline/22
+# End of cmdline tests
+# Start of quote tests
+ok 24 /shell/quote/0
+PASS: shell 24 /shell/quote/0
+ok 25 /shell/quote/1
+PASS: shell 25 /shell/quote/1
+ok 26 /shell/quote/2
+PASS: shell 26 /shell/quote/2
+ok 27 /shell/quote/3
+PASS: shell 27 /shell/quote/3
+ok 28 /shell/quote/4
+PASS: shell 28 /shell/quote/4
+ok 29 /shell/quote/5
+PASS: shell 29 /shell/quote/5
+ok 30 /shell/quote/6
+PASS: shell 30 /shell/quote/6
+# End of quote tests
+# Start of unquote tests
+ok 31 /shell/unquote/0
+PASS: shell 31 /shell/unquote/0
+ok 32 /shell/unquote/1
+PASS: shell 32 /shell/unquote/1
+ok 33 /shell/unquote/2
+PASS: shell 33 /shell/unquote/2
+ok 34 /shell/unquote/3
+PASS: shell 34 /shell/unquote/3
+ok 35 /shell/unquote/4
+PASS: shell 35 /shell/unquote/4
+ok 36 /shell/unquote/5
+PASS: shell 36 /shell/unquote/5
+ok 37 /shell/unquote/6
+PASS: shell 37 /shell/unquote/6
+ok 38 /shell/unquote/7
+PASS: shell 38 /shell/unquote/7
+ok 39 /shell/unquote/8
+PASS: shell 39 /shell/unquote/8
+ok 40 /shell/unquote/9
+PASS: shell 40 /shell/unquote/9
+ok 41 /shell/unquote/10
+PASS: shell 41 /shell/unquote/10
+ok 42 /shell/unquote/11
+PASS: shell 42 /shell/unquote/11
+ok 43 /shell/unquote/12
+PASS: shell 43 /shell/unquote/12
+ok 44 /shell/unquote/13
+PASS: shell 44 /shell/unquote/13
+ok 45 /shell/unquote/14
+PASS: shell 45 /shell/unquote/14
+ok 46 /shell/unquote/15
+PASS: shell 46 /shell/unquote/15
+ok 47 /shell/unquote/16
+PASS: shell 47 /shell/unquote/16
+ok 48 /shell/unquote/17
+PASS: shell 48 /shell/unquote/17
+ok 49 /shell/unquote/18
+PASS: shell 49 /shell/unquote/18
+ok 50 /shell/unquote/19
+PASS: shell 50 /shell/unquote/19
+ok 51 /shell/unquote/20
+PASS: shell 51 /shell/unquote/20
+# End of unquote tests
+# End of shell tests

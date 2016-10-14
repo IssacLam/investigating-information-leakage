@@ -1,0 +1,6 @@
+# random seed: R02S90fca53ce917814be356846c02f1185b
+1..1
+# Start of hook tests
+ok 1 /hook/test1
+PASS: hook 1 /hook/test1
+# End of hook tests

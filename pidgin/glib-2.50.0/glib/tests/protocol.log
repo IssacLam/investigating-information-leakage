@@ -1,0 +1,26 @@
+# random seed: R02Sa2c00c8127cdfee4914218a1d9f9023f
+1..9
+# Start of glib tests
+# Start of testing tests
+# Start of protocol tests
+ok 1 /glib/testing/protocol/debug
+PASS: protocol 1 /glib/testing/protocol/debug
+ok 2 /glib/testing/protocol/info
+PASS: protocol 2 /glib/testing/protocol/info
+ok 3 /glib/testing/protocol/message
+PASS: protocol 3 /glib/testing/protocol/message
+ok 4 /glib/testing/protocol/warning
+PASS: protocol 4 /glib/testing/protocol/warning
+ok 5 /glib/testing/protocol/critical
+PASS: protocol 5 /glib/testing/protocol/critical
+ok 6 /glib/testing/protocol/error
+PASS: protocol 6 /glib/testing/protocol/error
+ok 7 /glib/testing/protocol/gtest-message
+PASS: protocol 7 /glib/testing/protocol/gtest-message
+ok 8 /glib/testing/protocol/test-message
+PASS: protocol 8 /glib/testing/protocol/test-message
+ok 9 /glib/testing/protocol/test-error
+PASS: protocol 9 /glib/testing/protocol/test-error
+# End of protocol tests
+# End of testing tests
+# End of glib tests

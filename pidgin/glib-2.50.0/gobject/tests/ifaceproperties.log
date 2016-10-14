@@ -1,0 +1,21 @@
+# random seed: R02S33691e89c806e7b6b8a99ddc99968449
+1..7
+# Start of interface tests
+# Start of properties tests
+ok 1 /interface/properties/set
+PASS: ifaceproperties 1 /interface/properties/set
+ok 2 /interface/properties/notify
+PASS: ifaceproperties 2 /interface/properties/notify
+ok 3 /interface/properties/find-overridden
+PASS: ifaceproperties 3 /interface/properties/find-overridden
+ok 4 /interface/properties/list-overridden
+PASS: ifaceproperties 4 /interface/properties/list-overridden
+ok 5 /interface/properties/find-interface
+PASS: ifaceproperties 5 /interface/properties/find-interface
+ok 6 /interface/properties/list-interface
+PASS: ifaceproperties 6 /interface/properties/list-interface
+# Bug Reference: http://bugzilla.gnome.org/637738
+ok 7 /interface/properties/not-overridden
+PASS: ifaceproperties 7 /interface/properties/not-overridden
+# End of properties tests
+# End of interface tests

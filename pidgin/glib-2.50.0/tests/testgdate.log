@@ -1,0 +1,123 @@
+checking GDate...
+Locale set to en_US.UTF-8
+Today is a Wednesday, 10/12/2016
+1 second into the Unix epoch it was a Thursday, in the month of January, 01/01/1970
+Our "Julian" epoch begins on a Monday, in the month of January, 01/01/1
+testing 104 years
+ (Break in sequence of requested years to check)
+Checking year 1.................. done
+Checking year 2.................. done
+Checking year 3................... done
+Checking year 4.................. done
+Checking year 5................... done
+Checking year 6.................. done
+Checking year 7.................. done
+Checking year 8................... done
+Checking year 9.................. done
+Checking year 10................... done
+Checking year 11.................. done
+Checking year 12................... done
+Checking year 13.................. done
+Checking year 14.................. done
+ (Break in sequence of requested years to check)
+Checking year 98................... done
+Checking year 99.................. done
+Checking year 100................... done
+Checking year 101.................. done
+Checking year 102.................. done
+Checking year 103................... done
+ (Break in sequence of requested years to check)
+Checking year 397.................. done
+Checking year 398................... done
+Checking year 399.................. done
+Checking year 400................... done
+Checking year 401.................. done
+Checking year 402.................. done
+Checking year 403................... done
+Checking year 404.................. done
+Checking year 405................... done
+Checking year 406.................. done
+ (Break in sequence of requested years to check)
+Checking year 1598.................. done
+Checking year 1599................... done
+Checking year 1600.................. done
+Checking year 1601................... done
+Checking year 1602.................. done
+ (Break in sequence of requested years to check)
+Checking year 1650................... done
+Checking year 1651.................. done
+ (Break in sequence of requested years to check)
+Checking year 1897.................. done
+Checking year 1898................... done
+Checking year 1899.................. done
+Checking year 1900................... done
+Checking year 1901.................. done
+Checking year 1902.................. done
+Checking year 1903................... done
+ (Break in sequence of requested years to check)
+Checking year 1961.................. done
+Checking year 1962................... done
+Checking year 1963.................. done
+Checking year 1964................... done
+Checking year 1965.................. done
+ (Break in sequence of requested years to check)
+Checking year 1967.................. done
+Checking year 1968................... done
+Checking year 1969.................. done
+Checking year 1970................... done
+Checking year 1971.................. done
+Checking year 1972................... done
+Checking year 1973.................. done
+Checking year 1974.................. done
+Checking year 1975................... done
+Checking year 1976.................. done
+Checking year 1977................... done
+Checking year 1978.................. done
+Checking year 1979.................. done
+Checking year 1980................... done
+Checking year 1981.................. done
+Checking year 1982................... done
+Checking year 1983.................. done
+Checking year 1984................... done
+Checking year 1985.................. done
+Checking year 1986.................. done
+Checking year 1987................... done
+Checking year 1988.................. done
+Checking year 1989................... done
+Checking year 1990.................. done
+Checking year 1991................... done
+Checking year 1992.................. done
+Checking year 1993.................. done
+Checking year 1994................... done
+Checking year 1995.................. done
+Checking year 1996................... done
+Checking year 1997.................. done
+Checking year 1998................... done
+Checking year 1999.................. done
+Checking year 2000.................. done
+Checking year 2001................... done
+Checking year 2002.................. done
+Checking year 2003................... done
+Checking year 2004.................. done
+Checking year 2005.................. done
+Checking year 2006................... done
+Checking year 2007.................. done
+Checking year 2008................... done
+Checking year 2009.................. done
+Checking year 2010................... done
+Checking year 2011.................. done
+Checking year 2012.................. done
+ (Break in sequence of requested years to check)
+Checking year 3000................... done
+Checking year 3001.................. done
+Checking year 3002................... done
+ (Break in sequence of requested years to check)
+Checking year 3998.................. done
+Checking year 3999................... done
+Checking year 4000.................. done
+Checking year 4001.................. done
+Checking year 4002................... done
+Checking year 4003.................. done
+
+19156985 tests passed, 0 failed
+PASS testgdate (exit status: 0)

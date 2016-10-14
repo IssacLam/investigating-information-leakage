@@ -1,0 +1,9 @@
+# random seed: R02Sb1980b1637bcc87beb6607f37f7bb05a
+1..2
+# Start of rand tests
+ok 1 /rand/test-rand
+PASS: rand 1 /rand/test-rand
+# Bug Reference: http://bugzilla.gnome.org/502560
+ok 2 /rand/double-range
+PASS: rand 2 /rand/double-range
+# End of rand tests

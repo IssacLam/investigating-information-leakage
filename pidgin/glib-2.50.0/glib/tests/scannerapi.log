@@ -1,0 +1,12 @@
+# random seed: R02S61a3a8685ed2bf0deacc18946ade2d46
+1..4
+# Start of scanner tests
+ok 1 /scanner/warn
+PASS: scannerapi 1 /scanner/warn
+ok 2 /scanner/error
+PASS: scannerapi 2 /scanner/error
+ok 3 /scanner/symbols
+PASS: scannerapi 3 /scanner/symbols
+ok 4 /scanner/tokens
+PASS: scannerapi 4 /scanner/tokens
+# End of scanner tests

@@ -1,0 +1,8 @@
+Children: 3     Iters: 10000
+Children: 3     Iters: 10000
+Children: 3     Iters: 10000
+Elapsed user: 52
+Elapsed system: 164
+Elapsed total: 216
+total / iteration: 0.0072
+PASS timeloop-closure (exit status: 0)

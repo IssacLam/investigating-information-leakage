@@ -1,0 +1,100 @@
+# random seed: R02S4dfcbb4964179ebc0df20fee62acf947
+1..45
+# Start of GDateTime tests
+# Bug Reference: http://bugzilla.gnome.org/702674
+ok 1 /GDateTime/invalid
+PASS: gdatetime 1 /GDateTime/invalid
+ok 2 /GDateTime/add_days
+PASS: gdatetime 2 /GDateTime/add_days
+ok 3 /GDateTime/add_full
+PASS: gdatetime 3 /GDateTime/add_full
+ok 4 /GDateTime/add_hours
+PASS: gdatetime 4 /GDateTime/add_hours
+ok 5 /GDateTime/add_minutes
+PASS: gdatetime 5 /GDateTime/add_minutes
+ok 6 /GDateTime/add_months
+PASS: gdatetime 6 /GDateTime/add_months
+ok 7 /GDateTime/add_seconds
+PASS: gdatetime 7 /GDateTime/add_seconds
+ok 8 /GDateTime/add_weeks
+PASS: gdatetime 8 /GDateTime/add_weeks
+ok 9 /GDateTime/add_years
+PASS: gdatetime 9 /GDateTime/add_years
+ok 10 /GDateTime/compare
+PASS: gdatetime 10 /GDateTime/compare
+ok 11 /GDateTime/diff
+PASS: gdatetime 11 /GDateTime/diff
+ok 12 /GDateTime/equal
+PASS: gdatetime 12 /GDateTime/equal
+ok 13 /GDateTime/get_day_of_week
+PASS: gdatetime 13 /GDateTime/get_day_of_week
+ok 14 /GDateTime/get_day_of_month
+PASS: gdatetime 14 /GDateTime/get_day_of_month
+ok 15 /GDateTime/get_day_of_year
+PASS: gdatetime 15 /GDateTime/get_day_of_year
+ok 16 /GDateTime/get_hour
+PASS: gdatetime 16 /GDateTime/get_hour
+ok 17 /GDateTime/get_microsecond
+PASS: gdatetime 17 /GDateTime/get_microsecond
+ok 18 /GDateTime/get_minute
+PASS: gdatetime 18 /GDateTime/get_minute
+ok 19 /GDateTime/get_month
+PASS: gdatetime 19 /GDateTime/get_month
+ok 20 /GDateTime/get_second
+PASS: gdatetime 20 /GDateTime/get_second
+ok 21 /GDateTime/get_utc_offset
+PASS: gdatetime 21 /GDateTime/get_utc_offset
+ok 22 /GDateTime/get_year
+PASS: gdatetime 22 /GDateTime/get_year
+ok 23 /GDateTime/hash
+PASS: gdatetime 23 /GDateTime/hash
+ok 24 /GDateTime/new_from_unix
+PASS: gdatetime 24 /GDateTime/new_from_unix
+ok 25 /GDateTime/new_from_unix_utc
+PASS: gdatetime 25 /GDateTime/new_from_unix_utc
+ok 26 /GDateTime/new_from_timeval
+PASS: gdatetime 26 /GDateTime/new_from_timeval
+ok 27 /GDateTime/new_from_timeval_utc
+PASS: gdatetime 27 /GDateTime/new_from_timeval_utc
+ok 28 /GDateTime/new_full
+PASS: gdatetime 28 /GDateTime/new_full
+ok 29 /GDateTime/now
+PASS: gdatetime 29 /GDateTime/now
+ok 30 /GDateTime/printf
+PASS: gdatetime 30 /GDateTime/printf
+# locale ja_JP.eucjp not available, skipping non-UTF8 tests
+ok 31 /GDateTime/non_utf8_printf
+PASS: gdatetime 31 /GDateTime/non_utf8_printf
+ok 32 /GDateTime/strftime
+PASS: gdatetime 32 /GDateTime/strftime
+# locale fa_IR not available, skipping O modifier tests
+ok 33 /GDateTime/modifiers
+PASS: gdatetime 33 /GDateTime/modifiers
+ok 34 /GDateTime/to_local
+PASS: gdatetime 34 /GDateTime/to_local
+ok 35 /GDateTime/to_unix
+PASS: gdatetime 35 /GDateTime/to_unix
+ok 36 /GDateTime/to_timeval
+PASS: gdatetime 36 /GDateTime/to_timeval
+ok 37 /GDateTime/to_utc
+PASS: gdatetime 37 /GDateTime/to_utc
+ok 38 /GDateTime/now_utc
+PASS: gdatetime 38 /GDateTime/now_utc
+ok 39 /GDateTime/dst
+PASS: gdatetime 39 /GDateTime/dst
+# Bug Reference: http://bugzilla.gnome.org/642935
+ok 40 /GDateTime/test_z
+PASS: gdatetime 40 /GDateTime/test_z
+ok 41 /GDateTime/test-all-dates
+PASS: gdatetime 41 /GDateTime/test-all-dates
+# End of GDateTime tests
+# Start of GTimeZone tests
+ok 42 /GTimeZone/find-interval
+PASS: gdatetime 42 /GTimeZone/find-interval
+ok 43 /GTimeZone/adjust-time
+PASS: gdatetime 43 /GTimeZone/adjust-time
+ok 44 /GTimeZone/no-header
+PASS: gdatetime 44 /GTimeZone/no-header
+ok 45 /GTimeZone/posix-parse
+PASS: gdatetime 45 /GTimeZone/posix-parse
+# End of GTimeZone tests

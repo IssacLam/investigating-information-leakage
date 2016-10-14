@@ -1,0 +1,12 @@
+# random seed: R02Sfdcae4a20cac3f64cafa3ae694bea9be
+1..4
+# Start of thread tests
+ok 1 /thread/once1
+PASS: once 1 /thread/once1
+ok 2 /thread/once2
+PASS: once 2 /thread/once2
+ok 3 /thread/once3
+PASS: once 3 /thread/once3
+ok 4 /thread/once4
+PASS: once 4 /thread/once4
+# End of thread tests

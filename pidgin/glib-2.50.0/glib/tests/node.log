@@ -1,0 +1,16 @@
+# random seed: R02S867fb46d25bcbad17c950098734c6578
+1..6
+# Start of node tests
+ok 1 /node/allocation
+PASS: node 1 /node/allocation
+ok 2 /node/construction
+PASS: node 2 /node/construction
+ok 3 /node/traversal
+PASS: node 3 /node/traversal
+ok 4 /node/misc
+PASS: node 4 /node/misc
+ok 5 /node/unlink
+PASS: node 5 /node/unlink
+ok 6 /node/copy
+PASS: node 6 /node/copy
+# End of node tests

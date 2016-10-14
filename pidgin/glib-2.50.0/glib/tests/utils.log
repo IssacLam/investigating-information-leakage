@@ -1,0 +1,57 @@
+# random seed: R02Saf52f30556f681cebfbbb4cd4afdaf90
+1..25
+# Start of utils tests
+ok 1 /utils/language-names
+PASS: utils 1 /utils/language-names
+ok 2 /utils/locale-variants
+PASS: utils 2 /utils/locale-variants
+ok 3 /utils/version
+PASS: utils 3 /utils/version
+ok 4 /utils/appname
+PASS: utils 4 /utils/appname
+# Bug Reference: http://bugzilla.gnome.org/627969
+ok 5 /utils/tmpdir
+PASS: utils 5 /utils/tmpdir
+ok 6 /utils/bits
+PASS: utils 6 /utils/bits
+ok 7 /utils/swap
+PASS: utils 7 /utils/swap
+ok 8 /utils/find-program
+PASS: utils 8 /utils/find-program
+ok 9 /utils/debug
+PASS: utils 9 /utils/debug
+ok 10 /utils/codeset
+PASS: utils 10 /utils/codeset
+ok 11 /utils/codeset2
+PASS: utils 11 /utils/codeset2
+ok 12 /utils/basename
+PASS: utils 12 /utils/basename
+ok 13 /utils/gettext
+PASS: utils 13 /utils/gettext
+ok 14 /utils/username
+PASS: utils 14 /utils/username
+ok 15 /utils/realname
+PASS: utils 15 /utils/realname
+ok 16 /utils/hostname
+PASS: utils 16 /utils/hostname
+ok 17 /utils/xdgdirs
+PASS: utils 17 /utils/xdgdirs
+ok 18 /utils/specialdir
+PASS: utils 18 /utils/specialdir
+ok 19 /utils/clear-pointer
+PASS: utils 19 /utils/clear-pointer
+ok 20 /utils/take-pointer
+PASS: utils 20 /utils/take-pointer
+ok 21 /utils/misc-mem
+PASS: utils 21 /utils/misc-mem
+ok 22 /utils/nullify
+PASS: utils 22 /utils/nullify
+ok 23 /utils/atexit
+PASS: utils 23 /utils/atexit
+ok 24 /utils/check-setuid
+PASS: utils 24 /utils/check-setuid
+# Start of specialdir tests
+ok 25 /utils/specialdir/desktop
+PASS: utils 25 /utils/specialdir/desktop
+# End of specialdir tests
+# End of utils tests

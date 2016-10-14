@@ -1,0 +1,6 @@
+# random seed: R02S652e107e2d05bb117763ba657aed55f7
+1..1
+# Start of cache tests
+ok 1 /cache/basic
+PASS: cache 1 /cache/basic
+# End of cache tests

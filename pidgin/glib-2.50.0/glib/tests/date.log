@@ -1,0 +1,230 @@
+# random seed: R02S30887f4666b5dba34b7b2ba08d7ec237
+1..112
+# Start of date tests
+ok 1 /date/basic
+PASS: date 1 /date/basic
+ok 2 /date/empty
+PASS: date 2 /date/empty
+ok 3 /date/dmy
+PASS: date 3 /date/dmy
+ok 4 /date/julian
+PASS: date 4 /date/julian
+ok 5 /date/dates
+PASS: date 5 /date/dates
+ok 6 /date/parse
+PASS: date 6 /date/parse
+ok 7 /date/clamp
+PASS: date 7 /date/clamp
+ok 8 /date/order
+PASS: date 8 /date/order
+# Start of year tests
+ok 9 /date/year/1
+PASS: date 9 /date/year/1
+ok 10 /date/year/2
+PASS: date 10 /date/year/2
+ok 11 /date/year/3
+PASS: date 11 /date/year/3
+ok 12 /date/year/4
+PASS: date 12 /date/year/4
+ok 13 /date/year/5
+PASS: date 13 /date/year/5
+ok 14 /date/year/6
+PASS: date 14 /date/year/6
+ok 15 /date/year/7
+PASS: date 15 /date/year/7
+ok 16 /date/year/8
+PASS: date 16 /date/year/8
+ok 17 /date/year/9
+PASS: date 17 /date/year/9
+ok 18 /date/year/10
+PASS: date 18 /date/year/10
+ok 19 /date/year/11
+PASS: date 19 /date/year/11
+ok 20 /date/year/12
+PASS: date 20 /date/year/12
+ok 21 /date/year/13
+PASS: date 21 /date/year/13
+ok 22 /date/year/14
+PASS: date 22 /date/year/14
+ok 23 /date/year/98
+PASS: date 23 /date/year/98
+ok 24 /date/year/99
+PASS: date 24 /date/year/99
+ok 25 /date/year/100
+PASS: date 25 /date/year/100
+ok 26 /date/year/101
+PASS: date 26 /date/year/101
+ok 27 /date/year/102
+PASS: date 27 /date/year/102
+ok 28 /date/year/103
+PASS: date 28 /date/year/103
+ok 29 /date/year/397
+PASS: date 29 /date/year/397
+ok 30 /date/year/398
+PASS: date 30 /date/year/398
+ok 31 /date/year/399
+PASS: date 31 /date/year/399
+ok 32 /date/year/400
+PASS: date 32 /date/year/400
+ok 33 /date/year/401
+PASS: date 33 /date/year/401
+ok 34 /date/year/402
+PASS: date 34 /date/year/402
+ok 35 /date/year/403
+PASS: date 35 /date/year/403
+ok 36 /date/year/404
+PASS: date 36 /date/year/404
+ok 37 /date/year/405
+PASS: date 37 /date/year/405
+ok 38 /date/year/406
+PASS: date 38 /date/year/406
+ok 39 /date/year/1598
+PASS: date 39 /date/year/1598
+ok 40 /date/year/1599
+PASS: date 40 /date/year/1599
+ok 41 /date/year/1600
+PASS: date 41 /date/year/1600
+ok 42 /date/year/1601
+PASS: date 42 /date/year/1601
+ok 43 /date/year/1602
+PASS: date 43 /date/year/1602
+ok 44 /date/year/1650
+PASS: date 44 /date/year/1650
+ok 45 /date/year/1651
+PASS: date 45 /date/year/1651
+ok 46 /date/year/1897
+PASS: date 46 /date/year/1897
+ok 47 /date/year/1898
+PASS: date 47 /date/year/1898
+ok 48 /date/year/1899
+PASS: date 48 /date/year/1899
+ok 49 /date/year/1900
+PASS: date 49 /date/year/1900
+ok 50 /date/year/1901
+PASS: date 50 /date/year/1901
+ok 51 /date/year/1902
+PASS: date 51 /date/year/1902
+ok 52 /date/year/1903
+PASS: date 52 /date/year/1903
+ok 53 /date/year/1961
+PASS: date 53 /date/year/1961
+ok 54 /date/year/1962
+PASS: date 54 /date/year/1962
+ok 55 /date/year/1963
+PASS: date 55 /date/year/1963
+ok 56 /date/year/1964
+PASS: date 56 /date/year/1964
+ok 57 /date/year/1965
+PASS: date 57 /date/year/1965
+ok 58 /date/year/1967
+PASS: date 58 /date/year/1967
+ok 59 /date/year/1968
+PASS: date 59 /date/year/1968
+ok 60 /date/year/1969
+PASS: date 60 /date/year/1969
+ok 61 /date/year/1970
+PASS: date 61 /date/year/1970
+ok 62 /date/year/1971
+PASS: date 62 /date/year/1971
+ok 63 /date/year/1972
+PASS: date 63 /date/year/1972
+ok 64 /date/year/1973
+PASS: date 64 /date/year/1973
+ok 65 /date/year/1974
+PASS: date 65 /date/year/1974
+ok 66 /date/year/1975
+PASS: date 66 /date/year/1975
+ok 67 /date/year/1976
+PASS: date 67 /date/year/1976
+ok 68 /date/year/1977
+PASS: date 68 /date/year/1977
+ok 69 /date/year/1978
+PASS: date 69 /date/year/1978
+ok 70 /date/year/1979
+PASS: date 70 /date/year/1979
+ok 71 /date/year/1980
+PASS: date 71 /date/year/1980
+ok 72 /date/year/1981
+PASS: date 72 /date/year/1981
+ok 73 /date/year/1982
+PASS: date 73 /date/year/1982
+ok 74 /date/year/1983
+PASS: date 74 /date/year/1983
+ok 75 /date/year/1984
+PASS: date 75 /date/year/1984
+ok 76 /date/year/1985
+PASS: date 76 /date/year/1985
+ok 77 /date/year/1986
+PASS: date 77 /date/year/1986
+ok 78 /date/year/1987
+PASS: date 78 /date/year/1987
+ok 79 /date/year/1988
+PASS: date 79 /date/year/1988
+ok 80 /date/year/1989
+PASS: date 80 /date/year/1989
+ok 81 /date/year/1990
+PASS: date 81 /date/year/1990
+ok 82 /date/year/1991
+PASS: date 82 /date/year/1991
+ok 83 /date/year/1992
+PASS: date 83 /date/year/1992
+ok 84 /date/year/1993
+PASS: date 84 /date/year/1993
+ok 85 /date/year/1994
+PASS: date 85 /date/year/1994
+ok 86 /date/year/1995
+PASS: date 86 /date/year/1995
+ok 87 /date/year/1996
+PASS: date 87 /date/year/1996
+ok 88 /date/year/1997
+PASS: date 88 /date/year/1997
+ok 89 /date/year/1998
+PASS: date 89 /date/year/1998
+ok 90 /date/year/1999
+PASS: date 90 /date/year/1999
+ok 91 /date/year/2000
+PASS: date 91 /date/year/2000
+ok 92 /date/year/2001
+PASS: date 92 /date/year/2001
+ok 93 /date/year/2002
+PASS: date 93 /date/year/2002
+ok 94 /date/year/2003
+PASS: date 94 /date/year/2003
+ok 95 /date/year/2004
+PASS: date 95 /date/year/2004
+ok 96 /date/year/2005
+PASS: date 96 /date/year/2005
+ok 97 /date/year/2006
+PASS: date 97 /date/year/2006
+ok 98 /date/year/2007
+PASS: date 98 /date/year/2007
+ok 99 /date/year/2008
+PASS: date 99 /date/year/2008
+ok 100 /date/year/2009
+PASS: date 100 /date/year/2009
+ok 101 /date/year/2010
+PASS: date 101 /date/year/2010
+ok 102 /date/year/2011
+PASS: date 102 /date/year/2011
+ok 103 /date/year/2012
+PASS: date 103 /date/year/2012
+ok 104 /date/year/3000
+PASS: date 104 /date/year/3000
+ok 105 /date/year/3001
+PASS: date 105 /date/year/3001
+ok 106 /date/year/3002
+PASS: date 106 /date/year/3002
+ok 107 /date/year/3998
+PASS: date 107 /date/year/3998
+ok 108 /date/year/3999
+PASS: date 108 /date/year/3999
+ok 109 /date/year/4000
+PASS: date 109 /date/year/4000
+ok 110 /date/year/4001
+PASS: date 110 /date/year/4001
+ok 111 /date/year/4002
+PASS: date 111 /date/year/4002
+ok 112 /date/year/4003
+PASS: date 112 /date/year/4003
+# End of year tests
+# End of date tests

@@ -1,0 +1,22 @@
+# random seed: R02S05c81c9c46086695680e47c09dd00359
+1..8
+# Start of queue tests
+ok 1 /queue/basic
+PASS: queue 1 /queue/basic
+ok 2 /queue/copy
+PASS: queue 2 /queue/copy
+ok 3 /queue/off-by-one
+PASS: queue 3 /queue/off-by-one
+ok 4 /queue/find-custom
+PASS: queue 4 /queue/find-custom
+ok 5 /queue/static
+PASS: queue 5 /queue/static
+ok 6 /queue/clear
+PASS: queue 6 /queue/clear
+ok 7 /queue/free-full
+PASS: queue 7 /queue/free-full
+# Start of random tests
+ok 8 /queue/random/seed:80145248
+PASS: queue 8 /queue/random/seed:80145248
+# End of random tests
+# End of queue tests

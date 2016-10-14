@@ -1,0 +1,10 @@
+# random seed: R02Sc4b53d89f749776599129b78a453ea10
+1..3
+# Start of utf8 tests
+ok 1 /utf8/offsets
+PASS: utf8-pointer 1 /utf8/offsets
+ok 2 /utf8/lengths
+PASS: utf8-pointer 2 /utf8/lengths
+ok 3 /utf8/find
+PASS: utf8-pointer 3 /utf8/find
+# End of utf8 tests

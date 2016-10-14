@@ -1,0 +1,151 @@
+Cannot set locale to de_DE.UTF-8, skipping
+# random seed: R02S422c0e021f93e15f36bc7c52c92d5027
+1..55
+# Start of option tests
+ok 1 /option/basic
+PASS: option-context 1 /option/basic
+ok 2 /option/translate
+PASS: option-context 2 /option/translate
+ok 3 /option/strict-posix
+PASS: option-context 3 /option/strict-posix
+# Start of help tests
+ok 4 /option/help/options
+PASS: option-context 4 /option/help/options
+ok 5 /option/help/no-options
+PASS: option-context 5 /option/help/no-options
+# Bug Reference: http://bugzilla.gnome.org/697652
+ok 6 /option/help/no-help-options
+PASS: option-context 6 /option/help/no-help-options
+# End of help tests
+# Start of group tests
+# Bug Reference: http://bugzilla.gnome.org/504142
+ok 7 /option/group/captions
+PASS: option-context 7 /option/group/captions
+ok 8 /option/group/main
+PASS: option-context 8 /option/group/main
+ok 9 /option/group/error-hook
+PASS: option-context 9 /option/group/error-hook
+ok 10 /option/group/parse
+PASS: option-context 10 /option/group/parse
+# Start of captions tests
+# Start of subprocess tests
+# End of subprocess tests
+# End of captions tests
+# End of group tests
+# Start of restoration tests
+ok 11 /option/restoration/int
+PASS: option-context 11 /option/restoration/int
+ok 12 /option/restoration/string
+PASS: option-context 12 /option/restoration/string
+ok 13 /option/restoration/boolean
+PASS: option-context 13 /option/restoration/boolean
+# End of restoration tests
+# Start of arg tests
+ok 14 /option/arg/reverse-string
+PASS: option-context 14 /option/arg/reverse-string
+ok 15 /option/arg/optional-int
+PASS: option-context 15 /option/arg/optional-int
+# Start of repetition tests
+ok 16 /option/arg/repetition/int
+PASS: option-context 16 /option/arg/repetition/int
+ok 17 /option/arg/repetition/string
+PASS: option-context 17 /option/arg/repetition/string
+ok 18 /option/arg/repetition/filename
+PASS: option-context 18 /option/arg/repetition/filename
+ok 19 /option/arg/repetition/double
+PASS: option-context 19 /option/arg/repetition/double
+ok 20 /option/arg/repetition/locale
+PASS: option-context 20 /option/arg/repetition/locale
+ok 21 /option/arg/repetition/int64
+PASS: option-context 21 /option/arg/repetition/int64
+# End of repetition tests
+# Start of array tests
+ok 22 /option/arg/array/string
+PASS: option-context 22 /option/arg/array/string
+# End of array tests
+# Start of callback tests
+ok 23 /option/arg/callback/string
+PASS: option-context 23 /option/arg/callback/string
+ok 24 /option/arg/callback/count
+PASS: option-context 24 /option/arg/callback/count
+ok 25 /option/arg/callback/optional1
+PASS: option-context 25 /option/arg/callback/optional1
+ok 26 /option/arg/callback/optional2
+PASS: option-context 26 /option/arg/callback/optional2
+ok 27 /option/arg/callback/optional3
+PASS: option-context 27 /option/arg/callback/optional3
+ok 28 /option/arg/callback/optional4
+PASS: option-context 28 /option/arg/callback/optional4
+ok 29 /option/arg/callback/optional5
+PASS: option-context 29 /option/arg/callback/optional5
+ok 30 /option/arg/callback/optional6
+PASS: option-context 30 /option/arg/callback/optional6
+ok 31 /option/arg/callback/optional7
+PASS: option-context 31 /option/arg/callback/optional7
+ok 32 /option/arg/callback/optional8
+PASS: option-context 32 /option/arg/callback/optional8
+# End of callback tests
+# Start of remaining tests
+ok 33 /option/arg/remaining/callback
+PASS: option-context 33 /option/arg/remaining/callback
+ok 34 /option/arg/remaining/callback-false
+PASS: option-context 34 /option/arg/remaining/callback-false
+ok 35 /option/arg/remaining/non-option
+PASS: option-context 35 /option/arg/remaining/non-option
+ok 36 /option/arg/remaining/separator
+PASS: option-context 36 /option/arg/remaining/separator
+ok 37 /option/arg/remaining/array
+PASS: option-context 37 /option/arg/remaining/array
+# End of remaining tests
+# Start of ignore tests
+ok 38 /option/arg/ignore/long
+PASS: option-context 38 /option/arg/ignore/long
+ok 39 /option/arg/ignore/short
+PASS: option-context 39 /option/arg/ignore/short
+ok 40 /option/arg/ignore/arg
+PASS: option-context 40 /option/arg/ignore/arg
+# End of ignore tests
+# Start of rest tests
+ok 41 /option/arg/rest/non-option
+PASS: option-context 41 /option/arg/rest/non-option
+ok 42 /option/arg/rest/separator1
+PASS: option-context 42 /option/arg/rest/separator1
+ok 43 /option/arg/rest/separator2
+PASS: option-context 43 /option/arg/rest/separator2
+ok 44 /option/arg/rest/separator3
+PASS: option-context 44 /option/arg/rest/separator3
+ok 45 /option/arg/rest/separator4
+PASS: option-context 45 /option/arg/rest/separator4
+ok 46 /option/arg/rest/separator5
+PASS: option-context 46 /option/arg/rest/separator5
+# End of rest tests
+# End of arg tests
+# Start of context tests
+ok 47 /option/context/add
+PASS: option-context 47 /option/context/add
+ok 48 /option/context/empty2
+PASS: option-context 48 /option/context/empty2
+ok 49 /option/context/empty3
+PASS: option-context 49 /option/context/empty3
+# End of context tests
+# Start of bug tests
+# Bug Reference: http://bugzilla.gnome.org/166609
+ok 50 /option/bug/unknown-short
+PASS: option-context 50 /option/bug/unknown-short
+# Bug Reference: http://bugzilla.gnome.org/168008
+ok 51 /option/bug/lonely-dash
+PASS: option-context 51 /option/bug/lonely-dash
+# Bug Reference: http://bugzilla.gnome.org/305576
+ok 52 /option/bug/missing-arg
+PASS: option-context 52 /option/bug/missing-arg
+# Bug Reference: http://bugzilla.gnome.org/577638
+ok 53 /option/bug/dash-arg
+PASS: option-context 53 /option/bug/dash-arg
+# Bug Reference: http://bugzilla.gnome.org/729563
+ok 54 /option/bug/short-remaining
+PASS: option-context 54 /option/bug/short-remaining
+# Bug Reference: http://bugzilla.gnome.org/646926
+ok 55 /option/bug/double-free
+PASS: option-context 55 /option/bug/double-free
+# End of bug tests
+# End of option tests

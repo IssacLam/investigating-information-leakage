@@ -1,24 +1,12 @@
-#include "config.h"
+#include "gtypes.h"
+#include <stdarg.h>
+#include <stdio.h>
 
-#include "gmem.h"
-
-#include <stdlib.h>
-#include <string.h>
-#include <signal.h>
-
-#include "gslice.h"
-#include "gbacktrace.h"
-#include "gtestutils.h"
-#include "gthread.h"
-#include "glib_trace.h"
-
-gchar* g_convert (const gchar *str,
-		gssize       len,  
+/*gchar* g_convert (const gchar *str, gssize len,  
 		const gchar *to_codeset,
 		const gchar *from_codeset,
 		gsize       *bytes_read, 
-		gsize       *bytes_written, 
-		GError     **error)
+		gsize       *bytes_written, GError **error)
 {
 	gchar *res;
 	GIConv cd;
@@ -47,36 +35,67 @@ gchar* g_convert (const gchar *str,
 	close_converter (cd);
 
 	return res;
-}
+}*/
+/*
+ gchar*
+   g_strdup (const gchar *str)
+   {
+     gchar *new_str;
+     gsize length;
+   
+     if (str)
+       {
+         length = strlen (str) + 1;
+         new_str = g_new (char, length);
+         memcpy (new_str, str, length);
+       }
+     else
+       new_str = NULL;
+   
+     return new_str;
+   }
+  */ 
 
-g_strdup
+ void
+  g_return_if_fail_warning (const char *log_domain,
+                const char *pretty_function,
+                const char *expression)
+  {
+    /*g_log (log_domain,
+       G_LOG_LEVEL_CRITICAL,
+       "%s: assertion '%s' failed",
+       pretty_function,
+       expression);*/
+  }
 
-g_return_if_fail_warning
-
-g_strdup_printf
-
-gpointer g_malloc(gsize n_bytes){
-	if (G_LIKELY (n_bytes))
-	{
-		gpointer mem;
-		mem = malloc (n_bytes);
-		TRACE (GLIB_MEM_ALLOC((void*) mem, (unsigned int) n_bytes, 0, 0));
-		if (mem)
-			return mem;
-
-		g_error ("%s: failed to allocate %"G_GSIZE_FORMAT" bytes",
-				G_STRLOC, n_bytes);
-	}
-	TRACE(GLIB_MEM_ALLOC((void*) NULL, (int) n_bytes, 0, 0));
-	return NULL;
-}
-
-g_snprintf
-
-void g_free(gpointer mem){
-	if (G_LIKELY (mem))
-		free (mem);
-	TRACE(GLIB_MEM_FREE((void*) mem));
-}
+/*gchar*
+   g_strdup_printf (const gchar *format,
+                    ...)
+   {
+     gchar *buffer;
+     va_list args;
+   
+     va_start (args, format);
+     buffer = g_strdup_vprintf (format, args);
+     va_end (args);
+   
+     return buffer;
+   }
+*/
+gint
+   g_snprintf (gchar   *string,
+           gulong   n,
+           gchar const *format,
+           ...)
+   {
+     va_list args;
+     gint retval;
+   
+     va_start (args, format);
+     retval = g_vsnprintf (string, n, format, args);
+     va_end (args);
+     
+     return retval;
+   }
 
 

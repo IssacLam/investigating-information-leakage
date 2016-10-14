@@ -1,0 +1,20 @@
+# random seed: R02Sd6092c9db40b420091507422a5b466cf
+1..8
+# Start of glib-unix tests
+ok 1 /glib-unix/pipe
+PASS: unix 1 /glib-unix/pipe
+ok 2 /glib-unix/error
+PASS: unix 2 /glib-unix/error
+ok 3 /glib-unix/nonblocking
+PASS: unix 3 /glib-unix/nonblocking
+ok 4 /glib-unix/sighup
+PASS: unix 4 /glib-unix/sighup
+ok 5 /glib-unix/sigterm
+PASS: unix 5 /glib-unix/sigterm
+ok 6 /glib-unix/sighup_again
+PASS: unix 6 /glib-unix/sighup_again
+ok 7 /glib-unix/sighup_add_remove
+PASS: unix 7 /glib-unix/sighup_add_remove
+ok 8 /glib-unix/sighup_nested
+PASS: unix 8 /glib-unix/sighup_nested
+# End of glib-unix tests

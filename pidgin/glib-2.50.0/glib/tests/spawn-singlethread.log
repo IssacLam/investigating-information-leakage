@@ -1,0 +1,10 @@
+# random seed: R02Sf5c1e3d562f1104dbca0fd165bbb34e1
+1..3
+# Start of gthread tests
+ok 1 /gthread/spawn-single-sync
+PASS: spawn-singlethread 1 /gthread/spawn-single-sync
+ok 2 /gthread/spawn-single-async
+PASS: spawn-singlethread 2 /gthread/spawn-single-async
+ok 3 /gthread/spawn-script
+PASS: spawn-singlethread 3 /gthread/spawn-script
+# End of gthread tests

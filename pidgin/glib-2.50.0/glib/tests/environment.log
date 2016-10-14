@@ -1,0 +1,12 @@
+# random seed: R02S97411a8e1a46010194531caa9953138d
+1..4
+# Start of environ tests
+ok 1 /environ/listenv
+PASS: environment 1 /environ/listenv
+ok 2 /environ/setenv
+PASS: environment 2 /environ/setenv
+ok 3 /environ/array
+PASS: environment 3 /environ/array
+ok 4 /environ/null
+PASS: environment 4 /environ/null
+# End of environ tests

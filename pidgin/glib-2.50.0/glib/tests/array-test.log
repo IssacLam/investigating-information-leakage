@@ -1,0 +1,58 @@
+# random seed: R02S9bf14c3acf3e00fbaad2c14627320d5c
+1..25
+# Start of array tests
+ok 1 /array/append
+PASS: array-test 1 /array/append
+ok 2 /array/prepend
+PASS: array-test 2 /array/prepend
+ok 3 /array/remove
+PASS: array-test 3 /array/remove
+ok 4 /array/remove-fast
+PASS: array-test 4 /array/remove-fast
+ok 5 /array/remove-range
+PASS: array-test 5 /array/remove-range
+ok 6 /array/ref-count
+PASS: array-test 6 /array/ref-count
+ok 7 /array/sort
+PASS: array-test 7 /array/sort
+ok 8 /array/sort-with-data
+PASS: array-test 8 /array/sort-with-data
+ok 9 /array/clear-func
+PASS: array-test 9 /array/clear-func
+# End of array tests
+# Start of pointerarray tests
+ok 10 /pointerarray/add
+PASS: array-test 10 /pointerarray/add
+ok 11 /pointerarray/insert
+PASS: array-test 11 /pointerarray/insert
+ok 12 /pointerarray/ref-count
+PASS: array-test 12 /pointerarray/ref-count
+ok 13 /pointerarray/free-func
+PASS: array-test 13 /pointerarray/free-func
+ok 14 /pointerarray/sort
+PASS: array-test 14 /pointerarray/sort
+ok 15 /pointerarray/sort-with-data
+PASS: array-test 15 /pointerarray/sort-with-data
+# End of pointerarray tests
+# Start of bytearray tests
+ok 16 /bytearray/append
+PASS: array-test 16 /bytearray/append
+ok 17 /bytearray/prepend
+PASS: array-test 17 /bytearray/prepend
+ok 18 /bytearray/remove
+PASS: array-test 18 /bytearray/remove
+ok 19 /bytearray/remove-fast
+PASS: array-test 19 /bytearray/remove-fast
+ok 20 /bytearray/remove-range
+PASS: array-test 20 /bytearray/remove-range
+ok 21 /bytearray/ref-count
+PASS: array-test 21 /bytearray/ref-count
+ok 22 /bytearray/sort
+PASS: array-test 22 /bytearray/sort
+ok 23 /bytearray/sort-with-data
+PASS: array-test 23 /bytearray/sort-with-data
+ok 24 /bytearray/new-take
+PASS: array-test 24 /bytearray/new-take
+ok 25 /bytearray/free-to-bytes
+PASS: array-test 25 /bytearray/free-to-bytes
+# End of bytearray tests

@@ -1,0 +1,13 @@
+# random seed: R02S3737948b21e18dda035709227fcd4392
+1..4
+# Start of properties tests
+ok 1 /properties/install
+PASS: properties 1 /properties/install
+ok 2 /properties/notify
+PASS: properties 2 /properties/notify
+ok 3 /properties/notify-queue
+PASS: properties 3 /properties/notify-queue
+# Bug Reference: http://bugzilla.gnome.org/630357
+ok 4 /properties/construct
+PASS: properties 4 /properties/construct
+# End of properties tests

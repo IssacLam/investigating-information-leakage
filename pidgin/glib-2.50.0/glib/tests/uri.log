@@ -1,0 +1,18 @@
+# random seed: R02Scca2b035a0f464d7640817f925206e1f
+1..7
+# Start of uri tests
+ok 1 /uri/to-uri
+PASS: uri 1 /uri/to-uri
+ok 2 /uri/from-uri
+PASS: uri 2 /uri/from-uri
+ok 3 /uri/roundtrip
+PASS: uri 3 /uri/roundtrip
+ok 4 /uri/list
+PASS: uri 4 /uri/list
+ok 5 /uri/unescape
+PASS: uri 5 /uri/unescape
+ok 6 /uri/escape
+PASS: uri 6 /uri/escape
+ok 7 /uri/scheme
+PASS: uri 7 /uri/scheme
+# End of uri tests

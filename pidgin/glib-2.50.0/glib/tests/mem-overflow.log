@@ -1,0 +1,15 @@
+# random seed: R02S5fb5449a35b75ff6cb88266cff46db3b
+1..2
+# Start of mem tests
+ok 1 /mem/overflow
+PASS: mem-overflow 1 /mem/overflow
+# Bug Reference: http://bugzilla.gnome.org/615379
+ok 2 /mem/empty-alloc
+PASS: mem-overflow 2 /mem/empty-alloc
+# Start of overflow tests
+# Start of subprocess tests
+# End of subprocess tests
+# End of overflow tests
+# Start of empty-alloc tests
+# End of empty-alloc tests
+# End of mem tests

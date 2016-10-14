@@ -1,0 +1,24 @@
+# random seed: R02S40e002a669a65b2ac30293e2f590d335
+1..1
+# GLib-DEBUG: Started
+# GLib-DEBUG: 'he' - 'Hello World' should match: OK
+# GLib-DEBUG: 'wo' - 'Hello World' should match: OK
+# GLib-DEBUG: 'lo' - 'Hello World' should NOT match: OK
+# GLib-DEBUG: 'ld' - 'Hello World' should NOT match: OK
+# GLib-DEBUG: 'wo' - 'Hello-World' should match: OK
+# GLib-DEBUG: 'wo' - 'HelloWorld' should NOT match: OK
+# GLib-DEBUG: 'jor' - 'Jörgen' should match: OK
+# GLib-DEBUG: 'gaetan' - 'Gaëtan' should match: OK
+# GLib-DEBUG: 'ele' - 'élève' should match: OK
+# GLib-DEBUG: 'AzaÏs' - 'Azais' should NOT match: OK
+# GLib-DEBUG: 'Azais' - 'AzaÏs' should match: OK
+# GLib-DEBUG: 'Jör' - 'Jorgen' should NOT match: OK
+# GLib-DEBUG: 'jor' - 'Jörgen' should match: OK
+# GLib-DEBUG: 'ist' - 'İstanbul' should match: OK
+# GLib-DEBUG: 'diyarbakir' - 'Diyarbakır' should match: OK
+# GLib-DEBUG: 'Xav Cla' - 'Xavier Claessens' should match: OK
+# GLib-DEBUG: 'Cla Xav' - 'Xavier Claessens' should match: OK
+# GLib-DEBUG: '   b  ' - 'Foo Bar Baz' should match: OK
+# GLib-DEBUG: 'bar bazz' - 'Foo Bar Baz' should NOT match: OK
+ok 1 /search
+PASS: search-utils 1 /search

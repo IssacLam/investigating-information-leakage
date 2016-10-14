@@ -1,0 +1,64 @@
+# random seed: R02S30862aae9fe360d245fecb68c700a3a1
+1..30
+# Start of strfuncs tests
+ok 1 /strfuncs/test-is-to-digit
+PASS: strfuncs 1 /strfuncs/test-is-to-digit
+ok 2 /strfuncs/strdup
+PASS: strfuncs 2 /strfuncs/strdup
+ok 3 /strfuncs/strndup
+PASS: strfuncs 3 /strfuncs/strndup
+ok 4 /strfuncs/strdup-printf
+PASS: strfuncs 4 /strfuncs/strdup-printf
+ok 5 /strfuncs/strdupv
+PASS: strfuncs 5 /strfuncs/strdupv
+ok 6 /strfuncs/strnfill
+PASS: strfuncs 6 /strfuncs/strnfill
+ok 7 /strfuncs/strconcat
+PASS: strfuncs 7 /strfuncs/strconcat
+ok 8 /strfuncs/strjoin
+PASS: strfuncs 8 /strfuncs/strjoin
+ok 9 /strfuncs/strcanon
+PASS: strfuncs 9 /strfuncs/strcanon
+ok 10 /strfuncs/strcompress-strescape
+PASS: strfuncs 10 /strfuncs/strcompress-strescape
+ok 11 /strfuncs/ascii-strcasecmp
+PASS: strfuncs 11 /strfuncs/ascii-strcasecmp
+ok 12 /strfuncs/strchug
+PASS: strfuncs 12 /strfuncs/strchug
+ok 13 /strfuncs/strchomp
+PASS: strfuncs 13 /strfuncs/strchomp
+ok 14 /strfuncs/strreverse
+PASS: strfuncs 14 /strfuncs/strreverse
+ok 15 /strfuncs/strncasecmp
+PASS: strfuncs 15 /strfuncs/strncasecmp
+ok 16 /strfuncs/strstr
+PASS: strfuncs 16 /strfuncs/strstr
+ok 17 /strfuncs/has-prefix
+PASS: strfuncs 17 /strfuncs/has-prefix
+ok 18 /strfuncs/has-suffix
+PASS: strfuncs 18 /strfuncs/has-suffix
+ok 19 /strfuncs/strsplit
+PASS: strfuncs 19 /strfuncs/strsplit
+ok 20 /strfuncs/strsplit-set
+PASS: strfuncs 20 /strfuncs/strsplit-set
+ok 21 /strfuncs/strv-length
+PASS: strfuncs 21 /strfuncs/strv-length
+ok 22 /strfuncs/strtod
+PASS: strfuncs 22 /strfuncs/strtod
+ok 23 /strfuncs/strtoull-strtoll
+PASS: strfuncs 23 /strfuncs/strtoull-strtoll
+ok 24 /strfuncs/bounds-check
+PASS: strfuncs 24 /strfuncs/bounds-check
+ok 25 /strfuncs/strip-context
+PASS: strfuncs 25 /strfuncs/strip-context
+ok 26 /strfuncs/strerror
+PASS: strfuncs 26 /strfuncs/strerror
+ok 27 /strfuncs/strsignal
+PASS: strfuncs 27 /strfuncs/strsignal
+ok 28 /strfuncs/strup
+PASS: strfuncs 28 /strfuncs/strup
+ok 29 /strfuncs/transliteration
+PASS: strfuncs 29 /strfuncs/transliteration
+ok 30 /strfuncs/strv-contains
+PASS: strfuncs 30 /strfuncs/strv-contains
+# End of strfuncs tests

@@ -1,0 +1,66 @@
+# random seed: R02S9962b91044536786babf3a2f87b73bb0
+1..31
+# Start of hmac tests
+ok 1 /hmac/sha1-1
+PASS: hmac 1 /hmac/sha1-1
+ok 2 /hmac/sha1-2
+PASS: hmac 2 /hmac/sha1-2
+ok 3 /hmac/sha1-3
+PASS: hmac 3 /hmac/sha1-3
+ok 4 /hmac/sha1-4
+PASS: hmac 4 /hmac/sha1-4
+ok 5 /hmac/sha1-5
+PASS: hmac 5 /hmac/sha1-5
+ok 6 /hmac/sha1-6
+PASS: hmac 6 /hmac/sha1-6
+ok 7 /hmac/sha1-7
+PASS: hmac 7 /hmac/sha1-7
+ok 8 /hmac/sha256-1
+PASS: hmac 8 /hmac/sha256-1
+ok 9 /hmac/sha256-2
+PASS: hmac 9 /hmac/sha256-2
+ok 10 /hmac/sha256-3
+PASS: hmac 10 /hmac/sha256-3
+ok 11 /hmac/sha256-4
+PASS: hmac 11 /hmac/sha256-4
+ok 12 /hmac/sha256-5
+PASS: hmac 12 /hmac/sha256-5
+ok 13 /hmac/sha256-6
+PASS: hmac 13 /hmac/sha256-6
+ok 14 /hmac/sha512-1
+PASS: hmac 14 /hmac/sha512-1
+ok 15 /hmac/sha512-2
+PASS: hmac 15 /hmac/sha512-2
+ok 16 /hmac/sha512-3
+PASS: hmac 16 /hmac/sha512-3
+ok 17 /hmac/sha512-4
+PASS: hmac 17 /hmac/sha512-4
+ok 18 /hmac/sha512-5
+PASS: hmac 18 /hmac/sha512-5
+ok 19 /hmac/sha512-6
+PASS: hmac 19 /hmac/sha512-6
+ok 20 /hmac/md5-1
+PASS: hmac 20 /hmac/md5-1
+ok 21 /hmac/md5-2
+PASS: hmac 21 /hmac/md5-2
+ok 22 /hmac/md5-3
+PASS: hmac 22 /hmac/md5-3
+ok 23 /hmac/md5-4
+PASS: hmac 23 /hmac/md5-4
+ok 24 /hmac/md5-5
+PASS: hmac 24 /hmac/md5-5
+ok 25 /hmac/md5-6
+PASS: hmac 25 /hmac/md5-6
+ok 26 /hmac/md5-7
+PASS: hmac 26 /hmac/md5-7
+ok 27 /hmac/ref-unref
+PASS: hmac 27 /hmac/ref-unref
+ok 28 /hmac/copy
+PASS: hmac 28 /hmac/copy
+ok 29 /hmac/for-data
+PASS: hmac 29 /hmac/for-data
+ok 30 /hmac/for-string
+PASS: hmac 30 /hmac/for-string
+ok 31 /hmac/for-bytes
+PASS: hmac 31 /hmac/for-bytes
+# End of hmac tests

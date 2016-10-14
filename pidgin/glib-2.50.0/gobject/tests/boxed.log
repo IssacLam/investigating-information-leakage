@@ -1,0 +1,52 @@
+# random seed: R02S24a3d9d345b2cf3c3775dc2b07d42062
+1..24
+# Start of boxed tests
+ok 1 /boxed/define
+PASS: boxed 1 /boxed/define
+ok 2 /boxed/ownership
+PASS: boxed 2 /boxed/ownership
+ok 3 /boxed/closure
+PASS: boxed 3 /boxed/closure
+ok 4 /boxed/date
+PASS: boxed 4 /boxed/date
+ok 5 /boxed/value
+PASS: boxed 5 /boxed/value
+ok 6 /boxed/string
+PASS: boxed 6 /boxed/string
+ok 7 /boxed/hashtable
+PASS: boxed 7 /boxed/hashtable
+ok 8 /boxed/array
+PASS: boxed 8 /boxed/array
+ok 9 /boxed/ptrarray
+PASS: boxed 9 /boxed/ptrarray
+ok 10 /boxed/regex
+PASS: boxed 10 /boxed/regex
+ok 11 /boxed/varianttype
+PASS: boxed 11 /boxed/varianttype
+ok 12 /boxed/error
+PASS: boxed 12 /boxed/error
+ok 13 /boxed/datetime
+PASS: boxed 13 /boxed/datetime
+ok 14 /boxed/matchinfo
+PASS: boxed 14 /boxed/matchinfo
+ok 15 /boxed/keyfile
+PASS: boxed 15 /boxed/keyfile
+ok 16 /boxed/mainloop
+PASS: boxed 16 /boxed/mainloop
+ok 17 /boxed/maincontext
+PASS: boxed 17 /boxed/maincontext
+ok 18 /boxed/source
+PASS: boxed 18 /boxed/source
+ok 19 /boxed/variantbuilder
+PASS: boxed 19 /boxed/variantbuilder
+ok 20 /boxed/timezone
+PASS: boxed 20 /boxed/timezone
+ok 21 /boxed/pollfd
+PASS: boxed 21 /boxed/pollfd
+ok 22 /boxed/markup
+PASS: boxed 22 /boxed/markup
+ok 23 /boxed/thread
+PASS: boxed 23 /boxed/thread
+ok 24 /boxed/checksum
+PASS: boxed 24 /boxed/checksum
+# End of boxed tests

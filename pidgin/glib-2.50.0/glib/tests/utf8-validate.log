@@ -1,0 +1,436 @@
+# random seed: R02S6ca5a53b41a8afe66c855be007775646
+1..215
+# Start of utf8 tests
+# Start of validate tests
+ok 1 /utf8/validate/0
+PASS: utf8-validate 1 /utf8/validate/0
+ok 2 /utf8/validate/1
+PASS: utf8-validate 2 /utf8/validate/1
+ok 3 /utf8/validate/2
+PASS: utf8-validate 3 /utf8/validate/2
+ok 4 /utf8/validate/3
+PASS: utf8-validate 4 /utf8/validate/3
+ok 5 /utf8/validate/4
+PASS: utf8-validate 5 /utf8/validate/4
+ok 6 /utf8/validate/5
+PASS: utf8-validate 6 /utf8/validate/5
+ok 7 /utf8/validate/6
+PASS: utf8-validate 7 /utf8/validate/6
+ok 8 /utf8/validate/7
+PASS: utf8-validate 8 /utf8/validate/7
+ok 9 /utf8/validate/8
+PASS: utf8-validate 9 /utf8/validate/8
+ok 10 /utf8/validate/9
+PASS: utf8-validate 10 /utf8/validate/9
+ok 11 /utf8/validate/10
+PASS: utf8-validate 11 /utf8/validate/10
+ok 12 /utf8/validate/11
+PASS: utf8-validate 12 /utf8/validate/11
+ok 13 /utf8/validate/12
+PASS: utf8-validate 13 /utf8/validate/12
+ok 14 /utf8/validate/13
+PASS: utf8-validate 14 /utf8/validate/13
+ok 15 /utf8/validate/14
+PASS: utf8-validate 15 /utf8/validate/14
+ok 16 /utf8/validate/15
+PASS: utf8-validate 16 /utf8/validate/15
+ok 17 /utf8/validate/16
+PASS: utf8-validate 17 /utf8/validate/16
+ok 18 /utf8/validate/17
+PASS: utf8-validate 18 /utf8/validate/17
+ok 19 /utf8/validate/18
+PASS: utf8-validate 19 /utf8/validate/18
+ok 20 /utf8/validate/19
+PASS: utf8-validate 20 /utf8/validate/19
+ok 21 /utf8/validate/20
+PASS: utf8-validate 21 /utf8/validate/20
+ok 22 /utf8/validate/21
+PASS: utf8-validate 22 /utf8/validate/21
+ok 23 /utf8/validate/22
+PASS: utf8-validate 23 /utf8/validate/22
+ok 24 /utf8/validate/23
+PASS: utf8-validate 24 /utf8/validate/23
+ok 25 /utf8/validate/24
+PASS: utf8-validate 25 /utf8/validate/24
+ok 26 /utf8/validate/25
+PASS: utf8-validate 26 /utf8/validate/25
+ok 27 /utf8/validate/26
+PASS: utf8-validate 27 /utf8/validate/26
+ok 28 /utf8/validate/27
+PASS: utf8-validate 28 /utf8/validate/27
+ok 29 /utf8/validate/28
+PASS: utf8-validate 29 /utf8/validate/28
+ok 30 /utf8/validate/29
+PASS: utf8-validate 30 /utf8/validate/29
+ok 31 /utf8/validate/30
+PASS: utf8-validate 31 /utf8/validate/30
+ok 32 /utf8/validate/31
+PASS: utf8-validate 32 /utf8/validate/31
+ok 33 /utf8/validate/32
+PASS: utf8-validate 33 /utf8/validate/32
+ok 34 /utf8/validate/33
+PASS: utf8-validate 34 /utf8/validate/33
+ok 35 /utf8/validate/34
+PASS: utf8-validate 35 /utf8/validate/34
+ok 36 /utf8/validate/35
+PASS: utf8-validate 36 /utf8/validate/35
+ok 37 /utf8/validate/36
+PASS: utf8-validate 37 /utf8/validate/36
+ok 38 /utf8/validate/37
+PASS: utf8-validate 38 /utf8/validate/37
+ok 39 /utf8/validate/38
+PASS: utf8-validate 39 /utf8/validate/38
+ok 40 /utf8/validate/39
+PASS: utf8-validate 40 /utf8/validate/39
+ok 41 /utf8/validate/40
+PASS: utf8-validate 41 /utf8/validate/40
+ok 42 /utf8/validate/41
+PASS: utf8-validate 42 /utf8/validate/41
+ok 43 /utf8/validate/42
+PASS: utf8-validate 43 /utf8/validate/42
+ok 44 /utf8/validate/43
+PASS: utf8-validate 44 /utf8/validate/43
+ok 45 /utf8/validate/44
+PASS: utf8-validate 45 /utf8/validate/44
+ok 46 /utf8/validate/45
+PASS: utf8-validate 46 /utf8/validate/45
+ok 47 /utf8/validate/46
+PASS: utf8-validate 47 /utf8/validate/46
+ok 48 /utf8/validate/47
+PASS: utf8-validate 48 /utf8/validate/47
+ok 49 /utf8/validate/48
+PASS: utf8-validate 49 /utf8/validate/48
+ok 50 /utf8/validate/49
+PASS: utf8-validate 50 /utf8/validate/49
+ok 51 /utf8/validate/50
+PASS: utf8-validate 51 /utf8/validate/50
+ok 52 /utf8/validate/51
+PASS: utf8-validate 52 /utf8/validate/51
+ok 53 /utf8/validate/52
+PASS: utf8-validate 53 /utf8/validate/52
+ok 54 /utf8/validate/53
+PASS: utf8-validate 54 /utf8/validate/53
+ok 55 /utf8/validate/54
+PASS: utf8-validate 55 /utf8/validate/54
+ok 56 /utf8/validate/55
+PASS: utf8-validate 56 /utf8/validate/55
+ok 57 /utf8/validate/56
+PASS: utf8-validate 57 /utf8/validate/56
+ok 58 /utf8/validate/57
+PASS: utf8-validate 58 /utf8/validate/57
+ok 59 /utf8/validate/58
+PASS: utf8-validate 59 /utf8/validate/58
+ok 60 /utf8/validate/59
+PASS: utf8-validate 60 /utf8/validate/59
+ok 61 /utf8/validate/60
+PASS: utf8-validate 61 /utf8/validate/60
+ok 62 /utf8/validate/61
+PASS: utf8-validate 62 /utf8/validate/61
+ok 63 /utf8/validate/62
+PASS: utf8-validate 63 /utf8/validate/62
+ok 64 /utf8/validate/63
+PASS: utf8-validate 64 /utf8/validate/63
+ok 65 /utf8/validate/64
+PASS: utf8-validate 65 /utf8/validate/64
+ok 66 /utf8/validate/65
+PASS: utf8-validate 66 /utf8/validate/65
+ok 67 /utf8/validate/66
+PASS: utf8-validate 67 /utf8/validate/66
+ok 68 /utf8/validate/67
+PASS: utf8-validate 68 /utf8/validate/67
+ok 69 /utf8/validate/68
+PASS: utf8-validate 69 /utf8/validate/68
+ok 70 /utf8/validate/69
+PASS: utf8-validate 70 /utf8/validate/69
+ok 71 /utf8/validate/70
+PASS: utf8-validate 71 /utf8/validate/70
+ok 72 /utf8/validate/71
+PASS: utf8-validate 72 /utf8/validate/71
+ok 73 /utf8/validate/72
+PASS: utf8-validate 73 /utf8/validate/72
+ok 74 /utf8/validate/73
+PASS: utf8-validate 74 /utf8/validate/73
+ok 75 /utf8/validate/74
+PASS: utf8-validate 75 /utf8/validate/74
+ok 76 /utf8/validate/75
+PASS: utf8-validate 76 /utf8/validate/75
+ok 77 /utf8/validate/76
+PASS: utf8-validate 77 /utf8/validate/76
+ok 78 /utf8/validate/77
+PASS: utf8-validate 78 /utf8/validate/77
+ok 79 /utf8/validate/78
+PASS: utf8-validate 79 /utf8/validate/78
+ok 80 /utf8/validate/79
+PASS: utf8-validate 80 /utf8/validate/79
+ok 81 /utf8/validate/80
+PASS: utf8-validate 81 /utf8/validate/80
+ok 82 /utf8/validate/81
+PASS: utf8-validate 82 /utf8/validate/81
+ok 83 /utf8/validate/82
+PASS: utf8-validate 83 /utf8/validate/82
+ok 84 /utf8/validate/83
+PASS: utf8-validate 84 /utf8/validate/83
+ok 85 /utf8/validate/84
+PASS: utf8-validate 85 /utf8/validate/84
+ok 86 /utf8/validate/85
+PASS: utf8-validate 86 /utf8/validate/85
+ok 87 /utf8/validate/86
+PASS: utf8-validate 87 /utf8/validate/86
+ok 88 /utf8/validate/87
+PASS: utf8-validate 88 /utf8/validate/87
+ok 89 /utf8/validate/88
+PASS: utf8-validate 89 /utf8/validate/88
+ok 90 /utf8/validate/89
+PASS: utf8-validate 90 /utf8/validate/89
+ok 91 /utf8/validate/90
+PASS: utf8-validate 91 /utf8/validate/90
+ok 92 /utf8/validate/91
+PASS: utf8-validate 92 /utf8/validate/91
+ok 93 /utf8/validate/92
+PASS: utf8-validate 93 /utf8/validate/92
+ok 94 /utf8/validate/93
+PASS: utf8-validate 94 /utf8/validate/93
+ok 95 /utf8/validate/94
+PASS: utf8-validate 95 /utf8/validate/94
+ok 96 /utf8/validate/95
+PASS: utf8-validate 96 /utf8/validate/95
+ok 97 /utf8/validate/96
+PASS: utf8-validate 97 /utf8/validate/96
+ok 98 /utf8/validate/97
+PASS: utf8-validate 98 /utf8/validate/97
+ok 99 /utf8/validate/98
+PASS: utf8-validate 99 /utf8/validate/98
+ok 100 /utf8/validate/99
+PASS: utf8-validate 100 /utf8/validate/99
+ok 101 /utf8/validate/100
+PASS: utf8-validate 101 /utf8/validate/100
+ok 102 /utf8/validate/101
+PASS: utf8-validate 102 /utf8/validate/101
+ok 103 /utf8/validate/102
+PASS: utf8-validate 103 /utf8/validate/102
+ok 104 /utf8/validate/103
+PASS: utf8-validate 104 /utf8/validate/103
+ok 105 /utf8/validate/104
+PASS: utf8-validate 105 /utf8/validate/104
+ok 106 /utf8/validate/105
+PASS: utf8-validate 106 /utf8/validate/105
+ok 107 /utf8/validate/106
+PASS: utf8-validate 107 /utf8/validate/106
+ok 108 /utf8/validate/107
+PASS: utf8-validate 108 /utf8/validate/107
+ok 109 /utf8/validate/108
+PASS: utf8-validate 109 /utf8/validate/108
+ok 110 /utf8/validate/109
+PASS: utf8-validate 110 /utf8/validate/109
+ok 111 /utf8/validate/110
+PASS: utf8-validate 111 /utf8/validate/110
+ok 112 /utf8/validate/111
+PASS: utf8-validate 112 /utf8/validate/111
+ok 113 /utf8/validate/112
+PASS: utf8-validate 113 /utf8/validate/112
+ok 114 /utf8/validate/113
+PASS: utf8-validate 114 /utf8/validate/113
+ok 115 /utf8/validate/114
+PASS: utf8-validate 115 /utf8/validate/114
+ok 116 /utf8/validate/115
+PASS: utf8-validate 116 /utf8/validate/115
+ok 117 /utf8/validate/116
+PASS: utf8-validate 117 /utf8/validate/116
+ok 118 /utf8/validate/117
+PASS: utf8-validate 118 /utf8/validate/117
+ok 119 /utf8/validate/118
+PASS: utf8-validate 119 /utf8/validate/118
+ok 120 /utf8/validate/119
+PASS: utf8-validate 120 /utf8/validate/119
+ok 121 /utf8/validate/120
+PASS: utf8-validate 121 /utf8/validate/120
+ok 122 /utf8/validate/121
+PASS: utf8-validate 122 /utf8/validate/121
+ok 123 /utf8/validate/122
+PASS: utf8-validate 123 /utf8/validate/122
+ok 124 /utf8/validate/123
+PASS: utf8-validate 124 /utf8/validate/123
+ok 125 /utf8/validate/124
+PASS: utf8-validate 125 /utf8/validate/124
+ok 126 /utf8/validate/125
+PASS: utf8-validate 126 /utf8/validate/125
+ok 127 /utf8/validate/126
+PASS: utf8-validate 127 /utf8/validate/126
+ok 128 /utf8/validate/127
+PASS: utf8-validate 128 /utf8/validate/127
+ok 129 /utf8/validate/128
+PASS: utf8-validate 129 /utf8/validate/128
+ok 130 /utf8/validate/129
+PASS: utf8-validate 130 /utf8/validate/129
+ok 131 /utf8/validate/130
+PASS: utf8-validate 131 /utf8/validate/130
+ok 132 /utf8/validate/131
+PASS: utf8-validate 132 /utf8/validate/131
+ok 133 /utf8/validate/132
+PASS: utf8-validate 133 /utf8/validate/132
+ok 134 /utf8/validate/133
+PASS: utf8-validate 134 /utf8/validate/133
+ok 135 /utf8/validate/134
+PASS: utf8-validate 135 /utf8/validate/134
+ok 136 /utf8/validate/135
+PASS: utf8-validate 136 /utf8/validate/135
+ok 137 /utf8/validate/136
+PASS: utf8-validate 137 /utf8/validate/136
+ok 138 /utf8/validate/137
+PASS: utf8-validate 138 /utf8/validate/137
+ok 139 /utf8/validate/138
+PASS: utf8-validate 139 /utf8/validate/138
+ok 140 /utf8/validate/139
+PASS: utf8-validate 140 /utf8/validate/139
+ok 141 /utf8/validate/140
+PASS: utf8-validate 141 /utf8/validate/140
+ok 142 /utf8/validate/141
+PASS: utf8-validate 142 /utf8/validate/141
+ok 143 /utf8/validate/142
+PASS: utf8-validate 143 /utf8/validate/142
+ok 144 /utf8/validate/143
+PASS: utf8-validate 144 /utf8/validate/143
+ok 145 /utf8/validate/144
+PASS: utf8-validate 145 /utf8/validate/144
+ok 146 /utf8/validate/145
+PASS: utf8-validate 146 /utf8/validate/145
+ok 147 /utf8/validate/146
+PASS: utf8-validate 147 /utf8/validate/146
+ok 148 /utf8/validate/147
+PASS: utf8-validate 148 /utf8/validate/147
+ok 149 /utf8/validate/148
+PASS: utf8-validate 149 /utf8/validate/148
+ok 150 /utf8/validate/149
+PASS: utf8-validate 150 /utf8/validate/149
+ok 151 /utf8/validate/150
+PASS: utf8-validate 151 /utf8/validate/150
+ok 152 /utf8/validate/151
+PASS: utf8-validate 152 /utf8/validate/151
+ok 153 /utf8/validate/152
+PASS: utf8-validate 153 /utf8/validate/152
+ok 154 /utf8/validate/153
+PASS: utf8-validate 154 /utf8/validate/153
+ok 155 /utf8/validate/154
+PASS: utf8-validate 155 /utf8/validate/154
+ok 156 /utf8/validate/155
+PASS: utf8-validate 156 /utf8/validate/155
+ok 157 /utf8/validate/156
+PASS: utf8-validate 157 /utf8/validate/156
+ok 158 /utf8/validate/157
+PASS: utf8-validate 158 /utf8/validate/157
+ok 159 /utf8/validate/158
+PASS: utf8-validate 159 /utf8/validate/158
+ok 160 /utf8/validate/159
+PASS: utf8-validate 160 /utf8/validate/159
+ok 161 /utf8/validate/160
+PASS: utf8-validate 161 /utf8/validate/160
+ok 162 /utf8/validate/161
+PASS: utf8-validate 162 /utf8/validate/161
+ok 163 /utf8/validate/162
+PASS: utf8-validate 163 /utf8/validate/162
+ok 164 /utf8/validate/163
+PASS: utf8-validate 164 /utf8/validate/163
+ok 165 /utf8/validate/164
+PASS: utf8-validate 165 /utf8/validate/164
+ok 166 /utf8/validate/165
+PASS: utf8-validate 166 /utf8/validate/165
+ok 167 /utf8/validate/166
+PASS: utf8-validate 167 /utf8/validate/166
+ok 168 /utf8/validate/167
+PASS: utf8-validate 168 /utf8/validate/167
+ok 169 /utf8/validate/168
+PASS: utf8-validate 169 /utf8/validate/168
+ok 170 /utf8/validate/169
+PASS: utf8-validate 170 /utf8/validate/169
+ok 171 /utf8/validate/170
+PASS: utf8-validate 171 /utf8/validate/170
+ok 172 /utf8/validate/171
+PASS: utf8-validate 172 /utf8/validate/171
+ok 173 /utf8/validate/172
+PASS: utf8-validate 173 /utf8/validate/172
+ok 174 /utf8/validate/173
+PASS: utf8-validate 174 /utf8/validate/173
+ok 175 /utf8/validate/174
+PASS: utf8-validate 175 /utf8/validate/174
+ok 176 /utf8/validate/175
+PASS: utf8-validate 176 /utf8/validate/175
+ok 177 /utf8/validate/176
+PASS: utf8-validate 177 /utf8/validate/176
+ok 178 /utf8/validate/177
+PASS: utf8-validate 178 /utf8/validate/177
+ok 179 /utf8/validate/178
+PASS: utf8-validate 179 /utf8/validate/178
+ok 180 /utf8/validate/179
+PASS: utf8-validate 180 /utf8/validate/179
+ok 181 /utf8/validate/180
+PASS: utf8-validate 181 /utf8/validate/180
+ok 182 /utf8/validate/181
+PASS: utf8-validate 182 /utf8/validate/181
+ok 183 /utf8/validate/182
+PASS: utf8-validate 183 /utf8/validate/182
+ok 184 /utf8/validate/183
+PASS: utf8-validate 184 /utf8/validate/183
+ok 185 /utf8/validate/184
+PASS: utf8-validate 185 /utf8/validate/184
+ok 186 /utf8/validate/185
+PASS: utf8-validate 186 /utf8/validate/185
+ok 187 /utf8/validate/186
+PASS: utf8-validate 187 /utf8/validate/186
+ok 188 /utf8/validate/187
+PASS: utf8-validate 188 /utf8/validate/187
+ok 189 /utf8/validate/188
+PASS: utf8-validate 189 /utf8/validate/188
+ok 190 /utf8/validate/189
+PASS: utf8-validate 190 /utf8/validate/189
+ok 191 /utf8/validate/190
+PASS: utf8-validate 191 /utf8/validate/190
+ok 192 /utf8/validate/191
+PASS: utf8-validate 192 /utf8/validate/191
+ok 193 /utf8/validate/192
+PASS: utf8-validate 193 /utf8/validate/192
+ok 194 /utf8/validate/193
+PASS: utf8-validate 194 /utf8/validate/193
+ok 195 /utf8/validate/194
+PASS: utf8-validate 195 /utf8/validate/194
+ok 196 /utf8/validate/195
+PASS: utf8-validate 196 /utf8/validate/195
+ok 197 /utf8/validate/196
+PASS: utf8-validate 197 /utf8/validate/196
+ok 198 /utf8/validate/197
+PASS: utf8-validate 198 /utf8/validate/197
+ok 199 /utf8/validate/198
+PASS: utf8-validate 199 /utf8/validate/198
+ok 200 /utf8/validate/199
+PASS: utf8-validate 200 /utf8/validate/199
+ok 201 /utf8/validate/200
+PASS: utf8-validate 201 /utf8/validate/200
+ok 202 /utf8/validate/201
+PASS: utf8-validate 202 /utf8/validate/201
+ok 203 /utf8/validate/202
+PASS: utf8-validate 203 /utf8/validate/202
+ok 204 /utf8/validate/203
+PASS: utf8-validate 204 /utf8/validate/203
+ok 205 /utf8/validate/204
+PASS: utf8-validate 205 /utf8/validate/204
+ok 206 /utf8/validate/205
+PASS: utf8-validate 206 /utf8/validate/205
+ok 207 /utf8/validate/206
+PASS: utf8-validate 207 /utf8/validate/206
+ok 208 /utf8/validate/207
+PASS: utf8-validate 208 /utf8/validate/207
+ok 209 /utf8/validate/208
+PASS: utf8-validate 209 /utf8/validate/208
+ok 210 /utf8/validate/209
+PASS: utf8-validate 210 /utf8/validate/209
+ok 211 /utf8/validate/210
+PASS: utf8-validate 211 /utf8/validate/210
+ok 212 /utf8/validate/211
+PASS: utf8-validate 212 /utf8/validate/211
+ok 213 /utf8/validate/212
+PASS: utf8-validate 213 /utf8/validate/212
+ok 214 /utf8/validate/213
+PASS: utf8-validate 214 /utf8/validate/213
+ok 215 /utf8/validate/214
+PASS: utf8-validate 215 /utf8/validate/214
+# End of validate tests
+# End of utf8 tests

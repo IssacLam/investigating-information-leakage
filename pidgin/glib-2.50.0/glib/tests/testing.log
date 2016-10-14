@@ -1,0 +1,90 @@
+# random seed: R02Sf4199a28cf38a0ce66ce5570716bfba3
+1..25
+# Start of random-generator tests
+ok 1 /random-generator/rand-1
+PASS: testing 1 /random-generator/rand-1
+ok 2 /random-generator/rand-2
+PASS: testing 2 /random-generator/rand-2
+ok 3 /random-generator/random-conversions
+PASS: testing 3 /random-generator/random-conversions
+# End of random-generator tests
+# Start of misc tests
+ok 4 /misc/assertions
+PASS: testing 4 /misc/assertions
+ok 5 /misc/test-data
+PASS: testing 5 /misc/test-data
+ok 6 /misc/primetoul
+PASS: testing 6 /misc/primetoul
+ok 7 /misc/fatal-log-handler
+PASS: testing 7 /misc/fatal-log-handler
+ok 8 /misc/expected-messages
+PASS: testing 8 /misc/expected-messages
+ok 9 /misc/dash-p
+PASS: testing 9 /misc/dash-p
+ok 10 /misc/nonfatal
+PASS: testing 10 /misc/nonfatal
+ok 11 /misc/skip # SKIP Skipped should count as passed, not failed
+SKIP: testing 11 /misc/skip # SKIP Skipped should count as passed, not failed
+ok 12 /misc/skip-all
+PASS: testing 12 /misc/skip-all
+ok 13 /misc/fail
+PASS: testing 13 /misc/fail
+ok 14 /misc/incomplete
+PASS: testing 14 /misc/incomplete
+ok 15 /misc/timeout
+PASS: testing 15 /misc/timeout
+# Start of assertions tests
+# Start of subprocess tests
+# End of subprocess tests
+# End of assertions tests
+# Start of fatal-log-handler tests
+# Start of subprocess tests
+# End of subprocess tests
+# End of fatal-log-handler tests
+# Start of expected-messages tests
+ok 16 /misc/expected-messages/expect-error
+PASS: testing 16 /misc/expected-messages/expect-error
+# Test-DEBUG: should be ignored
+ok 17 /misc/expected-messages/skip-debug
+PASS: testing 17 /misc/expected-messages/skip-debug
+# Start of subprocess tests
+# End of subprocess tests
+# End of expected-messages tests
+# Start of dash-p tests
+ok 18 /misc/dash-p/child
+PASS: testing 18 /misc/dash-p/child
+# Start of child tests
+ok 19 /misc/dash-p/child/sub
+PASS: testing 19 /misc/dash-p/child/sub
+ok 20 /misc/dash-p/child/sub2
+PASS: testing 20 /misc/dash-p/child/sub2
+# Start of sub tests
+# Start of subprocess tests
+# End of subprocess tests
+# End of sub tests
+# End of child tests
+# Start of subprocess tests
+# Start of hidden tests
+# End of hidden tests
+# End of subprocess tests
+# End of dash-p tests
+# Start of skip-all tests
+# Start of subprocess tests
+# End of subprocess tests
+# End of skip-all tests
+# End of misc tests
+# Start of forking tests
+# testing:ERROR:testing.c:127:test_fork_fail: code should not be reached
+ok 21 /forking/fail assertion
+PASS: testing 21 /forking/fail assertion
+ok 22 /forking/patterns
+PASS: testing 22 /forking/patterns
+# End of forking tests
+# Start of trap_subprocess tests
+ok 23 /trap_subprocess/fail
+PASS: testing 23 /trap_subprocess/fail
+ok 24 /trap_subprocess/no-such-test
+PASS: testing 24 /trap_subprocess/no-such-test
+ok 25 /trap_subprocess/patterns
+PASS: testing 25 /trap_subprocess/patterns
+# End of trap_subprocess tests

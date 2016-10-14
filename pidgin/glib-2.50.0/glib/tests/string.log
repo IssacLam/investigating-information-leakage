@@ -1,0 +1,40 @@
+# random seed: R02S0ee6b360d1c0b287f402106fcaa22c66
+1..18
+# Start of string tests
+ok 1 /string/test-string-chunks
+PASS: string 1 /string/test-string-chunks
+ok 2 /string/test-string-chunk-insert
+PASS: string 2 /string/test-string-chunk-insert
+ok 3 /string/test-string-new
+PASS: string 3 /string/test-string-new
+ok 4 /string/test-string-printf
+PASS: string 4 /string/test-string-printf
+ok 5 /string/test-string-assign
+PASS: string 5 /string/test-string-assign
+ok 6 /string/test-string-append-c
+PASS: string 6 /string/test-string-append-c
+ok 7 /string/test-string-append
+PASS: string 7 /string/test-string-append
+ok 8 /string/test-string-prepend-c
+PASS: string 8 /string/test-string-prepend-c
+ok 9 /string/test-string-prepend
+PASS: string 9 /string/test-string-prepend
+ok 10 /string/test-string-insert
+PASS: string 10 /string/test-string-insert
+ok 11 /string/test-string-insert-unichar
+PASS: string 11 /string/test-string-insert-unichar
+ok 12 /string/test-string-equal
+PASS: string 12 /string/test-string-equal
+ok 13 /string/test-string-truncate
+PASS: string 13 /string/test-string-truncate
+ok 14 /string/test-string-overwrite
+PASS: string 14 /string/test-string-overwrite
+ok 15 /string/test-string-nul-handling
+PASS: string 15 /string/test-string-nul-handling
+ok 16 /string/test-string-up-down
+PASS: string 16 /string/test-string-up-down
+ok 17 /string/test-string-set-size
+PASS: string 17 /string/test-string-set-size
+ok 18 /string/test-string-to-bytes
+PASS: string 18 /string/test-string-to-bytes
+# End of string tests

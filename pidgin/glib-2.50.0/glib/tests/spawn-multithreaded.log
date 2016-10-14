@@ -1,0 +1,8 @@
+# random seed: R02S60d333627e2b3f9efce834a074a18562
+1..2
+# Start of gthread tests
+ok 1 /gthread/spawn-sync
+PASS: spawn-multithreaded 1 /gthread/spawn-sync
+ok 2 /gthread/spawn-async
+PASS: spawn-multithreaded 2 /gthread/spawn-async
+# End of gthread tests

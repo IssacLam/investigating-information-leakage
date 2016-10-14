@@ -1,0 +1,18 @@
+# random seed: R02S0ec6fdaee4fcac1b0925b5d6d4bc0fbd
+1..7
+# Start of mappedfile tests
+ok 1 /mappedfile/basic
+PASS: mappedfile 1 /mappedfile/basic
+ok 2 /mappedfile/empty
+PASS: mappedfile 2 /mappedfile/empty
+ok 3 /mappedfile/device
+PASS: mappedfile 3 /mappedfile/device
+ok 4 /mappedfile/nonexisting
+PASS: mappedfile 4 /mappedfile/nonexisting
+ok 5 /mappedfile/writable
+PASS: mappedfile 5 /mappedfile/writable
+ok 6 /mappedfile/writable_fd
+PASS: mappedfile 6 /mappedfile/writable_fd
+ok 7 /mappedfile/gbytes
+PASS: mappedfile 7 /mappedfile/gbytes
+# End of mappedfile tests

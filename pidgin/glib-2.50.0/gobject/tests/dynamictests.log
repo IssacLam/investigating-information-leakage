@@ -1,0 +1,8 @@
+# random seed: R02S2475e67332c7c87d6474568736190ecf
+1..2
+# Start of GObject tests
+ok 1 /GObject/threaded-dynamic-ref-unref-init
+PASS: dynamictests 1 /GObject/threaded-dynamic-ref-unref-init
+ok 2 /GObject/dynamic-interface-properties
+PASS: dynamictests 2 /GObject/dynamic-interface-properties
+# End of GObject tests

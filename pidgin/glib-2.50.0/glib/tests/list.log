@@ -1,0 +1,40 @@
+# random seed: R02S3124dd2c71813e8beb5ca8fd95624d71
+1..18
+# Start of list tests
+ok 1 /list/sort
+PASS: list 1 /list/sort
+ok 2 /list/sort-with-data
+PASS: list 2 /list/sort-with-data
+ok 3 /list/insert-sorted
+PASS: list 3 /list/insert-sorted
+ok 4 /list/insert-sorted-with-data
+PASS: list 4 /list/insert-sorted-with-data
+ok 5 /list/reverse
+PASS: list 5 /list/reverse
+ok 6 /list/nth
+PASS: list 6 /list/nth
+ok 7 /list/concat
+PASS: list 7 /list/concat
+ok 8 /list/remove
+PASS: list 8 /list/remove
+ok 9 /list/remove-all
+PASS: list 9 /list/remove-all
+ok 10 /list/first-last
+PASS: list 10 /list/first-last
+ok 11 /list/insert
+PASS: list 11 /list/insert
+ok 12 /list/free-full
+PASS: list 12 /list/free-full
+ok 13 /list/copy
+PASS: list 13 /list/copy
+ok 14 /list/copy-deep
+PASS: list 14 /list/copy-deep
+ok 15 /list/delete-link
+PASS: list 15 /list/delete-link
+ok 16 /list/prepend
+PASS: list 16 /list/prepend
+ok 17 /list/position
+PASS: list 17 /list/position
+ok 18 /list/double-free
+PASS: list 18 /list/double-free
+# End of list tests

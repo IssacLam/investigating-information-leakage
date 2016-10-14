@@ -1,0 +1,20 @@
+# random seed: R02Scd33e0034ff6d0f9abcedd91f1ab636e
+1..8
+# Start of thread tests
+ok 1 /thread/private1
+PASS: private 1 /thread/private1
+ok 2 /thread/private2
+PASS: private 2 /thread/private2
+ok 3 /thread/private3
+PASS: private 3 /thread/private3
+ok 4 /thread/staticprivate1
+PASS: private 4 /thread/staticprivate1
+ok 5 /thread/staticprivate2
+PASS: private 5 /thread/staticprivate2
+ok 6 /thread/staticprivate3
+PASS: private 6 /thread/staticprivate3
+ok 7 /thread/staticprivate4
+PASS: private 7 /thread/staticprivate4
+ok 8 /thread/staticprivate5
+PASS: private 8 /thread/staticprivate5
+# End of thread tests

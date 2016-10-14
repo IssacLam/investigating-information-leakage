@@ -1,0 +1,27 @@
+# random seed: R02S403ef5a998f7987ef6224973b9c33f51
+1..11
+# Start of binding tests
+ok 1 /binding/default
+PASS: binding 1 /binding/default
+ok 2 /binding/bidirectional
+PASS: binding 2 /binding/bidirectional
+ok 3 /binding/transform
+PASS: binding 3 /binding/transform
+ok 4 /binding/transform-default
+PASS: binding 4 /binding/transform-default
+ok 5 /binding/transform-closure
+PASS: binding 5 /binding/transform-closure
+# Bug Reference: http://bugzilla.gnome.org/621782
+ok 6 /binding/chain
+PASS: binding 6 /binding/chain
+ok 7 /binding/sync-create
+PASS: binding 7 /binding/sync-create
+ok 8 /binding/invert-boolean
+PASS: binding 8 /binding/invert-boolean
+ok 9 /binding/same-object
+PASS: binding 9 /binding/same-object
+ok 10 /binding/unbind
+PASS: binding 10 /binding/unbind
+ok 11 /binding/fail
+PASS: binding 11 /binding/fail
+# End of binding tests

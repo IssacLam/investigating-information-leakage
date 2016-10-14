@@ -1,0 +1,20 @@
+# random seed: R02S76ad3d87a54d851a56fb369eebbbaa18
+1..7
+# Start of timer tests
+ok 1 /timer/basic
+PASS: timer 1 /timer/basic
+ok 2 /timer/stop
+PASS: timer 2 /timer/stop
+ok 3 /timer/continue
+PASS: timer 3 /timer/continue
+ok 4 /timer/reset
+PASS: timer 4 /timer/reset
+# End of timer tests
+# Start of timeval tests
+ok 5 /timeval/add
+PASS: timer 5 /timeval/add
+ok 6 /timeval/from-iso8601
+PASS: timer 6 /timeval/from-iso8601
+ok 7 /timeval/to-iso8601
+PASS: timer 7 /timeval/to-iso8601
+# End of timeval tests

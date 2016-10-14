@@ -1,0 +1,76 @@
+# random seed: R02S6009fbc1e970d32dffdba9aca6734241
+1..34
+# Start of markup tests
+ok 1 /markup/format
+PASS: markup-escape 1 /markup/format
+# Start of escape-text tests
+ok 2 /markup/escape-text/0
+PASS: markup-escape 2 /markup/escape-text/0
+ok 3 /markup/escape-text/1
+PASS: markup-escape 3 /markup/escape-text/1
+ok 4 /markup/escape-text/2
+PASS: markup-escape 4 /markup/escape-text/2
+ok 5 /markup/escape-text/3
+PASS: markup-escape 5 /markup/escape-text/3
+ok 6 /markup/escape-text/4
+PASS: markup-escape 6 /markup/escape-text/4
+ok 7 /markup/escape-text/5
+PASS: markup-escape 7 /markup/escape-text/5
+ok 8 /markup/escape-text/6
+PASS: markup-escape 8 /markup/escape-text/6
+ok 9 /markup/escape-text/7
+PASS: markup-escape 9 /markup/escape-text/7
+ok 10 /markup/escape-text/8
+PASS: markup-escape 10 /markup/escape-text/8
+ok 11 /markup/escape-text/9
+PASS: markup-escape 11 /markup/escape-text/9
+ok 12 /markup/escape-text/10
+PASS: markup-escape 12 /markup/escape-text/10
+ok 13 /markup/escape-text/11
+PASS: markup-escape 13 /markup/escape-text/11
+ok 14 /markup/escape-text/12
+PASS: markup-escape 14 /markup/escape-text/12
+ok 15 /markup/escape-text/13
+PASS: markup-escape 15 /markup/escape-text/13
+ok 16 /markup/escape-text/14
+PASS: markup-escape 16 /markup/escape-text/14
+ok 17 /markup/escape-text/15
+PASS: markup-escape 17 /markup/escape-text/15
+# End of escape-text tests
+# Start of escape-unichar tests
+ok 18 /markup/escape-unichar/0
+PASS: markup-escape 18 /markup/escape-unichar/0
+ok 19 /markup/escape-unichar/1
+PASS: markup-escape 19 /markup/escape-unichar/1
+ok 20 /markup/escape-unichar/2
+PASS: markup-escape 20 /markup/escape-unichar/2
+ok 21 /markup/escape-unichar/3
+PASS: markup-escape 21 /markup/escape-unichar/3
+ok 22 /markup/escape-unichar/4
+PASS: markup-escape 22 /markup/escape-unichar/4
+ok 23 /markup/escape-unichar/5
+PASS: markup-escape 23 /markup/escape-unichar/5
+ok 24 /markup/escape-unichar/6
+PASS: markup-escape 24 /markup/escape-unichar/6
+ok 25 /markup/escape-unichar/7
+PASS: markup-escape 25 /markup/escape-unichar/7
+ok 26 /markup/escape-unichar/8
+PASS: markup-escape 26 /markup/escape-unichar/8
+ok 27 /markup/escape-unichar/9
+PASS: markup-escape 27 /markup/escape-unichar/9
+ok 28 /markup/escape-unichar/10
+PASS: markup-escape 28 /markup/escape-unichar/10
+ok 29 /markup/escape-unichar/11
+PASS: markup-escape 29 /markup/escape-unichar/11
+ok 30 /markup/escape-unichar/12
+PASS: markup-escape 30 /markup/escape-unichar/12
+ok 31 /markup/escape-unichar/13
+PASS: markup-escape 31 /markup/escape-unichar/13
+ok 32 /markup/escape-unichar/14
+PASS: markup-escape 32 /markup/escape-unichar/14
+ok 33 /markup/escape-unichar/15
+PASS: markup-escape 33 /markup/escape-unichar/15
+ok 34 /markup/escape-unichar/16
+PASS: markup-escape 34 /markup/escape-unichar/16
+# End of escape-unichar tests
+# End of markup tests

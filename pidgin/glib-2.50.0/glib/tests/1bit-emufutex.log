@@ -1,0 +1,10 @@
+# random seed: R02S07923a5ab3472c712f654dab78fc3ed0
+1..2
+# Start of glib tests
+# Start of 1bit-mutex-emufutex tests
+ok 1 /glib/1bit-mutex-emufutex/int
+PASS: 1bit-emufutex 1 /glib/1bit-mutex-emufutex/int
+ok 2 /glib/1bit-mutex-emufutex/pointer
+PASS: 1bit-emufutex 2 /glib/1bit-mutex-emufutex/pointer
+# End of 1bit-mutex-emufutex tests
+# End of glib tests

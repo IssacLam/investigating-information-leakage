@@ -1,0 +1,14 @@
+# random seed: R02S4e12ec7c6eccb7536ba4cd2a7796e198
+1..5
+# Start of utf8 tests
+ok 1 /utf8/strlen
+PASS: utf8-misc 1 /utf8/strlen
+ok 2 /utf8/strncpy
+PASS: utf8-misc 2 /utf8/strncpy
+ok 3 /utf8/strrchr
+PASS: utf8-misc 3 /utf8/strrchr
+ok 4 /utf8/reverse
+PASS: utf8-misc 4 /utf8/reverse
+ok 5 /utf8/substring
+PASS: utf8-misc 5 /utf8/substring
+# End of utf8 tests

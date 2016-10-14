@@ -1,0 +1,40 @@
+# random seed: R02S09f1b2063f858264a9c623eb9b5af6ec
+1..14
+# Start of glib tests
+# Start of markup tests
+# Start of subparser tests
+# Start of success tests
+ok 1 /glib/markup/subparser/success/0
+PASS: markup-subparser 1 /glib/markup/subparser/success/0
+ok 2 /glib/markup/subparser/success/1
+PASS: markup-subparser 2 /glib/markup/subparser/success/1
+ok 3 /glib/markup/subparser/success/2
+PASS: markup-subparser 3 /glib/markup/subparser/success/2
+ok 4 /glib/markup/subparser/success/3
+PASS: markup-subparser 4 /glib/markup/subparser/success/3
+ok 5 /glib/markup/subparser/success/4
+PASS: markup-subparser 5 /glib/markup/subparser/success/4
+ok 6 /glib/markup/subparser/success/5
+PASS: markup-subparser 6 /glib/markup/subparser/success/5
+ok 7 /glib/markup/subparser/success/6
+PASS: markup-subparser 7 /glib/markup/subparser/success/6
+# End of success tests
+# Start of failure tests
+ok 8 /glib/markup/subparser/failure/0
+PASS: markup-subparser 8 /glib/markup/subparser/failure/0
+ok 9 /glib/markup/subparser/failure/1
+PASS: markup-subparser 9 /glib/markup/subparser/failure/1
+ok 10 /glib/markup/subparser/failure/2
+PASS: markup-subparser 10 /glib/markup/subparser/failure/2
+ok 11 /glib/markup/subparser/failure/3
+PASS: markup-subparser 11 /glib/markup/subparser/failure/3
+ok 12 /glib/markup/subparser/failure/4
+PASS: markup-subparser 12 /glib/markup/subparser/failure/4
+ok 13 /glib/markup/subparser/failure/5
+PASS: markup-subparser 13 /glib/markup/subparser/failure/5
+ok 14 /glib/markup/subparser/failure/6
+PASS: markup-subparser 14 /glib/markup/subparser/failure/6
+# End of failure tests
+# End of subparser tests
+# End of markup tests
+# End of glib tests

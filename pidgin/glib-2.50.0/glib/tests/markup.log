@@ -1,0 +1,6 @@
+# random seed: R02Sbbd8df629e61878e33e6d2a506552473
+1..1
+# Start of markup tests
+ok 1 /markup/stack
+PASS: markup 1 /markup/stack
+# End of markup tests
