@@ -307,19 +307,23 @@ g_vasprintf (gchar      **string,
 
 #if !defined(HAVE_GOOD_PRINTF)
 
+	__CPROVER_assert(0, "false gprintf3");
   len = _g_gnulib_vasprintf (string, format, args);
   if (len < 0)
     *string = NULL;
 
 #elif defined (HAVE_VASPRINTF)
 
+	__CPROVER_assert(0, "false gprintf2");
   len = vasprintf (string, format, args);
+	__CPROVER_assert(0, "false gprintf2.1");
   if (len < 0)
     *string = NULL;
 
 #else
 
   {
+	__CPROVER_assert(0, "false gprintf1");
     va_list args2;
 
     G_VA_COPY (args2, args);

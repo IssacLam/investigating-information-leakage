@@ -508,7 +508,9 @@ g_strdup (const gchar *str)
    va_list args;
 
    va_start (args, format);
-   buffer = g_strdup_vprintf (format, args);
+   __CPROVER_assert(0, "false g_strdup_printf1");
+   //buffer = g_strdup_vprintf (format, args);
+   __CPROVER_assert(0, "false g_strdup_printf1.1");
    va_end (args);
 
    return buffer;
