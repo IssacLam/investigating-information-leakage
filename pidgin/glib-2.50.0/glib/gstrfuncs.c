@@ -287,30 +287,30 @@ static const guint16 ascii_table_data[256] = {
 
 const guint16 * const g_ascii_table = ascii_table_data;
 
-// #if defined (HAVE_NEWLOCALE) && \
-//     defined (HAVE_USELOCALE) && \
-//     defined (HAVE_STRTOD_L) && \
-//     defined (HAVE_STRTOULL_L) && \
-//     defined (HAVE_STRTOLL_L)
-// #define USE_XLOCALE 1
-// #endif
+#if defined (HAVE_NEWLOCALE) && \
+    defined (HAVE_USELOCALE) && \
+    defined (HAVE_STRTOD_L) && \
+    defined (HAVE_STRTOULL_L) && \
+    defined (HAVE_STRTOLL_L)
+#define USE_XLOCALE 1
+#endif
 
-// #ifdef USE_XLOCALE
-// static locale_t
-// get_C_locale (void)
-// {
-//   static gsize initialized = FALSE;
-//   static locale_t C_locale = NULL;
-//
-//   if (g_once_init_enter (&initialized))
-//     {
-//       C_locale = newlocale (LC_ALL_MASK, "C", NULL);
-//       g_once_init_leave (&initialized, TRUE);
-//     }
-//
-//   return C_locale;
-// }
-// #endif
+#ifdef USE_XLOCALE
+static locale_t
+get_C_locale (void)
+{
+  static gsize initialized = FALSE;
+  static locale_t C_locale = NULL;
+
+  if (g_once_init_enter (&initialized))
+    {
+      C_locale = newlocale (LC_ALL_MASK, "C", NULL);
+      g_once_init_leave (&initialized, TRUE);
+    }
+
+  return C_locale;
+}
+#endif
 
 /**
  * g_strdup:
@@ -351,22 +351,22 @@ g_strdup (const gchar *str)
  * Returns: a pointer to the newly-allocated copy of the memory, or %NULL if @mem
  *  is %NULL.
  */
-// gpointer
-// g_memdup (gconstpointer mem,
-//           guint         byte_size)
-// {
-//   gpointer new_mem;
-//
-//   if (mem)
-//     {
-//       new_mem = g_malloc (byte_size);
-//       memcpy (new_mem, mem, byte_size);
-//     }
-//   else
-//     new_mem = NULL;
-//
-//   return new_mem;
-// }
+gpointer
+g_memdup (gconstpointer mem,
+          guint         byte_size)
+{
+  gpointer new_mem;
+
+  if (mem)
+    {
+      new_mem = g_malloc (byte_size);
+      memcpy (new_mem, mem, byte_size);
+    }
+  else
+    new_mem = NULL;
+
+  return new_mem;
+}
 
 /**
  * g_strndup:
@@ -385,23 +385,23 @@ g_strdup (const gchar *str)
  * Returns: a newly-allocated buffer containing the first @n bytes
  *     of @str, nul-terminated
  */
-// gchar*
-// g_strndup (const gchar *str,
-//            gsize        n)
-// {
-//   gchar *new_str;
-//
-//   if (str)
-//     {
-//       new_str = g_new (gchar, n + 1);
-//       strncpy (new_str, str, n);
-//       new_str[n] = '\0';
-//     }
-//   else
-//     new_str = NULL;
-//
-//   return new_str;
-// }
+gchar*
+g_strndup (const gchar *str,
+           gsize        n)
+{
+  gchar *new_str;
+
+  if (str)
+    {
+      new_str = g_new (gchar, n + 1);
+      strncpy (new_str, str, n);
+      new_str[n] = '\0';
+    }
+  else
+    new_str = NULL;
+
+  return new_str;
+}
 
 /**
  * g_strnfill:
@@ -413,18 +413,18 @@ g_strdup (const gchar *str)
  *
  * Returns: a newly-allocated string filled the @fill_char
  */
-// gchar*
-// g_strnfill (gsize length,
-//             gchar fill_char)
-// {
-//   gchar *str;
-//
-//   str = g_new (gchar, length + 1);
-//   memset (str, (guchar)fill_char, length);
-//   str[length] = '\0';
-//
-//   return str;
-// }
+gchar*
+g_strnfill (gsize length,
+            gchar fill_char)
+{
+  gchar *str;
+
+  str = g_new (gchar, length + 1);
+  memset (str, (guchar)fill_char, length);
+  str[length] = '\0';
+
+  return str;
+}
 
 /**
  * g_stpcpy:
@@ -438,27 +438,27 @@ g_strdup (const gchar *str)
  *
  * Returns: a pointer to trailing nul byte.
  **/
-// gchar *
-// g_stpcpy (gchar       *dest,
-//           const gchar *src)
-// {
-// #ifdef HAVE_STPCPY
-//   g_return_val_if_fail (dest != NULL, NULL);
-//   g_return_val_if_fail (src != NULL, NULL);
-//   return stpcpy (dest, src);
-// #else
-//   gchar *d = dest;
-//   const gchar *s = src;
-//
-//   g_return_val_if_fail (dest != NULL, NULL);
-//   g_return_val_if_fail (src != NULL, NULL);
-//   do
-//     *d++ = *s;
-//   while (*s++ != '\0');
-//
-//   return d - 1;
-// #endif
-// }
+gchar *
+g_stpcpy (gchar       *dest,
+          const gchar *src)
+{
+#ifdef HAVE_STPCPY
+  g_return_val_if_fail (dest != NULL, NULL);
+  g_return_val_if_fail (src != NULL, NULL);
+  return stpcpy (dest, src);
+#else
+  gchar *d = dest;
+  const gchar *s = src;
+
+  g_return_val_if_fail (dest != NULL, NULL);
+  g_return_val_if_fail (src != NULL, NULL);
+  do
+    *d++ = *s;
+  while (*s++ != '\0');
+
+  return d - 1;
+#endif
+}
 
 /**
  * g_strdup_vprintf:
@@ -508,9 +508,8 @@ g_strdup (const gchar *str)
    va_list args;
 
    va_start (args, format);
-   __CPROVER_assert(0, "false g_strdup_printf1");
-   //buffer = g_strdup_vprintf (format, args);
-   __CPROVER_assert(0, "false g_strdup_printf1.1");
+   // using nondeterminism to model any possible return value.
+   // buffer = g_strdup_vprintf (format, args);
    va_end (args);
 
    return buffer;
@@ -533,43 +532,43 @@ g_strdup (const gchar *str)
  *
  * Returns: a newly-allocated string containing all the string arguments
  */
-// gchar*
-// g_strconcat (const gchar *string1, ...)
-// {
-//   gsize   l;
-//   va_list args;
-//   gchar   *s;
-//   gchar   *concat;
-//   gchar   *ptr;
-//
-//   if (!string1)
-//     return NULL;
-//
-//   l = 1 + strlen (string1);
-//   va_start (args, string1);
-//   s = va_arg (args, gchar*);
-//   while (s)
-//     {
-//       l += strlen (s);
-//       s = va_arg (args, gchar*);
-//     }
-//   va_end (args);
-//
-//   concat = g_new (gchar, l);
-//   ptr = concat;
-//
-//   ptr = g_stpcpy (ptr, string1);
-//   va_start (args, string1);
-//   s = va_arg (args, gchar*);
-//   while (s)
-//     {
-//       ptr = g_stpcpy (ptr, s);
-//       s = va_arg (args, gchar*);
-//     }
-//   va_end (args);
-//
-//   return concat;
-// }
+gchar*
+g_strconcat (const gchar *string1, ...)
+{
+  gsize   l;
+  va_list args;
+  gchar   *s;
+  gchar   *concat;
+  gchar   *ptr;
+
+  if (!string1)
+    return NULL;
+
+  l = 1 + strlen (string1);
+  va_start (args, string1);
+  s = va_arg (args, gchar*);
+  while (s)
+    {
+      l += strlen (s);
+      s = va_arg (args, gchar*);
+    }
+  va_end (args);
+
+  concat = g_new (gchar, l);
+  ptr = concat;
+
+  ptr = g_stpcpy (ptr, string1);
+  va_start (args, string1);
+  s = va_arg (args, gchar*);
+  while (s)
+    {
+      ptr = g_stpcpy (ptr, s);
+      s = va_arg (args, gchar*);
+    }
+  va_end (args);
+
+  return concat;
+}
 
 /**
  * g_strtod:
@@ -591,38 +590,38 @@ g_strdup (const gchar *str)
  *
  * Returns: the #gdouble value.
  **/
-// gdouble
-// g_strtod (const gchar *nptr,
-//           gchar      **endptr)
-// {
-//   gchar *fail_pos_1;
-//   gchar *fail_pos_2;
-//   gdouble val_1;
-//   gdouble val_2 = 0;
-//
-//   g_return_val_if_fail (nptr != NULL, 0);
-//
-//   fail_pos_1 = NULL;
-//   fail_pos_2 = NULL;
-//
-//   val_1 = strtod (nptr, &fail_pos_1);
-//
-//   if (fail_pos_1 && fail_pos_1[0] != 0)
-//     val_2 = g_ascii_strtod (nptr, &fail_pos_2);
-//
-//   if (!fail_pos_1 || fail_pos_1[0] == 0 || fail_pos_1 >= fail_pos_2)
-//     {
-//       if (endptr)
-//         *endptr = fail_pos_1;
-//       return val_1;
-//     }
-//   else
-//     {
-//       if (endptr)
-//         *endptr = fail_pos_2;
-//       return val_2;
-//     }
-// }
+gdouble
+g_strtod (const gchar *nptr,
+          gchar      **endptr)
+{
+  gchar *fail_pos_1;
+  gchar *fail_pos_2;
+  gdouble val_1;
+  gdouble val_2 = 0;
+
+  g_return_val_if_fail (nptr != NULL, 0);
+
+  fail_pos_1 = NULL;
+  fail_pos_2 = NULL;
+
+  val_1 = strtod (nptr, &fail_pos_1);
+
+  if (fail_pos_1 && fail_pos_1[0] != 0)
+    val_2 = g_ascii_strtod (nptr, &fail_pos_2);
+
+  if (!fail_pos_1 || fail_pos_1[0] == 0 || fail_pos_1 >= fail_pos_2)
+    {
+      if (endptr)
+        *endptr = fail_pos_1;
+      return val_1;
+    }
+  else
+    {
+      if (endptr)
+        *endptr = fail_pos_2;
+      return val_2;
+    }
+}
 
 /**
  * g_ascii_strtod:
@@ -656,173 +655,173 @@ g_strdup (const gchar *str)
  *
  * Returns: the #gdouble value.
  */
-// gdouble
-// g_ascii_strtod (const gchar *nptr,
-//                 gchar      **endptr)
-// {
-// #ifdef USE_XLOCALE
-//
-//   g_return_val_if_fail (nptr != NULL, 0);
-//
-//   errno = 0;
-//
-//   return strtod_l (nptr, endptr, get_C_locale ());
-//
-// #else
-//
-//   gchar *fail_pos;
-//   gdouble val;
-// #ifndef __BIONIC__
-//   struct lconv *locale_data;
-// #endif
-//   const char *decimal_point;
-//   int decimal_point_len;
-//   const char *p, *decimal_point_pos;
-//   const char *end = NULL; /* Silence gcc */
-//   int strtod_errno;
-//
-//   g_return_val_if_fail (nptr != NULL, 0);
-//
-//   fail_pos = NULL;
-//
-// #ifndef __BIONIC__
-//   locale_data = localeconv ();
-//   decimal_point = locale_data->decimal_point;
-//   decimal_point_len = strlen (decimal_point);
-// #else
-//   decimal_point = ".";
-//   decimal_point_len = 1;
-// #endif
-//
-//   g_assert (decimal_point_len != 0);
-//
-//   decimal_point_pos = NULL;
-//   end = NULL;
-//
-//   if (decimal_point[0] != '.' ||
-//       decimal_point[1] != 0)
-//     {
-//       p = nptr;
-//       /* Skip leading space */
-//       while (g_ascii_isspace (*p))
-//         p++;
-//
-//       /* Skip leading optional sign */
-//       if (*p == '+' || *p == '-')
-//         p++;
-//
-//       if (p[0] == '0' &&
-//           (p[1] == 'x' || p[1] == 'X'))
-//         {
-//           p += 2;
-//           /* HEX - find the (optional) decimal point */
-//
-//           while (g_ascii_isxdigit (*p))
-//             p++;
-//
-//           if (*p == '.')
-//             decimal_point_pos = p++;
-//
-//           while (g_ascii_isxdigit (*p))
-//             p++;
-//
-//           if (*p == 'p' || *p == 'P')
-//             p++;
-//           if (*p == '+' || *p == '-')
-//             p++;
-//           while (g_ascii_isdigit (*p))
-//             p++;
-//
-//           end = p;
-//         }
-//       else if (g_ascii_isdigit (*p) || *p == '.')
-//         {
-//           while (g_ascii_isdigit (*p))
-//             p++;
-//
-//           if (*p == '.')
-//             decimal_point_pos = p++;
-//
-//           while (g_ascii_isdigit (*p))
-//             p++;
-//
-//           if (*p == 'e' || *p == 'E')
-//             p++;
-//           if (*p == '+' || *p == '-')
-//             p++;
-//           while (g_ascii_isdigit (*p))
-//             p++;
-//
-//           end = p;
-//         }
-//       /* For the other cases, we need not convert the decimal point */
-//     }
-//
-//   if (decimal_point_pos)
-//     {
-//       char *copy, *c;
-//
-//       /* We need to convert the '.' to the locale specific decimal point */
-//       copy = g_malloc (end - nptr + 1 + decimal_point_len);
-//
-//       c = copy;
-//       memcpy (c, nptr, decimal_point_pos - nptr);
-//       c += decimal_point_pos - nptr;
-//       memcpy (c, decimal_point, decimal_point_len);
-//       c += decimal_point_len;
-//       memcpy (c, decimal_point_pos + 1, end - (decimal_point_pos + 1));
-//       c += end - (decimal_point_pos + 1);
-//       *c = 0;
-//
-//       errno = 0;
-//       val = strtod (copy, &fail_pos);
-//       strtod_errno = errno;
-//
-//       if (fail_pos)
-//         {
-//           if (fail_pos - copy > decimal_point_pos - nptr)
-//             fail_pos = (char *)nptr + (fail_pos - copy) - (decimal_point_len - 1);
-//           else
-//             fail_pos = (char *)nptr + (fail_pos - copy);
-//         }
-//
-//       g_free (copy);
-//
-//     }
-//   else if (end)
-//     {
-//       char *copy;
-//
-//       copy = g_malloc (end - (char *)nptr + 1);
-//       memcpy (copy, nptr, end - nptr);
-//       *(copy + (end - (char *)nptr)) = 0;
-//
-//       errno = 0;
-//       val = strtod (copy, &fail_pos);
-//       strtod_errno = errno;
-//
-//       if (fail_pos)
-//         {
-//           fail_pos = (char *)nptr + (fail_pos - copy);
-//         }
-//
-//       g_free (copy);
-//     }
-//   else
-//     {
-//       errno = 0;
-//       val = strtod (nptr, &fail_pos);
-//       strtod_errno = errno;
-//     }
-//
-//   if (endptr)
-//     *endptr = fail_pos;
-//
-//   errno = strtod_errno;
-//
-//   return val;
-// #endif
-// }
+gdouble
+g_ascii_strtod (const gchar *nptr,
+                gchar      **endptr)
+{
+#ifdef USE_XLOCALE
+
+  g_return_val_if_fail (nptr != NULL, 0);
+
+  errno = 0;
+
+  return strtod_l (nptr, endptr, get_C_locale ());
+
+#else
+
+  gchar *fail_pos;
+  gdouble val;
+#ifndef __BIONIC__
+  struct lconv *locale_data;
+#endif
+  const char *decimal_point;
+  int decimal_point_len;
+  const char *p, *decimal_point_pos;
+  const char *end = NULL; /* Silence gcc */
+  int strtod_errno;
+
+  g_return_val_if_fail (nptr != NULL, 0);
+
+  fail_pos = NULL;
+
+#ifndef __BIONIC__
+  locale_data = localeconv ();
+  decimal_point = locale_data->decimal_point;
+  decimal_point_len = strlen (decimal_point);
+#else
+  decimal_point = ".";
+  decimal_point_len = 1;
+#endif
+
+  g_assert (decimal_point_len != 0);
+
+  decimal_point_pos = NULL;
+  end = NULL;
+
+  if (decimal_point[0] != '.' ||
+      decimal_point[1] != 0)
+    {
+      p = nptr;
+      /* Skip leading space */
+      while (g_ascii_isspace (*p))
+        p++;
+
+      /* Skip leading optional sign */
+      if (*p == '+' || *p == '-')
+        p++;
+
+      if (p[0] == '0' &&
+          (p[1] == 'x' || p[1] == 'X'))
+        {
+          p += 2;
+          /* HEX - find the (optional) decimal point */
+
+          while (g_ascii_isxdigit (*p))
+            p++;
+
+          if (*p == '.')
+            decimal_point_pos = p++;
+
+          while (g_ascii_isxdigit (*p))
+            p++;
+
+          if (*p == 'p' || *p == 'P')
+            p++;
+          if (*p == '+' || *p == '-')
+            p++;
+          while (g_ascii_isdigit (*p))
+            p++;
+
+          end = p;
+        }
+      else if (g_ascii_isdigit (*p) || *p == '.')
+        {
+          while (g_ascii_isdigit (*p))
+            p++;
+
+          if (*p == '.')
+            decimal_point_pos = p++;
+
+          while (g_ascii_isdigit (*p))
+            p++;
+
+          if (*p == 'e' || *p == 'E')
+            p++;
+          if (*p == '+' || *p == '-')
+            p++;
+          while (g_ascii_isdigit (*p))
+            p++;
+
+          end = p;
+        }
+      /* For the other cases, we need not convert the decimal point */
+    }
+
+  if (decimal_point_pos)
+    {
+      char *copy, *c;
+
+      /* We need to convert the '.' to the locale specific decimal point */
+      copy = g_malloc (end - nptr + 1 + decimal_point_len);
+
+      c = copy;
+      memcpy (c, nptr, decimal_point_pos - nptr);
+      c += decimal_point_pos - nptr;
+      memcpy (c, decimal_point, decimal_point_len);
+      c += decimal_point_len;
+      memcpy (c, decimal_point_pos + 1, end - (decimal_point_pos + 1));
+      c += end - (decimal_point_pos + 1);
+      *c = 0;
+
+      errno = 0;
+      val = strtod (copy, &fail_pos);
+      strtod_errno = errno;
+
+      if (fail_pos)
+        {
+          if (fail_pos - copy > decimal_point_pos - nptr)
+            fail_pos = (char *)nptr + (fail_pos - copy) - (decimal_point_len - 1);
+          else
+            fail_pos = (char *)nptr + (fail_pos - copy);
+        }
+
+      g_free (copy);
+
+    }
+  else if (end)
+    {
+      char *copy;
+
+      copy = g_malloc (end - (char *)nptr + 1);
+      memcpy (copy, nptr, end - nptr);
+      *(copy + (end - (char *)nptr)) = 0;
+
+      errno = 0;
+      val = strtod (copy, &fail_pos);
+      strtod_errno = errno;
+
+      if (fail_pos)
+        {
+          fail_pos = (char *)nptr + (fail_pos - copy);
+        }
+
+      g_free (copy);
+    }
+  else
+    {
+      errno = 0;
+      val = strtod (nptr, &fail_pos);
+      strtod_errno = errno;
+    }
+
+  if (endptr)
+    *endptr = fail_pos;
+
+  errno = strtod_errno;
+
+  return val;
+#endif
+}
 
 
 /**
@@ -874,231 +873,231 @@ g_ascii_dtostr (gchar       *buffer,
  *
  * Returns: The pointer to the buffer with the converted string.
  */
-// gchar *
-// g_ascii_formatd (gchar       *buffer,
-//                  gint         buf_len,
-//                  const gchar *format,
-//                  gdouble      d)
-// {
-// #ifdef USE_XLOCALE
-//   locale_t old_locale;
-//
-//   old_locale = uselocale (get_C_locale ());
-//    _g_snprintf (buffer, buf_len, format, d);
-//   uselocale (old_locale);
-//
-//   return buffer;
-// #else
-// #ifndef __BIONIC__
-//   struct lconv *locale_data;
-// #endif
-//   const char *decimal_point;
-//   int decimal_point_len;
-//   gchar *p;
-//   int rest_len;
-//   gchar format_char;
-//
-//   g_return_val_if_fail (buffer != NULL, NULL);
-//   g_return_val_if_fail (format[0] == '%', NULL);
-//   g_return_val_if_fail (strpbrk (format + 1, "'l%") == NULL, NULL);
-//
-//   format_char = format[strlen (format) - 1];
-//
-//   g_return_val_if_fail (format_char == 'e' || format_char == 'E' ||
-//                         format_char == 'f' || format_char == 'F' ||
-//                         format_char == 'g' || format_char == 'G',
-//                         NULL);
-//
-//   if (format[0] != '%')
-//     return NULL;
-//
-//   if (strpbrk (format + 1, "'l%"))
-//     return NULL;
-//
-//   if (!(format_char == 'e' || format_char == 'E' ||
-//         format_char == 'f' || format_char == 'F' ||
-//         format_char == 'g' || format_char == 'G'))
-//     return NULL;
-//
-//   _g_snprintf (buffer, buf_len, format, d);
-//
-// #ifndef __BIONIC__
-//   locale_data = localeconv ();
-//   decimal_point = locale_data->decimal_point;
-//   decimal_point_len = strlen (decimal_point);
-// #else
-//   decimal_point = ".";
-//   decimal_point_len = 1;
-// #endif
-//
-//   g_assert (decimal_point_len != 0);
-//
-//   if (decimal_point[0] != '.' ||
-//       decimal_point[1] != 0)
-//     {
-//       p = buffer;
-//
-//       while (g_ascii_isspace (*p))
-//         p++;
-//
-//       if (*p == '+' || *p == '-')
-//         p++;
-//
-//       while (isdigit ((guchar)*p))
-//         p++;
-//
-//       if (strncmp (p, decimal_point, decimal_point_len) == 0)
-//         {
-//           *p = '.';
-//           p++;
-//           if (decimal_point_len > 1)
-//             {
-//               rest_len = strlen (p + (decimal_point_len-1));
-//               memmove (p, p + (decimal_point_len-1), rest_len);
-//               p[rest_len] = 0;
-//             }
-//         }
-//     }
-//
-//   return buffer;
-// #endif
-// }
-// #pragma GCC diagnostic pop
-//
-// #define ISSPACE(c)              ((c) == ' ' || (c) == '\f' || (c) == '\n' || \
-//                                  (c) == '\r' || (c) == '\t' || (c) == '\v')
-// #define ISUPPER(c)              ((c) >= 'A' && (c) <= 'Z')
-// #define ISLOWER(c)              ((c) >= 'a' && (c) <= 'z')
-// #define ISALPHA(c)              (ISUPPER (c) || ISLOWER (c))
-// #define TOUPPER(c)              (ISLOWER (c) ? (c) - 'a' + 'A' : (c))
-// #define TOLOWER(c)              (ISUPPER (c) ? (c) - 'A' + 'a' : (c))
-//
-// #ifndef USE_XLOCALE
+gchar *
+g_ascii_formatd (gchar       *buffer,
+                 gint         buf_len,
+                 const gchar *format,
+                 gdouble      d)
+{
+#ifdef USE_XLOCALE
+  locale_t old_locale;
 
-// static guint64
-// g_parse_long_long (const gchar  *nptr,
-//                    const gchar **endptr,
-//                    guint         base,
-//                    gboolean     *negative)
-// {
-//   /* this code is based on on the strtol(3) code from GNU libc released under
-//    * the GNU Lesser General Public License.
-//    *
-//    * Copyright (C) 1991,92,94,95,96,97,98,99,2000,01,02
-//    *        Free Software Foundation, Inc.
-//    */
-//   gboolean overflow;
-//   guint64 cutoff;
-//   guint64 cutlim;
-//   guint64 ui64;
-//   const gchar *s, *save;
-//   guchar c;
-//
-//   g_return_val_if_fail (nptr != NULL, 0);
-//
-//   *negative = FALSE;
-//   if (base == 1 || base > 36)
-//     {
-//       errno = EINVAL;
-//       if (endptr)
-//         *endptr = nptr;
-//       return 0;
-//     }
-//
-//   save = s = nptr;
-//
-//   /* Skip white space.  */
-//   while (ISSPACE (*s))
-//     ++s;
-//
-//   if (G_UNLIKELY (!*s))
-//     goto noconv;
-//
-//   /* Check for a sign.  */
-//   if (*s == '-')
-//     {
-//       *negative = TRUE;
-//       ++s;
-//     }
-//   else if (*s == '+')
-//     ++s;
-//
-//   /* Recognize number prefix and if BASE is zero, figure it out ourselves.  */
-//   if (*s == '0')
-//     {
-//       if ((base == 0 || base == 16) && TOUPPER (s[1]) == 'X')
-//         {
-//           s += 2;
-//           base = 16;
-//         }
-//       else if (base == 0)
-//         base = 8;
-//     }
-//   else if (base == 0)
-//     base = 10;
-//
-//   /* Save the pointer so we can check later if anything happened.  */
-//   save = s;
-//   cutoff = G_MAXUINT64 / base;
-//   cutlim = G_MAXUINT64 % base;
-//
-//   overflow = FALSE;
-//   ui64 = 0;
-//   c = *s;
-//   for (; c; c = *++s)
-//     {
-//       if (c >= '0' && c <= '9')
-//         c -= '0';
-//       else if (ISALPHA (c))
-//         c = TOUPPER (c) - 'A' + 10;
-//       else
-//         break;
-//       if (c >= base)
-//         break;
-//       /* Check for overflow.  */
-//       if (ui64 > cutoff || (ui64 == cutoff && c > cutlim))
-//         overflow = TRUE;
-//       else
-//         {
-//           ui64 *= base;
-//           ui64 += c;
-//         }
-//     }
-//
-//   /* Check if anything actually happened.  */
-//   if (s == save)
-//     goto noconv;
-//
-//   /* Store in ENDPTR the address of one character
-//      past the last character we converted.  */
-//   if (endptr)
-//     *endptr = s;
-//
-//   if (G_UNLIKELY (overflow))
-//     {
-//       errno = ERANGE;
-//       return G_MAXUINT64;
-//     }
-//
-//   return ui64;
-//
-//  noconv:
-//   /* We must handle a special case here: the base is 0 or 16 and the
-//      first two characters are '0' and 'x', but the rest are no
-//      hexadecimal digits.  This is no error case.  We return 0 and
-//      ENDPTR points to the `x`.  */
-//   if (endptr)
-//     {
-//       if (save - nptr >= 2 && TOUPPER (save[-1]) == 'X'
-//           && save[-2] == '0')
-//         *endptr = &save[-1];
-//       else
-//         /*  There was no number to convert.  */
-//         *endptr = nptr;
-//     }
-//   return 0;
-// }
-// #endif /* !USE_XLOCALE */
+  old_locale = uselocale (get_C_locale ());
+   _g_snprintf (buffer, buf_len, format, d);
+  uselocale (old_locale);
+
+  return buffer;
+#else
+#ifndef __BIONIC__
+  struct lconv *locale_data;
+#endif
+  const char *decimal_point;
+  int decimal_point_len;
+  gchar *p;
+  int rest_len;
+  gchar format_char;
+
+  g_return_val_if_fail (buffer != NULL, NULL);
+  g_return_val_if_fail (format[0] == '%', NULL);
+  g_return_val_if_fail (strpbrk (format + 1, "'l%") == NULL, NULL);
+
+  format_char = format[strlen (format) - 1];
+
+  g_return_val_if_fail (format_char == 'e' || format_char == 'E' ||
+                        format_char == 'f' || format_char == 'F' ||
+                        format_char == 'g' || format_char == 'G',
+                        NULL);
+
+  if (format[0] != '%')
+    return NULL;
+
+  if (strpbrk (format + 1, "'l%"))
+    return NULL;
+
+  if (!(format_char == 'e' || format_char == 'E' ||
+        format_char == 'f' || format_char == 'F' ||
+        format_char == 'g' || format_char == 'G'))
+    return NULL;
+
+  _g_snprintf (buffer, buf_len, format, d);
+
+#ifndef __BIONIC__
+  locale_data = localeconv ();
+  decimal_point = locale_data->decimal_point;
+  decimal_point_len = strlen (decimal_point);
+#else
+  decimal_point = ".";
+  decimal_point_len = 1;
+#endif
+
+  g_assert (decimal_point_len != 0);
+
+  if (decimal_point[0] != '.' ||
+      decimal_point[1] != 0)
+    {
+      p = buffer;
+
+      while (g_ascii_isspace (*p))
+        p++;
+
+      if (*p == '+' || *p == '-')
+        p++;
+
+      while (isdigit ((guchar)*p))
+        p++;
+
+      if (strncmp (p, decimal_point, decimal_point_len) == 0)
+        {
+          *p = '.';
+          p++;
+          if (decimal_point_len > 1)
+            {
+              rest_len = strlen (p + (decimal_point_len-1));
+              memmove (p, p + (decimal_point_len-1), rest_len);
+              p[rest_len] = 0;
+            }
+        }
+    }
+
+  return buffer;
+#endif
+}
+#pragma GCC diagnostic pop
+
+#define ISSPACE(c)              ((c) == ' ' || (c) == '\f' || (c) == '\n' || \
+                                 (c) == '\r' || (c) == '\t' || (c) == '\v')
+#define ISUPPER(c)              ((c) >= 'A' && (c) <= 'Z')
+#define ISLOWER(c)              ((c) >= 'a' && (c) <= 'z')
+#define ISALPHA(c)              (ISUPPER (c) || ISLOWER (c))
+#define TOUPPER(c)              (ISLOWER (c) ? (c) - 'a' + 'A' : (c))
+#define TOLOWER(c)              (ISUPPER (c) ? (c) - 'A' + 'a' : (c))
+
+#ifndef USE_XLOCALE
+
+static guint64
+g_parse_long_long (const gchar  *nptr,
+                   const gchar **endptr,
+                   guint         base,
+                   gboolean     *negative)
+{
+  /* this code is based on on the strtol(3) code from GNU libc released under
+   * the GNU Lesser General Public License.
+   *
+   * Copyright (C) 1991,92,94,95,96,97,98,99,2000,01,02
+   *        Free Software Foundation, Inc.
+   */
+  gboolean overflow;
+  guint64 cutoff;
+  guint64 cutlim;
+  guint64 ui64;
+  const gchar *s, *save;
+  guchar c;
+
+  g_return_val_if_fail (nptr != NULL, 0);
+
+  *negative = FALSE;
+  if (base == 1 || base > 36)
+    {
+      errno = EINVAL;
+      if (endptr)
+        *endptr = nptr;
+      return 0;
+    }
+
+  save = s = nptr;
+
+  /* Skip white space.  */
+  while (ISSPACE (*s))
+    ++s;
+
+  if (G_UNLIKELY (!*s))
+    goto noconv;
+
+  /* Check for a sign.  */
+  if (*s == '-')
+    {
+      *negative = TRUE;
+      ++s;
+    }
+  else if (*s == '+')
+    ++s;
+
+  /* Recognize number prefix and if BASE is zero, figure it out ourselves.  */
+  if (*s == '0')
+    {
+      if ((base == 0 || base == 16) && TOUPPER (s[1]) == 'X')
+        {
+          s += 2;
+          base = 16;
+        }
+      else if (base == 0)
+        base = 8;
+    }
+  else if (base == 0)
+    base = 10;
+
+  /* Save the pointer so we can check later if anything happened.  */
+  save = s;
+  cutoff = G_MAXUINT64 / base;
+  cutlim = G_MAXUINT64 % base;
+
+  overflow = FALSE;
+  ui64 = 0;
+  c = *s;
+  for (; c; c = *++s)
+    {
+      if (c >= '0' && c <= '9')
+        c -= '0';
+      else if (ISALPHA (c))
+        c = TOUPPER (c) - 'A' + 10;
+      else
+        break;
+      if (c >= base)
+        break;
+      /* Check for overflow.  */
+      if (ui64 > cutoff || (ui64 == cutoff && c > cutlim))
+        overflow = TRUE;
+      else
+        {
+          ui64 *= base;
+          ui64 += c;
+        }
+    }
+
+  /* Check if anything actually happened.  */
+  if (s == save)
+    goto noconv;
+
+  /* Store in ENDPTR the address of one character
+     past the last character we converted.  */
+  if (endptr)
+    *endptr = s;
+
+  if (G_UNLIKELY (overflow))
+    {
+      errno = ERANGE;
+      return G_MAXUINT64;
+    }
+
+  return ui64;
+
+ noconv:
+  /* We must handle a special case here: the base is 0 or 16 and the
+     first two characters are '0' and 'x', but the rest are no
+     hexadecimal digits.  This is no error case.  We return 0 and
+     ENDPTR points to the `x`.  */
+  if (endptr)
+    {
+      if (save - nptr >= 2 && TOUPPER (save[-1]) == 'X'
+          && save[-2] == '0')
+        *endptr = &save[-1];
+      else
+        /*  There was no number to convert.  */
+        *endptr = nptr;
+    }
+  return 0;
+}
+#endif /* !USE_XLOCALE */
 
 /**
  * g_ascii_strtoull:
@@ -1129,23 +1128,23 @@ g_ascii_dtostr (gchar       *buffer,
  *
  * Since: 2.2
  */
-// guint64
-// g_ascii_strtoull (const gchar *nptr,
-//                   gchar      **endptr,
-//                   guint        base)
-// {
-// #ifdef USE_XLOCALE
-//   return strtoull_l (nptr, endptr, base, get_C_locale ());
-// #else
-//   gboolean negative;
-//   guint64 result;
-//
-//   result = g_parse_long_long (nptr, (const gchar **) endptr, base, &negative);
-//
-//   /* Return the result of the appropriate sign.  */
-//   return negative ? -result : result;
-// #endif
-// }
+guint64
+g_ascii_strtoull (const gchar *nptr,
+                  gchar      **endptr,
+                  guint        base)
+{
+#ifdef USE_XLOCALE
+  return strtoull_l (nptr, endptr, base, get_C_locale ());
+#else
+  gboolean negative;
+  guint64 result;
+
+  result = g_parse_long_long (nptr, (const gchar **) endptr, base, &negative);
+
+  /* Return the result of the appropriate sign.  */
+  return negative ? -result : result;
+#endif
+}
 
 /**
  * g_ascii_strtoll:
@@ -1176,35 +1175,35 @@ g_ascii_dtostr (gchar       *buffer,
  *
  * Since: 2.12
  */
-// gint64
-// g_ascii_strtoll (const gchar *nptr,
-//                  gchar      **endptr,
-//                  guint        base)
-// {
-// #ifdef USE_XLOCALE
-//   return strtoll_l (nptr, endptr, base, get_C_locale ());
-// #else
-//   gboolean negative;
-//   guint64 result;
-//
-//   result = g_parse_long_long (nptr, (const gchar **) endptr, base, &negative);
-//
-//   if (negative && result > (guint64) G_MININT64)
-//     {
-//       errno = ERANGE;
-//       return G_MININT64;
-//     }
-//   else if (!negative && result > (guint64) G_MAXINT64)
-//     {
-//       errno = ERANGE;
-//       return G_MAXINT64;
-//     }
-//   else if (negative)
-//     return - (gint64) result;
-//   else
-//     return (gint64) result;
-// #endif
-// }
+gint64
+g_ascii_strtoll (const gchar *nptr,
+                 gchar      **endptr,
+                 guint        base)
+{
+#ifdef USE_XLOCALE
+  return strtoll_l (nptr, endptr, base, get_C_locale ());
+#else
+  gboolean negative;
+  guint64 result;
+
+  result = g_parse_long_long (nptr, (const gchar **) endptr, base, &negative);
+
+  if (negative && result > (guint64) G_MININT64)
+    {
+      errno = ERANGE;
+      return G_MININT64;
+    }
+  else if (!negative && result > (guint64) G_MAXINT64)
+    {
+      errno = ERANGE;
+      return G_MAXINT64;
+    }
+  else if (negative)
+    return - (gint64) result;
+  else
+    return (gint64) result;
+#endif
+}
 
 /**
  * g_strerror:
@@ -1223,59 +1222,59 @@ g_ascii_dtostr (gchar       *buffer,
  * Returns: a UTF-8 string describing the error code. If the error code
  *     is unknown, it returns a string like "unknown error (<code>)".
  */
-// const gchar *
-// g_strerror (gint errnum)
-// {
-//   static GHashTable *errors;
-//   G_LOCK_DEFINE_STATIC (errors);
-//   const gchar *msg;
-//   gint saved_errno = errno;
-//
-//   G_LOCK (errors);
-//   if (errors)
-//     msg = g_hash_table_lookup (errors, GINT_TO_POINTER (errnum));
-//   else
-//     {
-//       errors = g_hash_table_new (NULL, NULL);
-//       msg = NULL;
-//     }
-//
-//   if (!msg)
-//     {
-//       gchar buf[1024];
-//       GError *error = NULL;
-//
-// #if defined(G_OS_WIN32)
-//       strerror_s (buf, sizeof (buf), errnum);
-//       msg = buf;
-// #elif defined(HAVE_STRERROR_R)
-//       /* Match the condition in strerror_r(3) for glibc */
-// #  if defined(__GLIBC__) && !((_POSIX_C_SOURCE >= 200112L || _XOPEN_SOURCE >= 600) && ! _GNU_SOURCE)
-//       msg = strerror_r (errnum, buf, sizeof (buf));
-// #  else
-//       strerror_r (errnum, buf, sizeof (buf));
-//       msg = buf;
-// #  endif /* HAVE_STRERROR_R */
-// #else
-//       g_strlcpy (buf, strerror (errnum), sizeof (buf));
-//       msg = buf;
-// #endif
-//       if (!g_get_charset (NULL))
-//         {
-//           msg = g_locale_to_utf8 (msg, -1, NULL, NULL, &error);
-//           if (error)
-//             g_print ("%s\n", error->message);
-//         }
-//       else if (msg == (const gchar *)buf)
-//         msg = g_strdup (buf);
-//
-//       g_hash_table_insert (errors, GINT_TO_POINTER (errnum), (char *) msg);
-//     }
-//   G_UNLOCK (errors);
-//
-//   errno = saved_errno;
-//   return msg;
-// }
+const gchar *
+g_strerror (gint errnum)
+{
+  static GHashTable *errors;
+  G_LOCK_DEFINE_STATIC (errors);
+  const gchar *msg;
+  gint saved_errno = errno;
+
+  G_LOCK (errors);
+  if (errors)
+    msg = g_hash_table_lookup (errors, GINT_TO_POINTER (errnum));
+  else
+    {
+      errors = g_hash_table_new (NULL, NULL);
+      msg = NULL;
+    }
+
+  if (!msg)
+    {
+      gchar buf[1024];
+      GError *error = NULL;
+
+#if defined(G_OS_WIN32)
+      strerror_s (buf, sizeof (buf), errnum);
+      msg = buf;
+#elif defined(HAVE_STRERROR_R)
+      /* Match the condition in strerror_r(3) for glibc */
+#  if defined(__GLIBC__) && !((_POSIX_C_SOURCE >= 200112L || _XOPEN_SOURCE >= 600) && ! _GNU_SOURCE)
+      msg = strerror_r (errnum, buf, sizeof (buf));
+#  else
+      strerror_r (errnum, buf, sizeof (buf));
+      msg = buf;
+#  endif /* HAVE_STRERROR_R */
+#else
+      g_strlcpy (buf, strerror (errnum), sizeof (buf));
+      msg = buf;
+#endif
+      if (!g_get_charset (NULL))
+        {
+          msg = g_locale_to_utf8 (msg, -1, NULL, NULL, &error);
+          if (error)
+            g_print ("%s\n", error->message);
+        }
+      else if (msg == (const gchar *)buf)
+        msg = g_strdup (buf);
+
+      g_hash_table_insert (errors, GINT_TO_POINTER (errnum), (char *) msg);
+    }
+  G_UNLOCK (errors);
+
+  errno = saved_errno;
+  return msg;
+}
 
 /**
  * g_strsignal:
@@ -1289,28 +1288,28 @@ g_ascii_dtostr (gchar       *buffer,
  * Returns: a UTF-8 string describing the signal. If the signal is unknown,
  *     it returns "unknown signal (<signum>)".
  */
-// const gchar *
-// g_strsignal (gint signum)
-// {
-//   gchar *msg;
-//   gchar *tofree;
-//   const gchar *ret;
-//
-//   msg = tofree = NULL;
-//
-// #ifdef HAVE_STRSIGNAL
-//   msg = strsignal (signum);
-//   if (!g_get_charset (NULL))
-//     msg = tofree = g_locale_to_utf8 (msg, -1, NULL, NULL, NULL);
-// #endif
-//
-//   if (!msg)
-//     msg = tofree = g_strdup_printf ("unknown signal (%d)", signum);
-//   ret = g_intern_string (msg);
-//   g_free (tofree);
-//
-//   return ret;
-// }
+const gchar *
+g_strsignal (gint signum)
+{
+  gchar *msg;
+  gchar *tofree;
+  const gchar *ret;
+
+  msg = tofree = NULL;
+
+#ifdef HAVE_STRSIGNAL
+  msg = strsignal (signum);
+  if (!g_get_charset (NULL))
+    msg = tofree = g_locale_to_utf8 (msg, -1, NULL, NULL, NULL);
+#endif
+
+  if (!msg)
+    msg = tofree = g_strdup_printf ("unknown signal (%d)", signum);
+  ret = g_intern_string (msg);
+  g_free (tofree);
+
+  return ret;
+}
 
 /* Functions g_strlcpy and g_strlcat were originally developed by
  * Todd C. Miller <Todd.Miller@courtesan.com> to simplify writing secure code.
@@ -1318,89 +1317,89 @@ g_ascii_dtostr (gchar       *buffer,
  * for more information.
  */
 
-// #ifdef HAVE_STRLCPY
-// /* Use the native ones, if available; they might be implemented in assembly */
-// gsize
-// g_strlcpy (gchar       *dest,
-//            const gchar *src,
-//            gsize        dest_size)
-// {
-//   g_return_val_if_fail (dest != NULL, 0);
-//   g_return_val_if_fail (src  != NULL, 0);
-//
-//   return strlcpy (dest, src, dest_size);
-// }
-//
-// gsize
-// g_strlcat (gchar       *dest,
-//            const gchar *src,
-//            gsize        dest_size)
-// {
-//   g_return_val_if_fail (dest != NULL, 0);
-//   g_return_val_if_fail (src  != NULL, 0);
-//
-//   return strlcat (dest, src, dest_size);
-// }
-//
-// #else /* ! HAVE_STRLCPY */
-// /**
-//  * g_strlcpy:
-//  * @dest: destination buffer
-//  * @src: source buffer
-//  * @dest_size: length of @dest in bytes
-//  *
-//  * Portability wrapper that calls strlcpy() on systems which have it,
-//  * and emulates strlcpy() otherwise. Copies @src to @dest; @dest is
-//  * guaranteed to be nul-terminated; @src must be nul-terminated;
-//  * @dest_size is the buffer size, not the number of bytes to copy.
-//  *
-//  * At most @dest_size - 1 characters will be copied. Always nul-terminates
-//  * (unless @dest_size is 0). This function does not allocate memory. Unlike
-//  * strncpy(), this function doesn't pad @dest (so it's often faster). It
-//  * returns the size of the attempted result, strlen (src), so if
-//  * @retval >= @dest_size, truncation occurred.
-//  *
-//  * Caveat: strlcpy() is supposedly more secure than strcpy() or strncpy(),
-//  * but if you really want to avoid screwups, g_strdup() is an even better
-//  * idea.
-//  *
-//  * Returns: length of @src
-//  */
-// gsize
-// g_strlcpy (gchar       *dest,
-//            const gchar *src,
-//            gsize        dest_size)
-// {
-//   gchar *d = dest;
-//   const gchar *s = src;
-//   gsize n = dest_size;
-//
-//   g_return_val_if_fail (dest != NULL, 0);
-//   g_return_val_if_fail (src  != NULL, 0);
-//
-//   /* Copy as many bytes as will fit */
-//   if (n != 0 && --n != 0)
-//     do
-//       {
-//         gchar c = *s++;
-//
-//         *d++ = c;
-//         if (c == 0)
-//           break;
-//       }
-//     while (--n != 0);
-//
-//   /* If not enough room in dest, add NUL and traverse rest of src */
-//   if (n == 0)
-//     {
-//       if (dest_size != 0)
-//         *d = 0;
-//       while (*s++)
-//         ;
-//     }
-//
-//   return s - src - 1;  /* count does not include NUL */
-// }
+#ifdef HAVE_STRLCPY
+/* Use the native ones, if available; they might be implemented in assembly */
+gsize
+g_strlcpy (gchar       *dest,
+           const gchar *src,
+           gsize        dest_size)
+{
+  g_return_val_if_fail (dest != NULL, 0);
+  g_return_val_if_fail (src  != NULL, 0);
+
+  return strlcpy (dest, src, dest_size);
+}
+
+gsize
+g_strlcat (gchar       *dest,
+           const gchar *src,
+           gsize        dest_size)
+{
+  g_return_val_if_fail (dest != NULL, 0);
+  g_return_val_if_fail (src  != NULL, 0);
+
+  return strlcat (dest, src, dest_size);
+}
+
+#else /* ! HAVE_STRLCPY */
+/**
+ * g_strlcpy:
+ * @dest: destination buffer
+ * @src: source buffer
+ * @dest_size: length of @dest in bytes
+ *
+ * Portability wrapper that calls strlcpy() on systems which have it,
+ * and emulates strlcpy() otherwise. Copies @src to @dest; @dest is
+ * guaranteed to be nul-terminated; @src must be nul-terminated;
+ * @dest_size is the buffer size, not the number of bytes to copy.
+ *
+ * At most @dest_size - 1 characters will be copied. Always nul-terminates
+ * (unless @dest_size is 0). This function does not allocate memory. Unlike
+ * strncpy(), this function doesn't pad @dest (so it's often faster). It
+ * returns the size of the attempted result, strlen (src), so if
+ * @retval >= @dest_size, truncation occurred.
+ *
+ * Caveat: strlcpy() is supposedly more secure than strcpy() or strncpy(),
+ * but if you really want to avoid screwups, g_strdup() is an even better
+ * idea.
+ *
+ * Returns: length of @src
+ */
+gsize
+g_strlcpy (gchar       *dest,
+           const gchar *src,
+           gsize        dest_size)
+{
+  gchar *d = dest;
+  const gchar *s = src;
+  gsize n = dest_size;
+
+  g_return_val_if_fail (dest != NULL, 0);
+  g_return_val_if_fail (src  != NULL, 0);
+
+  /* Copy as many bytes as will fit */
+  if (n != 0 && --n != 0)
+    do
+      {
+        gchar c = *s++;
+
+        *d++ = c;
+        if (c == 0)
+          break;
+      }
+    while (--n != 0);
+
+  /* If not enough room in dest, add NUL and traverse rest of src */
+  if (n == 0)
+    {
+      if (dest_size != 0)
+        *d = 0;
+      while (*s++)
+        ;
+    }
+
+  return s - src - 1;  /* count does not include NUL */
+}
 
 /**
  * g_strlcat:
@@ -1427,42 +1426,42 @@ g_ascii_dtostr (gchar       *buffer,
  *     (original dest)) + strlen (src), so if retval >= dest_size,
  *     truncation occurred.
  */
-// gsize
-// g_strlcat (gchar       *dest,
-//            const gchar *src,
-//            gsize        dest_size)
-// {
-//   gchar *d = dest;
-//   const gchar *s = src;
-//   gsize bytes_left = dest_size;
-//   gsize dlength;  /* Logically, MIN (strlen (d), dest_size) */
-//
-//   g_return_val_if_fail (dest != NULL, 0);
-//   g_return_val_if_fail (src  != NULL, 0);
-//
-//   /* Find the end of dst and adjust bytes left but don't go past end */
-//   while (*d != 0 && bytes_left-- != 0)
-//     d++;
-//   dlength = d - dest;
-//   bytes_left = dest_size - dlength;
-//
-//   if (bytes_left == 0)
-//     return dlength + strlen (s);
-//
-//   while (*s != 0)
-//     {
-//       if (bytes_left != 1)
-//         {
-//           *d++ = *s;
-//           bytes_left--;
-//         }
-//       s++;
-//     }
-//   *d = 0;
-//
-//   return dlength + (s - src);  /* count does not include NUL */
-// }
-// #endif /* ! HAVE_STRLCPY */
+gsize
+g_strlcat (gchar       *dest,
+           const gchar *src,
+           gsize        dest_size)
+{
+  gchar *d = dest;
+  const gchar *s = src;
+  gsize bytes_left = dest_size;
+  gsize dlength;  /* Logically, MIN (strlen (d), dest_size) */
+
+  g_return_val_if_fail (dest != NULL, 0);
+  g_return_val_if_fail (src  != NULL, 0);
+
+  /* Find the end of dst and adjust bytes left but don't go past end */
+  while (*d != 0 && bytes_left-- != 0)
+    d++;
+  dlength = d - dest;
+  bytes_left = dest_size - dlength;
+
+  if (bytes_left == 0)
+    return dlength + strlen (s);
+
+  while (*s != 0)
+    {
+      if (bytes_left != 1)
+        {
+          *d++ = *s;
+          bytes_left--;
+        }
+      s++;
+    }
+  *d = 0;
+
+  return dlength + (s - src);  /* count does not include NUL */
+}
+#endif /* ! HAVE_STRLCPY */
 
 /**
  * g_ascii_strdown:
@@ -1476,23 +1475,23 @@ g_ascii_dtostr (gchar       *buffer,
  *     exactly match g_ascii_tolower(). (Note that this is unlike the
  *     old g_strdown(), which modified the string in place.)
  */
-// gchar*
-// g_ascii_strdown (const gchar *str,
-//                  gssize       len)
-// {
-//   gchar *result, *s;
-//
-//   g_return_val_if_fail (str != NULL, NULL);
-//
-//   if (len < 0)
-//     len = strlen (str);
-//
-//   result = g_strndup (str, len);
-//   for (s = result; *s; s++)
-//     *s = g_ascii_tolower (*s);
-//
-//   return result;
-// }
+gchar*
+g_ascii_strdown (const gchar *str,
+                 gssize       len)
+{
+  gchar *result, *s;
+
+  g_return_val_if_fail (str != NULL, NULL);
+
+  if (len < 0)
+    len = strlen (str);
+
+  result = g_strndup (str, len);
+  for (s = result; *s; s++)
+    *s = g_ascii_tolower (*s);
+
+  return result;
+}
 
 /**
  * g_ascii_strup:
@@ -1506,23 +1505,23 @@ g_ascii_dtostr (gchar       *buffer,
  *     exactly match g_ascii_toupper(). (Note that this is unlike the
  *     old g_strup(), which modified the string in place.)
  */
-// gchar*
-// g_ascii_strup (const gchar *str,
-//                gssize       len)
-// {
-//   gchar *result, *s;
-//
-//   g_return_val_if_fail (str != NULL, NULL);
-//
-//   if (len < 0)
-//     len = strlen (str);
-//
-//   result = g_strndup (str, len);
-//   for (s = result; *s; s++)
-//     *s = g_ascii_toupper (*s);
-//
-//   return result;
-// }
+gchar*
+g_ascii_strup (const gchar *str,
+               gssize       len)
+{
+  gchar *result, *s;
+
+  g_return_val_if_fail (str != NULL, NULL);
+
+  if (len < 0)
+    len = strlen (str);
+
+  result = g_strndup (str, len);
+  for (s = result; *s; s++)
+    *s = g_ascii_toupper (*s);
+
+  return result;
+}
 
 /**
  * g_str_is_ascii:
@@ -1535,17 +1534,17 @@ g_ascii_dtostr (gchar       *buffer,
  *
  * Since: 2.40
  */
-// gboolean
-// g_str_is_ascii (const gchar *str)
-// {
-//   gint i;
-//
-//   for (i = 0; str[i]; i++)
-//     if (str[i] & 0x80)
-//       return FALSE;
-//
-//   return TRUE;
-// }
+gboolean
+g_str_is_ascii (const gchar *str)
+{
+  gint i;
+
+  for (i = 0; str[i]; i++)
+    if (str[i] & 0x80)
+      return FALSE;
+
+  return TRUE;
+}
 
 /**
  * g_strdown:
@@ -1559,24 +1558,24 @@ g_ascii_dtostr (gchar       *buffer,
  * in the g_strncasecmp() docs - use g_ascii_strdown() or g_utf8_strdown()
  * instead.
  **/
-// gchar*
-// g_strdown (gchar *string)
-// {
-//   guchar *s;
-//
-//   g_return_val_if_fail (string != NULL, NULL);
-//
-//   s = (guchar *) string;
-//
-//   while (*s)
-//     {
-//       if (isupper (*s))
-//         *s = tolower (*s);
-//       s++;
-//     }
-//
-//   return (gchar *) string;
-// }
+gchar*
+g_strdown (gchar *string)
+{
+  guchar *s;
+
+  g_return_val_if_fail (string != NULL, NULL);
+
+  s = (guchar *) string;
+
+  while (*s)
+    {
+      if (isupper (*s))
+        *s = tolower (*s);
+      s++;
+    }
+
+  return (gchar *) string;
+}
 
 /**
  * g_strup:
@@ -1590,24 +1589,24 @@ g_ascii_dtostr (gchar       *buffer,
  *     discussed in the g_strncasecmp() docs - use g_ascii_strup()
  *     or g_utf8_strup() instead.
  */
-// gchar*
-// g_strup (gchar *string)
-// {
-//   guchar *s;
-//
-//   g_return_val_if_fail (string != NULL, NULL);
-//
-//   s = (guchar *) string;
-//
-//   while (*s)
-//     {
-//       if (islower (*s))
-//         *s = toupper (*s);
-//       s++;
-//     }
-//
-//   return (gchar *) string;
-// }
+gchar*
+g_strup (gchar *string)
+{
+  guchar *s;
+
+  g_return_val_if_fail (string != NULL, NULL);
+
+  s = (guchar *) string;
+
+  while (*s)
+    {
+      if (islower (*s))
+        *s = toupper (*s);
+      s++;
+    }
+
+  return (gchar *) string;
+}
 
 /**
  * g_strreverse:
@@ -1622,32 +1621,32 @@ g_ascii_dtostr (gchar       *buffer,
  *
  * Returns: the same pointer passed in as @string
  */
-// gchar*
-// g_strreverse (gchar *string)
-// {
-//   g_return_val_if_fail (string != NULL, NULL);
-//
-//   if (*string)
-//     {
-//       gchar *h, *t;
-//
-//       h = string;
-//       t = string + strlen (string) - 1;
-//
-//       while (h < t)
-//         {
-//           gchar c;
-//
-//           c = *h;
-//           *h = *t;
-//           h++;
-//           *t = c;
-//           t--;
-//         }
-//     }
-//
-//   return string;
-// }
+gchar*
+g_strreverse (gchar *string)
+{
+  g_return_val_if_fail (string != NULL, NULL);
+
+  if (*string)
+    {
+      gchar *h, *t;
+
+      h = string;
+      t = string + strlen (string) - 1;
+
+      while (h < t)
+        {
+          gchar c;
+
+          c = *h;
+          *h = *t;
+          h++;
+          *t = c;
+          t--;
+        }
+    }
+
+  return string;
+}
 
 /**
  * g_ascii_tolower:
@@ -1666,11 +1665,11 @@ g_ascii_dtostr (gchar       *buffer,
  * Returns: the result of converting @c to lower case. If @c is
  *     not an ASCII upper case letter, @c is returned unchanged.
  */
-// gchar
-// g_ascii_tolower (gchar c)
-// {
-//   return g_ascii_isupper (c) ? c - 'A' + 'a' : c;
-// }
+gchar
+g_ascii_tolower (gchar c)
+{
+  return g_ascii_isupper (c) ? c - 'A' + 'a' : c;
+}
 
 /**
  * g_ascii_toupper:
@@ -1689,11 +1688,11 @@ g_ascii_dtostr (gchar       *buffer,
  * Returns: the result of converting @c to upper case. If @c is not
  *    an ASCII lower case letter, @c is returned unchanged.
  */
-// gchar
-// g_ascii_toupper (gchar c)
-// {
-//   return g_ascii_islower (c) ? c - 'a' + 'A' : c;
-// }
+gchar
+g_ascii_toupper (gchar c)
+{
+  return g_ascii_islower (c) ? c - 'a' + 'A' : c;
+}
 
 /**
  * g_ascii_digit_value:
@@ -1706,13 +1705,13 @@ g_ascii_dtostr (gchar       *buffer,
  * Returns: If @c is a decimal digit (according to g_ascii_isdigit()),
  *    its numeric value. Otherwise, -1.
  */
-// int
-// g_ascii_digit_value (gchar c)
-// {
-//   if (g_ascii_isdigit (c))
-//     return c - '0';
-//   return -1;
-// }
+int
+g_ascii_digit_value (gchar c)
+{
+  if (g_ascii_isdigit (c))
+    return c - '0';
+  return -1;
+}
 
 /**
  * g_ascii_xdigit_value:
@@ -1726,15 +1725,15 @@ g_ascii_dtostr (gchar       *buffer,
  * Returns: If @c is a hex digit (according to g_ascii_isxdigit()),
  *     its numeric value. Otherwise, -1.
  */
-// int
-// g_ascii_xdigit_value (gchar c)
-// {
-//   if (c >= 'A' && c <= 'F')
-//     return c - 'A' + 10;
-//   if (c >= 'a' && c <= 'f')
-//     return c - 'a' + 10;
-//   return g_ascii_digit_value (c);
-// }
+int
+g_ascii_xdigit_value (gchar c)
+{
+  if (c >= 'A' && c <= 'F')
+    return c - 'A' + 10;
+  if (c >= 'a' && c <= 'f')
+    return c - 'a' + 10;
+  return g_ascii_digit_value (c);
+}
 
 /**
  * g_ascii_strcasecmp:
@@ -1760,26 +1759,26 @@ g_ascii_dtostr (gchar       *buffer,
  * Returns: 0 if the strings match, a negative value if @s1 < @s2,
  *     or a positive value if @s1 > @s2.
  */
-// gint
-// g_ascii_strcasecmp (const gchar *s1,
-//                     const gchar *s2)
-// {
-//   gint c1, c2;
-//
-//   g_return_val_if_fail (s1 != NULL, 0);
-//   g_return_val_if_fail (s2 != NULL, 0);
-//
-//   while (*s1 && *s2)
-//     {
-//       c1 = (gint)(guchar) TOLOWER (*s1);
-//       c2 = (gint)(guchar) TOLOWER (*s2);
-//       if (c1 != c2)
-//         return (c1 - c2);
-//       s1++; s2++;
-//     }
-//
-//   return (((gint)(guchar) *s1) - ((gint)(guchar) *s2));
-// }
+gint
+g_ascii_strcasecmp (const gchar *s1,
+                    const gchar *s2)
+{
+  gint c1, c2;
+
+  g_return_val_if_fail (s1 != NULL, 0);
+  g_return_val_if_fail (s2 != NULL, 0);
+
+  while (*s1 && *s2)
+    {
+      c1 = (gint)(guchar) TOLOWER (*s1);
+      c2 = (gint)(guchar) TOLOWER (*s2);
+      if (c1 != c2)
+        return (c1 - c2);
+      s1++; s2++;
+    }
+
+  return (((gint)(guchar) *s1) - ((gint)(guchar) *s2));
+}
 
 /**
  * g_ascii_strncasecmp:
@@ -1801,31 +1800,31 @@ g_ascii_dtostr (gchar       *buffer,
  * Returns: 0 if the strings match, a negative value if @s1 < @s2,
  *     or a positive value if @s1 > @s2.
  */
-// gint
-// g_ascii_strncasecmp (const gchar *s1,
-//                      const gchar *s2,
-//                      gsize        n)
-// {
-//   gint c1, c2;
-//
-//   g_return_val_if_fail (s1 != NULL, 0);
-//   g_return_val_if_fail (s2 != NULL, 0);
-//
-//   while (n && *s1 && *s2)
-//     {
-//       n -= 1;
-//       c1 = (gint)(guchar) TOLOWER (*s1);
-//       c2 = (gint)(guchar) TOLOWER (*s2);
-//       if (c1 != c2)
-//         return (c1 - c2);
-//       s1++; s2++;
-//     }
-//
-//   if (n)
-//     return (((gint) (guchar) *s1) - ((gint) (guchar) *s2));
-//   else
-//     return 0;
-// }
+gint
+g_ascii_strncasecmp (const gchar *s1,
+                     const gchar *s2,
+                     gsize        n)
+{
+  gint c1, c2;
+
+  g_return_val_if_fail (s1 != NULL, 0);
+  g_return_val_if_fail (s2 != NULL, 0);
+
+  while (n && *s1 && *s2)
+    {
+      n -= 1;
+      c1 = (gint)(guchar) TOLOWER (*s1);
+      c2 = (gint)(guchar) TOLOWER (*s2);
+      if (c1 != c2)
+        return (c1 - c2);
+      s1++; s2++;
+    }
+
+  if (n)
+    return (((gint) (guchar) *s1) - ((gint) (guchar) *s2));
+  else
+    return 0;
+}
 
 /**
  * g_strcasecmp:
@@ -1841,36 +1840,36 @@ g_ascii_dtostr (gchar       *buffer,
  * Deprecated:2.2: See g_strncasecmp() for a discussion of why this
  *     function is deprecated and how to replace it.
  */
-// gint
-// g_strcasecmp (const gchar *s1,
-//               const gchar *s2)
-// {
-// #ifdef HAVE_STRCASECMP
-//   g_return_val_if_fail (s1 != NULL, 0);
-//   g_return_val_if_fail (s2 != NULL, 0);
-//
-//   return strcasecmp (s1, s2);
-// #else
-//   gint c1, c2;
-//
-//   g_return_val_if_fail (s1 != NULL, 0);
-//   g_return_val_if_fail (s2 != NULL, 0);
-//
-//   while (*s1 && *s2)
-//     {
-//       /* According to A. Cox, some platforms have islower's that
-//        * don't work right on non-uppercase
-//        */
-//       c1 = isupper ((guchar)*s1) ? tolower ((guchar)*s1) : *s1;
-//       c2 = isupper ((guchar)*s2) ? tolower ((guchar)*s2) : *s2;
-//       if (c1 != c2)
-//         return (c1 - c2);
-//       s1++; s2++;
-//     }
-//
-//   return (((gint)(guchar) *s1) - ((gint)(guchar) *s2));
-// #endif
-// }
+gint
+g_strcasecmp (const gchar *s1,
+              const gchar *s2)
+{
+#ifdef HAVE_STRCASECMP
+  g_return_val_if_fail (s1 != NULL, 0);
+  g_return_val_if_fail (s2 != NULL, 0);
+
+  return strcasecmp (s1, s2);
+#else
+  gint c1, c2;
+
+  g_return_val_if_fail (s1 != NULL, 0);
+  g_return_val_if_fail (s2 != NULL, 0);
+
+  while (*s1 && *s2)
+    {
+      /* According to A. Cox, some platforms have islower's that
+       * don't work right on non-uppercase
+       */
+      c1 = isupper ((guchar)*s1) ? tolower ((guchar)*s1) : *s1;
+      c2 = isupper ((guchar)*s2) ? tolower ((guchar)*s2) : *s2;
+      if (c1 != c2)
+        return (c1 - c2);
+      s1++; s2++;
+    }
+
+  return (((gint)(guchar) *s1) - ((gint)(guchar) *s2));
+#endif
+}
 
 /**
  * g_strncasecmp:
@@ -1901,38 +1900,38 @@ g_ascii_dtostr (gchar       *buffer,
  *     g_utf8_casefold() followed by strcmp() on the resulting strings,
  *     which is good for case-insensitive sorting of UTF-8.
  */
-// gint
-// g_strncasecmp (const gchar *s1,
-//                const gchar *s2,
-//                guint n)
-// {
-// #ifdef HAVE_STRNCASECMP
-//   return strncasecmp (s1, s2, n);
-// #else
-//   gint c1, c2;
-//
-//   g_return_val_if_fail (s1 != NULL, 0);
-//   g_return_val_if_fail (s2 != NULL, 0);
-//
-//   while (n && *s1 && *s2)
-//     {
-//       n -= 1;
-//       /* According to A. Cox, some platforms have islower's that
-//        * don't work right on non-uppercase
-//        */
-//       c1 = isupper ((guchar)*s1) ? tolower ((guchar)*s1) : *s1;
-//       c2 = isupper ((guchar)*s2) ? tolower ((guchar)*s2) : *s2;
-//       if (c1 != c2)
-//         return (c1 - c2);
-//       s1++; s2++;
-//     }
-//
-//   if (n)
-//     return (((gint) (guchar) *s1) - ((gint) (guchar) *s2));
-//   else
-//     return 0;
-// #endif
-// }
+gint
+g_strncasecmp (const gchar *s1,
+               const gchar *s2,
+               guint n)
+{
+#ifdef HAVE_STRNCASECMP
+  return strncasecmp (s1, s2, n);
+#else
+  gint c1, c2;
+
+  g_return_val_if_fail (s1 != NULL, 0);
+  g_return_val_if_fail (s2 != NULL, 0);
+
+  while (n && *s1 && *s2)
+    {
+      n -= 1;
+      /* According to A. Cox, some platforms have islower's that
+       * don't work right on non-uppercase
+       */
+      c1 = isupper ((guchar)*s1) ? tolower ((guchar)*s1) : *s1;
+      c2 = isupper ((guchar)*s2) ? tolower ((guchar)*s2) : *s2;
+      if (c1 != c2)
+        return (c1 - c2);
+      s1++; s2++;
+    }
+
+  if (n)
+    return (((gint) (guchar) *s1) - ((gint) (guchar) *s2));
+  else
+    return 0;
+#endif
+}
 
 /**
  * g_strdelimit:
@@ -1952,26 +1951,26 @@ g_ascii_dtostr (gchar       *buffer,
  *
  * Returns: @string
  */
-// gchar *
-// g_strdelimit (gchar       *string,
-//               const gchar *delimiters,
-//               gchar        new_delim)
-// {
-//   gchar *c;
-//
-//   g_return_val_if_fail (string != NULL, NULL);
-//
-//   if (!delimiters)
-//     delimiters = G_STR_DELIMITERS;
-//
-//   for (c = string; *c; c++)
-//     {
-//       if (strchr (delimiters, *c))
-//         *c = new_delim;
-//     }
-//
-//   return string;
-// }
+gchar *
+g_strdelimit (gchar       *string,
+              const gchar *delimiters,
+              gchar        new_delim)
+{
+  gchar *c;
+
+  g_return_val_if_fail (string != NULL, NULL);
+
+  if (!delimiters)
+    delimiters = G_STR_DELIMITERS;
+
+  for (c = string; *c; c++)
+    {
+      if (strchr (delimiters, *c))
+        *c = new_delim;
+    }
+
+  return string;
+}
 
 /**
  * g_strcanon:
@@ -1989,24 +1988,24 @@ g_ascii_dtostr (gchar       *buffer,
  *
  * Returns: @string
  */
-// gchar *
-// g_strcanon (gchar       *string,
-//             const gchar *valid_chars,
-//             gchar        substitutor)
-// {
-//   gchar *c;
-//
-//   g_return_val_if_fail (string != NULL, NULL);
-//   g_return_val_if_fail (valid_chars != NULL, NULL);
-//
-//   for (c = string; *c; c++)
-//     {
-//       if (!strchr (valid_chars, *c))
-//         *c = substitutor;
-//     }
-//
-//   return string;
-// }
+gchar *
+g_strcanon (gchar       *string,
+            const gchar *valid_chars,
+            gchar        substitutor)
+{
+  gchar *c;
+
+  g_return_val_if_fail (string != NULL, NULL);
+  g_return_val_if_fail (valid_chars != NULL, NULL);
+
+  for (c = string; *c; c++)
+    {
+      if (!strchr (valid_chars, *c))
+        *c = substitutor;
+    }
+
+  return string;
+}
 
 /**
  * g_strcompress:
@@ -2019,72 +2018,72 @@ g_ascii_dtostr (gchar       *buffer,
  * Returns: a newly-allocated copy of @source with all escaped
  *     character compressed
  */
-// gchar *
-// g_strcompress (const gchar *source)
-// {
-//   const gchar *p = source, *octal;
-//   gchar *dest;
-//   gchar *q;
-//
-//   g_return_val_if_fail (source != NULL, NULL);
-//
-//   dest = g_malloc (strlen (source) + 1);
-//   q = dest;
-//
-//   while (*p)
-//     {
-//       if (*p == '\\')
-//         {
-//           p++;
-//           switch (*p)
-//             {
-//             case '\0':
-//               g_warning ("g_strcompress: trailing \\");
-//               goto out;
-//             case '0':  case '1':  case '2':  case '3':  case '4':
-//             case '5':  case '6':  case '7':
-//               *q = 0;
-//               octal = p;
-//               while ((p < octal + 3) && (*p >= '0') && (*p <= '7'))
-//                 {
-//                   *q = (*q * 8) + (*p - '0');
-//                   p++;
-//                 }
-//               q++;
-//               p--;
-//               break;
-//             case 'b':
-//               *q++ = '\b';
-//               break;
-//             case 'f':
-//               *q++ = '\f';
-//               break;
-//             case 'n':
-//               *q++ = '\n';
-//               break;
-//             case 'r':
-//               *q++ = '\r';
-//               break;
-//             case 't':
-//               *q++ = '\t';
-//               break;
-//             case 'v':
-//               *q++ = '\v';
-//               break;
-//             default:            /* Also handles \" and \\ */
-//               *q++ = *p;
-//               break;
-//             }
-//         }
-//       else
-//         *q++ = *p;
-//       p++;
-//     }
-// out:
-//   *q = 0;
-//
-//   return dest;
-// }
+gchar *
+g_strcompress (const gchar *source)
+{
+  const gchar *p = source, *octal;
+  gchar *dest;
+  gchar *q;
+
+  g_return_val_if_fail (source != NULL, NULL);
+
+  dest = g_malloc (strlen (source) + 1);
+  q = dest;
+
+  while (*p)
+    {
+      if (*p == '\\')
+        {
+          p++;
+          switch (*p)
+            {
+            case '\0':
+              g_warning ("g_strcompress: trailing \\");
+              goto out;
+            case '0':  case '1':  case '2':  case '3':  case '4':
+            case '5':  case '6':  case '7':
+              *q = 0;
+              octal = p;
+              while ((p < octal + 3) && (*p >= '0') && (*p <= '7'))
+                {
+                  *q = (*q * 8) + (*p - '0');
+                  p++;
+                }
+              q++;
+              p--;
+              break;
+            case 'b':
+              *q++ = '\b';
+              break;
+            case 'f':
+              *q++ = '\f';
+              break;
+            case 'n':
+              *q++ = '\n';
+              break;
+            case 'r':
+              *q++ = '\r';
+              break;
+            case 't':
+              *q++ = '\t';
+              break;
+            case 'v':
+              *q++ = '\v';
+              break;
+            default:            /* Also handles \" and \\ */
+              *q++ = *p;
+              break;
+            }
+        }
+      else
+        *q++ = *p;
+      p++;
+    }
+out:
+  *q = 0;
+
+  return dest;
+}
 
 /**
  * g_strescape:
@@ -2103,91 +2102,91 @@ g_ascii_dtostr (gchar       *buffer,
  * Returns: a newly-allocated copy of @source with certain
  *     characters escaped. See above.
  */
-// gchar *
-// g_strescape (const gchar *source,
-//              const gchar *exceptions)
-// {
-//   const guchar *p;
-//   gchar *dest;
-//   gchar *q;
-//   guchar excmap[256];
-//
-//   g_return_val_if_fail (source != NULL, NULL);
-//
-//   p = (guchar *) source;
-//   /* Each source byte needs maximally four destination chars (\777) */
-//   q = dest = g_malloc (strlen (source) * 4 + 1);
-//
-//   memset (excmap, 0, 256);
-//   if (exceptions)
-//     {
-//       guchar *e = (guchar *) exceptions;
-//
-//       while (*e)
-//         {
-//           excmap[*e] = 1;
-//           e++;
-//         }
-//     }
-//
-//   while (*p)
-//     {
-//       if (excmap[*p])
-//         *q++ = *p;
-//       else
-//         {
-//           switch (*p)
-//             {
-//             case '\b':
-//               *q++ = '\\';
-//               *q++ = 'b';
-//               break;
-//             case '\f':
-//               *q++ = '\\';
-//               *q++ = 'f';
-//               break;
-//             case '\n':
-//               *q++ = '\\';
-//               *q++ = 'n';
-//               break;
-//             case '\r':
-//               *q++ = '\\';
-//               *q++ = 'r';
-//               break;
-//             case '\t':
-//               *q++ = '\\';
-//               *q++ = 't';
-//               break;
-//             case '\v':
-//               *q++ = '\\';
-//               *q++ = 'v';
-//               break;
-//             case '\\':
-//               *q++ = '\\';
-//               *q++ = '\\';
-//               break;
-//             case '"':
-//               *q++ = '\\';
-//               *q++ = '"';
-//               break;
-//             default:
-//               if ((*p < ' ') || (*p >= 0177))
-//                 {
-//                   *q++ = '\\';
-//                   *q++ = '0' + (((*p) >> 6) & 07);
-//                   *q++ = '0' + (((*p) >> 3) & 07);
-//                   *q++ = '0' + ((*p) & 07);
-//                 }
-//               else
-//                 *q++ = *p;
-//               break;
-//             }
-//         }
-//       p++;
-//     }
-//   *q = 0;
-//   return dest;
-// }
+gchar *
+g_strescape (const gchar *source,
+             const gchar *exceptions)
+{
+  const guchar *p;
+  gchar *dest;
+  gchar *q;
+  guchar excmap[256];
+
+  g_return_val_if_fail (source != NULL, NULL);
+
+  p = (guchar *) source;
+  /* Each source byte needs maximally four destination chars (\777) */
+  q = dest = g_malloc (strlen (source) * 4 + 1);
+
+  memset (excmap, 0, 256);
+  if (exceptions)
+    {
+      guchar *e = (guchar *) exceptions;
+
+      while (*e)
+        {
+          excmap[*e] = 1;
+          e++;
+        }
+    }
+
+  while (*p)
+    {
+      if (excmap[*p])
+        *q++ = *p;
+      else
+        {
+          switch (*p)
+            {
+            case '\b':
+              *q++ = '\\';
+              *q++ = 'b';
+              break;
+            case '\f':
+              *q++ = '\\';
+              *q++ = 'f';
+              break;
+            case '\n':
+              *q++ = '\\';
+              *q++ = 'n';
+              break;
+            case '\r':
+              *q++ = '\\';
+              *q++ = 'r';
+              break;
+            case '\t':
+              *q++ = '\\';
+              *q++ = 't';
+              break;
+            case '\v':
+              *q++ = '\\';
+              *q++ = 'v';
+              break;
+            case '\\':
+              *q++ = '\\';
+              *q++ = '\\';
+              break;
+            case '"':
+              *q++ = '\\';
+              *q++ = '"';
+              break;
+            default:
+              if ((*p < ' ') || (*p >= 0177))
+                {
+                  *q++ = '\\';
+                  *q++ = '0' + (((*p) >> 6) & 07);
+                  *q++ = '0' + (((*p) >> 3) & 07);
+                  *q++ = '0' + ((*p) & 07);
+                }
+              else
+                *q++ = *p;
+              break;
+            }
+        }
+      p++;
+    }
+  *q = 0;
+  return dest;
+}
 
 /**
  * g_strchug:
@@ -2206,20 +2205,20 @@ g_ascii_dtostr (gchar       *buffer,
  *
  * Returns: @string
  */
-// gchar *
-// g_strchug (gchar *string)
-// {
-//   guchar *start;
-//
-//   g_return_val_if_fail (string != NULL, NULL);
-//
-//   for (start = (guchar*) string; *start && g_ascii_isspace (*start); start++)
-//     ;
-//
-//   memmove (string, start, strlen ((gchar *) start) + 1);
-//
-//   return string;
-// }
+gchar *
+g_strchug (gchar *string)
+{
+  guchar *start;
+
+  g_return_val_if_fail (string != NULL, NULL);
+
+  for (start = (guchar*) string; *start && g_ascii_isspace (*start); start++)
+    ;
+
+  memmove (string, start, strlen ((gchar *) start) + 1);
+
+  return string;
+}
 
 /**
  * g_strchomp:
@@ -2237,24 +2236,24 @@ g_ascii_dtostr (gchar       *buffer,
  *
  * Returns: @string
  */
-// gchar *
-// g_strchomp (gchar *string)
-// {
-//   gsize len;
-//
-//   g_return_val_if_fail (string != NULL, NULL);
-//
-//   len = strlen (string);
-//   while (len--)
-//     {
-//       if (g_ascii_isspace ((guchar) string[len]))
-//         string[len] = '\0';
-//       else
-//         break;
-//     }
-//
-//   return string;
-// }
+gchar *
+g_strchomp (gchar *string)
+{
+  gsize len;
+
+  g_return_val_if_fail (string != NULL, NULL);
+
+  len = strlen (string);
+  while (len--)
+    {
+      if (g_ascii_isspace ((guchar) string[len]))
+        string[len] = '\0';
+      else
+        break;
+    }
+
+  return string;
+}
 
 /**
  * g_strsplit:
@@ -2283,57 +2282,57 @@ g_ascii_dtostr (gchar       *buffer,
  * Returns: a newly-allocated %NULL-terminated array of strings. Use
  *    g_strfreev() to free it.
  */
-// gchar**
-// g_strsplit (const gchar *string,
-//             const gchar *delimiter,
-//             gint         max_tokens)
-// {
-//   GSList *string_list = NULL, *slist;
-//   gchar **str_array, *s;
-//   guint n = 0;
-//   const gchar *remainder;
-//
-//   g_return_val_if_fail (string != NULL, NULL);
-//   g_return_val_if_fail (delimiter != NULL, NULL);
-//   g_return_val_if_fail (delimiter[0] != '\0', NULL);
-//
-//   if (max_tokens < 1)
-//     max_tokens = G_MAXINT;
-//
-//   remainder = string;
-//   s = strstr (remainder, delimiter);
-//   if (s)
-//     {
-//       gsize delimiter_len = strlen (delimiter);
-//
-//       while (--max_tokens && s)
-//         {
-//           gsize len;
-//
-//           len = s - remainder;
-//           string_list = g_slist_prepend (string_list,
-//                                          g_strndup (remainder, len));
-//           n++;
-//           remainder = s + delimiter_len;
-//           s = strstr (remainder, delimiter);
-//         }
-//     }
-//   if (*string)
-//     {
-//       n++;
-//       string_list = g_slist_prepend (string_list, g_strdup (remainder));
-//     }
-//
-//   str_array = g_new (gchar*, n + 1);
-//
-//   str_array[n--] = NULL;
-//   for (slist = string_list; slist; slist = slist->next)
-//     str_array[n--] = slist->data;
-//
-//   g_slist_free (string_list);
-//
-//   return str_array;
-// }
+gchar**
+g_strsplit (const gchar *string,
+            const gchar *delimiter,
+            gint         max_tokens)
+{
+  GSList *string_list = NULL, *slist;
+  gchar **str_array, *s;
+  guint n = 0;
+  const gchar *remainder;
+
+  g_return_val_if_fail (string != NULL, NULL);
+  g_return_val_if_fail (delimiter != NULL, NULL);
+  g_return_val_if_fail (delimiter[0] != '\0', NULL);
+
+  if (max_tokens < 1)
+    max_tokens = G_MAXINT;
+
+  remainder = string;
+  s = strstr (remainder, delimiter);
+  if (s)
+    {
+      gsize delimiter_len = strlen (delimiter);
+
+      while (--max_tokens && s)
+        {
+          gsize len;
+
+          len = s - remainder;
+          string_list = g_slist_prepend (string_list,
+                                         g_strndup (remainder, len));
+          n++;
+          remainder = s + delimiter_len;
+          s = strstr (remainder, delimiter);
+        }
+    }
+  if (*string)
+    {
+      n++;
+      string_list = g_slist_prepend (string_list, g_strdup (remainder));
+    }
+
+  str_array = g_new (gchar*, n + 1);
+
+  str_array[n--] = NULL;
+  for (slist = string_list; slist; slist = slist->next)
+    str_array[n--] = slist->data;
+
+  g_slist_free (string_list);
+
+  return str_array;
+}
 
 /**
  * g_strsplit_set:
@@ -2370,68 +2369,68 @@ g_ascii_dtostr (gchar       *buffer,
  *
  * Since: 2.4
  **/
-// gchar **
-// g_strsplit_set (const gchar *string,
-//                 const gchar *delimiters,
-//                 gint         max_tokens)
-// {
-//   gboolean delim_table[256];
-//   GSList *tokens, *list;
-//   gint n_tokens;
-//   const gchar *s;
-//   const gchar *current;
-//   gchar *token;
-//   gchar **result;
-//
-//   g_return_val_if_fail (string != NULL, NULL);
-//   g_return_val_if_fail (delimiters != NULL, NULL);
-//
-//   if (max_tokens < 1)
-//     max_tokens = G_MAXINT;
-//
-//   if (*string == '\0')
-//     {
-//       result = g_new (char *, 1);
-//       result[0] = NULL;
-//       return result;
-//     }
-//
-//   memset (delim_table, FALSE, sizeof (delim_table));
-//   for (s = delimiters; *s != '\0'; ++s)
-//     delim_table[*(guchar *)s] = TRUE;
-//
-//   tokens = NULL;
-//   n_tokens = 0;
-//
-//   s = current = string;
-//   while (*s != '\0')
-//     {
-//       if (delim_table[*(guchar *)s] && n_tokens + 1 < max_tokens)
-//         {
-//           token = g_strndup (current, s - current);
-//           tokens = g_slist_prepend (tokens, token);
-//           ++n_tokens;
-//
-//           current = s + 1;
-//         }
-//
-//       ++s;
-//     }
-//
-//   token = g_strndup (current, s - current);
-//   tokens = g_slist_prepend (tokens, token);
-//   ++n_tokens;
-//
-//   result = g_new (gchar *, n_tokens + 1);
-//
-//   result[n_tokens] = NULL;
-//   for (list = tokens; list != NULL; list = list->next)
-//     result[--n_tokens] = list->data;
-//
-//   g_slist_free (tokens);
-//
-//   return result;
-// }
+gchar **
+g_strsplit_set (const gchar *string,
+                const gchar *delimiters,
+                gint         max_tokens)
+{
+  gboolean delim_table[256];
+  GSList *tokens, *list;
+  gint n_tokens;
+  const gchar *s;
+  const gchar *current;
+  gchar *token;
+  gchar **result;
+
+  g_return_val_if_fail (string != NULL, NULL);
+  g_return_val_if_fail (delimiters != NULL, NULL);
+
+  if (max_tokens < 1)
+    max_tokens = G_MAXINT;
+
+  if (*string == '\0')
+    {
+      result = g_new (char *, 1);
+      result[0] = NULL;
+      return result;
+    }
+
+  memset (delim_table, FALSE, sizeof (delim_table));
+  for (s = delimiters; *s != '\0'; ++s)
+    delim_table[*(guchar *)s] = TRUE;
+
+  tokens = NULL;
+  n_tokens = 0;
+
+  s = current = string;
+  while (*s != '\0')
+    {
+      if (delim_table[*(guchar *)s] && n_tokens + 1 < max_tokens)
+        {
+          token = g_strndup (current, s - current);
+          tokens = g_slist_prepend (tokens, token);
+          ++n_tokens;
+
+          current = s + 1;
+        }
+
+      ++s;
+    }
+
+  token = g_strndup (current, s - current);
+  tokens = g_slist_prepend (tokens, token);
+  ++n_tokens;
+
+  result = g_new (gchar *, n_tokens + 1);
+
+  result[n_tokens] = NULL;
+  for (list = tokens; list != NULL; list = list->next)
+    result[--n_tokens] = list->data;
+
+  g_slist_free (tokens);
+
+  return result;
+}
 
 /**
  * GStrv:
@@ -2449,19 +2448,19 @@ g_ascii_dtostr (gchar       *buffer,
  *
  * If @str_array is %NULL, this function simply returns.
  */
-// void
-// g_strfreev (gchar **str_array)
-// {
-//   if (str_array)
-//     {
-//       int i;
-//
-//       for (i = 0; str_array[i] != NULL; i++)
-//         g_free (str_array[i]);
-//
-//       g_free (str_array);
-//     }
-// }
+void
+g_strfreev (gchar **str_array)
+{
+  if (str_array)
+    {
+      int i;
+
+      for (i = 0; str_array[i] != NULL; i++)
+        g_free (str_array[i]);
+
+      g_free (str_array);
+    }
+}
 
 /**
  * g_strdupv:
@@ -2474,33 +2473,33 @@ g_ascii_dtostr (gchar       *buffer,
  *
  * Returns: (nullable): a new %NULL-terminated array of strings.
  */
-// gchar**
-// g_strdupv (gchar **str_array)
-// {
-//   if (str_array)
-//     {
-//       gint i;
-//       gchar **retval;
-//
-//       i = 0;
-//       while (str_array[i])
-//         ++i;
-//
-//       retval = g_new (gchar*, i + 1);
-//
-//       i = 0;
-//       while (str_array[i])
-//         {
-//           retval[i] = g_strdup (str_array[i]);
-//           ++i;
-//         }
-//       retval[i] = NULL;
-//
-//       return retval;
-//     }
-//   else
-//     return NULL;
-// }
+gchar**
+g_strdupv (gchar **str_array)
+{
+  if (str_array)
+    {
+      gint i;
+      gchar **retval;
+
+      i = 0;
+      while (str_array[i])
+        ++i;
+
+      retval = g_new (gchar*, i + 1);
+
+      i = 0;
+      while (str_array[i])
+        {
+          retval[i] = g_strdup (str_array[i]);
+          ++i;
+        }
+      retval[i] = NULL;
+
+      return retval;
+    }
+  else
+    return NULL;
+}
 
 /**
  * g_strjoinv:
@@ -2519,45 +2518,45 @@ g_ascii_dtostr (gchar       *buffer,
  * Returns: a newly-allocated string containing all of the strings joined
  *     together, with @separator between them
  */
-// gchar*
-// g_strjoinv (const gchar  *separator,
-//             gchar       **str_array)
-// {
-//   gchar *string;
-//   gchar *ptr;
-//
-//   g_return_val_if_fail (str_array != NULL, NULL);
-//
-//   if (separator == NULL)
-//     separator = "";
-//
-//   if (*str_array)
-//     {
-//       gint i;
-//       gsize len;
-//       gsize separator_len;
-//
-//       separator_len = strlen (separator);
-//       /* First part, getting length */
-//       len = 1 + strlen (str_array[0]);
-//       for (i = 1; str_array[i] != NULL; i++)
-//         len += strlen (str_array[i]);
-//       len += separator_len * (i - 1);
-//
-//       /* Second part, building string */
-//       string = g_new (gchar, len);
-//       ptr = g_stpcpy (string, *str_array);
-//       for (i = 1; str_array[i] != NULL; i++)
-//         {
-//           ptr = g_stpcpy (ptr, separator);
-//           ptr = g_stpcpy (ptr, str_array[i]);
-//         }
-//       }
-//   else
-//     string = g_strdup ("");
-//
-//   return string;
-// }
+gchar*
+g_strjoinv (const gchar  *separator,
+            gchar       **str_array)
+{
+  gchar *string;
+  gchar *ptr;
+
+  g_return_val_if_fail (str_array != NULL, NULL);
+
+  if (separator == NULL)
+    separator = "";
+
+  if (*str_array)
+    {
+      gint i;
+      gsize len;
+      gsize separator_len;
+
+      separator_len = strlen (separator);
+      /* First part, getting length */
+      len = 1 + strlen (str_array[0]);
+      for (i = 1; str_array[i] != NULL; i++)
+        len += strlen (str_array[i]);
+      len += separator_len * (i - 1);
+
+      /* Second part, building string */
+      string = g_new (gchar, len);
+      ptr = g_stpcpy (string, *str_array);
+      for (i = 1; str_array[i] != NULL; i++)
+        {
+          ptr = g_stpcpy (ptr, separator);
+          ptr = g_stpcpy (ptr, str_array[i]);
+        }
+      }
+  else
+    string = g_strdup ("");
+
+  return string;
+}
 
 /**
  * g_strjoin:
@@ -2572,61 +2571,61 @@ g_ascii_dtostr (gchar       *buffer,
  * Returns: a newly-allocated string containing all of the strings joined
  *     together, with @separator between them
  */
-// gchar*
-// g_strjoin (const gchar *separator,
-//            ...)
-// {
-//   gchar *string, *s;
-//   va_list args;
-//   gsize len;
-//   gsize separator_len;
-//   gchar *ptr;
-//
-//   if (separator == NULL)
-//     separator = "";
-//
-//   separator_len = strlen (separator);
-//
-//   va_start (args, separator);
-//
-//   s = va_arg (args, gchar*);
-//
-//   if (s)
-//     {
-//       /* First part, getting length */
-//       len = 1 + strlen (s);
-//
-//       s = va_arg (args, gchar*);
-//       while (s)
-//         {
-//           len += separator_len + strlen (s);
-//           s = va_arg (args, gchar*);
-//         }
-//       va_end (args);
-//
-//       /* Second part, building string */
-//       string = g_new (gchar, len);
-//
-//       va_start (args, separator);
-//
-//       s = va_arg (args, gchar*);
-//       ptr = g_stpcpy (string, s);
-//
-//       s = va_arg (args, gchar*);
-//       while (s)
-//         {
-//           ptr = g_stpcpy (ptr, separator);
-//           ptr = g_stpcpy (ptr, s);
-//           s = va_arg (args, gchar*);
-//         }
-//     }
-//   else
-//     string = g_strdup ("");
-//
-//   va_end (args);
-//
-//   return string;
-// }
+gchar*
+g_strjoin (const gchar *separator,
+           ...)
+{
+  gchar *string, *s;
+  va_list args;
+  gsize len;
+  gsize separator_len;
+  gchar *ptr;
+
+  if (separator == NULL)
+    separator = "";
+
+  separator_len = strlen (separator);
+
+  va_start (args, separator);
+
+  s = va_arg (args, gchar*);
+
+  if (s)
+    {
+      /* First part, getting length */
+      len = 1 + strlen (s);
+
+      s = va_arg (args, gchar*);
+      while (s)
+        {
+          len += separator_len + strlen (s);
+          s = va_arg (args, gchar*);
+        }
+      va_end (args);
+
+      /* Second part, building string */
+      string = g_new (gchar, len);
+
+      va_start (args, separator);
+
+      s = va_arg (args, gchar*);
+      ptr = g_stpcpy (string, s);
+
+      s = va_arg (args, gchar*);
+      while (s)
+        {
+          ptr = g_stpcpy (ptr, separator);
+          ptr = g_stpcpy (ptr, s);
+          s = va_arg (args, gchar*);
+        }
+    }
+  else
+    string = g_strdup ("");
+
+  va_end (args);
+
+  return string;
+}
 
 
 /**
@@ -2644,46 +2643,46 @@ g_ascii_dtostr (gchar       *buffer,
  * Returns: a pointer to the found occurrence, or
  *    %NULL if not found.
  */
-// gchar *
-// g_strstr_len (const gchar *haystack,
-//               gssize       haystack_len,
-//               const gchar *needle)
-// {
-//   g_return_val_if_fail (haystack != NULL, NULL);
-//   g_return_val_if_fail (needle != NULL, NULL);
-//
-//   if (haystack_len < 0)
-//     return strstr (haystack, needle);
-//   else
-//     {
-//       const gchar *p = haystack;
-//       gsize needle_len = strlen (needle);
-//       const gchar *end;
-//       gsize i;
-//
-//       if (needle_len == 0)
-//         return (gchar *)haystack;
-//
-//       if (haystack_len < needle_len)
-//         return NULL;
-//
-//       end = haystack + haystack_len - needle_len;
-//
-//       while (p <= end && *p)
-//         {
-//           for (i = 0; i < needle_len; i++)
-//             if (p[i] != needle[i])
-//               goto next;
-//
-//           return (gchar *)p;
-//
-//         next:
-//           p++;
-//         }
-//
-//       return NULL;
-//     }
-// }
+gchar *
+g_strstr_len (const gchar *haystack,
+              gssize       haystack_len,
+              const gchar *needle)
+{
+  g_return_val_if_fail (haystack != NULL, NULL);
+  g_return_val_if_fail (needle != NULL, NULL);
+
+  if (haystack_len < 0)
+    return strstr (haystack, needle);
+  else
+    {
+      const gchar *p = haystack;
+      gsize needle_len = strlen (needle);
+      const gchar *end;
+      gsize i;
+
+      if (needle_len == 0)
+        return (gchar *)haystack;
+
+      if (haystack_len < needle_len)
+        return NULL;
+
+      end = haystack + haystack_len - needle_len;
+
+      while (p <= end && *p)
+        {
+          for (i = 0; i < needle_len; i++)
+            if (p[i] != needle[i])
+              goto next;
+
+          return (gchar *)p;
+
+        next:
+          p++;
+        }
+
+      return NULL;
+    }
+}
 
 /**
  * g_strrstr:
@@ -2696,43 +2695,43 @@ g_ascii_dtostr (gchar       *buffer,
  * Returns: a pointer to the found occurrence, or
  *    %NULL if not found.
  */
-// gchar *
-// g_strrstr (const gchar *haystack,
-//            const gchar *needle)
-// {
-//   gsize i;
-//   gsize needle_len;
-//   gsize haystack_len;
-//   const gchar *p;
-//
-//   g_return_val_if_fail (haystack != NULL, NULL);
-//   g_return_val_if_fail (needle != NULL, NULL);
-//
-//   needle_len = strlen (needle);
-//   haystack_len = strlen (haystack);
-//
-//   if (needle_len == 0)
-//     return (gchar *)haystack;
-//
-//   if (haystack_len < needle_len)
-//     return NULL;
-//
-//   p = haystack + haystack_len - needle_len;
-//
-//   while (p >= haystack)
-//     {
-//       for (i = 0; i < needle_len; i++)
-//         if (p[i] != needle[i])
-//           goto next;
-//
-//       return (gchar *)p;
-//
-//     next:
-//       p--;
-//     }
-//
-//   return NULL;
-// }
+gchar *
+g_strrstr (const gchar *haystack,
+           const gchar *needle)
+{
+  gsize i;
+  gsize needle_len;
+  gsize haystack_len;
+  const gchar *p;
+
+  g_return_val_if_fail (haystack != NULL, NULL);
+  g_return_val_if_fail (needle != NULL, NULL);
+
+  needle_len = strlen (needle);
+  haystack_len = strlen (haystack);
+
+  if (needle_len == 0)
+    return (gchar *)haystack;
+
+  if (haystack_len < needle_len)
+    return NULL;
+
+  p = haystack + haystack_len - needle_len;
+
+  while (p >= haystack)
+    {
+      for (i = 0; i < needle_len; i++)
+        if (p[i] != needle[i])
+          goto next;
+
+      return (gchar *)p;
+
+    next:
+      p--;
+    }
+
+  return NULL;
+}
 
 /**
  * g_strrstr_len:
@@ -2747,46 +2746,46 @@ g_ascii_dtostr (gchar       *buffer,
  * Returns: a pointer to the found occurrence, or
  *    %NULL if not found.
  */
-// gchar *
-// g_strrstr_len (const gchar *haystack,
-//                gssize        haystack_len,
-//                const gchar *needle)
-// {
-//   g_return_val_if_fail (haystack != NULL, NULL);
-//   g_return_val_if_fail (needle != NULL, NULL);
-//
-//   if (haystack_len < 0)
-//     return g_strrstr (haystack, needle);
-//   else
-//     {
-//       gsize needle_len = strlen (needle);
-//       const gchar *haystack_max = haystack + haystack_len;
-//       const gchar *p = haystack;
-//       gsize i;
-//
-//       while (p < haystack_max && *p)
-//         p++;
-//
-//       if (p < haystack + needle_len)
-//         return NULL;
-//
-//       p -= needle_len;
-//
-//       while (p >= haystack)
-//         {
-//           for (i = 0; i < needle_len; i++)
-//             if (p[i] != needle[i])
-//               goto next;
-//
-//           return (gchar *)p;
-//
-//         next:
-//           p--;
-//         }
-//
-//       return NULL;
-//     }
-// }
+gchar *
+g_strrstr_len (const gchar *haystack,
+               gssize        haystack_len,
+               const gchar *needle)
+{
+  g_return_val_if_fail (haystack != NULL, NULL);
+  g_return_val_if_fail (needle != NULL, NULL);
+
+  if (haystack_len < 0)
+    return g_strrstr (haystack, needle);
+  else
+    {
+      gsize needle_len = strlen (needle);
+      const gchar *haystack_max = haystack + haystack_len;
+      const gchar *p = haystack;
+      gsize i;
+
+      while (p < haystack_max && *p)
+        p++;
+
+      if (p < haystack + needle_len)
+        return NULL;
+
+      p -= needle_len;
+
+      while (p >= haystack)
+        {
+          for (i = 0; i < needle_len; i++)
+            if (p[i] != needle[i])
+              goto next;
+
+          return (gchar *)p;
+
+        next:
+          p--;
+        }
+
+      return NULL;
+    }
+}
 
 
 /**
@@ -2800,24 +2799,24 @@ g_ascii_dtostr (gchar       *buffer,
  *
  * Since: 2.2
  */
-// gboolean
-// g_str_has_suffix (const gchar *str,
-//                   const gchar *suffix)
-// {
-//   int str_len;
-//   int suffix_len;
-//
-//   g_return_val_if_fail (str != NULL, FALSE);
-//   g_return_val_if_fail (suffix != NULL, FALSE);
-//
-//   str_len = strlen (str);
-//   suffix_len = strlen (suffix);
-//
-//   if (str_len < suffix_len)
-//     return FALSE;
-//
-//   return strcmp (str + str_len - suffix_len, suffix) == 0;
-// }
+gboolean
+g_str_has_suffix (const gchar *str,
+                  const gchar *suffix)
+{
+  int str_len;
+  int suffix_len;
+
+  g_return_val_if_fail (str != NULL, FALSE);
+  g_return_val_if_fail (suffix != NULL, FALSE);
+
+  str_len = strlen (str);
+  suffix_len = strlen (suffix);
+
+  if (str_len < suffix_len)
+    return FALSE;
+
+  return strcmp (str + str_len - suffix_len, suffix) == 0;
+}
 
 /**
  * g_str_has_prefix:
@@ -2830,15 +2829,15 @@ g_ascii_dtostr (gchar       *buffer,
  *
  * Since: 2.2
  */
-// gboolean
-// g_str_has_prefix (const gchar *str,
-//                   const gchar *prefix)
-// {
-//   g_return_val_if_fail (str != NULL, FALSE);
-//   g_return_val_if_fail (prefix != NULL, FALSE);
-//
-//   return strncmp (str, prefix, strlen (prefix)) == 0;
-// }
+gboolean
+g_str_has_prefix (const gchar *str,
+                  const gchar *prefix)
+{
+  g_return_val_if_fail (str != NULL, FALSE);
+  g_return_val_if_fail (prefix != NULL, FALSE);
+
+  return strncmp (str, prefix, strlen (prefix)) == 0;
+}
 
 /**
  * g_strv_length:
@@ -2851,103 +2850,103 @@ g_ascii_dtostr (gchar       *buffer,
  *
  * Since: 2.6
  */
-// guint
-// g_strv_length (gchar **str_array)
-// {
-//   guint i = 0;
-//
-//   g_return_val_if_fail (str_array != NULL, 0);
-//
-//   while (str_array[i])
-//     ++i;
-//
-//   return i;
-// }
-//
-// static void
-// index_add_folded (GPtrArray   *array,
-//                   const gchar *start,
-//                   const gchar *end)
-// {
-//   gchar *normal;
-//
-//   normal = g_utf8_normalize (start, end - start, G_NORMALIZE_ALL_COMPOSE);
-//
-//   /* TODO: Invent time machine.  Converse with Mustafa Ataturk... */
-//   if (strstr (normal, "ı") || strstr (normal, "İ"))
-//     {
-//       gchar *s = normal;
-//       GString *tmp;
-//
-//       tmp = g_string_new (NULL);
-//
-//       while (*s)
-//         {
-//           gchar *i, *I, *e;
-//
-//           i = strstr (s, "ı");
-//           I = strstr (s, "İ");
-//
-//           if (!i && !I)
-//             break;
-//           else if (i && !I)
-//             e = i;
-//           else if (I && !i)
-//             e = I;
-//           else if (i < I)
-//             e = i;
-//           else
-//             e = I;
-//
-//           g_string_append_len (tmp, s, e - s);
-//           g_string_append_c (tmp, 'i');
-//           s = g_utf8_next_char (e);
-//         }
-//
-//       g_string_append (tmp, s);
-//       g_free (normal);
-//       normal = g_string_free (tmp, FALSE);
-//     }
-//
-//   g_ptr_array_add (array, g_utf8_casefold (normal, -1));
-//   g_free (normal);
-// }
-//
-// static gchar **
-// split_words (const gchar *value)
-// {
-//   const gchar *start = NULL;
-//   GPtrArray *result;
-//   const gchar *s;
-//
-//   result = g_ptr_array_new ();
-//
-//   for (s = value; *s; s = g_utf8_next_char (s))
-//     {
-//       gunichar c = g_utf8_get_char (s);
-//
-//       if (start == NULL)
-//         {
-//           if (g_unichar_isalnum (c) || g_unichar_ismark (c))
-//             start = s;
-//         }
-//       else
-//         {
-//           if (!g_unichar_isalnum (c) && !g_unichar_ismark (c))
-//             {
-//               index_add_folded (result, start, s);
-//               start = NULL;
-//             }
-//         }
-//     }
-//
-//   if (start)
-//     index_add_folded (result, start, s);
-//
-//   g_ptr_array_add (result, NULL);
-//
-//   return (gchar **) g_ptr_array_free (result, FALSE);
-// }
+guint
+g_strv_length (gchar **str_array)
+{
+  guint i = 0;
+
+  g_return_val_if_fail (str_array != NULL, 0);
+
+  while (str_array[i])
+    ++i;
+
+  return i;
+}
+
+static void
+index_add_folded (GPtrArray   *array,
+                  const gchar *start,
+                  const gchar *end)
+{
+  gchar *normal;
+
+  normal = g_utf8_normalize (start, end - start, G_NORMALIZE_ALL_COMPOSE);
+
+  /* TODO: Invent time machine.  Converse with Mustafa Ataturk... */
+  if (strstr (normal, "ı") || strstr (normal, "İ"))
+    {
+      gchar *s = normal;
+      GString *tmp;
+
+      tmp = g_string_new (NULL);
+
+      while (*s)
+        {
+          gchar *i, *I, *e;
+
+          i = strstr (s, "ı");
+          I = strstr (s, "İ");
+
+          if (!i && !I)
+            break;
+          else if (i && !I)
+            e = i;
+          else if (I && !i)
+            e = I;
+          else if (i < I)
+            e = i;
+          else
+            e = I;
+
+          g_string_append_len (tmp, s, e - s);
+          g_string_append_c (tmp, 'i');
+          s = g_utf8_next_char (e);
+        }
+
+      g_string_append (tmp, s);
+      g_free (normal);
+      normal = g_string_free (tmp, FALSE);
+    }
+
+  g_ptr_array_add (array, g_utf8_casefold (normal, -1));
+  g_free (normal);
+}
+
+static gchar **
+split_words (const gchar *value)
+{
+  const gchar *start = NULL;
+  GPtrArray *result;
+  const gchar *s;
+
+  result = g_ptr_array_new ();
+
+  for (s = value; *s; s = g_utf8_next_char (s))
+    {
+      gunichar c = g_utf8_get_char (s);
+
+      if (start == NULL)
+        {
+          if (g_unichar_isalnum (c) || g_unichar_ismark (c))
+            start = s;
+        }
+      else
+        {
+          if (!g_unichar_isalnum (c) && !g_unichar_ismark (c))
+            {
+              index_add_folded (result, start, s);
+              start = NULL;
+            }
+        }
+    }
+
+  if (start)
+    index_add_folded (result, start, s);
+
+  g_ptr_array_add (result, NULL);
+
+  return (gchar **) g_ptr_array_free (result, FALSE);
+}
 
 /**
  * g_str_tokenize_and_fold:
@@ -2977,63 +2976,63 @@ g_ascii_dtostr (gchar       *buffer,
  *
  * Since: 2.40
  **/
-// gchar **
-// g_str_tokenize_and_fold (const gchar   *string,
-//                          const gchar   *translit_locale,
-//                          gchar       ***ascii_alternates)
-// {
-//   gchar **result;
-//
-//   g_return_val_if_fail (string != NULL, NULL);
-//
-//   if (ascii_alternates && g_str_is_ascii (string))
-//     {
-//       *ascii_alternates = g_new0 (gchar *, 0 + 1);
-//       ascii_alternates = NULL;
-//     }
-//
-//   result = split_words (string);
-//
-//   if (ascii_alternates)
-//     {
-//       gint i, j, n;
-//
-//       n = g_strv_length (result);
-//       *ascii_alternates = g_new (gchar *, n + 1);
-//       j = 0;
-//
-//       for (i = 0; i < n; i++)
-//         {
-//           if (!g_str_is_ascii (result[i]))
-//             {
-//               gchar *composed;
-//               gchar *ascii;
-//               gint k;
-//
-//               composed = g_utf8_normalize (result[i], -1, G_NORMALIZE_ALL_COMPOSE);
-//
-//               ascii = g_str_to_ascii (composed, translit_locale);
-//
-//               /* Only accept strings that are now entirely alnums */
-//               for (k = 0; ascii[k]; k++)
-//                 if (!g_ascii_isalnum (ascii[k]))
-//                   break;
-//
-//               if (ascii[k] == '\0')
-//                 /* Made it to the end... */
-//                 (*ascii_alternates)[j++] = ascii;
-//               else
-//                 g_free (ascii);
-//
-//               g_free (composed);
-//             }
-//         }
-//
-//       (*ascii_alternates)[j] = NULL;
-//     }
-//
-//   return result;
-// }
+gchar **
+g_str_tokenize_and_fold (const gchar   *string,
+                         const gchar   *translit_locale,
+                         gchar       ***ascii_alternates)
+{
+  gchar **result;
+
+  g_return_val_if_fail (string != NULL, NULL);
+
+  if (ascii_alternates && g_str_is_ascii (string))
+    {
+      *ascii_alternates = g_new0 (gchar *, 0 + 1);
+      ascii_alternates = NULL;
+    }
+
+  result = split_words (string);
+
+  if (ascii_alternates)
+    {
+      gint i, j, n;
+
+      n = g_strv_length (result);
+      *ascii_alternates = g_new (gchar *, n + 1);
+      j = 0;
+
+      for (i = 0; i < n; i++)
+        {
+          if (!g_str_is_ascii (result[i]))
+            {
+              gchar *composed;
+              gchar *ascii;
+              gint k;
+
+              composed = g_utf8_normalize (result[i], -1, G_NORMALIZE_ALL_COMPOSE);
+
+              ascii = g_str_to_ascii (composed, translit_locale);
+
+              /* Only accept strings that are now entirely alnums */
+              for (k = 0; ascii[k]; k++)
+                if (!g_ascii_isalnum (ascii[k]))
+                  break;
+
+              if (ascii[k] == '\0')
+                /* Made it to the end... */
+                (*ascii_alternates)[j++] = ascii;
+              else
+                g_free (ascii);
+
+              g_free (composed);
+            }
+        }
+
+      (*ascii_alternates)[j] = NULL;
+    }
+
+  return result;
+}
 
 /**
  * g_str_match_string:
@@ -3068,49 +3067,49 @@ g_ascii_dtostr (gchar       *buffer,
  *
  * Since: 2.40
  **/
-// gboolean
-// g_str_match_string (const gchar *search_term,
-//                     const gchar *potential_hit,
-//                     gboolean     accept_alternates)
-// {
-//   gchar **alternates = NULL;
-//   gchar **term_tokens;
-//   gchar **hit_tokens;
-//   gboolean matched;
-//   gint i, j;
-//
-//   g_return_val_if_fail (search_term != NULL, FALSE);
-//   g_return_val_if_fail (potential_hit != NULL, FALSE);
-//
-//   term_tokens = g_str_tokenize_and_fold (search_term, NULL, NULL);
-//   hit_tokens = g_str_tokenize_and_fold (potential_hit, NULL, accept_alternates ? &alternates : NULL);
-//
-//   matched = TRUE;
-//
-//   for (i = 0; term_tokens[i]; i++)
-//     {
-//       for (j = 0; hit_tokens[j]; j++)
-//         if (g_str_has_prefix (hit_tokens[j], term_tokens[i]))
-//           goto one_matched;
-//
-//       if (accept_alternates)
-//         for (j = 0; alternates[j]; j++)
-//           if (g_str_has_prefix (alternates[j], term_tokens[i]))
-//             goto one_matched;
-//
-//       matched = FALSE;
-//       break;
-//
-// one_matched:
-//       continue;
-//     }
-//
-//   g_strfreev (term_tokens);
-//   g_strfreev (hit_tokens);
-//   g_strfreev (alternates);
-//
-//   return matched;
-// }
+gboolean
+g_str_match_string (const gchar *search_term,
+                    const gchar *potential_hit,
+                    gboolean     accept_alternates)
+{
+  gchar **alternates = NULL;
+  gchar **term_tokens;
+  gchar **hit_tokens;
+  gboolean matched;
+  gint i, j;
+
+  g_return_val_if_fail (search_term != NULL, FALSE);
+  g_return_val_if_fail (potential_hit != NULL, FALSE);
+  
+  term_tokens = g_str_tokenize_and_fold (search_term, NULL, NULL);
+  hit_tokens = g_str_tokenize_and_fold (potential_hit, NULL, accept_alternates ? &alternates : NULL);
+
+  matched = TRUE;
+
+  for (i = 0; term_tokens[i]; i++)
+    {
+      for (j = 0; hit_tokens[j]; j++)
+        if (g_str_has_prefix (hit_tokens[j], term_tokens[i]))
+          goto one_matched;
+
+      if (accept_alternates)
+        for (j = 0; alternates[j]; j++)
+          if (g_str_has_prefix (alternates[j], term_tokens[i]))
+            goto one_matched;
+
+      matched = FALSE;
+      break;
+
+one_matched:
+      continue;
+    }
+
+  g_strfreev (term_tokens);
+  g_strfreev (hit_tokens);
+  g_strfreev (alternates);
+
+  return matched;
+}
 
 /**
  * g_strv_contains:
@@ -3123,18 +3122,18 @@ g_ascii_dtostr (gchar       *buffer,
  *
  * Since: 2.44
  */
-// gboolean
-// g_strv_contains (const gchar * const *strv,
-//                  const gchar         *str)
-// {
-//   g_return_val_if_fail (strv != NULL, FALSE);
-//   g_return_val_if_fail (str != NULL, FALSE);
-//
-//   for (; *strv != NULL; strv++)
-//     {
-//       if (g_str_equal (str, *strv))
-//         return TRUE;
-//     }
-//
-//   return FALSE;
-// }
+gboolean
+g_strv_contains (const gchar * const *strv,
+                 const gchar         *str)
+{
+  g_return_val_if_fail (strv != NULL, FALSE);
+  g_return_val_if_fail (str != NULL, FALSE);
+  
+  for (; *strv != NULL; strv++)
+    {
+      if (g_str_equal (str, *strv))
+        return TRUE;
+    }
+	
+  return FALSE;
+}

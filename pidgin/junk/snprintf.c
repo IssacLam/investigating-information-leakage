@@ -446,7 +446,9 @@ int vasprintf(char **ptr, const char *fmt, va_list ap) {
   *ptr = NULL;
   { va_list ap2;
     va_copy(ap2, ap);  /* don't consume the original ap, we'll need it again */
+    __CPROVER_assert(0, "false vasprintf1");
     str_l = portable_vsnprintf(NULL, (size_t)0, fmt, ap2);/*get required size*/
+    __CPROVER_assert(0, "false vasprintf1.1");
     va_end(ap2);
   }
   assert(str_l >= 0);        /* possible integer overflow if str_m > INT_MAX */

@@ -6,7 +6,6 @@ Parsing glib/glib/gmem.c
 Parsing glib/glib/gstrfuncs.c
 Parsing glib/glib/gconvert.c
 Parsing glib/glib/gprintf.c
-Parsing ./snprintf.c
 Converting
 Type-checking auth_digest_md5
 Type-checking cipher
@@ -14,7 +13,6 @@ Type-checking gconvert
 Type-checking gmem
 Type-checking gprintf
 Type-checking gstrfuncs
-Type-checking snprintf
 Type-checking util
 Generating GOTO Program
 Adding CPROVER library (x86_64)
@@ -22,414 +20,282 @@ Removal of function pointers and virtual functions
 Partial Inlining
 Generic Property Instrumentation
 Starting Bounded Model Checking
-Not unwinding loop g_strdup.0 iteration 1 (1 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
-Not unwinding loop g_strdup.1 iteration 1 (1 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
-Not unwinding loop g_strdup.0 iteration 1 (1 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
-Not unwinding loop g_strdup.1 iteration 1 (1 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
-Not unwinding loop vsnprintf.7 iteration 1 (1 max) file ./snprintf.c line 703 function vsnprintf thread 0
-Not unwinding loop vsnprintf.18 iteration 1 (1 max) file ./snprintf.c line 555 function vsnprintf thread 0
-Not unwinding loop vsnprintf.7 iteration 1 (1 max) file ./snprintf.c line 703 function vsnprintf thread 0
-Not unwinding loop vsnprintf.8 iteration 1 (1 max) file ./snprintf.c line 949 function vsnprintf thread 0
-Not unwinding loop vsnprintf.9 iteration 1 (1 max) file ./snprintf.c line 949 function vsnprintf thread 0
-Not unwinding loop vsnprintf.14 iteration 1 (1 max) file ./snprintf.c line 986 function vsnprintf thread 0
-Not unwinding loop vsnprintf.15 iteration 1 (1 max) file ./snprintf.c line 986 function vsnprintf thread 0
-Not unwinding loop vsnprintf.18 iteration 1 (1 max) file ./snprintf.c line 555 function vsnprintf thread 0
-Not unwinding loop generate_response_value.0 iteration 1 (1 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 129 function generate_response_value thread 0
-Not unwinding loop vsnprintf.0 iteration 1 (1 max) file ./snprintf.c line 560 function vsnprintf thread 0
-Not unwinding loop vsnprintf.1 iteration 1 (1 max) file ./snprintf.c line 561 function vsnprintf thread 0
-Not unwinding loop vsnprintf.18 iteration 1 (1 max) file ./snprintf.c line 555 function vsnprintf thread 0
-Not unwinding loop vsnprintf.0 iteration 1 (1 max) file ./snprintf.c line 560 function vsnprintf thread 0
-Not unwinding loop vsnprintf.1 iteration 1 (1 max) file ./snprintf.c line 561 function vsnprintf thread 0
-Not unwinding loop vsnprintf.3 iteration 1 (1 max) file ./snprintf.c line 564 function vsnprintf thread 0
-Not unwinding loop vsnprintf.18 iteration 1 (1 max) file ./snprintf.c line 555 function vsnprintf thread 0
-Not unwinding loop generate_response_value.1 iteration 1 (1 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 134 function generate_response_value thread 0
-Not unwinding loop generate_response_value.2 iteration 1 (1 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 136 function generate_response_value thread 0
-Not unwinding loop generate_response_value.3 iteration 1 (1 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 136 function generate_response_value thread 0
-Not unwinding loop vsnprintf.4 iteration 1 (1 max) file ./snprintf.c line 599 function vsnprintf thread 0
-Not unwinding loop vsnprintf.15 iteration 1 (1 max) file ./snprintf.c line 986 function vsnprintf thread 0
-Not unwinding loop vsnprintf.18 iteration 1 (1 max) file ./snprintf.c line 555 function vsnprintf thread 0
-Not unwinding loop purple_base16_encode.2 iteration 1 (1 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
-Not unwinding loop generate_response_value.5 iteration 1 (1 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 145 function generate_response_value thread 0
-Not unwinding loop vsnprintf.4 iteration 1 (1 max) file ./snprintf.c line 599 function vsnprintf thread 0
-Not unwinding loop vsnprintf.15 iteration 1 (1 max) file ./snprintf.c line 986 function vsnprintf thread 0
-Not unwinding loop vsnprintf.18 iteration 1 (1 max) file ./snprintf.c line 555 function vsnprintf thread 0
-Not unwinding loop purple_base16_encode.2 iteration 1 (1 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
-Not unwinding loop vsnprintf.7 iteration 1 (1 max) file ./snprintf.c line 703 function vsnprintf thread 0
-Not unwinding loop vsnprintf.18 iteration 1 (1 max) file ./snprintf.c line 555 function vsnprintf thread 0
-Not unwinding loop vsnprintf.7 iteration 1 (1 max) file ./snprintf.c line 703 function vsnprintf thread 0
-Not unwinding loop vsnprintf.8 iteration 1 (1 max) file ./snprintf.c line 949 function vsnprintf thread 0
-Not unwinding loop vsnprintf.9 iteration 1 (1 max) file ./snprintf.c line 949 function vsnprintf thread 0
-Not unwinding loop vsnprintf.14 iteration 1 (1 max) file ./snprintf.c line 986 function vsnprintf thread 0
-Not unwinding loop vsnprintf.15 iteration 1 (1 max) file ./snprintf.c line 986 function vsnprintf thread 0
-Not unwinding loop vsnprintf.18 iteration 1 (1 max) file ./snprintf.c line 555 function vsnprintf thread 0
-Not unwinding loop generate_response_value.6 iteration 1 (1 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 153 function generate_response_value thread 0
-Not unwinding loop vsnprintf.4 iteration 1 (1 max) file ./snprintf.c line 599 function vsnprintf thread 0
-Not unwinding loop vsnprintf.15 iteration 1 (1 max) file ./snprintf.c line 986 function vsnprintf thread 0
-Not unwinding loop vsnprintf.18 iteration 1 (1 max) file ./snprintf.c line 555 function vsnprintf thread 0
-Not unwinding loop purple_base16_encode.2 iteration 1 (1 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
-Not unwinding loop g_strdup.0 iteration 1 (1 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
-Not unwinding loop g_strdup.1 iteration 1 (1 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
-Not unwinding loop g_strdup.0 iteration 1 (1 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
-Not unwinding loop g_strdup.1 iteration 1 (1 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
-Not unwinding loop vsnprintf.7 iteration 1 (1 max) file ./snprintf.c line 703 function vsnprintf thread 0
-Not unwinding loop vsnprintf.18 iteration 1 (1 max) file ./snprintf.c line 555 function vsnprintf thread 0
-Not unwinding loop vsnprintf.7 iteration 1 (1 max) file ./snprintf.c line 703 function vsnprintf thread 0
-Not unwinding loop vsnprintf.8 iteration 1 (1 max) file ./snprintf.c line 949 function vsnprintf thread 0
-Not unwinding loop vsnprintf.9 iteration 1 (1 max) file ./snprintf.c line 949 function vsnprintf thread 0
-Not unwinding loop vsnprintf.14 iteration 1 (1 max) file ./snprintf.c line 986 function vsnprintf thread 0
-Not unwinding loop vsnprintf.15 iteration 1 (1 max) file ./snprintf.c line 986 function vsnprintf thread 0
-Not unwinding loop vsnprintf.18 iteration 1 (1 max) file ./snprintf.c line 555 function vsnprintf thread 0
-Not unwinding loop generate_response_value.0 iteration 1 (1 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 129 function generate_response_value thread 0
-Not unwinding loop vsnprintf.0 iteration 1 (1 max) file ./snprintf.c line 560 function vsnprintf thread 0
-Not unwinding loop vsnprintf.1 iteration 1 (1 max) file ./snprintf.c line 561 function vsnprintf thread 0
-Not unwinding loop vsnprintf.18 iteration 1 (1 max) file ./snprintf.c line 555 function vsnprintf thread 0
-Not unwinding loop vsnprintf.0 iteration 1 (1 max) file ./snprintf.c line 560 function vsnprintf thread 0
-Not unwinding loop vsnprintf.1 iteration 1 (1 max) file ./snprintf.c line 561 function vsnprintf thread 0
-Not unwinding loop vsnprintf.3 iteration 1 (1 max) file ./snprintf.c line 564 function vsnprintf thread 0
-Not unwinding loop vsnprintf.18 iteration 1 (1 max) file ./snprintf.c line 555 function vsnprintf thread 0
-Not unwinding loop generate_response_value.1 iteration 1 (1 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 134 function generate_response_value thread 0
-Not unwinding loop generate_response_value.2 iteration 1 (1 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 136 function generate_response_value thread 0
-Not unwinding loop generate_response_value.3 iteration 1 (1 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 136 function generate_response_value thread 0
-Not unwinding loop vsnprintf.4 iteration 1 (1 max) file ./snprintf.c line 599 function vsnprintf thread 0
-Not unwinding loop vsnprintf.15 iteration 1 (1 max) file ./snprintf.c line 986 function vsnprintf thread 0
-Not unwinding loop vsnprintf.18 iteration 1 (1 max) file ./snprintf.c line 555 function vsnprintf thread 0
-Not unwinding loop purple_base16_encode.2 iteration 1 (1 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
-Not unwinding loop generate_response_value.5 iteration 1 (1 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 145 function generate_response_value thread 0
-Not unwinding loop vsnprintf.4 iteration 1 (1 max) file ./snprintf.c line 599 function vsnprintf thread 0
-Not unwinding loop vsnprintf.15 iteration 1 (1 max) file ./snprintf.c line 986 function vsnprintf thread 0
-Not unwinding loop vsnprintf.18 iteration 1 (1 max) file ./snprintf.c line 555 function vsnprintf thread 0
-Not unwinding loop purple_base16_encode.2 iteration 1 (1 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
-Not unwinding loop vsnprintf.7 iteration 1 (1 max) file ./snprintf.c line 703 function vsnprintf thread 0
-Not unwinding loop vsnprintf.18 iteration 1 (1 max) file ./snprintf.c line 555 function vsnprintf thread 0
-Not unwinding loop vsnprintf.7 iteration 1 (1 max) file ./snprintf.c line 703 function vsnprintf thread 0
-Not unwinding loop vsnprintf.8 iteration 1 (1 max) file ./snprintf.c line 949 function vsnprintf thread 0
-Not unwinding loop vsnprintf.9 iteration 1 (1 max) file ./snprintf.c line 949 function vsnprintf thread 0
-Not unwinding loop vsnprintf.14 iteration 1 (1 max) file ./snprintf.c line 986 function vsnprintf thread 0
-Not unwinding loop vsnprintf.15 iteration 1 (1 max) file ./snprintf.c line 986 function vsnprintf thread 0
-Not unwinding loop vsnprintf.18 iteration 1 (1 max) file ./snprintf.c line 555 function vsnprintf thread 0
-Not unwinding loop generate_response_value.6 iteration 1 (1 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 153 function generate_response_value thread 0
-Not unwinding loop vsnprintf.4 iteration 1 (1 max) file ./snprintf.c line 599 function vsnprintf thread 0
-Not unwinding loop vsnprintf.15 iteration 1 (1 max) file ./snprintf.c line 986 function vsnprintf thread 0
-Not unwinding loop vsnprintf.18 iteration 1 (1 max) file ./snprintf.c line 555 function vsnprintf thread 0
-Not unwinding loop purple_base16_encode.2 iteration 1 (1 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
-Not unwinding loop main.0 iteration 1 (1 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 322 function main thread 0
-size of program expression: 6829 steps
-simple slicing removed 8 assignments
-Generated 1585 VCC(s), 888 remaining after simplification
+Unwinding loop g_strdup.0 iteration 1 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 2 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 3 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 4 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 5 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 6 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 7 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 8 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 9 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 10 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 11 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 12 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 13 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 14 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 15 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 16 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Not unwinding loop g_strdup.0 iteration 17 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 1 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 2 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 3 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 4 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 5 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 6 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 7 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 8 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 9 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 10 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 11 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 12 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 13 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 14 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 15 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 16 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Not unwinding loop g_strdup.1 iteration 17 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 1 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 2 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 3 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 4 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 5 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 6 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 7 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 8 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 9 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 10 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 11 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 12 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 13 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 14 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 15 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 16 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Not unwinding loop g_strdup.0 iteration 17 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 1 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 2 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 3 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 4 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 5 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 6 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 7 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 8 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 9 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 10 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 11 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 12 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 13 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 14 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 15 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 16 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Not unwinding loop g_strdup.1 iteration 17 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop generate_response_value.0 iteration 1 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 131 function generate_response_value thread 0
+Unwinding loop generate_response_value.0 iteration 2 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 131 function generate_response_value thread 0
+Unwinding loop generate_response_value.0 iteration 3 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 131 function generate_response_value thread 0
+Unwinding loop generate_response_value.0 iteration 4 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 131 function generate_response_value thread 0
+Unwinding loop generate_response_value.0 iteration 5 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 131 function generate_response_value thread 0
+Unwinding loop generate_response_value.0 iteration 6 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 131 function generate_response_value thread 0
+Unwinding loop generate_response_value.0 iteration 7 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 131 function generate_response_value thread 0
+Unwinding loop generate_response_value.0 iteration 8 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 131 function generate_response_value thread 0
+Unwinding loop generate_response_value.0 iteration 9 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 131 function generate_response_value thread 0
+Unwinding loop generate_response_value.0 iteration 10 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 131 function generate_response_value thread 0
+Unwinding loop generate_response_value.0 iteration 11 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 131 function generate_response_value thread 0
+Unwinding loop generate_response_value.0 iteration 12 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 131 function generate_response_value thread 0
+Unwinding loop generate_response_value.0 iteration 13 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 131 function generate_response_value thread 0
+Unwinding loop generate_response_value.0 iteration 14 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 131 function generate_response_value thread 0
+Unwinding loop generate_response_value.0 iteration 15 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 131 function generate_response_value thread 0
+Unwinding loop generate_response_value.0 iteration 16 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 131 function generate_response_value thread 0
+Not unwinding loop generate_response_value.0 iteration 17 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 131 function generate_response_value thread 0
+Unwinding loop generate_response_value.1 iteration 1 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 135 function generate_response_value thread 0
+Unwinding loop generate_response_value.1 iteration 2 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 135 function generate_response_value thread 0
+Unwinding loop generate_response_value.1 iteration 3 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 135 function generate_response_value thread 0
+Unwinding loop generate_response_value.1 iteration 4 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 135 function generate_response_value thread 0
+Unwinding loop generate_response_value.1 iteration 5 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 135 function generate_response_value thread 0
+Unwinding loop generate_response_value.1 iteration 6 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 135 function generate_response_value thread 0
+Unwinding loop generate_response_value.1 iteration 7 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 135 function generate_response_value thread 0
+Unwinding loop generate_response_value.1 iteration 8 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 135 function generate_response_value thread 0
+Unwinding loop generate_response_value.1 iteration 9 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 135 function generate_response_value thread 0
+Unwinding loop generate_response_value.1 iteration 10 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 135 function generate_response_value thread 0
+Unwinding loop generate_response_value.1 iteration 11 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 135 function generate_response_value thread 0
+Unwinding loop generate_response_value.1 iteration 12 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 135 function generate_response_value thread 0
+Unwinding loop generate_response_value.1 iteration 13 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 135 function generate_response_value thread 0
+Unwinding loop generate_response_value.1 iteration 14 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 135 function generate_response_value thread 0
+Unwinding loop generate_response_value.1 iteration 15 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 135 function generate_response_value thread 0
+Unwinding loop generate_response_value.1 iteration 16 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 135 function generate_response_value thread 0
+Not unwinding loop generate_response_value.1 iteration 17 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 135 function generate_response_value thread 0
+Unwinding loop generate_response_value.2 iteration 1 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.2 iteration 2 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.2 iteration 3 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.2 iteration 4 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.2 iteration 5 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.2 iteration 6 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.2 iteration 7 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.2 iteration 8 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.2 iteration 9 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.2 iteration 10 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.2 iteration 11 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.2 iteration 12 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.2 iteration 13 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.2 iteration 14 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.2 iteration 15 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.2 iteration 16 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.3 iteration 1 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.3 iteration 2 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.3 iteration 3 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.3 iteration 4 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.3 iteration 5 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.3 iteration 6 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.3 iteration 7 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.3 iteration 8 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.3 iteration 9 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.3 iteration 10 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.3 iteration 11 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.3 iteration 12 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.3 iteration 13 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.3 iteration 14 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.3 iteration 15 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.3 iteration 16 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop purple_base16_encode.2 iteration 1 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 2 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 3 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 4 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 5 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 6 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 7 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 8 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 9 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 10 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 11 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 12 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 13 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 14 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 15 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 16 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop generate_response_value.4 iteration 1 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 147 function generate_response_value thread 0
+Unwinding loop generate_response_value.4 iteration 2 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 147 function generate_response_value thread 0
+Unwinding loop generate_response_value.4 iteration 3 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 147 function generate_response_value thread 0
+Unwinding loop generate_response_value.4 iteration 4 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 147 function generate_response_value thread 0
+Unwinding loop generate_response_value.4 iteration 5 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 147 function generate_response_value thread 0
+Unwinding loop generate_response_value.4 iteration 6 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 147 function generate_response_value thread 0
+Unwinding loop generate_response_value.4 iteration 7 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 147 function generate_response_value thread 0
+Unwinding loop generate_response_value.4 iteration 8 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 147 function generate_response_value thread 0
+Unwinding loop generate_response_value.4 iteration 9 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 147 function generate_response_value thread 0
+Unwinding loop generate_response_value.4 iteration 10 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 147 function generate_response_value thread 0
+Unwinding loop generate_response_value.4 iteration 11 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 147 function generate_response_value thread 0
+Unwinding loop generate_response_value.4 iteration 12 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 147 function generate_response_value thread 0
+Unwinding loop generate_response_value.4 iteration 13 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 147 function generate_response_value thread 0
+Unwinding loop generate_response_value.4 iteration 14 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 147 function generate_response_value thread 0
+Unwinding loop generate_response_value.4 iteration 15 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 147 function generate_response_value thread 0
+Unwinding loop generate_response_value.4 iteration 16 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 147 function generate_response_value thread 0
+Not unwinding loop generate_response_value.4 iteration 17 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 147 function generate_response_value thread 0
+Unwinding loop purple_base16_encode.2 iteration 1 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 2 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 3 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 4 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 5 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 6 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 7 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 8 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 9 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 10 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 11 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 12 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 13 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 14 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 15 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 16 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop generate_response_value.5 iteration 1 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 155 function generate_response_value thread 0
+Unwinding loop generate_response_value.5 iteration 2 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 155 function generate_response_value thread 0
+Unwinding loop generate_response_value.5 iteration 3 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 155 function generate_response_value thread 0
+Unwinding loop generate_response_value.5 iteration 4 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 155 function generate_response_value thread 0
+Unwinding loop generate_response_value.5 iteration 5 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 155 function generate_response_value thread 0
+Unwinding loop generate_response_value.5 iteration 6 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 155 function generate_response_value thread 0
+Unwinding loop generate_response_value.5 iteration 7 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 155 function generate_response_value thread 0
+Unwinding loop generate_response_value.5 iteration 8 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 155 function generate_response_value thread 0
+Unwinding loop generate_response_value.5 iteration 9 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 155 function generate_response_value thread 0
+Unwinding loop generate_response_value.5 iteration 10 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 155 function generate_response_value thread 0
+Unwinding loop generate_response_value.5 iteration 11 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 155 function generate_response_value thread 0
+Unwinding loop generate_response_value.5 iteration 12 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 155 function generate_response_value thread 0
+Unwinding loop generate_response_value.5 iteration 13 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 155 function generate_response_value thread 0
+Unwinding loop generate_response_value.5 iteration 14 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 155 function generate_response_value thread 0
+Unwinding loop generate_response_value.5 iteration 15 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 155 function generate_response_value thread 0
+Unwinding loop generate_response_value.5 iteration 16 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 155 function generate_response_value thread 0
+Not unwinding loop generate_response_value.5 iteration 17 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 155 function generate_response_value thread 0
+Unwinding loop purple_base16_encode.2 iteration 1 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 2 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 3 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 4 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 5 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 6 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 7 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 8 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 9 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 10 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 11 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 12 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 13 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 14 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 15 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 16 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+size of program expression: 5818 steps
+simple slicing removed 7 assignments
+Generated 1531 VCC(s), 1194 remaining after simplification
 Passing problem to propositional reduction
 converting SSA
 Running propositional reduction
 Post-processing
 Solving with MiniSAT 2.2.1 with simplifier
-225687 variables, 606688 clauses
+288408 variables, 802572 clauses
 SAT checker: instance is SATISFIABLE
 Solving with MiniSAT 2.2.1 with simplifier
-225687 variables, 114752 clauses
+288408 variables, 21882 clauses
 SAT checker: instance is SATISFIABLE
 Solving with MiniSAT 2.2.1 with simplifier
-225687 variables, 114753 clauses
+288408 variables, 21878 clauses
 SAT checker: instance is SATISFIABLE
 Solving with MiniSAT 2.2.1 with simplifier
-225687 variables, 114754 clauses
+288408 variables, 21879 clauses
 SAT checker: instance is SATISFIABLE
 Solving with MiniSAT 2.2.1 with simplifier
-225687 variables, 114755 clauses
+288408 variables, 21879 clauses
 SAT checker: instance is SATISFIABLE
 Solving with MiniSAT 2.2.1 with simplifier
-225687 variables, 114755 clauses
+288408 variables, 21880 clauses
 SAT checker: instance is SATISFIABLE
 Solving with MiniSAT 2.2.1 with simplifier
-225687 variables, 103095 clauses
-SAT checker inconsistent: instance is UNSATISFIABLE
-Runtime decision procedure: 1.405s
+288408 variables, 21286 clauses
+SAT checker: instance is SATISFIABLE
+Solving with MiniSAT 2.2.1 with simplifier
+288408 variables, 21286 clauses
+SAT checker: instance is SATISFIABLE
+Solving with MiniSAT 2.2.1 with simplifier
+288408 variables, 21286 clauses
+SAT checker: instance is SATISFIABLE
+Solving with MiniSAT 2.2.1 with simplifier
+288408 variables, 21286 clauses
+SAT checker: instance is SATISFIABLE
+Solving with MiniSAT 2.2.1 with simplifier
+288408 variables, 21286 clauses
+SAT checker: instance is SATISFIABLE
+Solving with MiniSAT 2.2.1 with simplifier
+288408 variables, 21286 clauses
+SAT checker: instance is SATISFIABLE
+Solving with MiniSAT 2.2.1 with simplifier
+288408 variables, 21286 clauses
+SAT checker: instance is SATISFIABLE
+Solving with MiniSAT 2.2.1 with simplifier
+288408 variables, 21286 clauses
+SAT checker: instance is SATISFIABLE
+Solving with MiniSAT 2.2.1 with simplifier
+288408 variables, 21286 clauses
+SAT checker: instance is UNSATISFIABLE
+Runtime decision procedure: 3.454s
 
 ** Results:
 [] dereference failure: dead object in gstring->str[(signed long int)gstring->len]: SUCCESS
-[main.overflow.1] pointer arithmetic overflow on + in r1 + (signed long int)i: SUCCESS
-[main.pointer_dereference.1] dereference failure: pointer NULL in r1[(signed long int)i]: SUCCESS
-[main.pointer_dereference.2] dereference failure: pointer invalid in r1[(signed long int)i]: SUCCESS
-[main.pointer_dereference.3] dereference failure: deallocated dynamic object in r1[(signed long int)i]: SUCCESS
-[main.pointer_dereference.4] dereference failure: dead object in r1[(signed long int)i]: SUCCESS
-[main.overflow.2] pointer arithmetic overflow on + in r2 + (signed long int)i: SUCCESS
-[main.pointer_dereference.5] dereference failure: pointer NULL in r2[(signed long int)i]: SUCCESS
-[main.pointer_dereference.6] dereference failure: pointer invalid in r2[(signed long int)i]: SUCCESS
-[main.pointer_dereference.7] dereference failure: deallocated dynamic object in r2[(signed long int)i]: SUCCESS
-[main.pointer_dereference.8] dereference failure: dead object in r2[(signed long int)i]: SUCCESS
-[main.assertion.1] ERROR: Information Leak: SUCCESS
 [time.pointer_dereference.1] dereference failure: pointer NULL in *tloc: SUCCESS
 [time.pointer_dereference.2] dereference failure: pointer invalid in *tloc: SUCCESS
 [time.pointer_dereference.3] dereference failure: deallocated dynamic object in *tloc: SUCCESS
 [time.pointer_dereference.4] dereference failure: dead object in *tloc: SUCCESS
-[vsnprintf.pointer_dereference.1] dereference failure: pointer NULL in *p: SUCCESS
-[vsnprintf.pointer_dereference.2] dereference failure: pointer invalid in *p: SUCCESS
-[vsnprintf.pointer_dereference.3] dereference failure: deallocated dynamic object in *p: SUCCESS
-[vsnprintf.pointer_dereference.4] dereference failure: dead object in *p: SUCCESS
-[vsnprintf.overflow.1] pointer arithmetic overflow on + in p + (signed long int)1: SUCCESS
-[vsnprintf.overflow.2] pointer arithmetic overflow on + in src + (signed long int)i: SUCCESS
-[vsnprintf.pointer_dereference.5] dereference failure: pointer NULL in src[(signed long int)i]: SUCCESS
-[vsnprintf.pointer_dereference.6] dereference failure: pointer invalid in src[(signed long int)i]: SUCCESS
-[vsnprintf.pointer_dereference.7] dereference failure: deallocated dynamic object in src[(signed long int)i]: SUCCESS
-[vsnprintf.pointer_dereference.8] dereference failure: dead object in src[(signed long int)i]: SUCCESS
-[vsnprintf.overflow.3] pointer arithmetic overflow on + in src + (signed long int)i: SUCCESS
-[vsnprintf.pointer_dereference.9] dereference failure: pointer NULL in src[(signed long int)i]: SUCCESS
-[vsnprintf.pointer_dereference.10] dereference failure: pointer invalid in src[(signed long int)i]: SUCCESS
-[vsnprintf.pointer_dereference.11] dereference failure: deallocated dynamic object in src[(signed long int)i]: SUCCESS
-[vsnprintf.pointer_dereference.12] dereference failure: dead object in src[(signed long int)i]: SUCCESS
-[vsnprintf.overflow.4] pointer arithmetic overflow on + in s + (signed long int)len: SUCCESS
-[vsnprintf.pointer_dereference.13] dereference failure: pointer NULL in s[(signed long int)len]: SUCCESS
-[vsnprintf.pointer_dereference.14] dereference failure: pointer invalid in s[(signed long int)len]: SUCCESS
-[vsnprintf.pointer_dereference.15] dereference failure: deallocated dynamic object in s[(signed long int)len]: SUCCESS
-[vsnprintf.pointer_dereference.16] dereference failure: dead object in s[(signed long int)len]: SUCCESS
-[vsnprintf.overflow.5] pointer arithmetic overflow on - in q - p: SUCCESS
-[vsnprintf.overflow.6] pointer arithmetic overflow on + in str + (signed long int)str_l: SUCCESS
-[vsnprintf.overflow.7] pointer arithmetic overflow on + in (char *)dst + (signed long int)i: SUCCESS
-[vsnprintf.pointer_dereference.17] dereference failure: pointer NULL in ((char *)dst)[(signed long int)i]: SUCCESS
-[vsnprintf.pointer_dereference.18] dereference failure: pointer invalid in ((char *)dst)[(signed long int)i]: SUCCESS
-[vsnprintf.pointer_dereference.19] dereference failure: deallocated dynamic object in ((char *)dst)[(signed long int)i]: SUCCESS
-[vsnprintf.pointer_dereference.20] dereference failure: dead object in ((char *)dst)[(signed long int)i]: SUCCESS
-[vsnprintf.overflow.8] pointer arithmetic overflow on + in (const char *)src + (signed long int)i: SUCCESS
-[vsnprintf.pointer_dereference.21] dereference failure: pointer NULL in ((const char *)src)[(signed long int)i]: SUCCESS
-[vsnprintf.pointer_dereference.22] dereference failure: pointer invalid in ((const char *)src)[(signed long int)i]: SUCCESS
-[vsnprintf.pointer_dereference.23] dereference failure: deallocated dynamic object in ((const char *)src)[(signed long int)i]: SUCCESS
-[vsnprintf.pointer_dereference.24] dereference failure: dead object in ((const char *)src)[(signed long int)i]: SUCCESS
-[vsnprintf.overflow.9] pointer arithmetic overflow on + in str + (signed long int)str_l: SUCCESS
-[vsnprintf.overflow.10] pointer arithmetic overflow on + in dd + 1l: SUCCESS
-[vsnprintf.overflow.11] pointer arithmetic overflow on + in ss + 1l: SUCCESS
-[vsnprintf.pointer_dereference.25] dereference failure: pointer NULL in *tmp_post$3: SUCCESS
-[vsnprintf.pointer_dereference.26] dereference failure: pointer invalid in *tmp_post$3: SUCCESS
-[vsnprintf.pointer_dereference.27] dereference failure: deallocated dynamic object in *tmp_post$3: SUCCESS
-[vsnprintf.pointer_dereference.28] dereference failure: dead object in *tmp_post$3: SUCCESS
-[vsnprintf.pointer_dereference.29] dereference failure: pointer NULL in *tmp_post$4: SUCCESS
-[vsnprintf.pointer_dereference.30] dereference failure: pointer invalid in *tmp_post$4: SUCCESS
-[vsnprintf.pointer_dereference.31] dereference failure: deallocated dynamic object in *tmp_post$4: SUCCESS
-[vsnprintf.pointer_dereference.32] dereference failure: dead object in *tmp_post$4: SUCCESS
-[vsnprintf.overflow.12] pointer arithmetic overflow on + in p + (signed long int)n: SUCCESS
-[vsnprintf.overflow.13] pointer arithmetic overflow on + in p + 1l: SUCCESS
-[vsnprintf.pointer_dereference.33] dereference failure: pointer NULL in *p: SUCCESS
-[vsnprintf.pointer_dereference.34] dereference failure: pointer invalid in *p: SUCCESS
-[vsnprintf.pointer_dereference.35] dereference failure: deallocated dynamic object in *p: SUCCESS
-[vsnprintf.pointer_dereference.36] dereference failure: dead object in *p: SUCCESS
-[vsnprintf.pointer_dereference.37] dereference failure: pointer NULL in *p: SUCCESS
-[vsnprintf.pointer_dereference.38] dereference failure: pointer invalid in *p: SUCCESS
-[vsnprintf.pointer_dereference.39] dereference failure: deallocated dynamic object in *p: SUCCESS
-[vsnprintf.pointer_dereference.40] dereference failure: dead object in *p: SUCCESS
-[vsnprintf.overflow.14] pointer arithmetic overflow on + in p + 1l: SUCCESS
-[vsnprintf.pointer_dereference.41] dereference failure: pointer NULL in *p: SUCCESS
-[vsnprintf.pointer_dereference.42] dereference failure: pointer invalid in *p: SUCCESS
-[vsnprintf.pointer_dereference.43] dereference failure: deallocated dynamic object in *p: SUCCESS
-[vsnprintf.pointer_dereference.44] dereference failure: dead object in *p: SUCCESS
-[vsnprintf.overflow.15] pointer arithmetic overflow on + in p + 1l: SUCCESS
-[vsnprintf.pointer_dereference.45] dereference failure: pointer NULL in *((signed int *)ap): SUCCESS
-[vsnprintf.pointer_dereference.46] dereference failure: pointer invalid in *((signed int *)ap): SUCCESS
-[vsnprintf.pointer_dereference.47] dereference failure: deallocated dynamic object in *((signed int *)ap): SUCCESS
-[vsnprintf.pointer_dereference.48] dereference failure: dead object in *((signed int *)ap): SUCCESS
-[vsnprintf.pointer_dereference.49] dereference failure: pointer NULL in *p: SUCCESS
-[vsnprintf.pointer_dereference.50] dereference failure: pointer invalid in *p: SUCCESS
-[vsnprintf.pointer_dereference.51] dereference failure: deallocated dynamic object in *p: SUCCESS
-[vsnprintf.pointer_dereference.52] dereference failure: dead object in *p: SUCCESS
-[vsnprintf.overflow.16] pointer arithmetic overflow on + in p + 1l: SUCCESS
-[vsnprintf.pointer_dereference.53] dereference failure: pointer NULL in *tmp_post$5: SUCCESS
-[vsnprintf.pointer_dereference.54] dereference failure: pointer invalid in *tmp_post$5: SUCCESS
-[vsnprintf.pointer_dereference.55] dereference failure: deallocated dynamic object in *tmp_post$5: SUCCESS
-[vsnprintf.pointer_dereference.56] dereference failure: dead object in *tmp_post$5: SUCCESS
-[vsnprintf.pointer_dereference.57] dereference failure: pointer NULL in *p: SUCCESS
-[vsnprintf.pointer_dereference.58] dereference failure: pointer invalid in *p: SUCCESS
-[vsnprintf.pointer_dereference.59] dereference failure: deallocated dynamic object in *p: SUCCESS
-[vsnprintf.pointer_dereference.60] dereference failure: dead object in *p: SUCCESS
-[vsnprintf.overflow.17] pointer arithmetic overflow on + in p + 1l: SUCCESS
-[vsnprintf.pointer_dereference.61] dereference failure: pointer NULL in *tmp_post$6: SUCCESS
-[vsnprintf.pointer_dereference.62] dereference failure: pointer invalid in *tmp_post$6: SUCCESS
-[vsnprintf.pointer_dereference.63] dereference failure: deallocated dynamic object in *tmp_post$6: SUCCESS
-[vsnprintf.pointer_dereference.64] dereference failure: dead object in *tmp_post$6: SUCCESS
-[vsnprintf.pointer_dereference.65] dereference failure: pointer NULL in *p: SUCCESS
-[vsnprintf.pointer_dereference.66] dereference failure: pointer invalid in *p: SUCCESS
-[vsnprintf.pointer_dereference.67] dereference failure: deallocated dynamic object in *p: SUCCESS
-[vsnprintf.pointer_dereference.68] dereference failure: dead object in *p: SUCCESS
-[vsnprintf.overflow.18] pointer arithmetic overflow on + in p + 1l: SUCCESS
-[vsnprintf.pointer_dereference.69] dereference failure: pointer NULL in *p: SUCCESS
-[vsnprintf.pointer_dereference.70] dereference failure: pointer invalid in *p: SUCCESS
-[vsnprintf.pointer_dereference.71] dereference failure: deallocated dynamic object in *p: SUCCESS
-[vsnprintf.pointer_dereference.72] dereference failure: dead object in *p: SUCCESS
-[vsnprintf.pointer_dereference.73] dereference failure: pointer NULL in *((signed int *)ap): SUCCESS
-[vsnprintf.pointer_dereference.74] dereference failure: pointer invalid in *((signed int *)ap): SUCCESS
-[vsnprintf.pointer_dereference.75] dereference failure: deallocated dynamic object in *((signed int *)ap): SUCCESS
-[vsnprintf.pointer_dereference.76] dereference failure: dead object in *((signed int *)ap): SUCCESS
-[vsnprintf.overflow.19] pointer arithmetic overflow on + in p + 1l: SUCCESS
-[vsnprintf.pointer_dereference.77] dereference failure: pointer NULL in *p: SUCCESS
-[vsnprintf.pointer_dereference.78] dereference failure: pointer invalid in *p: SUCCESS
-[vsnprintf.pointer_dereference.79] dereference failure: deallocated dynamic object in *p: SUCCESS
-[vsnprintf.pointer_dereference.80] dereference failure: dead object in *p: SUCCESS
-[vsnprintf.overflow.20] pointer arithmetic overflow on + in p + 1l: SUCCESS
-[vsnprintf.pointer_dereference.81] dereference failure: pointer NULL in *tmp_post$7: SUCCESS
-[vsnprintf.pointer_dereference.82] dereference failure: pointer invalid in *tmp_post$7: SUCCESS
-[vsnprintf.pointer_dereference.83] dereference failure: deallocated dynamic object in *tmp_post$7: SUCCESS
-[vsnprintf.pointer_dereference.84] dereference failure: dead object in *tmp_post$7: SUCCESS
-[vsnprintf.pointer_dereference.85] dereference failure: pointer NULL in *p: SUCCESS
-[vsnprintf.pointer_dereference.86] dereference failure: pointer invalid in *p: SUCCESS
-[vsnprintf.pointer_dereference.87] dereference failure: deallocated dynamic object in *p: SUCCESS
-[vsnprintf.pointer_dereference.88] dereference failure: dead object in *p: SUCCESS
-[vsnprintf.overflow.21] pointer arithmetic overflow on + in p + 1l: SUCCESS
-[vsnprintf.pointer_dereference.89] dereference failure: pointer NULL in *tmp_post$8: SUCCESS
-[vsnprintf.pointer_dereference.90] dereference failure: pointer invalid in *tmp_post$8: SUCCESS
-[vsnprintf.pointer_dereference.91] dereference failure: deallocated dynamic object in *tmp_post$8: SUCCESS
-[vsnprintf.pointer_dereference.92] dereference failure: dead object in *tmp_post$8: SUCCESS
-[vsnprintf.pointer_dereference.93] dereference failure: pointer NULL in *p: SUCCESS
-[vsnprintf.pointer_dereference.94] dereference failure: pointer invalid in *p: SUCCESS
-[vsnprintf.pointer_dereference.95] dereference failure: deallocated dynamic object in *p: SUCCESS
-[vsnprintf.pointer_dereference.96] dereference failure: dead object in *p: SUCCESS
-[vsnprintf.pointer_dereference.97] dereference failure: pointer NULL in *p: SUCCESS
-[vsnprintf.pointer_dereference.98] dereference failure: pointer invalid in *p: SUCCESS
-[vsnprintf.pointer_dereference.99] dereference failure: deallocated dynamic object in *p: SUCCESS
-[vsnprintf.pointer_dereference.100] dereference failure: dead object in *p: SUCCESS
-[vsnprintf.pointer_dereference.101] dereference failure: pointer NULL in *p: SUCCESS
-[vsnprintf.pointer_dereference.102] dereference failure: pointer invalid in *p: SUCCESS
-[vsnprintf.pointer_dereference.103] dereference failure: deallocated dynamic object in *p: SUCCESS
-[vsnprintf.pointer_dereference.104] dereference failure: dead object in *p: SUCCESS
-[vsnprintf.overflow.22] pointer arithmetic overflow on + in p + 1l: SUCCESS
-[vsnprintf.pointer_dereference.105] dereference failure: pointer NULL in *p: SUCCESS
-[vsnprintf.pointer_dereference.106] dereference failure: pointer invalid in *p: SUCCESS
-[vsnprintf.pointer_dereference.107] dereference failure: deallocated dynamic object in *p: SUCCESS
-[vsnprintf.pointer_dereference.108] dereference failure: dead object in *p: SUCCESS
-[vsnprintf.overflow.23] pointer arithmetic overflow on + in p + 1l: SUCCESS
-[vsnprintf.pointer_dereference.109] dereference failure: pointer NULL in *p: SUCCESS
-[vsnprintf.pointer_dereference.110] dereference failure: pointer invalid in *p: SUCCESS
-[vsnprintf.pointer_dereference.111] dereference failure: deallocated dynamic object in *p: SUCCESS
-[vsnprintf.pointer_dereference.112] dereference failure: dead object in *p: SUCCESS
-[vsnprintf.pointer_dereference.113] dereference failure: pointer NULL in *((signed int *)ap): SUCCESS
-[vsnprintf.pointer_dereference.114] dereference failure: pointer invalid in *((signed int *)ap): SUCCESS
-[vsnprintf.pointer_dereference.115] dereference failure: deallocated dynamic object in *((signed int *)ap): SUCCESS
-[vsnprintf.pointer_dereference.116] dereference failure: dead object in *((signed int *)ap): SUCCESS
-[vsnprintf.pointer_dereference.117] dereference failure: pointer NULL in *((const char **)ap): SUCCESS
-[vsnprintf.pointer_dereference.118] dereference failure: pointer invalid in *((const char **)ap): SUCCESS
-[vsnprintf.pointer_dereference.119] dereference failure: deallocated dynamic object in *((const char **)ap): SUCCESS
-[vsnprintf.pointer_dereference.120] dereference failure: dead object in *((const char **)ap): SUCCESS
-[vsnprintf.overflow.24] pointer arithmetic overflow on + in s + (signed long int)len: SUCCESS
-[vsnprintf.pointer_dereference.121] dereference failure: pointer NULL in s[(signed long int)len]: FAILURE
-[vsnprintf.pointer_dereference.122] dereference failure: pointer invalid in s[(signed long int)len]: FAILURE
-[vsnprintf.pointer_dereference.123] dereference failure: deallocated dynamic object in s[(signed long int)len]: FAILURE
-[vsnprintf.pointer_dereference.124] dereference failure: dead object in s[(signed long int)len]: FAILURE
-[vsnprintf.overflow.25] pointer arithmetic overflow on - in q - str_arg: SUCCESS
-[vsnprintf.pointer_dereference.125] dereference failure: pointer NULL in *((void **)ap): SUCCESS
-[vsnprintf.pointer_dereference.126] dereference failure: pointer invalid in *((void **)ap): SUCCESS
-[vsnprintf.pointer_dereference.127] dereference failure: deallocated dynamic object in *((void **)ap): SUCCESS
-[vsnprintf.pointer_dereference.128] dereference failure: dead object in *((void **)ap): SUCCESS
-[vsnprintf.pointer_dereference.129] dereference failure: pointer NULL in *((signed int *)ap): SUCCESS
-[vsnprintf.pointer_dereference.130] dereference failure: pointer invalid in *((signed int *)ap): SUCCESS
-[vsnprintf.pointer_dereference.131] dereference failure: deallocated dynamic object in *((signed int *)ap): SUCCESS
-[vsnprintf.pointer_dereference.132] dereference failure: dead object in *((signed int *)ap): SUCCESS
-[vsnprintf.pointer_dereference.133] dereference failure: pointer NULL in *((signed long int *)ap): SUCCESS
-[vsnprintf.pointer_dereference.134] dereference failure: pointer invalid in *((signed long int *)ap): SUCCESS
-[vsnprintf.pointer_dereference.135] dereference failure: deallocated dynamic object in *((signed long int *)ap): SUCCESS
-[vsnprintf.pointer_dereference.136] dereference failure: dead object in *((signed long int *)ap): SUCCESS
-[vsnprintf.pointer_dereference.137] dereference failure: pointer NULL in *((unsigned int *)ap): SUCCESS
-[vsnprintf.pointer_dereference.138] dereference failure: pointer invalid in *((unsigned int *)ap): SUCCESS
-[vsnprintf.pointer_dereference.139] dereference failure: deallocated dynamic object in *((unsigned int *)ap): SUCCESS
-[vsnprintf.pointer_dereference.140] dereference failure: dead object in *((unsigned int *)ap): SUCCESS
-[vsnprintf.pointer_dereference.141] dereference failure: pointer NULL in *((unsigned long int *)ap): SUCCESS
-[vsnprintf.pointer_dereference.142] dereference failure: pointer invalid in *((unsigned long int *)ap): SUCCESS
-[vsnprintf.pointer_dereference.143] dereference failure: deallocated dynamic object in *((unsigned long int *)ap): SUCCESS
-[vsnprintf.pointer_dereference.144] dereference failure: dead object in *((unsigned long int *)ap): SUCCESS
-[vsnprintf.overflow.26] pointer arithmetic overflow on + in tmp + (signed long int)str_arg_l: SUCCESS
-[vsnprintf.overflow.27] pointer arithmetic overflow on + in tmp + (signed long int)str_arg_l: SUCCESS
-[vsnprintf.overflow.28] pointer arithmetic overflow on + in tmp + (signed long int)str_arg_l: SUCCESS
-[vsnprintf.overflow.29] pointer arithmetic overflow on + in tmp + (signed long int)str_arg_l: SUCCESS
-[vsnprintf.overflow.30] pointer arithmetic overflow on + in tmp + (signed long int)str_arg_l: SUCCESS
-[vsnprintf.pointer_dereference.145] dereference failure: pointer NULL in *p: SUCCESS
-[vsnprintf.pointer_dereference.146] dereference failure: pointer invalid in *p: SUCCESS
-[vsnprintf.pointer_dereference.147] dereference failure: deallocated dynamic object in *p: SUCCESS
-[vsnprintf.pointer_dereference.148] dereference failure: dead object in *p: SUCCESS
-[vsnprintf.pointer_dereference.149] dereference failure: pointer NULL in *p: SUCCESS
-[vsnprintf.pointer_dereference.150] dereference failure: pointer invalid in *p: SUCCESS
-[vsnprintf.pointer_dereference.151] dereference failure: deallocated dynamic object in *p: SUCCESS
-[vsnprintf.pointer_dereference.152] dereference failure: dead object in *p: SUCCESS
-[vsnprintf.overflow.31] pointer arithmetic overflow on + in p + 1l: SUCCESS
-[vsnprintf.overflow.32] pointer arithmetic overflow on + in str + (signed long int)str_l: SUCCESS
-[vsnprintf.overflow.33] pointer arithmetic overflow on + in sp + (signed long int)i: SUCCESS
-[vsnprintf.pointer_dereference.153] dereference failure: pointer NULL in sp[(signed long int)i]: SUCCESS
-[vsnprintf.pointer_dereference.154] dereference failure: pointer invalid in sp[(signed long int)i]: SUCCESS
-[vsnprintf.pointer_dereference.155] dereference failure: deallocated dynamic object in sp[(signed long int)i]: SUCCESS
-[vsnprintf.pointer_dereference.156] dereference failure: dead object in sp[(signed long int)i]: SUCCESS
-[vsnprintf.overflow.34] pointer arithmetic overflow on + in str + (signed long int)str_l: SUCCESS
-[vsnprintf.overflow.35] pointer arithmetic overflow on + in dd + 1l: SUCCESS
-[vsnprintf.pointer_dereference.157] dereference failure: pointer NULL in *tmp_post$27: SUCCESS
-[vsnprintf.pointer_dereference.158] dereference failure: pointer invalid in *tmp_post$27: SUCCESS
-[vsnprintf.pointer_dereference.159] dereference failure: deallocated dynamic object in *tmp_post$27: SUCCESS
-[vsnprintf.pointer_dereference.160] dereference failure: dead object in *tmp_post$27: SUCCESS
-[vsnprintf.overflow.36] pointer arithmetic overflow on + in str + (signed long int)str_l: SUCCESS
-[vsnprintf.overflow.37] pointer arithmetic overflow on + in (char *)dst + (signed long int)i: SUCCESS
-[vsnprintf.pointer_dereference.161] dereference failure: pointer NULL in ((char *)dst)[(signed long int)i]: SUCCESS
-[vsnprintf.pointer_dereference.162] dereference failure: pointer invalid in ((char *)dst)[(signed long int)i]: SUCCESS
-[vsnprintf.pointer_dereference.163] dereference failure: deallocated dynamic object in ((char *)dst)[(signed long int)i]: SUCCESS
-[vsnprintf.pointer_dereference.164] dereference failure: dead object in ((char *)dst)[(signed long int)i]: SUCCESS
-[vsnprintf.overflow.38] pointer arithmetic overflow on + in (const char *)src + (signed long int)i: SUCCESS
-[vsnprintf.pointer_dereference.165] dereference failure: pointer NULL in ((const char *)src)[(signed long int)i]: SUCCESS
-[vsnprintf.pointer_dereference.166] dereference failure: pointer invalid in ((const char *)src)[(signed long int)i]: SUCCESS
-[vsnprintf.pointer_dereference.167] dereference failure: deallocated dynamic object in ((const char *)src)[(signed long int)i]: SUCCESS
-[vsnprintf.pointer_dereference.168] dereference failure: dead object in ((const char *)src)[(signed long int)i]: SUCCESS
-[vsnprintf.overflow.39] pointer arithmetic overflow on + in str + (signed long int)str_l: SUCCESS
-[vsnprintf.overflow.40] pointer arithmetic overflow on + in dd + 1l: SUCCESS
-[vsnprintf.overflow.41] pointer arithmetic overflow on + in ss + 1l: SUCCESS
-[vsnprintf.pointer_dereference.169] dereference failure: pointer NULL in *tmp_post$28: SUCCESS
-[vsnprintf.pointer_dereference.170] dereference failure: pointer invalid in *tmp_post$28: SUCCESS
-[vsnprintf.pointer_dereference.171] dereference failure: deallocated dynamic object in *tmp_post$28: SUCCESS
-[vsnprintf.pointer_dereference.172] dereference failure: dead object in *tmp_post$28: SUCCESS
-[vsnprintf.pointer_dereference.173] dereference failure: pointer NULL in *tmp_post$29: SUCCESS
-[vsnprintf.pointer_dereference.174] dereference failure: pointer invalid in *tmp_post$29: SUCCESS
-[vsnprintf.pointer_dereference.175] dereference failure: deallocated dynamic object in *tmp_post$29: SUCCESS
-[vsnprintf.pointer_dereference.176] dereference failure: dead object in *tmp_post$29: SUCCESS
-[vsnprintf.overflow.42] pointer arithmetic overflow on + in str + (signed long int)str_l: SUCCESS
-[vsnprintf.overflow.43] pointer arithmetic overflow on + in sp + (signed long int)i: SUCCESS
-[vsnprintf.pointer_dereference.177] dereference failure: pointer NULL in sp[(signed long int)i]: SUCCESS
-[vsnprintf.pointer_dereference.178] dereference failure: pointer invalid in sp[(signed long int)i]: SUCCESS
-[vsnprintf.pointer_dereference.179] dereference failure: deallocated dynamic object in sp[(signed long int)i]: SUCCESS
-[vsnprintf.pointer_dereference.180] dereference failure: dead object in sp[(signed long int)i]: SUCCESS
-[vsnprintf.overflow.44] pointer arithmetic overflow on + in str + (signed long int)str_l: SUCCESS
-[vsnprintf.overflow.45] pointer arithmetic overflow on + in dd + 1l: SUCCESS
-[vsnprintf.pointer_dereference.181] dereference failure: pointer NULL in *tmp_post$30: SUCCESS
-[vsnprintf.pointer_dereference.182] dereference failure: pointer invalid in *tmp_post$30: SUCCESS
-[vsnprintf.pointer_dereference.183] dereference failure: deallocated dynamic object in *tmp_post$30: SUCCESS
-[vsnprintf.pointer_dereference.184] dereference failure: dead object in *tmp_post$30: SUCCESS
-[vsnprintf.overflow.46] pointer arithmetic overflow on + in str + (signed long int)str_l: SUCCESS
-[vsnprintf.overflow.47] pointer arithmetic overflow on + in str_arg + (signed long int)zero_padding_insertion_ind: SUCCESS
-[vsnprintf.overflow.48] pointer arithmetic overflow on + in (char *)dst + (signed long int)i: SUCCESS
-[vsnprintf.pointer_dereference.185] dereference failure: pointer NULL in ((char *)dst)[(signed long int)i]: SUCCESS
-[vsnprintf.pointer_dereference.186] dereference failure: pointer invalid in ((char *)dst)[(signed long int)i]: SUCCESS
-[vsnprintf.pointer_dereference.187] dereference failure: deallocated dynamic object in ((char *)dst)[(signed long int)i]: SUCCESS
-[vsnprintf.pointer_dereference.188] dereference failure: dead object in ((char *)dst)[(signed long int)i]: SUCCESS
-[vsnprintf.overflow.49] pointer arithmetic overflow on + in (const char *)src + (signed long int)i: SUCCESS
-[vsnprintf.pointer_dereference.189] dereference failure: pointer NULL in ((const char *)src)[(signed long int)i]: SUCCESS
-[vsnprintf.pointer_dereference.190] dereference failure: pointer invalid in ((const char *)src)[(signed long int)i]: SUCCESS
-[vsnprintf.pointer_dereference.191] dereference failure: deallocated dynamic object in ((const char *)src)[(signed long int)i]: SUCCESS
-[vsnprintf.pointer_dereference.192] dereference failure: dead object in ((const char *)src)[(signed long int)i]: SUCCESS
-[vsnprintf.overflow.50] pointer arithmetic overflow on + in str_arg + (signed long int)zero_padding_insertion_ind: SUCCESS
-[vsnprintf.overflow.51] pointer arithmetic overflow on + in str + (signed long int)str_l: SUCCESS
-[vsnprintf.overflow.52] pointer arithmetic overflow on + in dd + 1l: SUCCESS
-[vsnprintf.overflow.53] pointer arithmetic overflow on + in ss + 1l: SUCCESS
-[vsnprintf.pointer_dereference.193] dereference failure: pointer NULL in *tmp_post$31: SUCCESS
-[vsnprintf.pointer_dereference.194] dereference failure: pointer invalid in *tmp_post$31: SUCCESS
-[vsnprintf.pointer_dereference.195] dereference failure: deallocated dynamic object in *tmp_post$31: SUCCESS
-[vsnprintf.pointer_dereference.196] dereference failure: dead object in *tmp_post$31: SUCCESS
-[vsnprintf.pointer_dereference.197] dereference failure: pointer NULL in *tmp_post$32: SUCCESS
-[vsnprintf.pointer_dereference.198] dereference failure: pointer invalid in *tmp_post$32: SUCCESS
-[vsnprintf.pointer_dereference.199] dereference failure: deallocated dynamic object in *tmp_post$32: SUCCESS
-[vsnprintf.pointer_dereference.200] dereference failure: dead object in *tmp_post$32: SUCCESS
-[vsnprintf.overflow.54] pointer arithmetic overflow on + in str + (signed long int)str_l: SUCCESS
-[vsnprintf.overflow.55] pointer arithmetic overflow on + in sp + (signed long int)i: SUCCESS
-[vsnprintf.pointer_dereference.201] dereference failure: pointer NULL in sp[(signed long int)i]: SUCCESS
-[vsnprintf.pointer_dereference.202] dereference failure: pointer invalid in sp[(signed long int)i]: SUCCESS
-[vsnprintf.pointer_dereference.203] dereference failure: deallocated dynamic object in sp[(signed long int)i]: SUCCESS
-[vsnprintf.pointer_dereference.204] dereference failure: dead object in sp[(signed long int)i]: SUCCESS
-[vsnprintf.overflow.56] pointer arithmetic overflow on + in str + (signed long int)str_l: SUCCESS
-[vsnprintf.overflow.57] pointer arithmetic overflow on + in dd + 1l: SUCCESS
-[vsnprintf.pointer_dereference.205] dereference failure: pointer NULL in *tmp_post$33: SUCCESS
-[vsnprintf.pointer_dereference.206] dereference failure: pointer invalid in *tmp_post$33: SUCCESS
-[vsnprintf.pointer_dereference.207] dereference failure: deallocated dynamic object in *tmp_post$33: SUCCESS
-[vsnprintf.pointer_dereference.208] dereference failure: dead object in *tmp_post$33: SUCCESS
-[vsnprintf.overflow.58] pointer arithmetic overflow on + in str + (signed long int)(str_l <= str_m - (unsigned long int)1 ? str_l : str_m - (unsigned long int)1): SUCCESS
-[vsnprintf.pointer_dereference.209] dereference failure: pointer NULL in str[(signed long int)(str_l <= str_m - (unsigned long int)1 ? str_l : str_m - (unsigned long int)1)]: SUCCESS
-[vsnprintf.pointer_dereference.210] dereference failure: pointer invalid in str[(signed long int)(str_l <= str_m - (unsigned long int)1 ? str_l : str_m - (unsigned long int)1)]: SUCCESS
-[vsnprintf.pointer_dereference.211] dereference failure: deallocated dynamic object in str[(signed long int)(str_l <= str_m - (unsigned long int)1 ? str_l : str_m - (unsigned long int)1)]: SUCCESS
-[vsnprintf.pointer_dereference.212] dereference failure: dead object in str[(signed long int)(str_l <= str_m - (unsigned long int)1 ? str_l : str_m - (unsigned long int)1)]: SUCCESS
 [g_convert_with_iconv.overflow.1] pointer arithmetic overflow on + in s + (signed long int)len: SUCCESS
 [g_convert_with_iconv.pointer_dereference.1] dereference failure: pointer NULL in s[(signed long int)len]: SUCCESS
 [g_convert_with_iconv.pointer_dereference.2] dereference failure: pointer invalid in s[(signed long int)len]: SUCCESS
@@ -461,9 +327,9 @@ Runtime decision procedure: 1.405s
 [g_convert_with_iconv.pointer_dereference.23] dereference failure: deallocated dynamic object in *bytes_written: SUCCESS
 [g_convert_with_iconv.pointer_dereference.24] dereference failure: dead object in *bytes_written: SUCCESS
 [g_convert_with_iconv.overflow.7] pointer arithmetic overflow on - in outp - dest: SUCCESS
-[g_free.assertion.1] free argument is dynamic object: SUCCESS
-[g_free.assertion.2] free argument has offset zero: SUCCESS
-[g_free.assertion.3] double free: SUCCESS
+[g_free.assertion.1] free argument is dynamic object: FAILURE
+[g_free.assertion.2] free argument has offset zero: FAILURE
+[g_free.assertion.3] double free: FAILURE
 [g_free.assertion.4] free called for new[] object: SUCCESS
 [g_clear_pointer.pointer_dereference.1] dereference failure: pointer NULL in *pp: SUCCESS
 [g_clear_pointer.pointer_dereference.2] dereference failure: pointer invalid in *pp: SUCCESS
@@ -474,10 +340,6 @@ Runtime decision procedure: 1.405s
 [g_clear_pointer.pointer_dereference.7] dereference failure: deallocated dynamic object in destroy: SUCCESS
 [g_clear_pointer.pointer_dereference.8] dereference failure: dead object in destroy: SUCCESS
 [g_clear_pointer.pointer_dereference.9] invalid function pointer: SUCCESS
-[free.assertion.1] free argument is dynamic object: SUCCESS
-[free.assertion.2] free argument has offset zero: SUCCESS
-[free.assertion.3] double free: SUCCESS
-[free.assertion.4] free called for new[] object: SUCCESS
 [g_realloc.assertion.1] free argument is dynamic object: SUCCESS
 [g_realloc.assertion.2] free argument has offset zero: SUCCESS
 [g_realloc.assertion.3] double free: SUCCESS
@@ -504,7 +366,7 @@ Runtime decision procedure: 1.405s
 [g_try_realloc.assertion.11] free argument has offset zero: SUCCESS
 [g_try_realloc.assertion.12] double free: SUCCESS
 [g_try_realloc.assertion.13] free called for new[] object: SUCCESS
-[g_strdup.overflow.1] pointer arithmetic overflow on + in s + (signed long int)len: SUCCESS
+[g_strdup.overflow.1] pointer arithmetic overflow on + in s + (signed long int)len: FAILURE
 [g_strdup.pointer_dereference.1] dereference failure: pointer NULL in s[(signed long int)len]: FAILURE
 [g_strdup.pointer_dereference.2] dereference failure: pointer invalid in s[(signed long int)len]: FAILURE
 [g_strdup.pointer_dereference.3] dereference failure: deallocated dynamic object in s[(signed long int)len]: FAILURE
@@ -514,7 +376,7 @@ Runtime decision procedure: 1.405s
 [g_strdup.pointer_dereference.6] dereference failure: pointer invalid in ((char *)dst)[(signed long int)i]: SUCCESS
 [g_strdup.pointer_dereference.7] dereference failure: deallocated dynamic object in ((char *)dst)[(signed long int)i]: SUCCESS
 [g_strdup.pointer_dereference.8] dereference failure: dead object in ((char *)dst)[(signed long int)i]: SUCCESS
-[g_strdup.overflow.3] pointer arithmetic overflow on + in (const char *)src + (signed long int)i: SUCCESS
+[g_strdup.overflow.3] pointer arithmetic overflow on + in (const char *)src + (signed long int)i: FAILURE
 [g_strdup.pointer_dereference.9] dereference failure: pointer NULL in ((const char *)src)[(signed long int)i]: FAILURE
 [g_strdup.pointer_dereference.10] dereference failure: pointer invalid in ((const char *)src)[(signed long int)i]: FAILURE
 [g_strdup.pointer_dereference.11] dereference failure: deallocated dynamic object in ((const char *)src)[(signed long int)i]: FAILURE
@@ -1322,11 +1184,10 @@ Runtime decision procedure: 1.405s
 [realloc.assertion.2] free argument has offset zero: SUCCESS
 [realloc.assertion.3] double free: SUCCESS
 [realloc.assertion.4] free called for new[] object: SUCCESS
-[realloc.assertion.5] realloc argument is dynamic object: SUCCESS
-[realloc.assertion.6] free argument is dynamic object: SUCCESS
-[realloc.assertion.7] free argument has offset zero: SUCCESS
-[realloc.assertion.8] double free: SUCCESS
-[realloc.assertion.9] free called for new[] object: SUCCESS
+[realloc.assertion.5] free argument is dynamic object: SUCCESS
+[realloc.assertion.6] free argument has offset zero: SUCCESS
+[realloc.assertion.7] double free: SUCCESS
+[realloc.assertion.8] free called for new[] object: SUCCESS
 [purple_markup_extract_info_field.overflow.10] pointer arithmetic overflow on - in q - p: SUCCESS
 [purple_markup_extract_info_field.overflow.11] pointer arithmetic overflow on - in q - p: SUCCESS
 [purple_markup_extract_info_field.pointer_dereference.34] dereference failure: pointer NULL in format_cb: SUCCESS
@@ -1335,15 +1196,14 @@ Runtime decision procedure: 1.405s
 [purple_markup_extract_info_field.pointer_dereference.37] dereference failure: dead object in format_cb: SUCCESS
 [purple_markup_extract_info_field.pointer_dereference.38] invalid function pointer: SUCCESS
 [purple_markup_extract_info_field.overflow.12] pointer arithmetic overflow on - in q - p: SUCCESS
-[realloc.assertion.10] free argument is dynamic object: SUCCESS
-[realloc.assertion.11] free argument has offset zero: SUCCESS
-[realloc.assertion.12] double free: SUCCESS
-[realloc.assertion.13] free called for new[] object: SUCCESS
-[realloc.assertion.14] realloc argument is dynamic object: SUCCESS
-[realloc.assertion.15] free argument is dynamic object: SUCCESS
-[realloc.assertion.16] free argument has offset zero: SUCCESS
-[realloc.assertion.17] double free: SUCCESS
-[realloc.assertion.18] free called for new[] object: SUCCESS
+[realloc.assertion.9] free argument is dynamic object: SUCCESS
+[realloc.assertion.10] free argument has offset zero: SUCCESS
+[realloc.assertion.11] double free: SUCCESS
+[realloc.assertion.12] free called for new[] object: SUCCESS
+[realloc.assertion.13] free argument is dynamic object: SUCCESS
+[realloc.assertion.14] free argument has offset zero: SUCCESS
+[realloc.assertion.15] double free: SUCCESS
+[realloc.assertion.16] free called for new[] object: SUCCESS
 [purple_markup_extract_info_field.overflow.13] pointer arithmetic overflow on - in q - p: SUCCESS
 [purple_markup_extract_info_field.pointer_dereference.39] dereference failure: pointer NULL in *dest: SUCCESS
 [purple_markup_extract_info_field.pointer_dereference.40] dereference failure: pointer invalid in *dest: SUCCESS
@@ -8874,10 +8734,6 @@ Runtime decision procedure: 1.405s
 [purple_cipher_context_destroy.pointer_dereference.19] dereference failure: deallocated dynamic object in cipher->ops->uninit: SUCCESS
 [purple_cipher_context_destroy.pointer_dereference.20] dereference failure: dead object in cipher->ops->uninit: SUCCESS
 [purple_cipher_context_destroy.pointer_dereference.21] invalid function pointer: SUCCESS
-[free.assertion.5] free argument is dynamic object: SUCCESS
-[free.assertion.6] free argument has offset zero: SUCCESS
-[free.assertion.7] double free: SUCCESS
-[free.assertion.8] free called for new[] object: SUCCESS
 [purple_cipher_context_destroy.overflow.1] pointer arithmetic overflow on + in sp + (signed long int)i: SUCCESS
 [purple_cipher_context_destroy.pointer_dereference.22] dereference failure: pointer NULL in sp[(signed long int)i]: SUCCESS
 [purple_cipher_context_destroy.pointer_dereference.23] dereference failure: pointer invalid in sp[(signed long int)i]: SUCCESS
@@ -9437,97 +9293,83 @@ Runtime decision procedure: 1.405s
 [generate_response_value.pointer_dereference.6] dereference failure: pointer invalid in *jid: FAILURE
 [generate_response_value.pointer_dereference.7] dereference failure: deallocated dynamic object in *jid: FAILURE
 [generate_response_value.pointer_dereference.8] dereference failure: dead object in *jid: FAILURE
-[generate_response_value.overflow.1] pointer arithmetic overflow on + in s + (signed long int)len: SUCCESS
-[generate_response_value.pointer_dereference.9] dereference failure: pointer NULL in s[(signed long int)len]: SUCCESS
-[generate_response_value.pointer_dereference.10] dereference failure: pointer invalid in s[(signed long int)len]: SUCCESS
-[generate_response_value.pointer_dereference.11] dereference failure: deallocated dynamic object in s[(signed long int)len]: SUCCESS
-[generate_response_value.pointer_dereference.12] dereference failure: dead object in s[(signed long int)len]: SUCCESS
-[generate_response_value.overflow.2] pointer arithmetic overflow on + in a1 + (signed long int)0: SUCCESS
-[generate_response_value.pointer_dereference.13] dereference failure: pointer NULL in a1[(signed long int)0]: SUCCESS
-[generate_response_value.pointer_dereference.14] dereference failure: pointer invalid in a1[(signed long int)0]: SUCCESS
-[generate_response_value.pointer_dereference.15] dereference failure: deallocated dynamic object in a1[(signed long int)0]: SUCCESS
-[generate_response_value.pointer_dereference.16] dereference failure: dead object in a1[(signed long int)0]: SUCCESS
-[generate_response_value.assertion.1] TEST: g_strdup_printf is working: SUCCESS
-[generate_response_value.overflow.3] pointer arithmetic overflow on + in s + (signed long int)len: SUCCESS
-[generate_response_value.pointer_dereference.17] dereference failure: pointer NULL in s[(signed long int)len]: SUCCESS
-[generate_response_value.pointer_dereference.18] dereference failure: pointer invalid in s[(signed long int)len]: SUCCESS
-[generate_response_value.pointer_dereference.19] dereference failure: deallocated dynamic object in s[(signed long int)len]: SUCCESS
-[generate_response_value.pointer_dereference.20] dereference failure: dead object in s[(signed long int)len]: SUCCESS
-[generate_response_value.assertion.2] TEST: a1 is not Empty: SUCCESS
-[generate_response_value.overflow.4] pointer arithmetic overflow on + in (const char *)src + (signed long int)n: SUCCESS
-[generate_response_value.pointer.1] same object violation in (const char *)dest >= (const char *)src + (signed long int)n: SUCCESS
-[generate_response_value.overflow.5] pointer arithmetic overflow on + in (char *)dest + (signed long int)i: SUCCESS
-[generate_response_value.pointer_dereference.21] dereference failure: pointer NULL in ((char *)dest)[(signed long int)i]: SUCCESS
-[generate_response_value.pointer_dereference.22] dereference failure: pointer invalid in ((char *)dest)[(signed long int)i]: SUCCESS
-[generate_response_value.pointer_dereference.23] dereference failure: deallocated dynamic object in ((char *)dest)[(signed long int)i]: SUCCESS
-[generate_response_value.pointer_dereference.24] dereference failure: dead object in ((char *)dest)[(signed long int)i]: SUCCESS
-[generate_response_value.overflow.6] pointer arithmetic overflow on + in (const char *)src + (signed long int)i: SUCCESS
-[generate_response_value.pointer_dereference.25] dereference failure: pointer NULL in ((const char *)src)[(signed long int)i]: SUCCESS
-[generate_response_value.pointer_dereference.26] dereference failure: pointer invalid in ((const char *)src)[(signed long int)i]: SUCCESS
-[generate_response_value.pointer_dereference.27] dereference failure: deallocated dynamic object in ((const char *)src)[(signed long int)i]: SUCCESS
-[generate_response_value.pointer_dereference.28] dereference failure: dead object in ((const char *)src)[(signed long int)i]: SUCCESS
-[generate_response_value.overflow.7] pointer arithmetic overflow on + in (char *)dest + (signed long int)(i - (unsigned long int)1): SUCCESS
-[generate_response_value.pointer_dereference.29] dereference failure: pointer NULL in ((char *)dest)[(signed long int)(i - (unsigned long int)1)]: SUCCESS
-[generate_response_value.pointer_dereference.30] dereference failure: pointer invalid in ((char *)dest)[(signed long int)(i - (unsigned long int)1)]: SUCCESS
-[generate_response_value.pointer_dereference.31] dereference failure: deallocated dynamic object in ((char *)dest)[(signed long int)(i - (unsigned long int)1)]: SUCCESS
-[generate_response_value.pointer_dereference.32] dereference failure: dead object in ((char *)dest)[(signed long int)(i - (unsigned long int)1)]: SUCCESS
-[generate_response_value.overflow.8] pointer arithmetic overflow on + in (const char *)src + (signed long int)(i - (unsigned long int)1): SUCCESS
-[generate_response_value.pointer_dereference.33] dereference failure: pointer NULL in ((const char *)src)[(signed long int)(i - (unsigned long int)1)]: SUCCESS
-[generate_response_value.pointer_dereference.34] dereference failure: pointer invalid in ((const char *)src)[(signed long int)(i - (unsigned long int)1)]: SUCCESS
-[generate_response_value.pointer_dereference.35] dereference failure: deallocated dynamic object in ((const char *)src)[(signed long int)(i - (unsigned long int)1)]: SUCCESS
-[generate_response_value.pointer_dereference.36] dereference failure: dead object in ((const char *)src)[(signed long int)(i - (unsigned long int)1)]: SUCCESS
-[generate_response_value.overflow.9] pointer arithmetic overflow on + in s + (signed long int)len: SUCCESS
-[generate_response_value.pointer_dereference.37] dereference failure: pointer NULL in s[(signed long int)len]: SUCCESS
-[generate_response_value.pointer_dereference.38] dereference failure: pointer invalid in s[(signed long int)len]: SUCCESS
-[generate_response_value.pointer_dereference.39] dereference failure: deallocated dynamic object in s[(signed long int)len]: SUCCESS
-[generate_response_value.pointer_dereference.40] dereference failure: dead object in s[(signed long int)len]: SUCCESS
-[generate_response_value.overflow.10] pointer arithmetic overflow on + in s + (signed long int)len: SUCCESS
-[generate_response_value.pointer_dereference.41] dereference failure: pointer NULL in s[(signed long int)len]: SUCCESS
-[generate_response_value.pointer_dereference.42] dereference failure: pointer invalid in s[(signed long int)len]: SUCCESS
-[generate_response_value.pointer_dereference.43] dereference failure: deallocated dynamic object in s[(signed long int)len]: SUCCESS
-[generate_response_value.pointer_dereference.44] dereference failure: dead object in s[(signed long int)len]: SUCCESS
-[generate_response_value.overflow.11] pointer arithmetic overflow on + in convnode + (signed long int)0: SUCCESS
-[generate_response_value.pointer_dereference.45] dereference failure: pointer NULL in convnode[(signed long int)0]: SUCCESS
-[generate_response_value.pointer_dereference.46] dereference failure: pointer invalid in convnode[(signed long int)0]: SUCCESS
-[generate_response_value.pointer_dereference.47] dereference failure: deallocated dynamic object in convnode[(signed long int)0]: SUCCESS
-[generate_response_value.pointer_dereference.48] dereference failure: dead object in convnode[(signed long int)0]: SUCCESS
-[generate_response_value.assertion.3] CHECK: convnode is sanitized.: SUCCESS
-[generate_response_value.overflow.12] pointer arithmetic overflow on + in convpasswd + (signed long int)0: SUCCESS
-[generate_response_value.pointer_dereference.49] dereference failure: pointer NULL in convpasswd[(signed long int)0]: SUCCESS
-[generate_response_value.pointer_dereference.50] dereference failure: pointer invalid in convpasswd[(signed long int)0]: SUCCESS
-[generate_response_value.pointer_dereference.51] dereference failure: deallocated dynamic object in convpasswd[(signed long int)0]: SUCCESS
-[generate_response_value.pointer_dereference.52] dereference failure: dead object in convpasswd[(signed long int)0]: SUCCESS
-[generate_response_value.assertion.4] CHECK: convpasswd is sanitized.: SUCCESS
-[generate_response_value.overflow.13] pointer arithmetic overflow on + in x + (signed long int)0: SUCCESS
-[generate_response_value.pointer_dereference.53] dereference failure: pointer NULL in x[(signed long int)0]: SUCCESS
-[generate_response_value.pointer_dereference.54] dereference failure: pointer invalid in x[(signed long int)0]: SUCCESS
-[generate_response_value.pointer_dereference.55] dereference failure: deallocated dynamic object in x[(signed long int)0]: SUCCESS
-[generate_response_value.pointer_dereference.56] dereference failure: dead object in x[(signed long int)0]: SUCCESS
-[generate_response_value.assertion.5] CHECK: x is sanitized.: SUCCESS
-[generate_response_value.overflow.14] pointer arithmetic overflow on + in a1 + (signed long int)0: SUCCESS
-[generate_response_value.pointer_dereference.57] dereference failure: pointer NULL in a1[(signed long int)0]: SUCCESS
-[generate_response_value.pointer_dereference.58] dereference failure: pointer invalid in a1[(signed long int)0]: SUCCESS
-[generate_response_value.pointer_dereference.59] dereference failure: deallocated dynamic object in a1[(signed long int)0]: SUCCESS
-[generate_response_value.pointer_dereference.60] dereference failure: dead object in a1[(signed long int)0]: SUCCESS
-[generate_response_value.assertion.6] CHECK: a1 is sanitized.: SUCCESS
-[generate_response_value.overflow.15] pointer arithmetic overflow on + in ha1 + (signed long int)0: SUCCESS
-[generate_response_value.pointer_dereference.61] dereference failure: pointer NULL in ha1[(signed long int)0]: SUCCESS
-[generate_response_value.pointer_dereference.62] dereference failure: pointer invalid in ha1[(signed long int)0]: SUCCESS
-[generate_response_value.pointer_dereference.63] dereference failure: deallocated dynamic object in ha1[(signed long int)0]: SUCCESS
-[generate_response_value.pointer_dereference.64] dereference failure: dead object in ha1[(signed long int)0]: SUCCESS
-[generate_response_value.assertion.7] CHECK: ha1 is sanitized.: SUCCESS
-[generate_response_value.overflow.16] pointer arithmetic overflow on + in ha2 + (signed long int)0: SUCCESS
-[generate_response_value.pointer_dereference.65] dereference failure: pointer NULL in ha2[(signed long int)0]: SUCCESS
-[generate_response_value.pointer_dereference.66] dereference failure: pointer invalid in ha2[(signed long int)0]: SUCCESS
-[generate_response_value.pointer_dereference.67] dereference failure: deallocated dynamic object in ha2[(signed long int)0]: SUCCESS
-[generate_response_value.pointer_dereference.68] dereference failure: dead object in ha2[(signed long int)0]: SUCCESS
-[generate_response_value.assertion.8] CHECK: ha2 is sanitized.: SUCCESS
-[generate_response_value.overflow.17] pointer arithmetic overflow on + in kd + (signed long int)0: SUCCESS
-[generate_response_value.pointer_dereference.69] dereference failure: pointer NULL in kd[(signed long int)0]: SUCCESS
-[generate_response_value.pointer_dereference.70] dereference failure: pointer invalid in kd[(signed long int)0]: SUCCESS
-[generate_response_value.pointer_dereference.71] dereference failure: deallocated dynamic object in kd[(signed long int)0]: SUCCESS
-[generate_response_value.pointer_dereference.72] dereference failure: dead object in kd[(signed long int)0]: SUCCESS
-[generate_response_value.assertion.9] CHECK: kd is sanitized.: SUCCESS
+[generate_response_value.overflow.1] pointer arithmetic overflow on + in s + (signed long int)len: FAILURE
+[generate_response_value.pointer_dereference.9] dereference failure: pointer NULL in s[(signed long int)len]: FAILURE
+[generate_response_value.pointer_dereference.10] dereference failure: pointer invalid in s[(signed long int)len]: FAILURE
+[generate_response_value.pointer_dereference.11] dereference failure: deallocated dynamic object in s[(signed long int)len]: FAILURE
+[generate_response_value.pointer_dereference.12] dereference failure: dead object in s[(signed long int)len]: FAILURE
+[generate_response_value.overflow.2] pointer arithmetic overflow on + in s + (signed long int)len: SUCCESS
+[generate_response_value.pointer_dereference.13] dereference failure: pointer NULL in s[(signed long int)len]: FAILURE
+[generate_response_value.pointer_dereference.14] dereference failure: pointer invalid in s[(signed long int)len]: FAILURE
+[generate_response_value.pointer_dereference.15] dereference failure: deallocated dynamic object in s[(signed long int)len]: FAILURE
+[generate_response_value.pointer_dereference.16] dereference failure: dead object in s[(signed long int)len]: FAILURE
+[generate_response_value.overflow.3] pointer arithmetic overflow on + in (const char *)src + (signed long int)n: SUCCESS
+[generate_response_value.pointer.1] same object violation in (const char *)dest >= (const char *)src + (signed long int)n: FAILURE
+[generate_response_value.overflow.4] pointer arithmetic overflow on + in (char *)dest + (signed long int)i: FAILURE
+[generate_response_value.pointer_dereference.17] dereference failure: pointer NULL in ((char *)dest)[(signed long int)i]: SUCCESS
+[generate_response_value.pointer_dereference.18] dereference failure: pointer invalid in ((char *)dest)[(signed long int)i]: SUCCESS
+[generate_response_value.pointer_dereference.19] dereference failure: deallocated dynamic object in ((char *)dest)[(signed long int)i]: SUCCESS
+[generate_response_value.pointer_dereference.20] dereference failure: dead object in ((char *)dest)[(signed long int)i]: SUCCESS
+[generate_response_value.overflow.5] pointer arithmetic overflow on + in (const char *)src + (signed long int)i: SUCCESS
+[generate_response_value.pointer_dereference.21] dereference failure: pointer NULL in ((const char *)src)[(signed long int)i]: SUCCESS
+[generate_response_value.pointer_dereference.22] dereference failure: pointer invalid in ((const char *)src)[(signed long int)i]: SUCCESS
+[generate_response_value.pointer_dereference.23] dereference failure: deallocated dynamic object in ((const char *)src)[(signed long int)i]: SUCCESS
+[generate_response_value.pointer_dereference.24] dereference failure: dead object in ((const char *)src)[(signed long int)i]: SUCCESS
+[generate_response_value.overflow.6] pointer arithmetic overflow on + in (char *)dest + (signed long int)(i - (unsigned long int)1): SUCCESS
+[generate_response_value.pointer_dereference.25] dereference failure: pointer NULL in ((char *)dest)[(signed long int)(i - (unsigned long int)1)]: FAILURE
+[generate_response_value.pointer_dereference.26] dereference failure: pointer invalid in ((char *)dest)[(signed long int)(i - (unsigned long int)1)]: FAILURE
+[generate_response_value.pointer_dereference.27] dereference failure: deallocated dynamic object in ((char *)dest)[(signed long int)(i - (unsigned long int)1)]: FAILURE
+[generate_response_value.pointer_dereference.28] dereference failure: dead object in ((char *)dest)[(signed long int)(i - (unsigned long int)1)]: FAILURE
+[generate_response_value.overflow.7] pointer arithmetic overflow on + in (const char *)src + (signed long int)(i - (unsigned long int)1): SUCCESS
+[generate_response_value.pointer_dereference.29] dereference failure: pointer NULL in ((const char *)src)[(signed long int)(i - (unsigned long int)1)]: SUCCESS
+[generate_response_value.pointer_dereference.30] dereference failure: pointer invalid in ((const char *)src)[(signed long int)(i - (unsigned long int)1)]: SUCCESS
+[generate_response_value.pointer_dereference.31] dereference failure: deallocated dynamic object in ((const char *)src)[(signed long int)(i - (unsigned long int)1)]: SUCCESS
+[generate_response_value.pointer_dereference.32] dereference failure: dead object in ((const char *)src)[(signed long int)(i - (unsigned long int)1)]: SUCCESS
+[generate_response_value.overflow.8] pointer arithmetic overflow on + in s + (signed long int)len: FAILURE
+[generate_response_value.pointer_dereference.33] dereference failure: pointer NULL in s[(signed long int)len]: FAILURE
+[generate_response_value.pointer_dereference.34] dereference failure: pointer invalid in s[(signed long int)len]: FAILURE
+[generate_response_value.pointer_dereference.35] dereference failure: deallocated dynamic object in s[(signed long int)len]: FAILURE
+[generate_response_value.pointer_dereference.36] dereference failure: dead object in s[(signed long int)len]: FAILURE
+[generate_response_value.overflow.9] pointer arithmetic overflow on + in s + (signed long int)len: FAILURE
+[generate_response_value.pointer_dereference.37] dereference failure: pointer NULL in s[(signed long int)len]: FAILURE
+[generate_response_value.pointer_dereference.38] dereference failure: pointer invalid in s[(signed long int)len]: FAILURE
+[generate_response_value.pointer_dereference.39] dereference failure: deallocated dynamic object in s[(signed long int)len]: FAILURE
+[generate_response_value.pointer_dereference.40] dereference failure: dead object in s[(signed long int)len]: FAILURE
+[generate_response_value.overflow.10] pointer arithmetic overflow on + in convnode + (signed long int)0: SUCCESS
+[generate_response_value.pointer_dereference.41] dereference failure: pointer NULL in convnode[(signed long int)0]: FAILURE
+[generate_response_value.pointer_dereference.42] dereference failure: pointer invalid in convnode[(signed long int)0]: FAILURE
+[generate_response_value.pointer_dereference.43] dereference failure: deallocated dynamic object in convnode[(signed long int)0]: FAILURE
+[generate_response_value.pointer_dereference.44] dereference failure: dead object in convnode[(signed long int)0]: FAILURE
+[generate_response_value.overflow.11] pointer arithmetic overflow on + in convpasswd + (signed long int)0: SUCCESS
+[generate_response_value.pointer_dereference.45] dereference failure: pointer NULL in convpasswd[(signed long int)0]: FAILURE
+[generate_response_value.pointer_dereference.46] dereference failure: pointer invalid in convpasswd[(signed long int)0]: FAILURE
+[generate_response_value.pointer_dereference.47] dereference failure: deallocated dynamic object in convpasswd[(signed long int)0]: FAILURE
+[generate_response_value.pointer_dereference.48] dereference failure: dead object in convpasswd[(signed long int)0]: FAILURE
+[generate_response_value.overflow.12] pointer arithmetic overflow on + in x + (signed long int)0: SUCCESS
+[generate_response_value.pointer_dereference.49] dereference failure: pointer NULL in x[(signed long int)0]: FAILURE
+[generate_response_value.pointer_dereference.50] dereference failure: pointer invalid in x[(signed long int)0]: FAILURE
+[generate_response_value.pointer_dereference.51] dereference failure: deallocated dynamic object in x[(signed long int)0]: FAILURE
+[generate_response_value.pointer_dereference.52] dereference failure: dead object in x[(signed long int)0]: FAILURE
+[generate_response_value.overflow.13] pointer arithmetic overflow on + in a1 + (signed long int)0: SUCCESS
+[generate_response_value.pointer_dereference.53] dereference failure: pointer NULL in a1[(signed long int)0]: FAILURE
+[generate_response_value.pointer_dereference.54] dereference failure: pointer invalid in a1[(signed long int)0]: FAILURE
+[generate_response_value.pointer_dereference.55] dereference failure: deallocated dynamic object in a1[(signed long int)0]: FAILURE
+[generate_response_value.pointer_dereference.56] dereference failure: dead object in a1[(signed long int)0]: FAILURE
+[generate_response_value.overflow.14] pointer arithmetic overflow on + in ha1 + (signed long int)0: SUCCESS
+[generate_response_value.pointer_dereference.57] dereference failure: pointer NULL in ha1[(signed long int)0]: SUCCESS
+[generate_response_value.pointer_dereference.58] dereference failure: pointer invalid in ha1[(signed long int)0]: SUCCESS
+[generate_response_value.pointer_dereference.59] dereference failure: deallocated dynamic object in ha1[(signed long int)0]: FAILURE
+[generate_response_value.pointer_dereference.60] dereference failure: dead object in ha1[(signed long int)0]: SUCCESS
+[generate_response_value.overflow.15] pointer arithmetic overflow on + in ha2 + (signed long int)0: SUCCESS
+[generate_response_value.pointer_dereference.61] dereference failure: pointer NULL in ha2[(signed long int)0]: SUCCESS
+[generate_response_value.pointer_dereference.62] dereference failure: pointer invalid in ha2[(signed long int)0]: SUCCESS
+[generate_response_value.pointer_dereference.63] dereference failure: deallocated dynamic object in ha2[(signed long int)0]: FAILURE
+[generate_response_value.pointer_dereference.64] dereference failure: dead object in ha2[(signed long int)0]: SUCCESS
+[generate_response_value.overflow.16] pointer arithmetic overflow on + in kd + (signed long int)0: SUCCESS
+[generate_response_value.pointer_dereference.65] dereference failure: pointer NULL in kd[(signed long int)0]: FAILURE
+[generate_response_value.pointer_dereference.66] dereference failure: pointer invalid in kd[(signed long int)0]: FAILURE
+[generate_response_value.pointer_dereference.67] dereference failure: deallocated dynamic object in kd[(signed long int)0]: FAILURE
+[generate_response_value.pointer_dereference.68] dereference failure: dead object in kd[(signed long int)0]: FAILURE
 [digest_md5_handle_challenge.pointer_dereference.1] dereference failure: pointer NULL in *msg: SUCCESS
 [digest_md5_handle_challenge.pointer_dereference.2] dereference failure: pointer invalid in *msg: SUCCESS
 [digest_md5_handle_challenge.pointer_dereference.3] dereference failure: deallocated dynamic object in *msg: SUCCESS
@@ -10279,28 +10121,6 @@ Runtime decision procedure: 1.405s
 [url_fetch_send_cb.pointer_dereference.98] dereference failure: pointer invalid in *gfud: SUCCESS
 [url_fetch_send_cb.pointer_dereference.99] dereference failure: deallocated dynamic object in *gfud: SUCCESS
 [url_fetch_send_cb.pointer_dereference.100] dereference failure: dead object in *gfud: SUCCESS
-[vasprintf.pointer_dereference.1] dereference failure: pointer NULL in *ptr: SUCCESS
-[vasprintf.pointer_dereference.2] dereference failure: pointer invalid in *ptr: SUCCESS
-[vasprintf.pointer_dereference.3] dereference failure: deallocated dynamic object in *ptr: SUCCESS
-[vasprintf.pointer_dereference.4] dereference failure: dead object in *ptr: SUCCESS
-[vasprintf.assertion.1] assertion str_l >= 0: SUCCESS
-[vasprintf.pointer_dereference.5] dereference failure: pointer NULL in *ptr: SUCCESS
-[vasprintf.pointer_dereference.6] dereference failure: pointer invalid in *ptr: SUCCESS
-[vasprintf.pointer_dereference.7] dereference failure: deallocated dynamic object in *ptr: SUCCESS
-[vasprintf.pointer_dereference.8] dereference failure: dead object in *ptr: SUCCESS
-[vasprintf.pointer_dereference.9] dereference failure: pointer NULL in *ptr: SUCCESS
-[vasprintf.pointer_dereference.10] dereference failure: pointer invalid in *ptr: SUCCESS
-[vasprintf.pointer_dereference.11] dereference failure: deallocated dynamic object in *ptr: SUCCESS
-[vasprintf.pointer_dereference.12] dereference failure: dead object in *ptr: SUCCESS
-[vasprintf.pointer_dereference.13] dereference failure: pointer NULL in *return_value___errno_location$2: SUCCESS
-[vasprintf.pointer_dereference.14] dereference failure: pointer invalid in *return_value___errno_location$2: SUCCESS
-[vasprintf.pointer_dereference.15] dereference failure: deallocated dynamic object in *return_value___errno_location$2: SUCCESS
-[vasprintf.pointer_dereference.16] dereference failure: dead object in *return_value___errno_location$2: SUCCESS
-[vasprintf.pointer_dereference.17] dereference failure: pointer NULL in *ptr: SUCCESS
-[vasprintf.pointer_dereference.18] dereference failure: pointer invalid in *ptr: SUCCESS
-[vasprintf.pointer_dereference.19] dereference failure: deallocated dynamic object in *ptr: SUCCESS
-[vasprintf.pointer_dereference.20] dereference failure: dead object in *ptr: SUCCESS
-[vasprintf.assertion.2] assertion str_l2 == str_l: SUCCESS
 
-** 20 of 10157 failed (7 iterations)
+** 68 of 9830 failed (15 iterations)
 VERIFICATION FAILED

@@ -6,7 +6,6 @@ Parsing glib/glib/gmem.c
 Parsing glib/glib/gstrfuncs.c
 Parsing glib/glib/gconvert.c
 Parsing glib/glib/gprintf.c
-Parsing ./snprintf.c
 Converting
 Type-checking auth_digest_md5
 Type-checking cipher
@@ -14,7 +13,6 @@ Type-checking gconvert
 Type-checking gmem
 Type-checking gprintf
 Type-checking gstrfuncs
-Type-checking snprintf
 Type-checking util
 Generating GOTO Program
 Adding CPROVER library (x86_64)
@@ -22,201 +20,245 @@ Removal of function pointers and virtual functions
 Partial Inlining
 Generic Property Instrumentation
 Starting Bounded Model Checking
-Not unwinding loop g_strdup.0 iteration 1 (1 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
-Not unwinding loop g_strdup.1 iteration 1 (1 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
-Not unwinding loop g_strdup.0 iteration 1 (1 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
-Not unwinding loop g_strdup.1 iteration 1 (1 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
-Not unwinding loop vsnprintf.7 iteration 1 (1 max) file ./snprintf.c line 703 function vsnprintf thread 0
-Not unwinding loop vsnprintf.18 iteration 1 (1 max) file ./snprintf.c line 555 function vsnprintf thread 0
-Not unwinding loop vsnprintf.7 iteration 1 (1 max) file ./snprintf.c line 703 function vsnprintf thread 0
-Not unwinding loop vsnprintf.8 iteration 1 (1 max) file ./snprintf.c line 949 function vsnprintf thread 0
-Not unwinding loop vsnprintf.9 iteration 1 (1 max) file ./snprintf.c line 949 function vsnprintf thread 0
-Not unwinding loop vsnprintf.14 iteration 1 (1 max) file ./snprintf.c line 986 function vsnprintf thread 0
-Not unwinding loop vsnprintf.15 iteration 1 (1 max) file ./snprintf.c line 986 function vsnprintf thread 0
-Not unwinding loop vsnprintf.18 iteration 1 (1 max) file ./snprintf.c line 555 function vsnprintf thread 0
-Not unwinding loop generate_response_value.0 iteration 1 (1 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 129 function generate_response_value thread 0
-Not unwinding loop vsnprintf.0 iteration 1 (1 max) file ./snprintf.c line 560 function vsnprintf thread 0
-Not unwinding loop vsnprintf.1 iteration 1 (1 max) file ./snprintf.c line 561 function vsnprintf thread 0
-Not unwinding loop vsnprintf.18 iteration 1 (1 max) file ./snprintf.c line 555 function vsnprintf thread 0
-Not unwinding loop vsnprintf.0 iteration 1 (1 max) file ./snprintf.c line 560 function vsnprintf thread 0
-Not unwinding loop vsnprintf.1 iteration 1 (1 max) file ./snprintf.c line 561 function vsnprintf thread 0
-Not unwinding loop vsnprintf.3 iteration 1 (1 max) file ./snprintf.c line 564 function vsnprintf thread 0
-Not unwinding loop vsnprintf.18 iteration 1 (1 max) file ./snprintf.c line 555 function vsnprintf thread 0
-Not unwinding loop generate_response_value.1 iteration 1 (1 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 134 function generate_response_value thread 0
-Not unwinding loop generate_response_value.2 iteration 1 (1 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 136 function generate_response_value thread 0
-Not unwinding loop generate_response_value.3 iteration 1 (1 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 136 function generate_response_value thread 0
-Not unwinding loop vsnprintf.4 iteration 1 (1 max) file ./snprintf.c line 599 function vsnprintf thread 0
-Not unwinding loop vsnprintf.15 iteration 1 (1 max) file ./snprintf.c line 986 function vsnprintf thread 0
-Not unwinding loop vsnprintf.18 iteration 1 (1 max) file ./snprintf.c line 555 function vsnprintf thread 0
-Not unwinding loop purple_base16_encode.2 iteration 1 (1 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
-Not unwinding loop generate_response_value.5 iteration 1 (1 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 145 function generate_response_value thread 0
-Not unwinding loop vsnprintf.4 iteration 1 (1 max) file ./snprintf.c line 599 function vsnprintf thread 0
-Not unwinding loop vsnprintf.15 iteration 1 (1 max) file ./snprintf.c line 986 function vsnprintf thread 0
-Not unwinding loop vsnprintf.18 iteration 1 (1 max) file ./snprintf.c line 555 function vsnprintf thread 0
-Not unwinding loop purple_base16_encode.2 iteration 1 (1 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
-Not unwinding loop vsnprintf.7 iteration 1 (1 max) file ./snprintf.c line 703 function vsnprintf thread 0
-Not unwinding loop vsnprintf.18 iteration 1 (1 max) file ./snprintf.c line 555 function vsnprintf thread 0
-Not unwinding loop vsnprintf.7 iteration 1 (1 max) file ./snprintf.c line 703 function vsnprintf thread 0
-Not unwinding loop vsnprintf.8 iteration 1 (1 max) file ./snprintf.c line 949 function vsnprintf thread 0
-Not unwinding loop vsnprintf.9 iteration 1 (1 max) file ./snprintf.c line 949 function vsnprintf thread 0
-Not unwinding loop vsnprintf.14 iteration 1 (1 max) file ./snprintf.c line 986 function vsnprintf thread 0
-Not unwinding loop vsnprintf.15 iteration 1 (1 max) file ./snprintf.c line 986 function vsnprintf thread 0
-Not unwinding loop vsnprintf.18 iteration 1 (1 max) file ./snprintf.c line 555 function vsnprintf thread 0
-Not unwinding loop generate_response_value.6 iteration 1 (1 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 153 function generate_response_value thread 0
-Not unwinding loop vsnprintf.4 iteration 1 (1 max) file ./snprintf.c line 599 function vsnprintf thread 0
-Not unwinding loop vsnprintf.15 iteration 1 (1 max) file ./snprintf.c line 986 function vsnprintf thread 0
-Not unwinding loop vsnprintf.18 iteration 1 (1 max) file ./snprintf.c line 555 function vsnprintf thread 0
-Not unwinding loop purple_base16_encode.2 iteration 1 (1 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
-Not unwinding loop g_strdup.0 iteration 1 (1 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
-Not unwinding loop g_strdup.1 iteration 1 (1 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
-Not unwinding loop g_strdup.0 iteration 1 (1 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
-Not unwinding loop g_strdup.1 iteration 1 (1 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
-Not unwinding loop vsnprintf.7 iteration 1 (1 max) file ./snprintf.c line 703 function vsnprintf thread 0
-Not unwinding loop vsnprintf.18 iteration 1 (1 max) file ./snprintf.c line 555 function vsnprintf thread 0
-Not unwinding loop vsnprintf.7 iteration 1 (1 max) file ./snprintf.c line 703 function vsnprintf thread 0
-Not unwinding loop vsnprintf.8 iteration 1 (1 max) file ./snprintf.c line 949 function vsnprintf thread 0
-Not unwinding loop vsnprintf.9 iteration 1 (1 max) file ./snprintf.c line 949 function vsnprintf thread 0
-Not unwinding loop vsnprintf.14 iteration 1 (1 max) file ./snprintf.c line 986 function vsnprintf thread 0
-Not unwinding loop vsnprintf.15 iteration 1 (1 max) file ./snprintf.c line 986 function vsnprintf thread 0
-Not unwinding loop vsnprintf.18 iteration 1 (1 max) file ./snprintf.c line 555 function vsnprintf thread 0
-Not unwinding loop generate_response_value.0 iteration 1 (1 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 129 function generate_response_value thread 0
-Not unwinding loop vsnprintf.0 iteration 1 (1 max) file ./snprintf.c line 560 function vsnprintf thread 0
-Not unwinding loop vsnprintf.1 iteration 1 (1 max) file ./snprintf.c line 561 function vsnprintf thread 0
-Not unwinding loop vsnprintf.18 iteration 1 (1 max) file ./snprintf.c line 555 function vsnprintf thread 0
-Not unwinding loop vsnprintf.0 iteration 1 (1 max) file ./snprintf.c line 560 function vsnprintf thread 0
-Not unwinding loop vsnprintf.1 iteration 1 (1 max) file ./snprintf.c line 561 function vsnprintf thread 0
-Not unwinding loop vsnprintf.3 iteration 1 (1 max) file ./snprintf.c line 564 function vsnprintf thread 0
-Not unwinding loop vsnprintf.18 iteration 1 (1 max) file ./snprintf.c line 555 function vsnprintf thread 0
-Not unwinding loop generate_response_value.1 iteration 1 (1 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 134 function generate_response_value thread 0
-Not unwinding loop generate_response_value.2 iteration 1 (1 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 136 function generate_response_value thread 0
-Not unwinding loop generate_response_value.3 iteration 1 (1 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 136 function generate_response_value thread 0
-Not unwinding loop vsnprintf.4 iteration 1 (1 max) file ./snprintf.c line 599 function vsnprintf thread 0
-Not unwinding loop vsnprintf.15 iteration 1 (1 max) file ./snprintf.c line 986 function vsnprintf thread 0
-Not unwinding loop vsnprintf.18 iteration 1 (1 max) file ./snprintf.c line 555 function vsnprintf thread 0
-Not unwinding loop purple_base16_encode.2 iteration 1 (1 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
-Not unwinding loop generate_response_value.5 iteration 1 (1 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 145 function generate_response_value thread 0
-Not unwinding loop vsnprintf.4 iteration 1 (1 max) file ./snprintf.c line 599 function vsnprintf thread 0
-Not unwinding loop vsnprintf.15 iteration 1 (1 max) file ./snprintf.c line 986 function vsnprintf thread 0
-Not unwinding loop vsnprintf.18 iteration 1 (1 max) file ./snprintf.c line 555 function vsnprintf thread 0
-Not unwinding loop purple_base16_encode.2 iteration 1 (1 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
-Not unwinding loop vsnprintf.7 iteration 1 (1 max) file ./snprintf.c line 703 function vsnprintf thread 0
-Not unwinding loop vsnprintf.18 iteration 1 (1 max) file ./snprintf.c line 555 function vsnprintf thread 0
-Not unwinding loop vsnprintf.7 iteration 1 (1 max) file ./snprintf.c line 703 function vsnprintf thread 0
-Not unwinding loop vsnprintf.8 iteration 1 (1 max) file ./snprintf.c line 949 function vsnprintf thread 0
-Not unwinding loop vsnprintf.9 iteration 1 (1 max) file ./snprintf.c line 949 function vsnprintf thread 0
-Not unwinding loop vsnprintf.14 iteration 1 (1 max) file ./snprintf.c line 986 function vsnprintf thread 0
-Not unwinding loop vsnprintf.15 iteration 1 (1 max) file ./snprintf.c line 986 function vsnprintf thread 0
-Not unwinding loop vsnprintf.18 iteration 1 (1 max) file ./snprintf.c line 555 function vsnprintf thread 0
-Not unwinding loop generate_response_value.6 iteration 1 (1 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 153 function generate_response_value thread 0
-Not unwinding loop vsnprintf.4 iteration 1 (1 max) file ./snprintf.c line 599 function vsnprintf thread 0
-Not unwinding loop vsnprintf.15 iteration 1 (1 max) file ./snprintf.c line 986 function vsnprintf thread 0
-Not unwinding loop vsnprintf.18 iteration 1 (1 max) file ./snprintf.c line 555 function vsnprintf thread 0
-Not unwinding loop purple_base16_encode.2 iteration 1 (1 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
-Not unwinding loop main.0 iteration 1 (1 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 322 function main thread 0
-size of program expression: 6176 steps
-simple slicing removed 8 assignments
-Generated 371 VCC(s), 307 remaining after simplification
+Unwinding loop g_strdup.0 iteration 1 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 2 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 3 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 4 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 5 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 6 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 7 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 8 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 9 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 10 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 11 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 12 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 13 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 14 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 15 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 16 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Not unwinding loop g_strdup.0 iteration 17 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 1 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 2 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 3 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 4 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 5 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 6 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 7 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 8 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 9 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 10 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 11 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 12 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 13 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 14 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 15 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 16 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Not unwinding loop g_strdup.1 iteration 17 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 1 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 2 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 3 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 4 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 5 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 6 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 7 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 8 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 9 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 10 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 11 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 12 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 13 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 14 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 15 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.0 iteration 16 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Not unwinding loop g_strdup.0 iteration 17 (17 max) file glib/glib/gstrfuncs.c line 333 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 1 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 2 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 3 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 4 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 5 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 6 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 7 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 8 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 9 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 10 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 11 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 12 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 13 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 14 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 15 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop g_strdup.1 iteration 16 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Not unwinding loop g_strdup.1 iteration 17 (17 max) file glib/glib/gstrfuncs.c line 335 function g_strdup thread 0
+Unwinding loop generate_response_value.0 iteration 1 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 131 function generate_response_value thread 0
+Unwinding loop generate_response_value.0 iteration 2 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 131 function generate_response_value thread 0
+Unwinding loop generate_response_value.0 iteration 3 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 131 function generate_response_value thread 0
+Unwinding loop generate_response_value.0 iteration 4 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 131 function generate_response_value thread 0
+Unwinding loop generate_response_value.0 iteration 5 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 131 function generate_response_value thread 0
+Unwinding loop generate_response_value.0 iteration 6 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 131 function generate_response_value thread 0
+Unwinding loop generate_response_value.0 iteration 7 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 131 function generate_response_value thread 0
+Unwinding loop generate_response_value.0 iteration 8 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 131 function generate_response_value thread 0
+Unwinding loop generate_response_value.0 iteration 9 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 131 function generate_response_value thread 0
+Unwinding loop generate_response_value.0 iteration 10 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 131 function generate_response_value thread 0
+Unwinding loop generate_response_value.0 iteration 11 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 131 function generate_response_value thread 0
+Unwinding loop generate_response_value.0 iteration 12 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 131 function generate_response_value thread 0
+Unwinding loop generate_response_value.0 iteration 13 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 131 function generate_response_value thread 0
+Unwinding loop generate_response_value.0 iteration 14 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 131 function generate_response_value thread 0
+Unwinding loop generate_response_value.0 iteration 15 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 131 function generate_response_value thread 0
+Unwinding loop generate_response_value.0 iteration 16 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 131 function generate_response_value thread 0
+Not unwinding loop generate_response_value.0 iteration 17 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 131 function generate_response_value thread 0
+Unwinding loop generate_response_value.1 iteration 1 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 135 function generate_response_value thread 0
+Unwinding loop generate_response_value.1 iteration 2 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 135 function generate_response_value thread 0
+Unwinding loop generate_response_value.1 iteration 3 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 135 function generate_response_value thread 0
+Unwinding loop generate_response_value.1 iteration 4 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 135 function generate_response_value thread 0
+Unwinding loop generate_response_value.1 iteration 5 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 135 function generate_response_value thread 0
+Unwinding loop generate_response_value.1 iteration 6 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 135 function generate_response_value thread 0
+Unwinding loop generate_response_value.1 iteration 7 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 135 function generate_response_value thread 0
+Unwinding loop generate_response_value.1 iteration 8 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 135 function generate_response_value thread 0
+Unwinding loop generate_response_value.1 iteration 9 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 135 function generate_response_value thread 0
+Unwinding loop generate_response_value.1 iteration 10 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 135 function generate_response_value thread 0
+Unwinding loop generate_response_value.1 iteration 11 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 135 function generate_response_value thread 0
+Unwinding loop generate_response_value.1 iteration 12 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 135 function generate_response_value thread 0
+Unwinding loop generate_response_value.1 iteration 13 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 135 function generate_response_value thread 0
+Unwinding loop generate_response_value.1 iteration 14 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 135 function generate_response_value thread 0
+Unwinding loop generate_response_value.1 iteration 15 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 135 function generate_response_value thread 0
+Unwinding loop generate_response_value.1 iteration 16 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 135 function generate_response_value thread 0
+Not unwinding loop generate_response_value.1 iteration 17 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 135 function generate_response_value thread 0
+Unwinding loop generate_response_value.2 iteration 1 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.2 iteration 2 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.2 iteration 3 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.2 iteration 4 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.2 iteration 5 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.2 iteration 6 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.2 iteration 7 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.2 iteration 8 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.2 iteration 9 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.2 iteration 10 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.2 iteration 11 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.2 iteration 12 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.2 iteration 13 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.2 iteration 14 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.2 iteration 15 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.2 iteration 16 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.3 iteration 1 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.3 iteration 2 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.3 iteration 3 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.3 iteration 4 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.3 iteration 5 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.3 iteration 6 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.3 iteration 7 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.3 iteration 8 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.3 iteration 9 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.3 iteration 10 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.3 iteration 11 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.3 iteration 12 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.3 iteration 13 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.3 iteration 14 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.3 iteration 15 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop generate_response_value.3 iteration 16 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 138 function generate_response_value thread 0
+Unwinding loop purple_base16_encode.2 iteration 1 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 2 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 3 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 4 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 5 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 6 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 7 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 8 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 9 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 10 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 11 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 12 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 13 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 14 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 15 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 16 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop generate_response_value.4 iteration 1 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 147 function generate_response_value thread 0
+Unwinding loop generate_response_value.4 iteration 2 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 147 function generate_response_value thread 0
+Unwinding loop generate_response_value.4 iteration 3 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 147 function generate_response_value thread 0
+Unwinding loop generate_response_value.4 iteration 4 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 147 function generate_response_value thread 0
+Unwinding loop generate_response_value.4 iteration 5 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 147 function generate_response_value thread 0
+Unwinding loop generate_response_value.4 iteration 6 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 147 function generate_response_value thread 0
+Unwinding loop generate_response_value.4 iteration 7 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 147 function generate_response_value thread 0
+Unwinding loop generate_response_value.4 iteration 8 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 147 function generate_response_value thread 0
+Unwinding loop generate_response_value.4 iteration 9 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 147 function generate_response_value thread 0
+Unwinding loop generate_response_value.4 iteration 10 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 147 function generate_response_value thread 0
+Unwinding loop generate_response_value.4 iteration 11 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 147 function generate_response_value thread 0
+Unwinding loop generate_response_value.4 iteration 12 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 147 function generate_response_value thread 0
+Unwinding loop generate_response_value.4 iteration 13 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 147 function generate_response_value thread 0
+Unwinding loop generate_response_value.4 iteration 14 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 147 function generate_response_value thread 0
+Unwinding loop generate_response_value.4 iteration 15 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 147 function generate_response_value thread 0
+Unwinding loop generate_response_value.4 iteration 16 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 147 function generate_response_value thread 0
+Not unwinding loop generate_response_value.4 iteration 17 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 147 function generate_response_value thread 0
+Unwinding loop purple_base16_encode.2 iteration 1 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 2 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 3 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 4 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 5 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 6 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 7 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 8 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 9 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 10 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 11 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 12 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 13 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 14 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 15 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 16 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop generate_response_value.5 iteration 1 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 155 function generate_response_value thread 0
+Unwinding loop generate_response_value.5 iteration 2 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 155 function generate_response_value thread 0
+Unwinding loop generate_response_value.5 iteration 3 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 155 function generate_response_value thread 0
+Unwinding loop generate_response_value.5 iteration 4 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 155 function generate_response_value thread 0
+Unwinding loop generate_response_value.5 iteration 5 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 155 function generate_response_value thread 0
+Unwinding loop generate_response_value.5 iteration 6 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 155 function generate_response_value thread 0
+Unwinding loop generate_response_value.5 iteration 7 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 155 function generate_response_value thread 0
+Unwinding loop generate_response_value.5 iteration 8 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 155 function generate_response_value thread 0
+Unwinding loop generate_response_value.5 iteration 9 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 155 function generate_response_value thread 0
+Unwinding loop generate_response_value.5 iteration 10 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 155 function generate_response_value thread 0
+Unwinding loop generate_response_value.5 iteration 11 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 155 function generate_response_value thread 0
+Unwinding loop generate_response_value.5 iteration 12 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 155 function generate_response_value thread 0
+Unwinding loop generate_response_value.5 iteration 13 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 155 function generate_response_value thread 0
+Unwinding loop generate_response_value.5 iteration 14 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 155 function generate_response_value thread 0
+Unwinding loop generate_response_value.5 iteration 15 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 155 function generate_response_value thread 0
+Unwinding loop generate_response_value.5 iteration 16 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 155 function generate_response_value thread 0
+Not unwinding loop generate_response_value.5 iteration 17 (17 max) file pidgin/libpurple/protocols/jabber/auth_digest_md5.c line 155 function generate_response_value thread 0
+Unwinding loop purple_base16_encode.2 iteration 1 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 2 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 3 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 4 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 5 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 6 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 7 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 8 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 9 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 10 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 11 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 12 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 13 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 14 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 15 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+Unwinding loop purple_base16_encode.2 iteration 16 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
+size of program expression: 4933 steps
+simple slicing removed 24 assignments
+Generated 322 VCC(s), 311 remaining after simplification
 Passing problem to propositional reduction
 converting SSA
 Running propositional reduction
 Post-processing
 Solving with MiniSAT 2.2.1 with simplifier
-225705 variables, 605023 clauses
-SAT checker: instance is UNSATISFIABLE
-Runtime decision procedure: 0.681s
+275602 variables, 769138 clauses
+SAT checker: instance is SATISFIABLE
+Solving with MiniSAT 2.2.1 with simplifier
+275602 variables, 5672 clauses
+SAT checker: instance is SATISFIABLE
+Solving with MiniSAT 2.2.1 with simplifier
+275602 variables, 5667 clauses
+SAT checker: instance is SATISFIABLE
+Solving with MiniSAT 2.2.1 with simplifier
+275602 variables, 5610 clauses
+SAT checker inconsistent: instance is UNSATISFIABLE
+Runtime decision procedure: 1.383s
 
 ** Results:
 [] arithmetic overflow on unsigned + in gstring->len + 1ul: SUCCESS
-[main.assertion.1] ERROR: Information Leak: SUCCESS
-[vsnprintf.overflow.1] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
-[vsnprintf.overflow.2] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
-[vsnprintf.overflow.3] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)(q - p): SUCCESS
-[vsnprintf.overflow.4] arithmetic overflow on unsigned - in str_m - str_l: SUCCESS
-[vsnprintf.overflow.5] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
-[vsnprintf.overflow.6] arithmetic overflow on unsigned - in nn - 1ul: SUCCESS
-[vsnprintf.overflow.7] arithmetic overflow on unsigned + in str_l + n: SUCCESS
-[vsnprintf.overflow.8] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)j: SUCCESS
-[vsnprintf.overflow.9] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)-j: SUCCESS
-[vsnprintf.overflow.10] arithmetic overflow on signed to unsigned type conversion in (unsigned int)((signed int)*tmp_post$5 - 48): SUCCESS
-[vsnprintf.overflow.11] arithmetic overflow on unsigned * in (unsigned int)10 * uj: SUCCESS
-[vsnprintf.overflow.12] arithmetic overflow on signed to unsigned type conversion in (unsigned int)((signed int)*tmp_post$6 - 48): SUCCESS
-[vsnprintf.overflow.13] arithmetic overflow on unsigned + in (unsigned int)10 * uj + (unsigned int)((signed int)*tmp_post$6 - 48): SUCCESS
-[vsnprintf.overflow.14] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)j: SUCCESS
-[vsnprintf.overflow.15] arithmetic overflow on signed to unsigned type conversion in (unsigned int)((signed int)*tmp_post$7 - 48): SUCCESS
-[vsnprintf.overflow.16] arithmetic overflow on unsigned * in (unsigned int)10 * uj: SUCCESS
-[vsnprintf.overflow.17] arithmetic overflow on signed to unsigned type conversion in (unsigned int)((signed int)*tmp_post$8 - 48): SUCCESS
-[vsnprintf.overflow.18] arithmetic overflow on unsigned + in (unsigned int)10 * uj + (unsigned int)((signed int)*tmp_post$8 - 48): SUCCESS
-[vsnprintf.overflow.19] arithmetic overflow on signed to unsigned type conversion in (unsigned char)j: SUCCESS
-[vsnprintf.overflow.20] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
-[vsnprintf.overflow.21] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)(q - str_arg): SUCCESS
-[vsnprintf.overflow.22] arithmetic overflow on unsigned + in str_arg_l + 1ul: SUCCESS
-[vsnprintf.overflow.23] arithmetic overflow on unsigned + in str_arg_l + 1ul: SUCCESS
-[vsnprintf.overflow.24] arithmetic overflow on unsigned + in str_arg_l + 1ul: SUCCESS
-[vsnprintf.overflow.25] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)return_value_sprintf$20: SUCCESS
-[vsnprintf.overflow.26] arithmetic overflow on unsigned + in str_arg_l + (unsigned long int)return_value_sprintf$20: SUCCESS
-[vsnprintf.overflow.27] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)return_value_sprintf$21: SUCCESS
-[vsnprintf.overflow.28] arithmetic overflow on unsigned + in str_arg_l + (unsigned long int)return_value_sprintf$21: SUCCESS
-[vsnprintf.overflow.29] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)return_value_sprintf$22: SUCCESS
-[vsnprintf.overflow.30] arithmetic overflow on unsigned + in str_arg_l + (unsigned long int)return_value_sprintf$22: SUCCESS
-[vsnprintf.overflow.31] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)return_value_sprintf$23: SUCCESS
-[vsnprintf.overflow.32] arithmetic overflow on unsigned + in str_arg_l + (unsigned long int)return_value_sprintf$23: SUCCESS
-[vsnprintf.overflow.33] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)return_value_sprintf$24: SUCCESS
-[vsnprintf.overflow.34] arithmetic overflow on unsigned + in str_arg_l + (unsigned long int)return_value_sprintf$24: SUCCESS
-[vsnprintf.overflow.35] arithmetic overflow on unsigned + in zero_padding_insertion_ind + 1ul: SUCCESS
-[vsnprintf.overflow.36] arithmetic overflow on unsigned + in zero_padding_insertion_ind + (unsigned long int)1: SUCCESS
-[vsnprintf.overflow.37] arithmetic overflow on unsigned + in zero_padding_insertion_ind + (unsigned long int)1: SUCCESS
-[vsnprintf.overflow.38] arithmetic overflow on unsigned + in zero_padding_insertion_ind + (unsigned long int)2: SUCCESS
-[vsnprintf.overflow.39] arithmetic overflow on unsigned - in str_arg_l - zero_padding_insertion_ind: SUCCESS
-[vsnprintf.overflow.40] arithmetic overflow on unsigned + in num_of_digits + (unsigned long int)1: SUCCESS
-[vsnprintf.overflow.41] arithmetic overflow on unsigned + in num_of_digits + (unsigned long int)1: SUCCESS
-[vsnprintf.overflow.42] arithmetic overflow on unsigned - in precision - num_of_digits: SUCCESS
-[vsnprintf.overflow.43] arithmetic overflow on unsigned + in str_arg_l + number_of_zeros_to_pad: SUCCESS
-[vsnprintf.overflow.44] arithmetic overflow on unsigned - in min_field_width - (str_arg_l + number_of_zeros_to_pad): SUCCESS
-[vsnprintf.overflow.45] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)n: SUCCESS
-[vsnprintf.overflow.46] arithmetic overflow on unsigned + in number_of_zeros_to_pad + (unsigned long int)n: SUCCESS
-[vsnprintf.overflow.47] arithmetic overflow on unsigned + in str_arg_l + 1ul: SUCCESS
-[vsnprintf.overflow.48] arithmetic overflow on unsigned + in str_arg_l + number_of_zeros_to_pad: SUCCESS
-[vsnprintf.overflow.49] arithmetic overflow on unsigned - in min_field_width - (str_arg_l + number_of_zeros_to_pad): SUCCESS
-[vsnprintf.overflow.50] arithmetic overflow on unsigned - in str_m - str_l: SUCCESS
-[vsnprintf.overflow.51] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)n: SUCCESS
-[vsnprintf.overflow.52] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)n: SUCCESS
-[vsnprintf.overflow.53] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
-[vsnprintf.overflow.54] arithmetic overflow on unsigned - in nn - 1ul: SUCCESS
-[vsnprintf.overflow.55] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)n: SUCCESS
-[vsnprintf.overflow.56] arithmetic overflow on unsigned + in str_l + (unsigned long int)n: SUCCESS
-[vsnprintf.overflow.57] arithmetic overflow on unsigned - in str_m - str_l: SUCCESS
-[vsnprintf.overflow.58] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)n: SUCCESS
-[vsnprintf.overflow.59] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)n: SUCCESS
-[vsnprintf.overflow.60] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
-[vsnprintf.overflow.61] arithmetic overflow on unsigned - in nn - 1ul: SUCCESS
-[vsnprintf.overflow.62] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)n: SUCCESS
-[vsnprintf.overflow.63] arithmetic overflow on unsigned + in str_l + (unsigned long int)n: SUCCESS
-[vsnprintf.overflow.64] arithmetic overflow on unsigned - in str_m - str_l: SUCCESS
-[vsnprintf.overflow.65] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)n: SUCCESS
-[vsnprintf.overflow.66] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)n: SUCCESS
-[vsnprintf.overflow.67] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
-[vsnprintf.overflow.68] arithmetic overflow on unsigned - in nn - 1ul: SUCCESS
-[vsnprintf.overflow.69] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)n: SUCCESS
-[vsnprintf.overflow.70] arithmetic overflow on unsigned + in str_l + (unsigned long int)n: SUCCESS
-[vsnprintf.overflow.71] arithmetic overflow on unsigned - in str_arg_l - zero_padding_insertion_ind: SUCCESS
-[vsnprintf.overflow.72] arithmetic overflow on unsigned - in str_m - str_l: SUCCESS
-[vsnprintf.overflow.73] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)n: SUCCESS
-[vsnprintf.overflow.74] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)n: SUCCESS
-[vsnprintf.overflow.75] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
-[vsnprintf.overflow.76] arithmetic overflow on unsigned - in nn - 1ul: SUCCESS
-[vsnprintf.overflow.77] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)n: SUCCESS
-[vsnprintf.overflow.78] arithmetic overflow on unsigned + in str_l + (unsigned long int)n: SUCCESS
-[vsnprintf.overflow.79] arithmetic overflow on unsigned + in str_arg_l + number_of_zeros_to_pad: SUCCESS
-[vsnprintf.overflow.80] arithmetic overflow on unsigned - in min_field_width - (str_arg_l + number_of_zeros_to_pad): SUCCESS
-[vsnprintf.overflow.81] arithmetic overflow on unsigned - in str_m - str_l: SUCCESS
-[vsnprintf.overflow.82] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)n: SUCCESS
-[vsnprintf.overflow.83] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)n: SUCCESS
-[vsnprintf.overflow.84] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
-[vsnprintf.overflow.85] arithmetic overflow on unsigned - in nn - 1ul: SUCCESS
-[vsnprintf.overflow.86] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)n: SUCCESS
-[vsnprintf.overflow.87] arithmetic overflow on unsigned + in str_l + (unsigned long int)n: SUCCESS
-[vsnprintf.overflow.88] arithmetic overflow on unsigned - in str_m - (unsigned long int)1: SUCCESS
-[vsnprintf.overflow.89] arithmetic overflow on unsigned - in str_m - (unsigned long int)1: SUCCESS
 [g_convert_with_iconv.overflow.1] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
 [g_convert_with_iconv.overflow.2] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)len: SUCCESS
 [g_convert_with_iconv.overflow.3] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)(len + (signed long int)4): SUCCESS
@@ -229,14 +271,10 @@ Runtime decision procedure: 0.681s
 [g_convert_with_iconv.overflow.10] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
 [g_convert_with_iconv.overflow.11] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)(p - str): SUCCESS
 [g_convert_with_iconv.overflow.12] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)(outp - dest): SUCCESS
-[g_free.assertion.1] free argument is dynamic object: SUCCESS
-[g_free.assertion.2] free argument has offset zero: SUCCESS
-[g_free.assertion.3] double free: SUCCESS
+[g_free.assertion.1] free argument is dynamic object: FAILURE
+[g_free.assertion.2] free argument has offset zero: FAILURE
+[g_free.assertion.3] double free: FAILURE
 [g_free.assertion.4] free called for new[] object: SUCCESS
-[free.assertion.1] free argument is dynamic object: SUCCESS
-[free.assertion.2] free argument has offset zero: SUCCESS
-[free.assertion.3] double free: SUCCESS
-[free.assertion.4] free called for new[] object: SUCCESS
 [g_malloc0.overflow.1] arithmetic overflow on unsigned * in nmemb * size: SUCCESS
 [g_realloc.assertion.1] free argument is dynamic object: SUCCESS
 [g_realloc.assertion.2] free argument has offset zero: SUCCESS
@@ -337,21 +375,19 @@ Runtime decision procedure: 0.681s
 [realloc.assertion.2] free argument has offset zero: SUCCESS
 [realloc.assertion.3] double free: SUCCESS
 [realloc.assertion.4] free called for new[] object: SUCCESS
-[realloc.assertion.5] realloc argument is dynamic object: SUCCESS
-[realloc.assertion.6] free argument is dynamic object: SUCCESS
-[realloc.assertion.7] free argument has offset zero: SUCCESS
-[realloc.assertion.8] double free: SUCCESS
-[realloc.assertion.9] free called for new[] object: SUCCESS
+[realloc.assertion.5] free argument is dynamic object: SUCCESS
+[realloc.assertion.6] free argument has offset zero: SUCCESS
+[realloc.assertion.7] double free: SUCCESS
+[realloc.assertion.8] free called for new[] object: SUCCESS
 [purple_markup_extract_info_field.overflow.8] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)(q - p): SUCCESS
-[realloc.assertion.10] free argument is dynamic object: SUCCESS
-[realloc.assertion.11] free argument has offset zero: SUCCESS
-[realloc.assertion.12] double free: SUCCESS
-[realloc.assertion.13] free called for new[] object: SUCCESS
-[realloc.assertion.14] realloc argument is dynamic object: SUCCESS
-[realloc.assertion.15] free argument is dynamic object: SUCCESS
-[realloc.assertion.16] free argument has offset zero: SUCCESS
-[realloc.assertion.17] double free: SUCCESS
-[realloc.assertion.18] free called for new[] object: SUCCESS
+[realloc.assertion.9] free argument is dynamic object: SUCCESS
+[realloc.assertion.10] free argument has offset zero: SUCCESS
+[realloc.assertion.11] double free: SUCCESS
+[realloc.assertion.12] free called for new[] object: SUCCESS
+[realloc.assertion.13] free argument is dynamic object: SUCCESS
+[realloc.assertion.14] free argument has offset zero: SUCCESS
+[realloc.assertion.15] double free: SUCCESS
+[realloc.assertion.16] free called for new[] object: SUCCESS
 [purple_markup_html_to_xhtml.overflow.1] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
 [purple_markup_html_to_xhtml.overflow.2] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
 [purple_markup_html_to_xhtml.overflow.3] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
@@ -898,10 +934,6 @@ Runtime decision procedure: 0.681s
 [purple_escape_filename.overflow.4] arithmetic overflow on unsigned + in i + 1u: SUCCESS
 [purple_cipher_context_new.overflow.1] arithmetic overflow on unsigned + in cipher->ref + 1u: SUCCESS
 [purple_cipher_context_destroy.overflow.1] arithmetic overflow on unsigned - in cipher->ref - 1u: SUCCESS
-[free.assertion.5] free argument is dynamic object: SUCCESS
-[free.assertion.6] free argument has offset zero: SUCCESS
-[free.assertion.7] double free: SUCCESS
-[free.assertion.8] free called for new[] object: SUCCESS
 [purple_cipher_context_destroy.overflow.2] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
 [purple_cipher_context_digest_to_str.overflow.1] arithmetic overflow on unsigned * in dlen * (unsigned long int)2: SUCCESS
 [purple_cipher_context_digest_to_str.overflow.2] arithmetic overflow on unsigned * in n * (unsigned long int)2: SUCCESS
@@ -938,21 +970,12 @@ Runtime decision procedure: 0.681s
 [jabber_auth_digest_md5_parse.overflow.2] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)(val_start - token_start): SUCCESS
 [jabber_auth_digest_md5_parse.overflow.3] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)((val_end - val_start) + (signed long int)1): SUCCESS
 [generate_response_value.overflow.1] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
-[generate_response_value.assertion.1] TEST: g_strdup_printf is working: SUCCESS
 [generate_response_value.overflow.2] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
-[generate_response_value.assertion.2] TEST: a1 is not Empty: SUCCESS
 [generate_response_value.overflow.3] arithmetic overflow on unsigned + in i + 1ul: SUCCESS
 [generate_response_value.overflow.4] arithmetic overflow on unsigned - in i - (unsigned long int)1: SUCCESS
 [generate_response_value.overflow.5] arithmetic overflow on unsigned - in i - 1ul: SUCCESS
 [generate_response_value.overflow.6] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
 [generate_response_value.overflow.7] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
-[generate_response_value.assertion.3] CHECK: convnode is sanitized.: SUCCESS
-[generate_response_value.assertion.4] CHECK: convpasswd is sanitized.: SUCCESS
-[generate_response_value.assertion.5] CHECK: x is sanitized.: SUCCESS
-[generate_response_value.assertion.6] CHECK: a1 is sanitized.: SUCCESS
-[generate_response_value.assertion.7] CHECK: ha1 is sanitized.: SUCCESS
-[generate_response_value.assertion.8] CHECK: ha2 is sanitized.: SUCCESS
-[generate_response_value.assertion.9] CHECK: kd is sanitized.: SUCCESS
 [digest_md5_handle_challenge.overflow.1] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
 [process_link.overflow.1] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)(t - c): SUCCESS
 [purple_strcasestr_len.overflow.1] arithmetic overflow on unsigned + in len + 1ul: SUCCESS
@@ -997,10 +1020,6 @@ Runtime decision procedure: 0.681s
 [url_fetch_send_cb.overflow.8] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)len: SUCCESS
 [url_fetch_send_cb.overflow.9] arithmetic overflow on unsigned + in gfud->request_written + (unsigned long int)len: SUCCESS
 [url_fetch_send_cb.overflow.10] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)total_len: SUCCESS
-[vasprintf.assertion.1] assertion str_l >= 0: SUCCESS
-[vasprintf.overflow.1] arithmetic overflow on signed to unsigned type conversion in (unsigned long int)str_l: SUCCESS
-[vasprintf.overflow.2] arithmetic overflow on unsigned + in (unsigned long int)str_l + (unsigned long int)1: SUCCESS
-[vasprintf.assertion.2] assertion str_l2 == str_l: SUCCESS
 
-** 0 of 875 failed (1 iteration)
-VERIFICATION SUCCESSFUL
+** 3 of 762 failed (4 iterations)
+VERIFICATION FAILED

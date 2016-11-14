@@ -236,29 +236,27 @@ Unwinding loop purple_base16_encode.2 iteration 13 (17 max) file pidgin/libpurpl
 Unwinding loop purple_base16_encode.2 iteration 14 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
 Unwinding loop purple_base16_encode.2 iteration 15 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
 Unwinding loop purple_base16_encode.2 iteration 16 (17 max) file pidgin/libpurple/util.c line 141 function purple_base16_encode thread 0
-size of program expression: 4639 steps
-simple slicing removed 24 assignments
-Generated 28 VCC(s), 17 remaining after simplification
+size of program expression: 4642 steps
+simple slicing removed 1 assignments
+Generated 29 VCC(s), 18 remaining after simplification
 Passing problem to propositional reduction
 converting SSA
 Running propositional reduction
 Post-processing
 Solving with MiniSAT 2.2.1 with simplifier
-275588 variables, 769081 clauses
+276077 variables, 770371 clauses
 SAT checker: instance is SATISFIABLE
 Solving with MiniSAT 2.2.1 with simplifier
-275588 variables, 5658 clauses
+276077 variables, 6414 clauses
 SAT checker: instance is SATISFIABLE
 Solving with MiniSAT 2.2.1 with simplifier
-275588 variables, 5653 clauses
-SAT checker: instance is SATISFIABLE
-Solving with MiniSAT 2.2.1 with simplifier
-275588 variables, 5638 clauses
+276077 variables, 6379 clauses
 SAT checker inconsistent: instance is UNSATISFIABLE
-Runtime decision procedure: 1.381s
+Runtime decision procedure: 1.431s
 
 ** Results:
 [] free called for new[] object: SUCCESS
+[_start.memory-leak.1] dynamically allocated memory never freed in __CPROVER_memory_leak == NULL: FAILURE
 [g_free.assertion.1] free argument is dynamic object: FAILURE
 [g_free.assertion.2] free argument has offset zero: FAILURE
 [g_free.assertion.3] double free: FAILURE
@@ -305,26 +303,6 @@ Runtime decision procedure: 1.381s
 [realloc.assertion.14] free argument has offset zero: SUCCESS
 [realloc.assertion.15] double free: SUCCESS
 [realloc.assertion.16] free called for new[] object: SUCCESS
-[purple_markup_unescape_entity.array_bounds.1] array `buf' lower bound in buf[(signed long int)buflen]: SUCCESS
-[purple_markup_unescape_entity.array_bounds.2] array `buf' upper bound in buf[(signed long int)buflen]: SUCCESS
-[purple_str_size_to_units.array_bounds.1] array `size_str' lower bound in size_str[(signed long int)size_index]: SUCCESS
-[purple_str_size_to_units.array_bounds.2] array `size_str' upper bound in size_str[(signed long int)size_index]: SUCCESS
-[purple_str_size_to_units.array_bounds.3] array `size_str' lower bound in size_str[(signed long int)size_index]: SUCCESS
-[purple_str_size_to_units.array_bounds.4] array `size_str' upper bound in size_str[(signed long int)size_index]: SUCCESS
-[purple_got_protocol_handler_uri.array_bounds.1] array `proto' lower bound in proto[(signed long int)len]: SUCCESS
-[purple_got_protocol_handler_uri.array_bounds.2] array `proto' upper bound in proto[(signed long int)len]: SUCCESS
-[purple_url_decode.array_bounds.1] array `buf' upper bound in buf[(signed long int)tmp_post$3]: SUCCESS
-[purple_url_decode.array_bounds.2] array `buf' upper bound in buf[(signed long int)tmp_post$4]: SUCCESS
-[purple_url_decode.array_bounds.3] array `buf' upper bound in buf[(signed long int)j]: SUCCESS
-[purple_url_encode.array_bounds.1] array `buf' upper bound in buf[(signed long int)tmp_post$2]: SUCCESS
-[purple_url_encode.array_bounds.2] array `utf_char' upper bound in utf_char[(signed long int)i]: SUCCESS
-[purple_url_encode.array_bounds.3] array `buf' upper bound in buf[(signed long int)j]: SUCCESS
-[purple_escape_filename.array_bounds.1] array `buf' upper bound in buf[(signed long int)tmp_post$2]: SUCCESS
-[purple_escape_filename.array_bounds.2] array `utf_char' upper bound in utf_char[(signed long int)i]: SUCCESS
-[purple_escape_filename.array_bounds.3] array `buf' upper bound in buf[(signed long int)j]: SUCCESS
-[purple_cipher_context_digest_to_str.array_bounds.1] array `digest' upper bound in digest[(signed long int)n]: SUCCESS
-[mktime_utc.array_bounds.1] array `days_before' lower bound in days_before[(signed long int)tm->tm_mon]: SUCCESS
-[mktime_utc.array_bounds.2] array `days_before' upper bound in days_before[(signed long int)tm->tm_mon]: SUCCESS
 
-** 3 of 67 failed (4 iterations)
+** 4 of 48 failed (3 iterations)
 VERIFICATION FAILED

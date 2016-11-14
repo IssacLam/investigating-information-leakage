@@ -113,54 +113,39 @@ generate_response_value(JabberID *jid, const char *passwd, const char *nonce,
 
 	gchar *a1, *convnode=NULL, *convpasswd = NULL, *ha1, *ha2, *kd, *x, *z;
 
-//__CPROVER_assert(0, "false-1");
 	if((convnode = g_convert(jid->node, -1, "iso-8859-1", "utf-8",
 					NULL, NULL, NULL)) == NULL) {
 		convnode = g_strdup(jid->node);
 	}
 
-//__CPROVER_assert(0, "false0");
 	if(passwd && ((convpasswd = g_convert(passwd, -1, "iso-8859-1",
 						"utf-8", NULL, NULL, NULL)) == NULL)) {
 		convpasswd = g_strdup(passwd);
 	}
 
-//__CPROVER_assert(0, "false1");
-
 	cipher = purple_ciphers_find_cipher("md5");
 	context = purple_cipher_context_new(cipher, NULL);
 
-__CPROVER_assert(0, "false1.1");
 	x = g_strdup_printf("%s:%s:%s", convnode, realm, convpasswd ? convpasswd : "");
 
-__CPROVER_assert(0, "false1.2");
 	purple_cipher_context_append(context, (const guchar *)x, strlen(x));
 	purple_cipher_context_digest(context, sizeof(result), result, NULL);
 
-__CPROVER_assert(0, "false2");
 	a1 = g_strdup_printf("xxxxxxxxxxxxxxxx:%s:%s", nonce, cnonce);
-__CPROVER_assert(0, "false2.1");
-	//__CPROVER_assert(a1[0] == 'x', "TEST: g_strdup_printf is working");	
 	a1len = strlen(a1);
-__CPROVER_assert(0, "false2.2");
-	__CPROVER_assert(a1len != 0, "TEST: a1 is not Empty");
-__CPROVER_assert(0, "false2.3");
 	//g_memmove(a1, result, 16);
 	memmove(a1, result, 16);
 
-__CPROVER_assert(0, "false3");
 	purple_cipher_context_reset(context, NULL);
 	purple_cipher_context_append(context, (const guchar *)a1, a1len);
 	purple_cipher_context_digest(context, sizeof(result), result, NULL);
 
-__CPROVER_assert(0, "false4");
 	ha1 = purple_base16_encode(result, 16);
 
 	purple_cipher_context_reset(context, NULL);
 	purple_cipher_context_append(context, (const guchar *)a2, strlen(a2));
 	purple_cipher_context_digest(context, sizeof(result), result, NULL);
 
-__CPROVER_assert(0, "false5");
 	ha2 = purple_base16_encode(result, 16);
 
 	kd = g_strdup_printf("%s:%s:00000001:%s:auth:%s", ha1, nonce, cnonce, ha2);
@@ -172,7 +157,6 @@ __CPROVER_assert(0, "false5");
 
 	z = purple_base16_encode(result, 16);
 
-__CPROVER_assert(0, "false");
 	g_free(convnode);
 	g_free(convpasswd);
 	g_free(x);
@@ -335,32 +319,20 @@ int main(){
   char z1[16], z2[16];
   __CPROVER_assume(r1 != r2);
 
-  __CPROVER_assert(0, "false main");
-
   JabberID *jid;
   char *passwd1, *passwd2, *nonce, *cnonce, *a2, *realm;
 
+  // assume two passwd are different and correctly initialized.
   __CPROVER_assume(passwd1 != NULL && passwd2 != NULL);
   __CPROVER_assume(passwd1[0] != passwd2[0]);
   r1 = generate_response_value(jid, passwd1, nonce, cnonce, a2, realm);
   r2 = generate_response_value(jid, passwd2, nonce, cnonce, a2, realm);
 
-  __CPROVER_assert(r1 != r2, "r1, r2 shuold be different");
-  __CPROVER_assert(*r1 != *r2, "*r1, *r2 shuold be different");
   int i = nondet_int();
   if(i >= 0 && i < 16)
-//  for(int i = 0; i < 16; ++i)
-    __CPROVER_assert(r1[i] == r2[i], "ERROR: Information Leak - Test by pointer");
+    __CPROVER_assert(r1[i] == r2[i], "ERROR: Information Leak");
 
-//  __CPROVER_assert(__CPROVER_forall{int i; (i >= 0 && i < 16) ==> r1[i] == r2[i]}, "ERROR: Information Leak");
-
-
-  strncpy(z1, generate_response_value(jid, passwd1, nonce, cnonce, a2, realm), 16);
-  strncpy(z2, generate_response_value(jid, passwd2, nonce, cnonce, a2, realm), 16);
-
-  if(i >= 0 && i < 16)
-    __CPROVER_assert(z1[i] == z2[i], "ERROR: Information Leak - Test by clone");
-  
+  __CPROVER_assert(0, "Ensure the reachability - FAILURE == ");
   return 0;
 }
 
